@@ -1,0 +1,1433 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="250" />
+          <Fields>
+            <Field name="Text" />
+          </Fields>
+          <Data>
+            <r>
+              <c>myhposlqgeauywfikztndcvrqr</c>
+            </r>
+            <r>
+              <c>mbhposlxfeauywoikztndcvjqi</c>
+            </r>
+            <r>
+              <c>mbhpoulxgeagywfikytndcvjqr</c>
+            </r>
+            <r>
+              <c>jbhposlxgeauywdikztndcvjqk</c>
+            </r>
+            <r>
+              <c>mbhpsslxueauywfikzfndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposnxgeauzyfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>ibhposlxgetvywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbcposlxgeauywfikztxdcvjqv</c>
+            </r>
+            <r>
+              <c>mlhposltgeauywfikitndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpostxgeauywfikztndjvjqy</c>
+            </r>
+            <r>
+              <c>mboboslxglauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpoglxgeahywfikztndcvjqp</c>
+            </r>
+            <r>
+              <c>mbhposlxgeapydpikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxseauywfikztnncljqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauydfisztndcvjqj</c>
+            </r>
+            <r>
+              <c>mbhposlxgeaugwwikzlndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpoklxgeauywfikztndvvmqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfikdtndcmjqx</c>
+            </r>
+            <r>
+              <c>mbhposlxaeauapfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbwposgxgeauymfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauvwfirzcndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpozlxgeaqywfykztndcvjqr</c>
+            </r>
+            <r>
+              <c>mahqoslxgeauywfikzgndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlcgexbywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>ykhposlxgeeuywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhgoswxgeauywfikztndhvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfikztnocmjqp</c>
+            </r>
+            <r>
+              <c>mbvposfageauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpnslxgeauywfikztndgejqr</c>
+            </r>
+            <r>
+              <c>mblposfxgeauypfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxyeauywfikzpndcvmqr</c>
+            </r>
+            <r>
+              <c>ibhposlbgeauywfikotndcvjqr</c>
+            </r>
+            <r>
+              <c>mbmposlxgeauywfiktwndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeduywfikztndfvoqr</c>
+            </r>
+            <r>
+              <c>mbhpoklxdeauywfikztndcvuqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfikltnlcvuqr</c>
+            </r>
+            <r>
+              <c>mbhposlbgsauywfikztndsvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfirzfndcbjqr</c>
+            </r>
+            <r>
+              <c>mphposlxgeauywfikztndcvjgg</c>
+            </r>
+            <r>
+              <c>mohposlcgeauywfikzsndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpovlxgeauyqfikotndcvjqr</c>
+            </r>
+            <r>
+              <c>qbhpgslxgeauywqikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxweauywfikztndtvjqm</c>
+            </r>
+            <r>
+              <c>pbhposlxgeauywfikztnncvjqm</c>
+            </r>
+            <r>
+              <c>mbbposlxpeauuwfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgmauyrfikztndcvjir</c>
+            </r>
+            <r>
+              <c>pbhposlqgefuywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhkoslxgeauywfikztndciwqr</c>
+            </r>
+            <r>
+              <c>mbtpoflxgeauywfikztndrvjqr</c>
+            </r>
+            <r>
+              <c>mbhcoslxveguywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpovlxgeauywfhkdtndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywftrztndcujqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeaoywfdkzpndcvjqr</c>
+            </r>
+            <r>
+              <c>mbnposlxgeyuywfikztldcvjqr</c>
+            </r>
+            <r>
+              <c>mbaposlxweauywfikftndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposljgeauywfikztcdcvvqr</c>
+            </r>
+            <r>
+              <c>nbhpkslxgeauywfikzwndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhtoslxgeauywfikzkndcvjdr</c>
+            </r>
+            <r>
+              <c>mbhposxxgeaxywfikztndsvjqr</c>
+            </r>
+            <r>
+              <c>mbdpoflxgeauywfisztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposvxgeauywfikztnscvnqr</c>
+            </r>
+            <r>
+              <c>mbcposlxghauywfikztndcgjqr</c>
+            </r>
+            <r>
+              <c>mbhpovlxgeauywpckztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpfslxgeauywbikntndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpowyxgeauywfikztndcvjcr</c>
+            </r>
+            <r>
+              <c>mbhposlxoeatywfikztndcvoqr</c>
+            </r>
+            <r>
+              <c>mchpfslxgeauywfikztidcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposvxgearywfikztndcvjcr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfpcztnduvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgmauyyfiqztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxteauuwfikwtndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpotlspeauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpoelxgeauywfikztndckjkr</c>
+            </r>
+            <r>
+              <c>mbhpnslxgeauywfikztndcvkqs</c>
+            </r>
+            <r>
+              <c>mbhpksfxgwauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mxhwoglxgeauywfdkztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhphsbjgeauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauwifixztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposqxguauywfikztndcwjqr</c>
+            </r>
+            <r>
+              <c>mbhposlngeauywfikztedcvjor</c>
+            </r>
+            <r>
+              <c>nbhposlxgeauywiikztndcyjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauawfykztndcvbqr</c>
+            </r>
+            <r>
+              <c>mbhplslxgeauywcikztndcvjrr</c>
+            </r>
+            <r>
+              <c>fshposlxgeagywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauymcikztndcxjqr</c>
+            </r>
+            <r>
+              <c>mbhponlxgeauyloikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposrxzeanywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhtoslxgeajyifikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposixkeauywfikhtndcvjqr</c>
+            </r>
+            <r>
+              <c>mahhoslxgeaufwfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpdslxteauywfikzvndcvjqr</c>
+            </r>
+            <r>
+              <c>mfhposlxgeauywfiqttndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhplslxheauywfikztnscvjqr</c>
+            </r>
+            <r>
+              <c>mbhpoylxgeauywbizztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlhgeawywfjkztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhkoslxgkauywfilztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposnxgeauywfikztkdcvlqr</c>
+            </r>
+            <r>
+              <c>mvhpxslxgevuywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpohlxgeauyrficztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhsosuxgewuywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpoxlxgeauywuikztnhcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxqeauyqfikztndcvrqr</c>
+            </r>
+            <r>
+              <c>mbhpchlxgeauywfikztnhcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywoikztndcfqqr</c>
+            </r>
+            <r>
+              <c>pbhposlxgeagmwfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mxhwoglxgeauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpospxgaauywfikstndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhwoxlxgeauywfgkztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfikvtndhvsqr</c>
+            </r>
+            <r>
+              <c>mbbposlxgesuywfikztnicvjqr</c>
+            </r>
+            <r>
+              <c>mhhjoslxgeauywfikztndccjqr</c>
+            </r>
+            <r>
+              <c>mbhkoslxgeagywffkztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgesqywfukztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbdposlxgeauywfilztndcvjqp</c>
+            </r>
+            <r>
+              <c>mbhposlxgeakqwfikztedcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposuxgeayywficztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfxkztndcloqr</c>
+            </r>
+            <r>
+              <c>mchposlxgeauywoiiztndcvjqr</c>
+            </r>
+            <r>
+              <c>tbhporlxgeauywfikztndcvyqr</c>
+            </r>
+            <r>
+              <c>mbhposlxoevuywfikzindcvjqr</c>
+            </r>
+            <r>
+              <c>qbhposlxfevuywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxfeauvwfikztndcvgqr</c>
+            </r>
+            <r>
+              <c>mbjposlxgsauywfikztnwcvjqr</c>
+            </r>
+            <r>
+              <c>vbhposlxgeauvwfikztndcvjqk</c>
+            </r>
+            <r>
+              <c>pbhposlxguauyrfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlcgeauywfiketndcviqr</c>
+            </r>
+            <r>
+              <c>mbsposlxgvauywfikztndcviqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauynfxkztndcvjbr</c>
+            </r>
+            <r>
+              <c>mbhposlxtentywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeavywfikztndhvjnr</c>
+            </r>
+            <r>
+              <c>mbhpsvlxgeauywfikztndcvzqr</c>
+            </r>
+            <r>
+              <c>mzhpotlxgeauywfiyztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposkqgeauywfiwztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxoeakywfikztndcvjqt</c>
+            </r>
+            <r>
+              <c>mbhposlxghauywfikbdndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpossxgeauywfikqxndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgearywhikztydcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeaiywfikztndfvjur</c>
+            </r>
+            <r>
+              <c>mbhpxslxgoazywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxneauywfibqtndcvjqr</c>
+            </r>
+            <r>
+              <c>mnheoslxteauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfmkztrdcvuqr</c>
+            </r>
+            <r>
+              <c>mbhzowlxgeauywfizztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhloslxgeauyofikztnucvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxneagywfbkztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposongeauywfikztnzcvjqr</c>
+            </r>
+            <r>
+              <c>mwyposlxgeauywfikztnqcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpnqaxgeauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mboposlxzeauywfioztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposledeauywfikztndqvjqr</c>
+            </r>
+            <r>
+              <c>mphpaslxgeauywfbkztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposrxgeauywlikbtndcvjqr</c>
+            </r>
+            <r>
+              <c>ybhnoslxgeauywfihztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfikntxccvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauqwfikutndcfjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxglabywfikztidcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpollxgeauywfikxtnscvjqr</c>
+            </r>
+            <r>
+              <c>mboposlggeaufwfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywpikedndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpoklxgeauywpikztndcvjlr</c>
+            </r>
+            <r>
+              <c>mbhposhxgeauywfifztndcvpqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgwagywfikztndcvjwr</c>
+            </r>
+            <r>
+              <c>mbhpokldgeauywfikztngcvjqr</c>
+            </r>
+            <r>
+              <c>nbhposlxgeauywfiketndcvjxr</c>
+            </r>
+            <r>
+              <c>mbhhoslxgexuywfikrtndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgefujwfikztkdcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxggagywfikztndchjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauyvfilztnicvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlkgeauywfikzxndcvoqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauvqfikztndcvuqr</c>
+            </r>
+            <r>
+              <c>zbhposlxgfauylfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhyoshxgeauywfikztndcvjqa</c>
+            </r>
+            <r>
+              <c>sbhposlxgeauyxfikztndavjqr</c>
+            </r>
+            <r>
+              <c>mlhposlxgeauywfikzmndcqjqr</c>
+            </r>
+            <r>
+              <c>mbhpaslxgekuywfikztnncvjqr</c>
+            </r>
+            <r>
+              <c>ibhhoslxteauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauyodibztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgkaoywfikztndcvpqr</c>
+            </r>
+            <r>
+              <c>mbhonslxgearywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbdpoolxgealywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbepfslxgvauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlygeauywfikztfdcvaqr</c>
+            </r>
+            <r>
+              <c>mthpoalxgeauywnikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpesbogeauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgjauywfikztnmcvjqj</c>
+            </r>
+            <r>
+              <c>mbhnoslxgeauydfikgtndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpxslxgeauywfikztndcvjcx</c>
+            </r>
+            <r>
+              <c>muhposlxgwauywfipztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpcslxgeauywfiqztndcvjbr</c>
+            </r>
+            <r>
+              <c>mbhpomlxgeauywfioftndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlfgepuywfikzmndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhsosliteauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbwposlxgeauywfikztnycveqr</c>
+            </r>
+            <r>
+              <c>mbhpfslxgeauywfqkztndcvjhr</c>
+            </r>
+            <r>
+              <c>mxhbvslxgeauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>fbhposlxgeauywfikzcnmcvjqr</c>
+            </r>
+            <r>
+              <c>mbhfosfxgeauywfikztnduvjqr</c>
+            </r>
+            <r>
+              <c>tbhporlxgeauywfikztndcvjqm</c>
+            </r>
+            <r>
+              <c>mhhposlxgeauywfikctnecvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeqtywfikztnmcvjqr</c>
+            </r>
+            <r>
+              <c>qbhpjslxgeauywfikztndevjqr</c>
+            </r>
+            <r>
+              <c>tbhpxslxgeaunwfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>wbhposlxgeadywfikztndcujqr</c>
+            </r>
+            <r>
+              <c>mbhposlvgeauywfpkotndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeagywfingtndcvjqr</c>
+            </r>
+            <r>
+              <c>mbnposlxgeauywfikztnvcjjqr</c>
+            </r>
+            <r>
+              <c>mohpoilxgeadywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlsgeauywfikztnxcvgqr</c>
+            </r>
+            <r>
+              <c>mbhposlogeauywfikqtndcvjor</c>
+            </r>
+            <r>
+              <c>mbhroslxgeauypfikztndcvjqg</c>
+            </r>
+            <r>
+              <c>mblposuxgetuywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlogeiuywfikztodcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauylfikztedcvrqr</c>
+            </r>
+            <r>
+              <c>mbhfoslxgeautwxikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhouslxgeauywfikztnycvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfvkqtndlvjqr</c>
+            </r>
+            <r>
+              <c>mbfposltgeauytfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgcapywfikztnddvjqr</c>
+            </r>
+            <r>
+              <c>hbhposlxgeasywfikztnxcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposntgeauywfikztcdcvjqr</c>
+            </r>
+            <r>
+              <c>mbhponlxgfauywfirztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeatywlikztndcvrqr</c>
+            </r>
+            <r>
+              <c>mohroslzgeauywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhpojaxgeauywfifztndcvjqr</c>
+            </r>
+            <r>
+              <c>rbhposlxgwauywfikztndovjqr</c>
+            </r>
+            <r>
+              <c>mbhpoclxgeaeywfikztndcvjqo</c>
+            </r>
+            <r>
+              <c>mbhposllgeauywfikzondcvmqr</c>
+            </r>
+            <r>
+              <c>mbhpxslxgeauywfikzymdcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeasywxikztndkvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfivztndcmjqx</c>
+            </r>
+            <r>
+              <c>qbhposlxgpauywfikgtndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauyqdikztqdcvjqr</c>
+            </r>
+            <r>
+              <c>cbhposlxgeauywfikttjdcvjqr</c>
+            </r>
+            <r>
+              <c>mbhgoslxgeanywfihztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeajywfhkztndcvjvr</c>
+            </r>
+            <r>
+              <c>mbhpozlxgeauewfmkztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeagywfbiztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhmoslxgeauywfikztndrnjqr</c>
+            </r>
+            <r>
+              <c>ybhposmxgeauywfikztndcviqr</c>
+            </r>
+            <r>
+              <c>mrwposlxgeauywfikztndpvjqr</c>
+            </r>
+            <r>
+              <c>mbhposlxneauywfikztndcbjqh</c>
+            </r>
+            <r>
+              <c>mbhpowlxheauywfikztndcojqr</c>
+            </r>
+            <r>
+              <c>mbeposlxgeauywfiwztnycvjqr</c>
+            </r>
+            <r>
+              <c>mbhposixgeapywfikztndcvvqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgeauywfikztnbcvjap</c>
+            </r>
+            <r>
+              <c>mzhposixgenuywfikztndcvjqr</c>
+            </r>
+            <r>
+              <c>mbhposgxgeauywyikztndvvjqr</c>
+            </r>
+            <r>
+              <c>mbhposajgeauywfikztzdcvjqr</c>
+            </r>
+            <r>
+              <c>mbhyoslxgeauywfikzsndcvxqr</c>
+            </r>
+            <r>
+              <c>mbhposlxgdauywfikmtndcljqr</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="138" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="222" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Text</Field>
+          <RegExExpression value="." />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>Text_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Tokenize:
+.</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="318" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+            <SummarizeField field="Text" action="GroupBy" rename="Text" />
+            <SummarizeField field="Text" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="426" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count] = 2</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-03 20:59:54</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2018-12-03 20:59:54</StartDate>
+              <EndDate>2018-12-03 20:59:54</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="426" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count] = 3</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-03 20:59:59</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2018-12-03 20:59:59</StartDate>
+              <EndDate>2018-12-03 20:59:59</EndDate>
+              <Operand>3</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="522" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="CountDistinct" rename="Count2" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="522" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="CountDistinct" rename="Count3" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="606" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="690" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Count2]*[Count3]" field="Checksum" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Checksum = [Count2]*[Count3]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="342" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>RecordID</UpdateField_Name>
+          <CreateField_Name>CharID</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>[Row-1:CharID]+1</Expression>
+          <GroupByFields>
+            <Field field="RecordID" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Row-1:CharID]+1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="462" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CharID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CharID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Right_RecordID" selected="True" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Left_Text" selected="True" input="Left_" />
+                <SelectField field="Right_Text" selected="True" rename="Right_Text" input="Right_" />
+                <SelectField field="Left_CharID" selected="True" input="Left_" />
+                <SelectField field="Right_CharID" selected="False" rename="Right_CharID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="570" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Right_RecordID] != [RecordID]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Right_RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-03 21:07:14</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-03 21:07:14</StartDate>
+              <EndDate>2018-12-03 21:07:14</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Right_RecordID] != [RecordID]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="678" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Text] != [Right_Text]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Text</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-03 21:07:34</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2018-12-03 21:07:34</StartDate>
+              <EndDate>2018-12-03 21:07:34</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Text] != [Right_Text]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="786" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+            <SummarizeField field="Right_RecordID" action="GroupBy" rename="Right_RecordID" />
+            <SummarizeField field="Right_Text" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="882" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count] = 1</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-03 21:08:01</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2018-12-03 21:08:01</StartDate>
+              <EndDate>2018-12-03 21:08:01</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="978" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_Text" selected="True" input="Left_" />
+                <SelectField field="Left_CharID" selected="True" input="Left_" />
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1086" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CharID" />
+            <Field field="Text" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CharID" />
+            <Field field="Text" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_CharID" selected="False" input="Left_" />
+                <SelectField field="Right_RecordID" selected="True" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_Text" selected="False" rename="Right_Text" input="Right_" />
+                <SelectField field="Right_CharID" selected="False" rename="Right_CharID" input="Right_" />
+                <SelectField field="Left_Text" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1278" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Text" action="Concat" rename="Concat_Text">
+              <Concat_Start />
+              <Separator />
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1182" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[RecordID] &lt;[Right_RecordID]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-03 21:12:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-03 21:12:53</StartDate>
+              <EndDate>2018-12-03 21:12:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] &lt;[Right_RecordID]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
