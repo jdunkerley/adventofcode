@@ -1,0 +1,940 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="101" />
+          <Fields>
+            <Field name="Sequence" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Step Z must be finished before step B can begin.</c>
+            </r>
+            <r>
+              <c>Step X must be finished before step D can begin.</c>
+            </r>
+            <r>
+              <c>Step D must be finished before step P can begin.</c>
+            </r>
+            <r>
+              <c>Step O must be finished before step C can begin.</c>
+            </r>
+            <r>
+              <c>Step C must be finished before step Y can begin.</c>
+            </r>
+            <r>
+              <c>Step K must be finished before step J can begin.</c>
+            </r>
+            <r>
+              <c>Step H must be finished before step T can begin.</c>
+            </r>
+            <r>
+              <c>Step B must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step V must be finished before step M can begin.</c>
+            </r>
+            <r>
+              <c>Step E must be finished before step W can begin.</c>
+            </r>
+            <r>
+              <c>Step S must be finished before step J can begin.</c>
+            </r>
+            <r>
+              <c>Step I must be finished before step N can begin.</c>
+            </r>
+            <r>
+              <c>Step T must be finished before step L can begin.</c>
+            </r>
+            <r>
+              <c>Step N must be finished before step M can begin.</c>
+            </r>
+            <r>
+              <c>Step P must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step F must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step J must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step L must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step Y must be finished before step R can begin.</c>
+            </r>
+            <r>
+              <c>Step U must be finished before step A can begin.</c>
+            </r>
+            <r>
+              <c>Step W must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step R must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step G must be finished before step M can begin.</c>
+            </r>
+            <r>
+              <c>Step A must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step M must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step N must be finished before step F can begin.</c>
+            </r>
+            <r>
+              <c>Step Y must be finished before step W can begin.</c>
+            </r>
+            <r>
+              <c>Step J must be finished before step W can begin.</c>
+            </r>
+            <r>
+              <c>Step U must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step X must be finished before step L can begin.</c>
+            </r>
+            <r>
+              <c>Step P must be finished before step J can begin.</c>
+            </r>
+            <r>
+              <c>Step L must be finished before step Y can begin.</c>
+            </r>
+            <r>
+              <c>Step G must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step K must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step V must be finished before step J can begin.</c>
+            </r>
+            <r>
+              <c>Step F must be finished before step U can begin.</c>
+            </r>
+            <r>
+              <c>Step V must be finished before step N can begin.</c>
+            </r>
+            <r>
+              <c>Step I must be finished before step T can begin.</c>
+            </r>
+            <r>
+              <c>Step U must be finished before step W can begin.</c>
+            </r>
+            <r>
+              <c>Step S must be finished before step A can begin.</c>
+            </r>
+            <r>
+              <c>Step C must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step L must be finished before step A can begin.</c>
+            </r>
+            <r>
+              <c>Step E must be finished before step L can begin.</c>
+            </r>
+            <r>
+              <c>Step D must be finished before step H can begin.</c>
+            </r>
+            <r>
+              <c>Step Z must be finished before step E can begin.</c>
+            </r>
+            <r>
+              <c>Step J must be finished before step U can begin.</c>
+            </r>
+            <r>
+              <c>Step R must be finished before step A can begin.</c>
+            </r>
+            <r>
+              <c>Step C must be finished before step J can begin.</c>
+            </r>
+            <r>
+              <c>Step T must be finished before step R can begin.</c>
+            </r>
+            <r>
+              <c>Step Z must be finished before step D can begin.</c>
+            </r>
+            <r>
+              <c>Step Y must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step Y must be finished before step M can begin.</c>
+            </r>
+            <r>
+              <c>Step X must be finished before step H can begin.</c>
+            </r>
+            <r>
+              <c>Step S must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step R must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step D must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step G must be finished before step A can begin.</c>
+            </r>
+            <r>
+              <c>Step N must be finished before step A can begin.</c>
+            </r>
+            <r>
+              <c>Step F must be finished before step L can begin.</c>
+            </r>
+            <r>
+              <c>Step O must be finished before step N can begin.</c>
+            </r>
+            <r>
+              <c>Step T must be finished before step J can begin.</c>
+            </r>
+            <r>
+              <c>Step S must be finished before step T can begin.</c>
+            </r>
+            <r>
+              <c>Step O must be finished before step M can begin.</c>
+            </r>
+            <r>
+              <c>Step P must be finished before step Y can begin.</c>
+            </r>
+            <r>
+              <c>Step I must be finished before step U can begin.</c>
+            </r>
+            <r>
+              <c>Step V must be finished before step S can begin.</c>
+            </r>
+            <r>
+              <c>Step F must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step P must be finished before step M can begin.</c>
+            </r>
+            <r>
+              <c>Step C must be finished before step S can begin.</c>
+            </r>
+            <r>
+              <c>Step A must be finished before step M can begin.</c>
+            </r>
+            <r>
+              <c>Step C must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step Y must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step O must be finished before step P can begin.</c>
+            </r>
+            <r>
+              <c>Step S must be finished before step R can begin.</c>
+            </r>
+            <r>
+              <c>Step S must be finished before step Y can begin.</c>
+            </r>
+            <r>
+              <c>Step I must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step O must be finished before step T can begin.</c>
+            </r>
+            <r>
+              <c>Step F must be finished before step W can begin.</c>
+            </r>
+            <r>
+              <c>Step U must be finished before step R can begin.</c>
+            </r>
+            <r>
+              <c>Step O must be finished before step U can begin.</c>
+            </r>
+            <r>
+              <c>Step D must be finished before step L can begin.</c>
+            </r>
+            <r>
+              <c>Step H must be finished before step I can begin.</c>
+            </r>
+            <r>
+              <c>Step P must be finished before step R can begin.</c>
+            </r>
+            <r>
+              <c>Step J must be finished before step L can begin.</c>
+            </r>
+            <r>
+              <c>Step P must be finished before step W can begin.</c>
+            </r>
+            <r>
+              <c>Step W must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step X must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step Z must be finished before step U can begin.</c>
+            </r>
+            <r>
+              <c>Step T must be finished before step U can begin.</c>
+            </r>
+            <r>
+              <c>Step D must be finished before step S can begin.</c>
+            </r>
+            <r>
+              <c>Step U must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step N must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step E must be finished before step Q can begin.</c>
+            </r>
+            <r>
+              <c>Step X must be finished before step K can begin.</c>
+            </r>
+            <r>
+              <c>Step J must be finished before step R can begin.</c>
+            </r>
+            <r>
+              <c>Step X must be finished before step R can begin.</c>
+            </r>
+            <r>
+              <c>Step T must be finished before step W can begin.</c>
+            </r>
+            <r>
+              <c>Step K must be finished before step S can begin.</c>
+            </r>
+            <r>
+              <c>Step S must be finished before step G can begin.</c>
+            </r>
+            <r>
+              <c>Step P must be finished before step F can begin.</c>
+            </r>
+            <r>
+              <c>Step X must be finished before step C can begin.</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="186" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Sequence</Field>
+          <RegExExpression value="Step ([^ ]+).*step ([^ ]+).*" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="First" type="V_WString" size="254" />
+            <Field field="Second" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>Sequence_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+Step ([^ ]+).*step ([^ ]+).*</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="270" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields />
+          <DataFields>
+            <Field field="Sequence" selected="False" />
+            <Field field="First" selected="True" />
+            <Field field="Second" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="390" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Value" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="474" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="False" />
+            <SelectField field="Value" selected="True" rename="Node" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="474" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sequence" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="7" />
+          <Fields>
+            <Field name="Sequence" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Step C must be finished before step A can begin.</c>
+            </r>
+            <r>
+              <c>Step C must be finished before step F can begin.</c>
+            </r>
+            <r>
+              <c>Step A must be finished before step B can begin.</c>
+            </r>
+            <r>
+              <c>Step A must be finished before step D can begin.</c>
+            </r>
+            <r>
+              <c>Step B must be finished before step E can begin.</c>
+            </r>
+            <r>
+              <c>Step D must be finished before step E can begin.</c>
+            </r>
+            <r>
+              <c>Step F must be finished before step E can begin.</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="450" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="Worker" />
+            <Field name="Task" />
+            <Field name="Step" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>?</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>?</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>?</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>?</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>?</c>
+              <c>0</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings>
+        <Position x="642" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Numeric Up Down (37)">4</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Day7 Loop 2 (16)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro=".\Day7 Loop 2.yxmc" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_26460_e71bb58a206b4519a7a91e90888983d4_\Engine_27980_631dbbc272c64221b26b5a2d7361b8ba_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="834" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Step" />
+          </GroupFields>
+          <HeaderField field="Worker" />
+          <DataField field="Task" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Step" source="CrossTab:Group:Concat:" type="Int64" />
+            <Field name="1" size="2048" source="CrossTab:Header:Worker:1:Concat:" type="V_WString" />
+            <Field name="2" size="2048" source="CrossTab:Header:Worker:2:Concat:" type="V_WString" />
+            <Field name="3" size="2048" source="CrossTab:Header:Worker:3:Concat:" type="V_WString" />
+            <Field name="4" size="2048" source="CrossTab:Header:Worker:4:Concat:" type="V_WString" />
+            <Field name="5" size="2048" source="CrossTab:Header:Worker:5:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Step" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="738" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Task] != "?"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Task</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-07 06:02:40</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>?</Operand>
+              <StartDate>2018-12-07 06:02:40</StartDate>
+              <EndDate>2018-12-07 06:02:40</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Task] != "?"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="834" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Task" action="GroupBy" rename="Task" />
+            <SummarizeField field="Step" action="Min" rename="Min_Step" />
+            <SummarizeField field="Step" action="Max" rename="Max_Step" />
+            <SummarizeField field="Step" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_26460_e71bb58a206b4519a7a91e90888983d4_\Engine_27980_636250b7d22043fd8ed9822add42d9b2_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="546" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>5</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 5</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="678" y="58" width="136.4582" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 23</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings>
+            <Position x="703" y="110" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Day7 Loop (7)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro=".\Day7 Loop.yxmc" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="799" y="206" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_10096_2bcb3f65691442cda19bcb893f4bf86c_\Engine_27980_29cd28cb1e7e419dbaab85d5332d68d6_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1014" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Node" action="Concat" rename="Concat_Node">
+                  <Concat_Start />
+                  <Separator />
+                  <Concat_End />
+                </SummarizeField>
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="799" y="108" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Iteration" order="Ascending" />
+                <Field field="Node" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iteration - Ascending
+Node - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Unique" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="15" Connection="Nodes" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="15" Connection="Input3" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="42" Connection="Input3" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="42" Connection="Nodes" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output33" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output7" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output7" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day7</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
