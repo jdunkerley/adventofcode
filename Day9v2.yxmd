@@ -14,8 +14,8 @@
           </Fields>
           <Data>
             <r>
-              <c>17</c>
-              <c>1104</c>
+              <c>427</c>
+              <c>70723</c>
             </r>
           </Data>
         </Configuration>
@@ -57,12 +57,12 @@
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="IIF([Marble]=0 OR MOD([Marble],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" field="Action" size="1073741823" type="V_WString" />
+            <FormulaField expression="IIF([Marble]=0 OR MOD([Marble],23)!=0,1,-7)" field="Action" size="2" type="Int16" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[Action = IIF([Marble]=0 OR MOD([Marble],23)!=0,"Add","Remove")
+          <DefaultAnnotationText><![CDATA[Action = IIF([Marble]=0 OR MOD([Marble],23)!=0,1,-7)
 ]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -82,16 +82,190 @@
           <CreateField_Size>4</CreateField_Size>
           <OtherRows>Empty</OtherRows>
           <NumRows value="1" />
-          <Expression>[Row-1:Count]+IIF([Action]="Add",1,-1)</Expression>
+          <Expression>[Row-1:Count]+IIF([Action]=1,1,-1)</Expression>
           <GroupByFields />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>[Row-1:Count]+IIF([Action]="Add",1,-1)</DefaultAnnotationText>
+          <DefaultAnnotationText>[Row-1:Count]+IIF([Action]=1,1,-1)</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="498" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Players</UpdateField_Name>
+          <CreateField_Name>Current</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF([Marble]=0,0,
+[Row-1:Current] + IIF([Row-1:Action]=1,1,0) + 
+[Action] +
+IIF([Row-1:Current] + IIF([Row-1:Action]=1,1,0) + [Action] &gt; [Row-1:Count],
+    -[Row-1:Count],
+    IIF([Row-1:Current] + IIF([Row-1:Action]=1,1,0) + [Action] &lt; 0, [Row-1:Count], 0)
+)
+)</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF([Marble]=0,0,
+[Row-1:Current] + IIF([Row-1:Action]=1,1,0)...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="618" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Players</UpdateField_Name>
+          <CreateField_Name>Positions</CreateField_Name>
+          <CreateField_Type>V_WString</CreateField_Type>
+          <CreateField_Size>1073741823</CreateField_Size>
+          <OtherRows>NULL</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF(IsNull([Row-1:Positions]),ToString([Marble]) + " ",
+	iif([Action]=1,
+	    REGEX_REPLACE([Row-1:Positions],"^((\d+ ){"+ToString([Current])+"})(.*)$","${1}" + ToString([Marble]) + " $3"),
+	    REGEX_REPLACE([Row-1:Positions],"^((\d+ ){"+ToString([Current]-1)+"})\d+ (.*)$","${1}" + ToString([Marble]) + " $3"))
+)</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF(IsNull([Row-1:Positions]),ToString([Marble]) + " ",
+	iif(...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="738" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Players</UpdateField_Name>
+          <CreateField_Name>Score</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF([Action]=-7,
+ToNumber(REGEX_REPLACE([Row-1:Positions],"^((\d+ ){"+ToString([Current]-1)+"})(\d+) (.*)$","$3")) + [Marble],0
+)</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF([Action]=-7,
+ToNumber(REGEX_REPLACE([Row-1:Positions],"^(...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="858" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Mod([Marble],[Players])" field="Player" size="8" type="Int64" />
+            <FormulaField expression="IIF([Player]=0,[Players],[Player])" field="Player" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Player = Mod([Marble],[Players])
+Player = IIF([Player]=0,[Players],[Player])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="966" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Player" action="GroupBy" rename="Player" />
+            <SummarizeField field="Score" action="Sum" rename="Sum_Score" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1074" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Sum_Score" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sum_Score - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1170" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_628_4ea77b9702b546a797c109dfe4a490d9_\Engine_13592_6d07e79ced6e45229fcc65658e049817_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
   </Nodes>
   <Connections>
@@ -106,6 +280,34 @@
     <Connection>
       <Origin ToolID="3" Connection="Output" />
       <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
