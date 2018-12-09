@@ -1,0 +1,1053 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="3" />
+              <Fields>
+                <Field name="Players" />
+                <Field name="Marbles" />
+                <Field name="Position" />
+                <Field name="Marble" />
+                <Field name="Current" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>9</c>
+                  <c>25</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>25</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>25</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1314" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Engine.IterationNumber]&lt;[Marbles]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-09 18:24:22</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-09 18:24:22</StartDate>
+              <EndDate>2018-12-09 18:24:22</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Engine.IterationNumber]&lt;[Marbles]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="(Multiple Sources)" type="Byte" />
+            <Field name="Marble" source="(Multiple Sources)" type="Byte" />
+            <Field name="Current" source="Formula: iif([Action]=&quot;Add&quot; AND [Engine.IterationNumber] &gt; 0,1,0)+[Current]" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="(Multiple Sources)" type="Byte" />
+            <Field name="Marble" source="(Multiple Sources)" type="Byte" />
+            <Field name="Current" source="Formula: iif([Action]=&quot;Add&quot; AND [Engine.IterationNumber] &gt; 0,1,0)+[Current]" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1410" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Loop</Name>
+          <Abbrev>L</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="138" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" field="Action" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Action = iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,"...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="TextInput:" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="630" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Action] = "Remove"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Action</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-09 19:29:41</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Remove</Operand>
+              <StartDate>2018-12-09 19:29:41</StartDate>
+              <EndDate>2018-12-09 19:29:41</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Action] = "Remove"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="726" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Position]!=[Current]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-09 19:29:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-09 19:29:53</StartDate>
+              <EndDate>2018-12-09 19:29:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Position]!=[Current]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="822" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Position] &lt;= [Current]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-09 19:30:29</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-09 19:30:29</StartDate>
+              <EndDate>2018-12-09 19:30:29</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Position] &lt;= [Current]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1122" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+            <Connection>#4</Connection>
+            <Connection>#3</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="(Multiple Sources)" type="Byte" />
+            <Field name="Marble" source="(Multiple Sources)" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1014" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Position]+1" field="Position" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Position = [Position]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="Formula: [Position]+1" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="726" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="822" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Current]+1" field="Position" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Position = [Current]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="Formula: [Current]+1" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="906" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]" field="Marble" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Marble = [Engine.IterationNumber]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="Formula: [Current]+1" type="Byte" />
+            <Field name="Marble" source="Formula: [Engine.IterationNumber]" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="822" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF([Position]&gt;[Current],-1,0)+[Position]" field="Position" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Position = IIF([Position]>[Current],-1,0)+[Position]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="Formula: IIF([Position]&gt;[Current],-1,0)+[Position]" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1494" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Score</Name>
+          <Abbrev>S</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1398" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Players" selected="False" />
+            <SelectField field="Marbles" selected="False" />
+            <SelectField field="Position" selected="False" />
+            <SelectField field="Current" selected="False" />
+            <SelectField field="Action" selected="False" />
+            <SelectField field="Player" selected="True" />
+            <SelectField field="Kept" selected="True" />
+            <SelectField field="Marble" selected="True" rename="Took" />
+            <SelectField field="Score" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Player" source="Formula: iif([Player]=0,[Players],[Player])" type="Int64" />
+            <Field name="Kept" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field name="Took" source="TextInput:" type="Byte" />
+            <Field name="Score" source="Formula: [Marble] + [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1290" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="MOD([Engine.IterationNumber],[Players])" field="Player" size="8" type="Int64" />
+            <FormulaField expression="iif([Player]=0,[Players],[Player])" field="Player" size="8" type="Int64" />
+            <FormulaField expression="[Engine.IterationNumber]" field="Kept" size="8" type="Int64" />
+            <FormulaField expression="[Marble] + [Engine.IterationNumber]" field="Score" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Player = MOD([Engine.IterationNumber],[Players])
+Player = iif([Player]=0,[Player...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+            <Field name="Player" source="Formula: iif([Player]=0,[Players],[Player])" type="Int64" />
+            <Field name="Kept" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field name="Score" source="Formula: [Marble] + [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1014" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Engine.IterationNumber]&gt;0</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-09 19:40:00</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-09 19:40:00</StartDate>
+              <EndDate>2018-12-09 19:40:00</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Engine.IterationNumber]&gt;0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="Formula: [Current]+1" type="Byte" />
+            <Field name="Marble" source="Formula: [Engine.IterationNumber]" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="Formula: [Current]+1" type="Byte" />
+            <Field name="Marble" source="Formula: [Engine.IterationNumber]" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF([Action]='Add',[Current]+1,[Current]-7)" field="Current" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Current = IIF([Action]='Add',[Current]+1,[Current]-7)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Action]='Add',[Current]+1,[Current]-7)" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings>
+        <Position x="258" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="354" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Action]='Add',[Current]+1,[Current]-7)" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="438" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" field="Current" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Current = IIF([Current]&gt;[Count]-1,[Current]-[Count],
+IIF([Current]&lt;0,[Current]+[...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Count" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Marble" source="TextInput:" type="Byte" />
+            <Field name="Current" source="Formula: IIF([Current]&gt;[Count]-1,[Current]-[Count],&#xA;IIF([Current]&lt;0,[Current]+[Count],&#xA;[Current]))" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1206" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="iif([Action]=&quot;Add&quot; AND [Engine.IterationNumber] &gt; 0,1,0)+[Current]" field="Current" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Current = iif([Action]="Add" AND [Engine.IterationNumber] > 0,1,0)+[Current]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Players" source="TextInput:" type="Byte" />
+            <Field name="Marbles" source="TextInput:" type="Byte" />
+            <Field name="Position" source="(Multiple Sources)" type="Byte" />
+            <Field name="Marble" source="(Multiple Sources)" type="Byte" />
+            <Field name="Current" source="Formula: iif([Action]=&quot;Add&quot; AND [Engine.IterationNumber] &gt; 0,1,0)+[Current]" type="Byte" />
+            <Field name="Action" size="1073741823" source="Formula: iif([Engine.IterationNumber]=0 or mod([Engine.IterationNumber],23)!=0,&quot;Add&quot;,&quot;Remove&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="23" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="False" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="False" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="8" Connection="False" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output9" />
+      <Destination ToolID="24" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (5)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (16)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day9 Loop</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (3)</Description>
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (5)</Description>
+              <Name>Macro Output (5)</Name>
+              <ToolId value="5" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (16)</Description>
+              <Name>Macro Output (16)</Name>
+              <ToolId value="16" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input3</Input>
+        <Output>Loop</Output>
+        <IterationLimit value="100000" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="5" Selected="True" />
+        <Tool ToolId="16" Selected="True" />
+        <Tool ToolId="23" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
