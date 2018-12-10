@@ -29,7 +29,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="246" y="54" />
+        <Position x="222" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -52,7 +52,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="342" y="54" />
+        <Position x="318" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -71,7 +71,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="438" y="54" />
+        <Position x="414" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -95,7 +95,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="534" y="54" />
+        <Position x="522" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -127,7 +127,7 @@ IIF([Row-1:Current] + IIF([Row-1:Action]=1,1,0) + [Action] &gt; [Row-1:Count],
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="726" y="54" />
+        <Position x="738" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -160,7 +160,7 @@ IIF([Row-1:Current] + IIF([Row-1:Action]=1,1,0) + [Action] &gt; [Row-1:Count],
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="822" y="54" />
+        <Position x="834" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -188,7 +188,7 @@ ToNumber(Substring([Row-1:Positions],([Curre...</DefaultAnnotationText>
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1014" y="54" />
+        <Position x="1026" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -209,7 +209,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1110" y="54" />
+        <Position x="1122" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -228,7 +228,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="1206" y="54" />
+        <Position x="1218" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -246,7 +246,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1302" y="54" />
+        <Position x="1314" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -293,7 +293,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="150" y="54" />
+        <Position x="126" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -312,7 +312,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="918" y="54" />
+        <Position x="930" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
