@@ -15,7 +15,7 @@
           <Data>
             <r>
               <c>427</c>
-              <c>70723</c>
+              <c>7072300</c>
             </r>
           </Data>
         </Configuration>
@@ -29,7 +29,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="162" y="54" />
+        <Position x="246" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -52,7 +52,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="270" y="54" />
+        <Position x="342" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -71,7 +71,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="378" y="54" />
+        <Position x="438" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -95,7 +95,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="498" y="54" />
+        <Position x="534" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -127,7 +127,7 @@ IIF([Row-1:Current] + IIF([Row-1:Action]=1,1,0) + [Action] &gt; [Row-1:Count],
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="618" y="54" />
+        <Position x="726" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -138,17 +138,21 @@ IIF([Row-1:Current] + IIF([Row-1:Action]=1,1,0) + [Action] &gt; [Row-1:Count],
           <CreateField_Size>1073741823</CreateField_Size>
           <OtherRows>NULL</OtherRows>
           <NumRows value="1" />
-          <Expression>IIF(IsNull([Row-1:Positions]),ToString([Marble]) + " ",
-	iif([Action]=1,
-	    REGEX_REPLACE([Row-1:Positions],"^((\d+ ){"+ToString([Current])+"})(.*)$","${1}" + ToString([Marble]) + " $3"),
-	    REGEX_REPLACE([Row-1:Positions],"^((\d+ ){"+ToString([Current]-1)+"})\d+ (.*)$","${1}" + ToString([Marble]) + " $3"))
+          <Expression>IIF(IsNull([Row-1:Positions]),[MarbleStr],
+  iif([Action]=1,
+    Left([Row-1:Positions],Current * [Length])
+    + [MarbleStr] + 
+    SubString([Row-1:Positions],Current * [Length]),
+    Left([Row-1:Positions],(Current - 1) * [Length])
+    + SubString([Row-1:Positions],Current * [Length]))
 )</Expression>
           <GroupByFields />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>IIF(IsNull([Row-1:Positions]),ToString([Marble]) + " ",
-	iif(...</DefaultAnnotationText>
+          <DefaultAnnotationText>IIF(IsNull([Row-1:Positions]),[MarbleStr],
+  iif([Action]=1,
+...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -156,7 +160,7 @@ IIF([Row-1:Current] + IIF([Row-1:Action]=1,1,0) + [Action] &gt; [Row-1:Count],
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="738" y="54" />
+        <Position x="822" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -168,14 +172,15 @@ IIF([Row-1:Current] + IIF([Row-1:Action]=1,1,0) + [Action] &gt; [Row-1:Count],
           <OtherRows>Empty</OtherRows>
           <NumRows value="1" />
           <Expression>IIF([Action]=-7,
-ToNumber(REGEX_REPLACE([Row-1:Positions],"^((\d+ ){"+ToString([Current]-1)+"})(\d+) (.*)$","$3")) + [Marble],0
-)</Expression>
+ToNumber(Substring([Row-1:Positions],([Current]-1)*[Length],[Length]-1)) 
++ [Marble],
+0)</Expression>
           <GroupByFields />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>IIF([Action]=-7,
-ToNumber(REGEX_REPLACE([Row-1:Positions],"^(...</DefaultAnnotationText>
+ToNumber(Substring([Row-1:Positions],([Curre...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -183,13 +188,13 @@ ToNumber(REGEX_REPLACE([Row-1:Positions],"^(...</DefaultAnnotationText>
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="858" y="54" />
+        <Position x="1014" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="Mod([Marble],[Players])" field="Player" size="8" type="Int64" />
-            <FormulaField expression="IIF([Player]=0,[Players],[Player])" field="Player" size="8" type="Int64" />
+            <FormulaField expression="Mod([Marble],[Players])" field="Player" size="2" type="Int16" />
+            <FormulaField expression="IIF([Player]=0,[Players],[Player])" field="Player" size="2" type="Int16" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -204,7 +209,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="966" y="54" />
+        <Position x="1110" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -223,7 +228,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="1074" y="54" />
+        <Position x="1206" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -241,11 +246,11 @@ Player = IIF([Player]=0,[Players],[Player])
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1170" y="54" />
+        <Position x="1302" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_628_4ea77b9702b546a797c109dfe4a490d9_\Engine_13592_6d07e79ced6e45229fcc65658e049817_.yxdb</TempFile>
+          <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_8904_194458caca4645e097c2eb132c48a578_\Engine_1292_f86c5b7173d24356942c5d3e1cfcc63e_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -267,11 +272,72 @@ Player = IIF([Player]=0,[Players],[Player])
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="PadLeft(ToString([Marble]),  [Length]-1, &quot;0&quot;) + &quot; &quot;" field="MarbleStr" size="9" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[MarbleStr = PadLeft(ToString([Marble]),  [Length]-1, "0") + " "
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Length(ToString([Marbles]))+1" field="Length" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Length = Length(ToString([Marbles]))+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="918" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Players" selected="True" />
+            <SelectField field="Marble" selected="True" />
+            <SelectField field="Score" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="2" Connection="Input" />
+      <Destination ToolID="13" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
@@ -287,7 +353,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Connection>
     <Connection>
       <Origin ToolID="5" Connection="Output" />
-      <Destination ToolID="6" Connection="Input" />
+      <Destination ToolID="12" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="6" Connection="Output" />
@@ -295,7 +361,7 @@ Player = IIF([Player]=0,[Players],[Player])
     </Connection>
     <Connection>
       <Origin ToolID="7" Connection="Output" />
-      <Destination ToolID="8" Connection="Input" />
+      <Destination ToolID="14" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="8" Connection="Output" />
@@ -308,6 +374,18 @@ Player = IIF([Player]=0,[Players],[Player])
     <Connection>
       <Origin ToolID="10" Connection="Output" />
       <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
