@@ -1,0 +1,1768 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="30" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="391" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>position=&lt;-50429,  40580&gt; velocity=&lt; 5, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30528, -40359&gt; velocity=&lt;-3,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20386, -40351&gt; velocity=&lt;-2,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9924,  30462&gt; velocity=&lt; 1, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30203, -50470&gt; velocity=&lt; 3,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50746, -40351&gt; velocity=&lt;-5,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50778, -20120&gt; velocity=&lt;-5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20046,  10229&gt; velocity=&lt; 2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40645,  30467&gt; velocity=&lt;-4, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50419, -10005&gt; velocity=&lt; 5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20089,  -9999&gt; velocity=&lt; 2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50386, -10003&gt; velocity=&lt; 5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40613, -20117&gt; velocity=&lt;-4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40272,  50699&gt; velocity=&lt; 4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20406, -50467&gt; velocity=&lt;-2,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9972, -10000&gt; velocity=&lt; 1,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9921,  10229&gt; velocity=&lt; 1, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40635, -30240&gt; velocity=&lt;-4,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50389, -30237&gt; velocity=&lt; 5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20390,  10231&gt; velocity=&lt;-2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40325,  50694&gt; velocity=&lt; 4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20382,  20350&gt; velocity=&lt;-2, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50749, -10007&gt; velocity=&lt;-5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20046,  40584&gt; velocity=&lt; 2, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40633, -20120&gt; velocity=&lt;-4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20416, -10005&gt; velocity=&lt;-2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30520,  40577&gt; velocity=&lt;-3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20377, -10004&gt; velocity=&lt;-2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40608,  20348&gt; velocity=&lt;-4, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40309, -30237&gt; velocity=&lt; 4,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10305, -20123&gt; velocity=&lt;-1,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40669,  30464&gt; velocity=&lt;-4, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30150,  50700&gt; velocity=&lt; 3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20090, -40359&gt; velocity=&lt; 2,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30496,  20352&gt; velocity=&lt;-3, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20387,  10235&gt; velocity=&lt;-2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50445,  40581&gt; velocity=&lt; 5, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20398, -20119&gt; velocity=&lt;-2,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20374,  10232&gt; velocity=&lt;-2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20414, -50472&gt; velocity=&lt;-2,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9916,  -9999&gt; velocity=&lt; 1,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50765,  40585&gt; velocity=&lt;-5, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50426,  50694&gt; velocity=&lt; 5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9920,  50699&gt; velocity=&lt; 1, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50408,  30464&gt; velocity=&lt; 5, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50781, -20123&gt; velocity=&lt;-5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30211,  30462&gt; velocity=&lt; 3, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40617, -20116&gt; velocity=&lt;-4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50765,  10227&gt; velocity=&lt;-5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20066,  40585&gt; velocity=&lt; 2, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30170,  40582&gt; velocity=&lt; 3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10290,  50698&gt; velocity=&lt;-1, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40318,  10235&gt; velocity=&lt; 4, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50785,  10227&gt; velocity=&lt;-5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30526,  10230&gt; velocity=&lt;-3, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9977, -20120&gt; velocity=&lt; 1,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40327, -20121&gt; velocity=&lt; 4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10299, -30236&gt; velocity=&lt;-1,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40632, -20117&gt; velocity=&lt;-4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9958,  10230&gt; velocity=&lt; 1, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50420, -50471&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10281,  50699&gt; velocity=&lt;-1, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50749,  50700&gt; velocity=&lt;-5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50786,  20351&gt; velocity=&lt;-5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50776,  20348&gt; velocity=&lt;-5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50733, -30238&gt; velocity=&lt;-5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9932, -30242&gt; velocity=&lt; 1,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40612,  30466&gt; velocity=&lt;-4, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30496, -20122&gt; velocity=&lt;-3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30174,  30461&gt; velocity=&lt; 3, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30534, -50474&gt; velocity=&lt;-3,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40661,  -9999&gt; velocity=&lt;-4,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30552,  50696&gt; velocity=&lt;-3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50775,  30464&gt; velocity=&lt;-5, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20057,  20345&gt; velocity=&lt; 2, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20410,  50698&gt; velocity=&lt;-2, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10297, -50474&gt; velocity=&lt;-1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50429, -20118&gt; velocity=&lt; 5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40327, -20121&gt; velocity=&lt; 4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30194, -20121&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9956,  40580&gt; velocity=&lt; 1, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20427, -10008&gt; velocity=&lt;-2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10257, -20122&gt; velocity=&lt;-1,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20075, -40355&gt; velocity=&lt; 2,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20041,  10234&gt; velocity=&lt; 2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20033,  30468&gt; velocity=&lt; 2, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50389,  30464&gt; velocity=&lt; 5, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50773,  -9999&gt; velocity=&lt;-5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30179, -50474&gt; velocity=&lt; 3,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40659,  30465&gt; velocity=&lt;-4, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50781, -20123&gt; velocity=&lt;-5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40632, -10001&gt; velocity=&lt;-4,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30194, -30238&gt; velocity=&lt; 3,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20073, -20117&gt; velocity=&lt; 2,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50730,  10228&gt; velocity=&lt;-5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10313,  40579&gt; velocity=&lt;-1, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50421, -10003&gt; velocity=&lt; 5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9924,  40581&gt; velocity=&lt; 1, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30151, -30237&gt; velocity=&lt; 3,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9965,  20343&gt; velocity=&lt; 1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50759,  50698&gt; velocity=&lt;-5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20036, -30237&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20070, -20122&gt; velocity=&lt; 2,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40641, -50472&gt; velocity=&lt;-4,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40293,  50698&gt; velocity=&lt; 4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50736, -30233&gt; velocity=&lt;-5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50389,  20351&gt; velocity=&lt; 5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20374, -30234&gt; velocity=&lt;-2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20043, -20119&gt; velocity=&lt; 2,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50445, -10005&gt; velocity=&lt; 5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9961, -20116&gt; velocity=&lt; 1,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40328,  40578&gt; velocity=&lt; 4, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50405,  10226&gt; velocity=&lt; 5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10305, -40359&gt; velocity=&lt;-1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9929, -40358&gt; velocity=&lt; 1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30499, -50470&gt; velocity=&lt;-3,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50741, -30234&gt; velocity=&lt;-5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9965,  20348&gt; velocity=&lt; 1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20062, -30238&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20066, -30234&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50773,  10235&gt; velocity=&lt;-5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20430, -40353&gt; velocity=&lt;-2,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40311, -40359&gt; velocity=&lt; 4,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50757, -30236&gt; velocity=&lt;-5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30198,  20350&gt; velocity=&lt; 3, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40632, -10006&gt; velocity=&lt;-4,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50444, -40355&gt; velocity=&lt; 5,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20422,  10232&gt; velocity=&lt;-2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50393,  50701&gt; velocity=&lt; 5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50429, -40350&gt; velocity=&lt; 5,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20046, -30238&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50397, -30233&gt; velocity=&lt; 5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40618, -10008&gt; velocity=&lt;-4,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40271, -10007&gt; velocity=&lt; 4,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20069,  10230&gt; velocity=&lt; 2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30154,  40578&gt; velocity=&lt; 3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20057,  50696&gt; velocity=&lt; 2, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40634, -20119&gt; velocity=&lt;-4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30523, -10007&gt; velocity=&lt;-3,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10305,  50694&gt; velocity=&lt;-1, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30547, -10003&gt; velocity=&lt;-3,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10257, -50468&gt; velocity=&lt;-1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40628,  10230&gt; velocity=&lt;-4, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20078, -30233&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40312, -50471&gt; velocity=&lt; 4,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30500,  20343&gt; velocity=&lt;-3, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10273,  40585&gt; velocity=&lt;-1, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10314, -30237&gt; velocity=&lt;-1,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20414,  40582&gt; velocity=&lt;-2, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30531,  50701&gt; velocity=&lt;-3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30170, -20120&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50413, -20120&gt; velocity=&lt; 5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9945, -40359&gt; velocity=&lt; 1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40275,  30465&gt; velocity=&lt; 4, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40312,  40583&gt; velocity=&lt; 4, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30179,  40580&gt; velocity=&lt; 3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9974,  30465&gt; velocity=&lt; 1, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10284,  10228&gt; velocity=&lt;-1, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20374,  50694&gt; velocity=&lt;-2, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9937,  50701&gt; velocity=&lt; 1, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50441,  50701&gt; velocity=&lt; 5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10270, -50468&gt; velocity=&lt;-1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50773,  50697&gt; velocity=&lt;-5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40619, -40359&gt; velocity=&lt;-4,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40315,  40586&gt; velocity=&lt; 4, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30179,  10232&gt; velocity=&lt; 3, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20049,  30460&gt; velocity=&lt; 2, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10289, -50473&gt; velocity=&lt;-1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20033, -20119&gt; velocity=&lt; 2,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50766, -40355&gt; velocity=&lt;-5,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30191,  50701&gt; velocity=&lt; 3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10273,  30463&gt; velocity=&lt;-1, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50778,  -9999&gt; velocity=&lt;-5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50730,  50695&gt; velocity=&lt;-5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9929, -50473&gt; velocity=&lt; 1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40644, -20121&gt; velocity=&lt;-4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50725, -40352&gt; velocity=&lt;-5,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50388,  40582&gt; velocity=&lt; 5, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50741,  20345&gt; velocity=&lt;-5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20090,  40581&gt; velocity=&lt; 2, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30191, -10008&gt; velocity=&lt; 3,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10273,  20348&gt; velocity=&lt;-1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10268,  20343&gt; velocity=&lt;-1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30533,  40580&gt; velocity=&lt;-3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20041, -40358&gt; velocity=&lt; 2,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30531,  50703&gt; velocity=&lt;-3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50757, -30234&gt; velocity=&lt;-5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30187,  -9999&gt; velocity=&lt; 3,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50442,  40582&gt; velocity=&lt; 5, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50749, -30242&gt; velocity=&lt;-5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30158, -20121&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50386, -20125&gt; velocity=&lt; 5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40637,  10235&gt; velocity=&lt;-4, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30203, -20117&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50392, -20118&gt; velocity=&lt; 5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30493,  20347&gt; velocity=&lt;-3, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30163,  40582&gt; velocity=&lt; 3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30499,  40580&gt; velocity=&lt;-3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50392, -50474&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20085,  10235&gt; velocity=&lt; 2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10313,  20346&gt; velocity=&lt;-1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40636,  50695&gt; velocity=&lt;-4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50384, -30235&gt; velocity=&lt; 5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9956,  -9999&gt; velocity=&lt; 1,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30547,  50703&gt; velocity=&lt;-3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9957, -50472&gt; velocity=&lt; 1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30174,  10232&gt; velocity=&lt; 3, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30544,  40586&gt; velocity=&lt;-3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30552,  40582&gt; velocity=&lt;-3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40611,  40577&gt; velocity=&lt;-4, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30549, -50476&gt; velocity=&lt;-3,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9945, -50473&gt; velocity=&lt; 1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40296, -40352&gt; velocity=&lt; 4,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30163, -20117&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50405, -40357&gt; velocity=&lt; 5,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50786, -30236&gt; velocity=&lt;-5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50757, -20124&gt; velocity=&lt;-5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20392,  10230&gt; velocity=&lt;-2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30531,  20348&gt; velocity=&lt;-3, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50735,  10235&gt; velocity=&lt;-5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30198, -30233&gt; velocity=&lt; 3,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50397, -50469&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50441,  30467&gt; velocity=&lt; 5, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30163, -10000&gt; velocity=&lt; 3,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50773, -40355&gt; velocity=&lt;-5,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20086, -30234&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10276,  40577&gt; velocity=&lt;-1, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40661,  50700&gt; velocity=&lt;-4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50728,  50699&gt; velocity=&lt;-5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10313, -40353&gt; velocity=&lt;-1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50445,  50697&gt; velocity=&lt; 5, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20050,  10227&gt; velocity=&lt; 2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10315, -40359&gt; velocity=&lt;-1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20379,  40579&gt; velocity=&lt;-2, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30507, -40359&gt; velocity=&lt;-3,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50444, -50476&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40637, -40350&gt; velocity=&lt;-4,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20427, -10005&gt; velocity=&lt;-2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10318,  10233&gt; velocity=&lt;-1, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30190,  30463&gt; velocity=&lt; 3, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10300,  20345&gt; velocity=&lt;-1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50408,  40578&gt; velocity=&lt; 5, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10297, -10002&gt; velocity=&lt;-1,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20060,  40581&gt; velocity=&lt; 2, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40640,  20352&gt; velocity=&lt;-4, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50437,  10231&gt; velocity=&lt; 5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50429, -20119&gt; velocity=&lt; 5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50396, -50474&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20078, -40358&gt; velocity=&lt; 2,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20376, -30242&gt; velocity=&lt;-2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30528,  50695&gt; velocity=&lt;-3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20043, -30236&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40632,  10226&gt; velocity=&lt;-4, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50413,  20344&gt; velocity=&lt; 5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9940, -40356&gt; velocity=&lt; 1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10308,  30465&gt; velocity=&lt;-1, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30171, -20118&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20066,  30461&gt; velocity=&lt; 2, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40291, -40351&gt; velocity=&lt; 4,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30191,  50700&gt; velocity=&lt; 3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20054, -10007&gt; velocity=&lt; 2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10270,  30461&gt; velocity=&lt;-1, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9940, -30234&gt; velocity=&lt; 1,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30150,  50703&gt; velocity=&lt; 3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9965, -50476&gt; velocity=&lt; 1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40664, -10002&gt; velocity=&lt;-4,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40324,  10230&gt; velocity=&lt; 4, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9924, -40354&gt; velocity=&lt; 1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20416,  20349&gt; velocity=&lt;-2, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50397, -50471&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40610, -30242&gt; velocity=&lt;-4,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9964, -30236&gt; velocity=&lt; 1,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20094,  30464&gt; velocity=&lt; 2, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40660, -10000&gt; velocity=&lt;-4,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40311,  50698&gt; velocity=&lt; 4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20091, -50472&gt; velocity=&lt; 2,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30154, -20124&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50389,  10229&gt; velocity=&lt; 5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20094,  20344&gt; velocity=&lt; 2, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20074, -30235&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50433,  30468&gt; velocity=&lt; 5, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20054, -30238&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9945, -10006&gt; velocity=&lt; 1,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9945,  20347&gt; velocity=&lt; 1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30193,  30460&gt; velocity=&lt; 3, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40632,  10227&gt; velocity=&lt;-4, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40315,  20344&gt; velocity=&lt; 4, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40303,  50698&gt; velocity=&lt; 4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30526,  40581&gt; velocity=&lt;-3, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40300,  10234&gt; velocity=&lt; 4, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30507,  50700&gt; velocity=&lt;-3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20083, -50471&gt; velocity=&lt; 2,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50733,  20344&gt; velocity=&lt;-5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9969, -10006&gt; velocity=&lt; 1,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30174,  30469&gt; velocity=&lt; 3, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40660,  50702&gt; velocity=&lt;-4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50393, -50468&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20054,  30462&gt; velocity=&lt; 2, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50404, -10004&gt; velocity=&lt; 5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50440,  20351&gt; velocity=&lt; 5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20042, -20118&gt; velocity=&lt; 2,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10289, -40350&gt; velocity=&lt;-1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30162,  50695&gt; velocity=&lt; 3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30171,  20349&gt; velocity=&lt; 3, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50413, -20125&gt; velocity=&lt; 5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50424, -50467&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40315,  20348&gt; velocity=&lt; 4, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50392, -50470&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10281, -50473&gt; velocity=&lt;-1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20395, -30240&gt; velocity=&lt;-2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30499, -40356&gt; velocity=&lt;-3,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30531,  50697&gt; velocity=&lt;-3, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50766,  10230&gt; velocity=&lt;-5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40291, -40355&gt; velocity=&lt; 4,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40291,  50699&gt; velocity=&lt; 4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20418,  30461&gt; velocity=&lt;-2, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50400, -50467&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30202,  10226&gt; velocity=&lt; 3, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30540,  30462&gt; velocity=&lt;-3, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20376, -10008&gt; velocity=&lt;-2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9953, -50473&gt; velocity=&lt; 1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30512,  30468&gt; velocity=&lt;-3, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40328, -10001&gt; velocity=&lt; 4,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9933, -40351&gt; velocity=&lt; 1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40645,  30460&gt; velocity=&lt;-4, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40316,  50699&gt; velocity=&lt; 4, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9965, -50476&gt; velocity=&lt; 1,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20046, -50468&gt; velocity=&lt; 2,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9921,  40584&gt; velocity=&lt; 1, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40275,  10232&gt; velocity=&lt; 4, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9916,  30467&gt; velocity=&lt; 1, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50445,  20349&gt; velocity=&lt; 5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30168, -20118&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50773, -40354&gt; velocity=&lt;-5,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50397,  40584&gt; velocity=&lt; 5, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20392, -10008&gt; velocity=&lt;-2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40272, -20116&gt; velocity=&lt; 4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20078,  30468&gt; velocity=&lt; 2, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10299,  20346&gt; velocity=&lt;-1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40328, -50469&gt; velocity=&lt; 4,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20395,  50695&gt; velocity=&lt;-2, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20086, -30236&gt; velocity=&lt; 2,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30169,  10232&gt; velocity=&lt; 3, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50396,  10227&gt; velocity=&lt; 5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20081,  10232&gt; velocity=&lt; 2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20430,  50701&gt; velocity=&lt;-2, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50775, -10005&gt; velocity=&lt;-5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40648, -20125&gt; velocity=&lt;-4,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30191,  10230&gt; velocity=&lt; 3, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20062, -10002&gt; velocity=&lt; 2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50745,  40577&gt; velocity=&lt;-5, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30179, -30237&gt; velocity=&lt; 3,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30544, -20125&gt; velocity=&lt;-3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30187,  20347&gt; velocity=&lt; 3, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50773,  20343&gt; velocity=&lt;-5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40267,  40580&gt; velocity=&lt; 4, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20406, -10000&gt; velocity=&lt;-2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40291,  30465&gt; velocity=&lt; 4, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20084,  50694&gt; velocity=&lt; 2, -5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50725, -20124&gt; velocity=&lt;-5,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20078,  10230&gt; velocity=&lt; 2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30528, -20119&gt; velocity=&lt;-3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10273,  10227&gt; velocity=&lt;-1, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9964,  40584&gt; velocity=&lt; 1, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50445,  10235&gt; velocity=&lt; 5, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50729, -30236&gt; velocity=&lt;-5,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9916,  30468&gt; velocity=&lt; 1, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30167, -20124&gt; velocity=&lt; 3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 10270, -20117&gt; velocity=&lt;-1,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50405,  30465&gt; velocity=&lt; 5, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30184, -50469&gt; velocity=&lt; 3,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-40312,  40584&gt; velocity=&lt; 4, -4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20065,  10226&gt; velocity=&lt; 2, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50762,  -9999&gt; velocity=&lt;-5,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40648, -50475&gt; velocity=&lt;-4,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20401,  30467&gt; velocity=&lt;-2, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-20081, -10000&gt; velocity=&lt; 2,  1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30190,  10229&gt; velocity=&lt; 3, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50389,  20350&gt; velocity=&lt; 5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30520,  10235&gt; velocity=&lt;-3, -1&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9951, -40356&gt; velocity=&lt; 1,  4&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40659, -30236&gt; velocity=&lt;-4,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 50762,  30467&gt; velocity=&lt;-5, -3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50402, -50469&gt; velocity=&lt; 5,  5&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40624, -30235&gt; velocity=&lt;-4,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 40629, -30233&gt; velocity=&lt;-4,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; -9918,  20348&gt; velocity=&lt; 1, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-30203, -30239&gt; velocity=&lt; 3,  3&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt;-50387,  20348&gt; velocity=&lt; 5, -2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 30528, -20125&gt; velocity=&lt;-3,  2&gt;</c>
+            </r>
+            <r>
+              <c>position=&lt; 20384, -20125&gt; velocity=&lt;-2,  2&gt;</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="138" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field1</Field>
+          <RegExExpression value=".*?&lt;(.*?),(.*?)&gt; velocity=&lt;(.*?),(.*?)&gt;" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_WString" size="254" />
+            <Field field="RegExOut2" type="V_WString" size="254" />
+            <Field field="RegExOut3" type="V_WString" size="254" />
+            <Field field="RegExOut4" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+.*?&lt;(.*?),(.*?)&gt; velocity=&lt;...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="246" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Field1","RegExOut1","RegExOut2","RegExOut3","RegExOut4"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field1" selected="False" />
+            <SelectField field="RegExOut1" selected="True" rename="X" type="Int64" size="8" />
+            <SelectField field="RegExOut2" selected="True" rename="Y" type="Int64" size="8" />
+            <SelectField field="RegExOut3" selected="True" rename="dX" type="Int64" size="8" />
+            <SelectField field="RegExOut4" selected="True" rename="dY" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="450" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Y" action="Min" rename="Min_Y" />
+            <SummarizeField field="Y" action="Max" rename="Max_Y" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="558" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Y" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Min_Y" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="570" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Y" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Max_Y" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="654" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="666" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="762" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_dY" selected="True" rename="Min_dY" input="Target_" />
+                <SelectField field="Target_Min_Y" selected="True" input="Target_" />
+                <SelectField field="Target_Max_Y" selected="True" input="Target_" />
+                <SelectField field="Source_X" selected="False" rename="Source_X" input="Source_" />
+                <SelectField field="Source_Y" selected="False" rename="Source_Y" input="Source_" />
+                <SelectField field="Source_dX" selected="False" rename="Source_dX" input="Source_" />
+                <SelectField field="Source_dY" selected="True" rename="Max_dY" input="Source_" />
+                <SelectField field="Source_Min_Y" selected="False" rename="Source_Min_Y" input="Source_" />
+                <SelectField field="Source_Max_Y" selected="False" rename="Source_Max_Y" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="846" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round(([Max_Y]-[Min_Y])/([Min_dY]-[Max_dY]),1)" field="Iteration" size="1073741823" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Iteration = Round(([Max_Y]-[Min_Y])/([Min_dY]-[Max_dY]),1)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1158" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Min_dY" selected="False" input="Source_" />
+                <SelectField field="Source_Min_Y" selected="False" input="Source_" />
+                <SelectField field="Source_Max_Y" selected="False" input="Source_" />
+                <SelectField field="Source_Max_dY" selected="False" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1254" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[X]+[dX]*[Iteration]" field="X" size="8" type="Int64" />
+            <FormulaField expression="-([Y]+[dY]*[Iteration])" field="Y" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[X = [X]+[dX]*[Iteration]
+Y = -([Y]+[dY]*[Iteration])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+        <Position x="1350" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields fieldX="X" fieldY="Y" />
+          <Mode>Projected</Mode>
+          <Projection>EPSG:27700</Projection>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1542" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_21576_a5f70ef7f2ee4be89b616d896e67b8d4_\Engine_1292_7349fc7b67024319bbc87de75e2d98dd_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="666" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="942" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Min_dY</UpdateField_Name>
+          <CreateField_Name>RowCount</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>-1</Expression_Init>
+          <Expression_Cond>RowCount &lt;= 1</Expression_Cond>
+          <Expression_Loop>RowCount + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1038" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Iteration]+[RowCount]" field="Iteration" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Iteration = [Iteration]+[RowCount]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1446" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RowCount" action="GroupBy" rename="RowCount" />
+            <SummarizeField field="Centroid" action="SpatialObjCombine" rename="SpatialObjCombine_Centroid" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output26" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="16" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="16" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day10</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
