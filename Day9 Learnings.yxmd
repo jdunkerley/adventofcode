@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="26" />
+          <Fields>
+            <Field name="Marble" />
+            <Field name="Action" />
+            <Field name="Current" />
+            <Field name="CurrentPosition" />
+          </Fields>
+          <Data>
+            <r>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c />
+            </r>
+            <r>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c />
+            </r>
+            <r>
+              <c>2</c>
+              <c>1</c>
+              <c>1</c>
+              <c />
+            </r>
+            <r>
+              <c>3</c>
+              <c>1</c>
+              <c>3</c>
+              <c />
+            </r>
+            <r>
+              <c>4</c>
+              <c>1</c>
+              <c>1</c>
+              <c />
+            </r>
+            <r>
+              <c>5</c>
+              <c>1</c>
+              <c>3</c>
+              <c />
+            </r>
+            <r>
+              <c>6</c>
+              <c>1</c>
+              <c>5</c>
+              <c />
+            </r>
+            <r>
+              <c>7</c>
+              <c>1</c>
+              <c>7</c>
+              <c />
+            </r>
+            <r>
+              <c>8</c>
+              <c>1</c>
+              <c>1</c>
+              <c />
+            </r>
+            <r>
+              <c>9</c>
+              <c>1</c>
+              <c>3</c>
+              <c />
+            </r>
+            <r>
+              <c>10</c>
+              <c>1</c>
+              <c>5</c>
+              <c />
+            </r>
+            <r>
+              <c>11</c>
+              <c>1</c>
+              <c>7</c>
+              <c />
+            </r>
+            <r>
+              <c>12</c>
+              <c>1</c>
+              <c>9</c>
+              <c />
+            </r>
+            <r>
+              <c>13</c>
+              <c>1</c>
+              <c>11</c>
+              <c />
+            </r>
+            <r>
+              <c>14</c>
+              <c>1</c>
+              <c>13</c>
+              <c />
+            </r>
+            <r>
+              <c>15</c>
+              <c>1</c>
+              <c>15</c>
+              <c />
+            </r>
+            <r>
+              <c>16</c>
+              <c>1</c>
+              <c>1</c>
+              <c />
+            </r>
+            <r>
+              <c>17</c>
+              <c>1</c>
+              <c>3</c>
+              <c />
+            </r>
+            <r>
+              <c>18</c>
+              <c>1</c>
+              <c>5</c>
+              <c />
+            </r>
+            <r>
+              <c>19</c>
+              <c>1</c>
+              <c>7</c>
+              <c />
+            </r>
+            <r>
+              <c>20</c>
+              <c>1</c>
+              <c>9</c>
+              <c />
+            </r>
+            <r>
+              <c>21</c>
+              <c>1</c>
+              <c>11</c>
+              <c />
+            </r>
+            <r>
+              <c>22</c>
+              <c>1</c>
+              <c>13</c>
+              <c />
+            </r>
+            <r>
+              <c>23</c>
+              <c>-6</c>
+              <c>8</c>
+              <c />
+            </r>
+            <r>
+              <c>24</c>
+              <c>1</c>
+              <c>9</c>
+              <c />
+            </r>
+            <r>
+              <c>25</c>
+              <c>1</c>
+              <c>11</c>
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings>
+        <Position x="246" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>Day9 Loop v2 (2)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro=".\Day9 Loop v2.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_2716_a4f5ea488d014158a646c9d4f8e31413_\Engine_15992_88f19852c52a430a84dab64d5c80bea3_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="738" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_2716_a4f5ea488d014158a646c9d4f8e31413_\Engine_15992_5f62ad11c1ff48e78d11fd4204426941_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Marble" selected="True" type="Int32" size="4" />
+            <SelectField field="Action" selected="True" type="Int32" size="4" />
+            <SelectField field="Current" selected="True" type="Int32" size="4" />
+            <SelectField field="CurrentPosition" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="594" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Iteration" action="GroupBy" rename="Iteration" />
+            <SummarizeField field="Marble" action="Concat" rename="Concat_Marble">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="486" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Loop" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output18" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="13" Connection="Input3" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day9 Learnings</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
