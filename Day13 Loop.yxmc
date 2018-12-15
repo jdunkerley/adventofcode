@@ -1,0 +1,966 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="Id" />
+                <Field name="X" />
+                <Field name="Y" />
+                <Field name="Input" />
+                <Field name="Turn" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>0</c>
+                  <c>&gt;</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>10</c>
+                  <c>3</c>
+                  <c>v</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Input" size="1" source="TextInput:" type="String" />
+            <Field name="Turn" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Y - Ascending
+X - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Input" size="1" source="TextInput:" type="String" />
+            <Field name="Turn" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="246" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>SequenceID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SequenceID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Input" size="1" source="TextInput:" type="String" />
+            <Field name="Turn" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" field="NewX" size="2" type="Int16" />
+            <FormulaField expression="IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" field="NewY" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NewX = IIF([Input]="&gt;",1,IIF([Input]="&lt;",-1,0))+[X]
+NewY = IIF([Input]="v",1,IIF...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SequenceID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Input" size="1" source="TextInput:" type="String" />
+            <Field name="Turn" source="TextInput:" type="Byte" />
+            <Field name="NewX" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="NewY" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="66" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input14</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="48" />
+              <Fields>
+                <Field name="X" />
+                <Field name="Y" />
+                <Field name="Input" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>/</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>0</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>0</c>
+                  <c>\</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>1</c>
+                  <c>/</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>1</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>1</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>1</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>1</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>1</c>
+                  <c>\</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>/</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>2</c>
+                  <c>+</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>2</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>2</c>
+                  <c>+</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>2</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>2</c>
+                  <c>\</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>2</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>3</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>3</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>3</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>3</c>
+                  <c>|</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>4</c>
+                  <c>\</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>+</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>4</c>
+                  <c>/</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>4</c>
+                  <c>\</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>4</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>4</c>
+                  <c>+</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>4</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>4</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>4</c>
+                  <c>/</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>\</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>5</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>5</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>5</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>5</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>5</c>
+                  <c>-</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>5</c>
+                  <c>/</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (13)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Input" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="NewX" />
+            <Field field="NewY" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="X" />
+            <Field field="Y" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_SequenceID" selected="True" input="Left_" />
+                <SelectField field="Left_Id" selected="True" input="Left_" />
+                <SelectField field="Left_X" selected="True" rename="OldX" input="Left_" />
+                <SelectField field="Left_Y" selected="True" rename="OldY" input="Left_" />
+                <SelectField field="Left_NewX" selected="True" rename="X" input="Left_" />
+                <SelectField field="Left_NewY" selected="True" rename="Y" input="Left_" />
+                <SelectField field="Left_Input" selected="True" input="Left_" />
+                <SelectField field="Right_X" selected="False" rename="Right_X" input="Right_" />
+                <SelectField field="Right_Y" selected="False" rename="Right_Y" input="Right_" />
+                <SelectField field="Right_Input" selected="True" rename="Square" input="Right_" />
+                <SelectField field="Left_Turn" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="SequenceID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Input" size="1" source="TextInput:" type="String" />
+            <Field name="Turn" source="TextInput:" type="Byte" />
+            <Field name="NewX" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="NewY" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="NewX" />
+            <Field field="NewY" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="SequenceID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="OldX" source="TextInput:" type="Byte" />
+            <Field name="OldY" source="TextInput:" type="Byte" />
+            <Field name="X" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="Y" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+            <Field name="Input" size="1" source="TextInput:" type="String" />
+            <Field name="Square" size="1" source="TextInput:" type="String" />
+            <Field name="Turn" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="" />
+            <Field field="Y" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Input" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="X" />
+            <Field field="Y" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Switch([Square],[Input]&#xA;,&quot;/&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&quot;,&#xA;           &quot;^&quot;,&quot;&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&lt;&quot;)&#xA;,&quot;\&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;&quot;)&#xA;,&quot;+&quot;,Substring(Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&gt;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&lt;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;^&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;v&lt;&quot;),[Turn],1)&#xA;)" field="Input" size="1" type="String" />
+            <FormulaField expression="MOD(IIF([Square]='+',1,0)+[Turn],3)" field="Turn" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input = Switch([Square],[Input]
+,"/",Switch([Input],[Input],
+           "&gt;","^",...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SequenceID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="OldX" source="TextInput:" type="Byte" />
+            <Field name="OldY" source="TextInput:" type="Byte" />
+            <Field name="X" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="Y" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+            <Field name="Input" size="1" source="Formula: Switch([Square],[Input]&#xA;,&quot;/&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&quot;,&#xA;           &quot;^&quot;,&quot;&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&lt;&quot;)&#xA;,&quot;\&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;&quot;)&#xA;,&quot;+&quot;,Substring(Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&gt;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&lt;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;^&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;v&lt;&quot;),[Turn],1)&#xA;)" type="String" />
+            <Field name="Square" size="1" source="TextInput:" type="String" />
+            <Field name="Turn" source="Formula: MOD(IIF([Square]='+',1,0)+[Turn],3)" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="" />
+            <Field field="Y" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="714" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SequenceID" selected="False" />
+            <SelectField field="OldX" selected="False" />
+            <SelectField field="OldY" selected="False" />
+            <SelectField field="Square" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="X" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="Y" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+            <Field name="Input" size="1" source="Formula: Switch([Square],[Input]&#xA;,&quot;/&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&quot;,&#xA;           &quot;^&quot;,&quot;&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&lt;&quot;)&#xA;,&quot;\&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;&quot;)&#xA;,&quot;+&quot;,Substring(Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&gt;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&lt;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;^&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;v&lt;&quot;),[Turn],1)&#xA;)" type="String" />
+            <Field name="Turn" source="Formula: MOD(IIF([Square]='+',1,0)+[Turn],3)" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="" />
+            <Field field="Y" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="906" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output18</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="654" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]+1" field="Step" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Step = [Engine.IterationNumber]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SequenceID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="OldX" source="TextInput:" type="Byte" />
+            <Field name="OldY" source="TextInput:" type="Byte" />
+            <Field name="X" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="Y" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+            <Field name="Input" size="1" source="Formula: Switch([Square],[Input]&#xA;,&quot;/&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&quot;,&#xA;           &quot;^&quot;,&quot;&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&lt;&quot;)&#xA;,&quot;\&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;&quot;)&#xA;,&quot;+&quot;,Substring(Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&gt;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&lt;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;^&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;v&lt;&quot;),[Turn],1)&#xA;)" type="String" />
+            <Field name="Square" size="1" source="TextInput:" type="String" />
+            <Field name="Turn" source="Formula: MOD(IIF([Square]='+',1,0)+[Turn],3)" type="Byte" />
+            <Field name="Step" source="Formula: [Engine.IterationNumber]+1" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="" />
+            <Field field="Y" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="750" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Step" selected="True" />
+            <SelectField field="SequenceID" selected="True" />
+            <SelectField field="Id" selected="True" />
+            <SelectField field="OldX" selected="True" />
+            <SelectField field="OldY" selected="True" />
+            <SelectField field="X" selected="True" />
+            <SelectField field="Y" selected="True" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="Square" selected="False" />
+            <SelectField field="Turn" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Step" source="Formula: [Engine.IterationNumber]+1" type="Int16" />
+            <Field name="SequenceID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="OldX" source="TextInput:" type="Byte" />
+            <Field name="OldY" source="TextInput:" type="Byte" />
+            <Field name="X" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="Y" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+            <Field name="Input" size="1" source="Formula: Switch([Square],[Input]&#xA;,&quot;/&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&quot;,&#xA;           &quot;^&quot;,&quot;&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&lt;&quot;)&#xA;,&quot;\&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;&quot;)&#xA;,&quot;+&quot;,Substring(Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&gt;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&lt;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;^&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;v&lt;&quot;),[Turn],1)&#xA;)" type="String" />
+            <Field name="Turn" source="Formula: MOD(IIF([Square]='+',1,0)+[Turn],3)" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="" />
+            <Field field="Y" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="858" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output21</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="810" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Engine.IterationNumber]&lt;20000</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-14 22:05:59</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-14 22:05:59</StartDate>
+              <EndDate>2018-12-14 22:05:59</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Engine.IterationNumber]&lt;20000</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="X" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="Y" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+            <Field name="Input" size="1" source="Formula: Switch([Square],[Input]&#xA;,&quot;/&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&quot;,&#xA;           &quot;^&quot;,&quot;&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&lt;&quot;)&#xA;,&quot;\&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;&quot;)&#xA;,&quot;+&quot;,Substring(Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&gt;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&lt;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;^&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;v&lt;&quot;),[Turn],1)&#xA;)" type="String" />
+            <Field name="Turn" source="Formula: MOD(IIF([Square]='+',1,0)+[Turn],3)" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="" />
+            <Field field="Y" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Id" source="TextInput:" type="Byte" />
+            <Field name="X" source="Formula: IIF([Input]=&quot;&gt;&quot;,1,IIF([Input]=&quot;&lt;&quot;,-1,0))+[X]" type="Int16" />
+            <Field name="Y" source="Formula: IIF([Input]=&quot;v&quot;,1,IIF([Input]=&quot;^&quot;,-1,0))+[Y]" type="Int16" />
+            <Field name="Input" size="1" source="Formula: Switch([Square],[Input]&#xA;,&quot;/&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&quot;,&#xA;           &quot;^&quot;,&quot;&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&lt;&quot;)&#xA;,&quot;\&quot;,Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;&quot;)&#xA;,&quot;+&quot;,Substring(Switch([Input],[Input],&#xA;           &quot;&gt;&quot;,&quot;^&gt;v&quot;,&#xA;           &quot;&lt;&quot;,&quot;v&lt;^&quot;,&#xA;           &quot;^&quot;,&quot;&lt;^&gt;&quot;,&#xA;           &quot;v&quot;,&quot;&gt;v&lt;&quot;),[Turn],1)&#xA;)" type="String" />
+            <Field name="Turn" source="Formula: MOD(IIF([Square]='+',1,0)+[Turn],3)" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="" />
+            <Field field="Y" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (18)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (21)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day13 Loop</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (3)</Description>
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (14)</Description>
+              <Name>Macro Input (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (18)</Description>
+              <Name>Macro Output (18)</Name>
+              <ToolId value="18" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (21)</Description>
+              <Name>Macro Output (21)</Name>
+              <ToolId value="21" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input3</Input>
+        <Output>Output18</Output>
+        <IterationLimit value="100000" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="21" Selected="True" />
+        <Tool ToolId="18" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
