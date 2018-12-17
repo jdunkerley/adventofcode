@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="642" y="138" width="136.4582" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 18</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="667" y="181.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="5" />
+              <Fields>
+                <Field name="A" />
+                <Field name="B" />
+                <Field name="Length" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>2018</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>5037</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="979" y="194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Substring([State],12)" field="State" size="5000000" type="V_String" />
+                <FormulaField expression="Substring([State],[Length],10)" field="State" size="5000000" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[State = Substring([State],12)
+State = Substring([State],[Length],10)
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1075" y="194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\JDUNKE~1.SCO\AppData\Local\Temp\Engine_8376_9f96f5cc6e8a4ab8bf318479974ffbcc_\Engine_28424_b1337c88627f453eb9a5422f3f35587b_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="811" y="194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'00000100000237'" field="State" size="2147483647" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[State = '00000100000237'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="919" y="194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="// A    ToNumber(Left([State],6))&#xA;// v(A) ToNumber(Substring([State], 11 + ToNumber(Left([State],6)), 1))&#xA;// B    ToNumber(Substring([State],6,6))&#xA;// v(B) ToNumber(Substring([State], 11 + ToNumber(Substring([State],6,6)), 1))&#xA;// NewL Length([State]) - 12 + IIF(ToNumber(Substring([State], 11 + ToNumber(Left([State],6)), 1)) + ToNumber(Substring([State], 11 + ToNumber(Substring([State],6,6)), 1))&gt;9,2,1)&#xA;PadLeft(ToString(MOD(&#xA;ToNumber(Left([State],6)) + ToNumber(Substring([State], 11 + ToNumber(Left([State],6)), 1)),&#xA;Length([State]) - 12 + IIF(ToNumber(Substring([State], 11 + ToNumber(Left([State],6)), 1)) + ToNumber(Substring([State], 11 + ToNumber(Substring([State],6,6)), 1))&gt;9,2,1)&#xA;) + 1), 6, '0')&#xA;+ PadLeft(ToString(MOD(&#xA;ToNumber(Substring([State],6,6)) + ToNumber(Substring([State], 11 + ToNumber(Substring([State],6,6)), 1)),&#xA;Length([State]) - 12 + IIF(ToNumber(Substring([State], 11 + ToNumber(Left([State],6)), 1)) + ToNumber(Substring([State], 11 + ToNumber(Substring([State],6,6)), 1))&gt;9,2,1)&#xA;) + 1), 6, '0')&#xA;+ Substring([State], 12)&#xA;+ ToString(ToNumber(Substring([State], 11 + ToNumber(Left([State],6)), 1)) + ToNumber(Substring([State], 11 + ToNumber(Substring([State],6,6)), 1)))&#xA;" field="State" size="2147483647" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>State = // A    ToNumber(Left([State],6))
+// v(A) ToNumber(Substring([State], 11...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54.00001" y="54" width="494" height="224" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 17</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="162" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>A</UpdateField_Name>
+              <CreateField_Name>State</CreateField_Name>
+              <CreateField_Type>V_String</CreateField_Type>
+              <CreateField_Size>1000000</CreateField_Size>
+              <OtherRows>NULL</OtherRows>
+              <NumRows value="1" />
+              <Expression>IIF(IsNull([Row-1:State]),
+'00000100000237',
+PadLeft(ToString(MOD(
+ToNumber(Left([Row-1:State],6)) + ToNumber(Substring([Row-1:State], 11 + ToNumber(Left([Row-1:State],6)), 1)),
+Length([Row-1:State]) - 12 + IIF(ToNumber(Substring([Row-1:State], 11 + ToNumber(Left([Row-1:State],6)), 1)) + ToNumber(Substring([Row-1:State], 11 + ToNumber(Substring([Row-1:State],6,6)), 1))&gt;9,2,1)
+) + 1), 6, '0')
++ PadLeft(ToString(MOD(
+ToNumber(Substring([Row-1:State],6,6)) + ToNumber(Substring([Row-1:State], 11 + ToNumber(Substring([Row-1:State],6,6)), 1)),
+Length([Row-1:State]) - 12 + IIF(ToNumber(Substring([Row-1:State], 11 + ToNumber(Left([Row-1:State],6)), 1)) + ToNumber(Substring([Row-1:State], 11 + ToNumber(Substring([Row-1:State],6,6)), 1))&gt;9,2,1)
+) + 1), 6, '0')
++ Substring([Row-1:State], 12)
++ ToString(ToNumber(Substring([Row-1:State], 11 + ToNumber(Left([Row-1:State],6)), 1)) + ToNumber(Substring([Row-1:State], 11 + ToNumber(Substring([Row-1:State],6,6)), 1))))</Expression>
+              <GroupByFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IIF(IsNull([Row-1:State]),
+'00000100000237',
+PadLeft(ToString...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="79.00001" y="98" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name />
+              <CreateField_Name>RowCount</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>1</Expression_Init>
+              <Expression_Cond>RowCount &lt;= 600000</Expression_Cond>
+              <Expression_Loop>RowCount + 1</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="450" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">.\Day14.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Day14.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="258" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Length([State])" field="Len" size="8" type="Int64" />
+                <FormulaField expression="ToNumber(Right([State],1))" field="Code" size="1" type="Byte" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Len = Length([State])
+Code = ToNumber(Right([State],1))
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="354" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="RowCount" selected="False" />
+                <SelectField field="State" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day14</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
