@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="114" y="54" />
+        <Position x="150" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -34,7 +34,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="186" y="54" />
+        <Position x="222" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -66,7 +66,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="282" y="78" />
+        <Position x="318" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -136,7 +136,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="354" y="78" />
+        <Position x="390" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -167,7 +167,7 @@ Lumber = IIF([Adjacent]='#',1,0)
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="450" y="78" />
+        <Position x="486" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -203,12 +203,12 @@ Lumber = IIF([Adjacent]='#',1,0)
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="546" y="78" />
+        <Position x="582" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;1,'#','.'))" field="Output" size="1" type="String" />
+            <FormulaField expression="Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" field="Output" size="1" type="String" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -225,7 +225,7 @@ Lumber = IIF([Adjacent]='#',1,0)
             <Field name="Input" size="1" source="Summarize: GroupBy - Input" type="String" />
             <Field name="Trees" source="Summarize: Sum - Tree" type="Int64" />
             <Field name="Lumberyards" source="Summarize: Sum - Lumber" type="Int64" />
-            <Field name="Output" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;1,'#','.'))" type="String" />
+            <Field name="Output" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" type="String" />
           </RecordInfo>
           <SortInfo>
             <Field field="X" order="Asc" />
@@ -241,6 +241,7 @@ Lumber = IIF([Adjacent]='#',1,0)
         <Position x="0" y="0" width="59" height="59" />
       </GuiSettings>
       <Properties>
+        <Configuration />
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -250,7 +251,7 @@ Lumber = IIF([Adjacent]='#',1,0)
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="18" y="78" />
+        <Position x="54" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -789,7 +790,7 @@ Lumber = IIF([Adjacent]='#',1,0)
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="846" y="54" />
+        <Position x="894" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -806,7 +807,7 @@ Lumber = IIF([Adjacent]='#',1,0)
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="654" y="78" />
+        <Position x="690" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -829,7 +830,7 @@ Lumber = IIF([Adjacent]='#',1,0)
           <RecordInfo>
             <Field name="X" source="Summarize: GroupBy - X" type="Byte" />
             <Field name="Y" source="Summarize: GroupBy - Y" type="Byte" />
-            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;1,'#','.'))" type="String" />
+            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" type="String" />
           </RecordInfo>
           <SortInfo>
             <Field field="X" order="Asc" />
@@ -841,11 +842,11 @@ Lumber = IIF([Adjacent]='#',1,0)
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="750" y="78" />
+        <Position x="786" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Expression>[Engine.IterationNumber]&lt;9</Expression>
+          <Expression>[Engine.IterationNumber]&lt;[#1]</Expression>
           <Mode>Custom</Mode>
           <Simple>
             <Operator>=</Operator>
@@ -867,14 +868,14 @@ Lumber = IIF([Adjacent]='#',1,0)
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>[Engine.IterationNumber]&lt;9</DefaultAnnotationText>
+          <DefaultAnnotationText>[Engine.IterationNumber]&lt;[#1]</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="True">
           <RecordInfo>
             <Field name="X" source="Summarize: GroupBy - X" type="Byte" />
             <Field name="Y" source="Summarize: GroupBy - Y" type="Byte" />
-            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;1,'#','.'))" type="String" />
+            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" type="String" />
           </RecordInfo>
           <SortInfo>
             <Field field="X" order="Asc" />
@@ -885,7 +886,7 @@ Lumber = IIF([Adjacent]='#',1,0)
           <RecordInfo>
             <Field name="X" source="Summarize: GroupBy - X" type="Byte" />
             <Field name="Y" source="Summarize: GroupBy - Y" type="Byte" />
-            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;1,'#','.'))" type="String" />
+            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" type="String" />
           </RecordInfo>
           <SortInfo>
             <Field field="X" order="Asc" />
@@ -897,7 +898,7 @@ Lumber = IIF([Adjacent]='#',1,0)
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="858" y="126" />
+        <Position x="894" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -911,6 +912,278 @@ Lumber = IIF([Adjacent]='#',1,0)
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="774" y="6" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="798" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Input]='#'</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-18 17:19:58</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-18 17:19:58</StartDate>
+              <EndDate>2018-12-18 17:19:58</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Input]='#'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="X" source="Summarize: GroupBy - X" type="Byte" />
+            <Field name="Y" source="Summarize: GroupBy - Y" type="Byte" />
+            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="Asc" />
+            <Field field="Y" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="X" source="Summarize: GroupBy - X" type="Byte" />
+            <Field name="Y" source="Summarize: GroupBy - Y" type="Byte" />
+            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="Asc" />
+            <Field field="Y" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="798" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Input]='|'</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-18 17:20:01</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-18 17:20:01</StartDate>
+              <EndDate>2018-12-18 17:20:01</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Input]='|'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="X" source="Summarize: GroupBy - X" type="Byte" />
+            <Field name="Y" source="Summarize: GroupBy - Y" type="Byte" />
+            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="Asc" />
+            <Field field="Y" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="X" source="Summarize: GroupBy - X" type="Byte" />
+            <Field name="Y" source="Summarize: GroupBy - Y" type="Byte" />
+            <Field name="Input" size="1" source="Formula: Switch([Input],NULL(),&#xA;'.',IIF([Trees]&gt;=3,'|','.'),&#xA;'|',IIF([Lumberyards]&gt;=3,'#','|'),&#xA;'#',IIF([Lumberyards]&gt;=2 AND [Trees]&gt;=1,'#','.'))" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="Asc" />
+            <Field field="Y" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="918" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings>
+        <Position x="918" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1014" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Count" selected="True" rename="Lumberyards" input="Target_" />
+                <SelectField field="Source_Count" selected="True" rename="Trees" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Lumberyards" source="(Multiple Sources)" type="Int64" />
+            <Field name="Trees" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1110" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Lumberyards]*[Trees]" field="Result" size="8" type="Int64" />
+            <FormulaField expression="[Engine.IterationNumber]+1" field="Minute" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Result = [Lumberyards]*[Trees]
+Minute = [Engine.IterationNumber]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Lumberyards" source="(Multiple Sources)" type="Int64" />
+            <Field name="Trees" source="(Multiple Sources)" type="Int64" />
+            <Field name="Result" source="Formula: [Lumberyards]*[Trees]" type="Int64" />
+            <Field name="Minute" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1302" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output23</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1206" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Lumberyards" selected="False" />
+            <SelectField field="Trees" selected="False" />
+            <SelectField field="Minute" selected="True" />
+            <SelectField field="Result" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Minute" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+            <Field name="Result" source="Formula: [Lumberyards]*[Trees]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
   </Nodes>
   <Connections>
@@ -950,6 +1223,18 @@ Lumber = IIF([Adjacent]='#',1,0)
       <Origin ToolID="13" Connection="Output" />
       <Destination ToolID="14" Connection="Input" />
     </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Question" />
+      <Destination ToolID="14" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
     <Connection>
       <Origin ToolID="14" Connection="True" />
       <Destination ToolID="11" Connection="Input" />
@@ -957,6 +1242,34 @@ Lumber = IIF([Adjacent]='#',1,0)
     <Connection>
       <Origin ToolID="14" Connection="False" />
       <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="19" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="20" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output9" />
+      <Destination ToolID="21" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output9" />
+      <Destination ToolID="21" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -979,6 +1292,18 @@ Lumber = IIF([Adjacent]='#',1,0)
       <Constant>
         <Namespace>Question</Namespace>
         <Name>Macro Output (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Numeric Up Down (16)</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (23)</Name>
         <Value />
         <IsNumeric value="False" />
       </Constant>
@@ -1031,6 +1356,23 @@ Lumber = IIF([Adjacent]='#',1,0)
               <Name>Macro Output (15)</Name>
               <ToolId value="15" />
             </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>Iterations</Description>
+              <Name>Numeric Up Down (16)</Name>
+              <ToolId value="16" />
+              <Minimum value="0" />
+              <Maximum value="5000" />
+              <Increment value="1" />
+              <Default value="10" />
+              <Decimals value="0" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (23)</Description>
+              <Name>Macro Output (23)</Name>
+              <ToolId value="23" />
+            </Question>
           </Questions>
         </Question>
       </Questions>
@@ -1043,7 +1385,7 @@ Lumber = IIF([Adjacent]='#',1,0)
       <IterativeMacro>
         <Input>Input10</Input>
         <Output>Loop</Output>
-        <IterationLimit value="100" />
+        <IterationLimit value="5001" />
         <LimitBehavior>Error</LimitBehavior>
         <OutputMode>AllSame</OutputMode>
       </IterativeMacro>
@@ -1054,6 +1396,9 @@ Lumber = IIF([Adjacent]='#',1,0)
         <Tool ToolId="10" Selected="True" />
         <Tool ToolId="11" Selected="True" />
         <Tool ToolId="15" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="20" Selected="True" />
+        <Tool ToolId="23" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
