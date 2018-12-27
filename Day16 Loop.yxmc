@@ -1,0 +1,715 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="OpCode" action="GroupBy" rename="OpCode" />
+            <SummarizeField field="Op" action="First" rename="Op" />
+            <SummarizeField field="OpCode" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OpCode" source="Summarize: GroupBy - OpCode" type="Byte" />
+            <Field name="Op" size="4" source="TextInput:" type="String" />
+            <Field name="Count" source="Summarize: Count - OpCode" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="OpCode" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="234" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count] = 1</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-26 19:44:27</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2018-12-26 19:44:27</StartDate>
+              <EndDate>2018-12-26 19:44:27</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="OpCode" source="Summarize: GroupBy - OpCode" type="Byte" />
+            <Field name="Op" size="4" source="TextInput:" type="String" />
+            <Field name="Count" source="Summarize: Count - OpCode" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="OpCode" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="OpCode" source="Summarize: GroupBy - OpCode" type="Byte" />
+            <Field name="Op" size="4" source="TextInput:" type="String" />
+            <Field name="Count" source="Summarize: Count - OpCode" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="OpCode" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="318" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Op" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Op" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_OpCode" selected="True" input="Left_" />
+                <SelectField field="Left_Op" selected="True" input="Left_" />
+                <SelectField field="Right_OpCode" selected="False" rename="Right_OpCode" input="Right_" />
+                <SelectField field="Right_Op" selected="False" rename="Right_Op" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="OpCode" source="TextInput:" type="Byte" />
+            <Field name="Op" size="4" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Op" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="OpCode" source="TextInput:" type="Byte" />
+            <Field name="Op" size="4" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Op" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Op" size="4" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Op" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input6</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="83" />
+              <Fields>
+                <Field name="OpCode" />
+                <Field name="Op" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>gtri</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>gtrr</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>addr</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>bori</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>borr</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>gtrr</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>setr</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>eqri</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>eqrr</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>gtir</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>gtri</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>gtrr</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>eqri</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>gtri</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>gtrr</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>addr</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>seti</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>bani</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>banr</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>eqri</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>eqrr</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>gtir</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>gtri</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>gtrr</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>seti</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>eqrr</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>eqrr</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>gtri</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>banr</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>eqri</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>eqrr</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>gtir</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>gtri</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>gtrr</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>addi</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>addr</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>seti</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>gtir</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>setr</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>addi</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>addr</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>bani</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>banr</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>bori</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>borr</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>gtir</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>gtri</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>gtrr</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>muli</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>mulr</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>seti</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>setr</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>bani</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>banr</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>bori</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>eqri</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>muli</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>setr</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>bani</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>banr</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>eqri</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>eqrr</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>gtir</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>gtrr</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>muli</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>bani</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>banr</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>eqir</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>eqri</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>eqrr</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>gtir</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>gtri</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>gtrr</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OpCode" source="TextInput:" type="Byte" />
+            <Field name="Op" size="4" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="438" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="426" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Loop</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Count" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OpCode" source="Summarize: GroupBy - OpCode" type="Byte" />
+            <Field name="Op" size="4" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="OpCode" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Left" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day16 Loop</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (5)</Name>
+          <ToolId value="5" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (6)</Description>
+              <Name>Macro Input (6)</Name>
+              <ToolId value="6" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (7)</Description>
+              <Name>Macro Output (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (8)</Description>
+              <Name>Macro Output (8)</Name>
+              <ToolId value="8" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input6</Input>
+        <Output>Loop</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="6" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="8" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

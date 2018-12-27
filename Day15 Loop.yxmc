@@ -1,0 +1,1255 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="270" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Move" order="Ascending" />
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Move" order="Ascending" />
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Move - Ascending
+Y - Ascending
+X - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Move" order="Ascending" />
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="342" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Y" selected="True" input="Target_" />
+                <SelectField field="Target_Type" selected="True" input="Target_" />
+                <SelectField field="Target_X" selected="True" input="Target_" />
+                <SelectField field="Target_Health" selected="True" input="Target_" />
+                <SelectField field="Target_Move" selected="True" input="Target_" />
+                <SelectField field="Source_Y" selected="True" rename="Source_Y" input="Source_" />
+                <SelectField field="Source_Type" selected="True" rename="Source_Type" input="Source_" />
+                <SelectField field="Source_X" selected="True" rename="Source_X" input="Source_" />
+                <SelectField field="Source_Health" selected="False" rename="Source_Health" input="Source_" />
+                <SelectField field="Source_Move" selected="False" rename="Source_Move" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="438" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Type]!=[Source_Type]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-25 16:02:31</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-25 16:02:31</StartDate>
+              <EndDate>2018-12-25 16:02:31</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Type]!=[Source_Type]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>([X]=[Source_X] AND ABS([Y]-[Source_Y])=1)
+OR
+([Y]=[Source_Y] AND ABS([X]-[Source_X])=1)</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-25 16:06:14</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-12-25 16:06:14</StartDate>
+              <EndDate>2018-12-25 16:06:14</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>([X]=[Source_X] AND ABS([Y]-[Source_Y])=1)
+OR
+([Y]=[Source_Y] AND ABS([X]-[Sourc...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings>
+        <Position x="666" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="750" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Count" selected="True" rename="InRange" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="162" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Y" />
+            <Field field="X" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Y" />
+            <Field field="X" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Y" selected="False" rename="Right_Y" input="Right_" />
+                <SelectField field="Right_X" selected="False" rename="Right_X" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Y" />
+            <Field field="X" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Y" order="" />
+            <Field field="X" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Y" />
+            <Field field="X" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="42" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Soldiers</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="7" />
+              <Fields>
+                <Field name="Y" />
+                <Field name="Type" />
+                <Field name="X" />
+                <Field name="Health" />
+                <Field name="Move" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2</c>
+                  <c>G</c>
+                  <c>3</c>
+                  <c>200</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>E</c>
+                  <c>5</c>
+                  <c>200</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>E</c>
+                  <c>2</c>
+                  <c>200</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>G</c>
+                  <c>4</c>
+                  <c>200</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>E</c>
+                  <c>6</c>
+                  <c>200</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>G</c>
+                  <c>3</c>
+                  <c>200</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>E</c>
+                  <c>5</c>
+                  <c>200</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (12)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="42" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>MapSquares</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="15" />
+              <Fields>
+                <Field name="Y" />
+                <Field name="X" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>6</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (13)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="834" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[InRange] &gt; 0</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>InRange</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-25 20:11:49</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2018-12-25 20:11:49</StartDate>
+              <EndDate>2018-12-25 20:11:49</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[InRange] &gt; 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="510" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="4" />
+          <Fields>
+            <Field name="dX" />
+            <Field name="dY" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>-1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>0</c>
+              <c>-1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="dX" source="TextInput:" type="Int16" />
+            <Field name="dY" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="582" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Source_Y" selected="False" input="Target_" />
+                <SelectField field="Target_Source_Type" selected="False" input="Target_" />
+                <SelectField field="Target_Source_X" selected="False" input="Target_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="dX" source="TextInput:" type="Int16" />
+            <Field name="dY" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="678" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[x]+[dX]" field="X" size="1" type="Byte" />
+            <FormulaField expression="[Y]+[dY]" field="Y" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[X = [x]+[dX]
+Y = [Y]+[dY]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="Formula: [Y]+[dY]" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="Formula: [x]+[dX]" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="dX" source="TextInput:" type="Int16" />
+            <Field name="dY" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="762" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Y" />
+            <Field field="X" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Y" />
+            <Field field="X" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_X" selected="True" input="Left_" />
+                <SelectField field="Left_Y" selected="True" input="Left_" />
+                <SelectField field="Right_Y" selected="False" rename="Right_Y" input="Right_" />
+                <SelectField field="Right_X" selected="False" rename="Right_X" input="Right_" />
+                <SelectField field="Right_Type" selected="False" input="Right_" />
+                <SelectField field="Right_Health" selected="False" input="Right_" />
+                <SelectField field="Right_Move" selected="False" input="Right_" />
+                <SelectField field="Right_dX" selected="False" input="Right_" />
+                <SelectField field="Right_dY" selected="False" input="Right_" />
+                <SelectField field="Right_Source_Y" selected="False" input="Right_" />
+                <SelectField field="Right_Source_Type" selected="False" input="Right_" />
+                <SelectField field="Right_Source_X" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Y" />
+            <Field field="X" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Y" order="" />
+            <Field field="X" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Y" source="Formula: [Y]+[dY]" type="Byte" />
+            <Field name="X" source="Formula: [x]+[dX]" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Y" />
+            <Field field="X" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="834" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="X" />
+            <Field field="Y" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: X, Y</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="Asc" />
+            <Field field="Y" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="X" order="Asc" />
+            <Field field="Y" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="942" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Y" selected="True" rename="Source_Y" input="Source_" />
+                <SelectField field="Source_X" selected="True" rename="Source_X" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1014" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ABS([X]-[Source_X])+ABS([Y]-[Source_Y])" field="Dist" size="1073741823" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Dist = ABS([X]-[Source_X])+ABS([Y]-[Source_Y])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dist" source="Formula: ABS([X]-[Source_X])+ABS([Y]-[Source_Y])" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1122" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Dist" order="Ascending" />
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dist - Ascending
+Y - Ascending
+X - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dist" source="Formula: ABS([X]-[Source_X])+ABS([Y]-[Source_Y])" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Dist" order="Ascending" />
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1230" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Source_Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Source_X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dist" source="Formula: ABS([X]-[Source_X])+ABS([Y]-[Source_Y])" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Dist" order="Ascending" />
+            <Field field="Y" order="Ascending" />
+            <Field field="X" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1314" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Source_Y" selected="False" />
+            <SelectField field="Source_X" selected="False" />
+            <SelectField field="Dist" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1434" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Y" source="TextInput:" type="Byte" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="X" source="TextInput:" type="Byte" />
+            <Field name="Health" source="TextInput:" type="Byte" />
+            <Field name="Move" source="TextInput:" type="Byte" />
+            <Field name="InRange" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="3" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output9" />
+      <Destination ToolID="9" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="19" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Left" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="False" />
+      <Destination ToolID="23" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Unique" />
+      <Destination ToolID="23" Connection="Targets" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (16)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day15 Loop</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (14)</Name>
+          <ToolId value="14" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (15)</Description>
+              <Name>Macro Input (15)</Name>
+              <ToolId value="15" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (16)</Description>
+              <Name>Macro Input (16)</Name>
+              <ToolId value="16" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="15" Selected="True" />
+        <Tool ToolId="16" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
