@@ -392,11 +392,13 @@ OR
       </GuiSettings>
       <Properties>
         <Configuration>
-          <OrderChanged value="False" />
+          <OrderChanged value="True" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Field1" selected="False" />
+            <SelectField field="X" selected="True" />
+            <SelectField field="Y" selected="True" />
             <SelectField field="*Unknown" selected="True" />
+            <SelectField field="Field1" selected="False" />
           </SelectFields>
         </Configuration>
         <Annotation DisplayMode="0">

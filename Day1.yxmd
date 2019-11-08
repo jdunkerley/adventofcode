@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="102" y="66" />
+        <Position x="54" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2919,7 +2919,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RunningTotal.RunningTotal">
-        <Position x="282" y="18" />
+        <Position x="246" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2938,7 +2938,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="390" y="18" />
+        <Position x="354" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2958,7 +2958,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="198" y="18" />
+        <Position x="162" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2983,7 +2983,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="90" y="6" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2995,7 +2995,6 @@
           <Expression_Init>1</Expression_Init>
           <Expression_Cond>RowCount &lt;= 3100</Expression_Cond>
           <Expression_Loop>RowCount + 1</Expression_Loop>
-          <RecordCount value="3100" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -3007,7 +3006,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="498" y="18" />
+        <Position x="462" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3027,7 +3026,7 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="594" y="18" />
+        <Position x="558" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
