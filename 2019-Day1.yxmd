@@ -1,0 +1,570 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="30" y="18" width="576" height="216" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>At the first Go / No Go poll, every Elf is Go until the Fuel Counter-Upper. They haven't determined the amount of fuel required yet.
+
+Fuel required to launch a given module is based on its mass. Specifically, to find the fuel required for a module, take its mass, divide by three, round down, and subtract 2.
+
+For example:
+
+For a mass of 12, divide by 3 and round down to get 4, then subtract 2 to get 2.
+For a mass of 14, dividing by 3 and rounding down still yields 4, so the fuel required is also 2.
+For a mass of 1969, the fuel required is 654.
+For a mass of 100756, the fuel required is 33583.
+The Fuel Counter-Upper needs to know the total fuel requirement. To find it, individually calculate the fuel needed for the mass of each module (your puzzle input), then add together all the fuel values.
+
+What is the sum of the fuel requirements for all of the modules on your spacecraft?</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="642" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="100" />
+          <Fields>
+            <Field name="Input" />
+          </Fields>
+          <Data>
+            <r>
+              <c>148216</c>
+            </r>
+            <r>
+              <c>142030</c>
+            </r>
+            <r>
+              <c>129401</c>
+            </r>
+            <r>
+              <c>74642</c>
+            </r>
+            <r>
+              <c>108051</c>
+            </r>
+            <r>
+              <c>54128</c>
+            </r>
+            <r>
+              <c>145495</c>
+            </r>
+            <r>
+              <c>67818</c>
+            </r>
+            <r>
+              <c>120225</c>
+            </r>
+            <r>
+              <c>67113</c>
+            </r>
+            <r>
+              <c>107672</c>
+            </r>
+            <r>
+              <c>101032</c>
+            </r>
+            <r>
+              <c>147714</c>
+            </r>
+            <r>
+              <c>55788</c>
+            </r>
+            <r>
+              <c>87732</c>
+            </r>
+            <r>
+              <c>73681</c>
+            </r>
+            <r>
+              <c>114646</c>
+            </r>
+            <r>
+              <c>76586</c>
+            </r>
+            <r>
+              <c>116436</c>
+            </r>
+            <r>
+              <c>139788</c>
+            </r>
+            <r>
+              <c>125150</c>
+            </r>
+            <r>
+              <c>136675</c>
+            </r>
+            <r>
+              <c>90527</c>
+            </r>
+            <r>
+              <c>74674</c>
+            </r>
+            <r>
+              <c>105505</c>
+            </r>
+            <r>
+              <c>146059</c>
+            </r>
+            <r>
+              <c>52735</c>
+            </r>
+            <r>
+              <c>101389</c>
+            </r>
+            <r>
+              <c>108121</c>
+            </r>
+            <r>
+              <c>62897</c>
+            </r>
+            <r>
+              <c>132337</c>
+            </r>
+            <r>
+              <c>51963</c>
+            </r>
+            <r>
+              <c>129188</c>
+            </r>
+            <r>
+              <c>122308</c>
+            </r>
+            <r>
+              <c>84677</c>
+            </r>
+            <r>
+              <c>66433</c>
+            </r>
+            <r>
+              <c>118374</c>
+            </r>
+            <r>
+              <c>66822</c>
+            </r>
+            <r>
+              <c>94714</c>
+            </r>
+            <r>
+              <c>101162</c>
+            </r>
+            <r>
+              <c>54030</c>
+            </r>
+            <r>
+              <c>136580</c>
+            </r>
+            <r>
+              <c>55677</c>
+            </r>
+            <r>
+              <c>114051</c>
+            </r>
+            <r>
+              <c>133898</c>
+            </r>
+            <r>
+              <c>95026</c>
+            </r>
+            <r>
+              <c>112964</c>
+            </r>
+            <r>
+              <c>68662</c>
+            </r>
+            <r>
+              <c>85139</c>
+            </r>
+            <r>
+              <c>53559</c>
+            </r>
+            <r>
+              <c>84703</c>
+            </r>
+            <r>
+              <c>92053</c>
+            </r>
+            <r>
+              <c>132197</c>
+            </r>
+            <r>
+              <c>60130</c>
+            </r>
+            <r>
+              <c>63184</c>
+            </r>
+            <r>
+              <c>86182</c>
+            </r>
+            <r>
+              <c>113038</c>
+            </r>
+            <r>
+              <c>52659</c>
+            </r>
+            <r>
+              <c>140463</c>
+            </r>
+            <r>
+              <c>123234</c>
+            </r>
+            <r>
+              <c>97887</c>
+            </r>
+            <r>
+              <c>70216</c>
+            </r>
+            <r>
+              <c>131832</c>
+            </r>
+            <r>
+              <c>108162</c>
+            </r>
+            <r>
+              <c>116759</c>
+            </r>
+            <r>
+              <c>111828</c>
+            </r>
+            <r>
+              <c>132815</c>
+            </r>
+            <r>
+              <c>113476</c>
+            </r>
+            <r>
+              <c>127734</c>
+            </r>
+            <r>
+              <c>134545</c>
+            </r>
+            <r>
+              <c>99643</c>
+            </r>
+            <r>
+              <c>141911</c>
+            </r>
+            <r>
+              <c>74705</c>
+            </r>
+            <r>
+              <c>65720</c>
+            </r>
+            <r>
+              <c>95640</c>
+            </r>
+            <r>
+              <c>51581</c>
+            </r>
+            <r>
+              <c>66787</c>
+            </r>
+            <r>
+              <c>147590</c>
+            </r>
+            <r>
+              <c>72937</c>
+            </r>
+            <r>
+              <c>148774</c>
+            </r>
+            <r>
+              <c>119881</c>
+            </r>
+            <r>
+              <c>139875</c>
+            </r>
+            <r>
+              <c>131976</c>
+            </r>
+            <r>
+              <c>68238</c>
+            </r>
+            <r>
+              <c>100342</c>
+            </r>
+            <r>
+              <c>134691</c>
+            </r>
+            <r>
+              <c>112320</c>
+            </r>
+            <r>
+              <c>86107</c>
+            </r>
+            <r>
+              <c>100045</c>
+            </r>
+            <r>
+              <c>120458</c>
+            </r>
+            <r>
+              <c>54459</c>
+            </r>
+            <r>
+              <c>52047</c>
+            </r>
+            <r>
+              <c>108226</c>
+            </r>
+            <r>
+              <c>102138</c>
+            </r>
+            <r>
+              <c>141233</c>
+            </r>
+            <r>
+              <c>54452</c>
+            </r>
+            <r>
+              <c>67859</c>
+            </r>
+            <r>
+              <c>105132</c>
+            </r>
+            <r>
+              <c>81903</c>
+            </r>
+            <r>
+              <c>104282</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="738" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="FLOOR([Input]/3)-2" field="Fuel" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Fuel = FLOOR([Input]/3)-2
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="834" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Fuel" action="Sum" rename="Sum_Fuel" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="30" y="246" width="612" height="324" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>During the second Go / No Go poll, the Elf in charge of the Rocket Equation Double-Checker stops the launch sequence. Apparently, you forgot to include additional fuel for the fuel you just added.
+
+Fuel itself requires fuel just like a module - take its mass, divide by three, round down, and subtract 2. However, that fuel also requires fuel, and that fuel requires fuel, and so on. Any mass that would require negative fuel should instead be treated as if it requires zero fuel; the remaining mass, if any, is instead handled by wishing really hard, which has no mass and is outside the scope of this calculation.
+
+So, for each module mass, calculate its fuel and add it to the total. Then, treat the fuel amount you just calculated as the input mass and repeat the process, continuing until a fuel requirement is zero or negative. For example:
+
+A module of mass 14 requires 2 fuel. This fuel requires no further fuel (2 divided by 3 and rounded down is 0, which would call for a negative fuel), so the total fuel required is still just 2.
+At first, a module of mass 1969 requires 654 fuel. Then, this fuel requires 216 more fuel (654 / 3 - 2). 216 then requires 70 more fuel, which requires 21 fuel, which requires 5 fuel, which requires no further fuel. So, the total fuel required for a module of mass 1969 is 654 + 216 + 70 + 21 + 5 = 966.
+The fuel required by a module of mass 100756 and its fuel is: 33583 + 11192 + 3728 + 1240 + 411 + 135 + 43 + 12 + 2 = 50346.
+What is the sum of the fuel requirements for all of the modules on your spacecraft when also taking into account the mass of the added fuel? (Calculate the fuel requirements for each module separately, then add them all up at the end.)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="666" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Input" />
+          </Fields>
+          <Data>
+            <r>
+              <c>14</c>
+            </r>
+            <r>
+              <c>1969</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Test</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="774" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>Fuel</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>FLOOR([Input]/3)-2</Expression_Init>
+          <Expression_Cond>[Fuel]&gt;0</Expression_Cond>
+          <Expression_Loop>FLOOR([Fuel]/3)-2</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="858" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Fuel" action="Sum" rename="Sum_Fuel" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14292_78a19e580c2043269877a9befc17053d_\Engine_10016_5e1cfb01e85b4fbc89503a23102882bc_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2019-Day1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
