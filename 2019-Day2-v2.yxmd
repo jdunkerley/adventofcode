@@ -98,7 +98,7 @@
           <Expression_Init>0</Expression_Init>
           <Expression_Cond>Noun&lt;=99</Expression_Cond>
           <Expression_Loop>Noun+ 1</Expression_Loop>
-          <RecordCount value="100" />
+          <RecordCount value="0" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -267,6 +267,20 @@ Switch(
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
     </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="774" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -304,6 +318,10 @@ Switch(
     <Connection>
       <Origin ToolID="12" Connection="Output" />
       <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
