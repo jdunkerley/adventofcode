@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="State" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1,9,10,3,2,3,11,0,99,30,40,50</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="342" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="// GetWord([State], ToNumber(GetWord([State], 0)) + 1) Op&#xA;// ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)) Left&#xA;// ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)) Right&#xA;// GetWord([State], ToNumber(GetWord([State], 0)) + 4) // Target&#xA;Switch(&#xA;   GetWord([State], ToNumber(GetWord([State], 0)) + 1),&#xA;   '-',&#xA;   '99', '- ' + REGEX_Replace([State], &quot;^\d+ &quot;, &quot;&quot;),&#xA;   '1', ToString(ToNumber(GetWord([State], 0))+4) + ' ' +&#xA;   REGEX_Replace([State], &quot;^\d+ ((?:\d+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\d+)( .*)&quot;,&#xA;        &quot;${1}&quot; + ToString(&#xA;             ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)) +&#xA;             ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1))&#xA;        )+ &quot;$3&quot;&#xA;   ),&#xA;   '2', ToString(ToNumber(GetWord([State], 0))+4) + ' ' +&#xA;   REGEX_Replace([State], &quot;^\d+ ((?:\d+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\d+)( .*)&quot;,&#xA;        &quot;${1}&quot; + ToString(&#xA;             ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)) *&#xA;             ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1))&#xA;        )+ &quot;$3&quot;&#xA;   )&#xA;)&#xA;" field="State" size="1000000" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>State = // GetWord([State], ToNumber(GetWord([State], 0)) + 1) Op
+// ToNumber(Ge...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="246" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'0 ' + Replace([State], &quot;,&quot;, &quot; &quot;)" field="State" size="1000000" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[State = '0 ' + Replace([State], ",", " ")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="State" selected="True" type="V_WString" size="1000000" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>Noun</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>0</Expression_Init>
+          <Expression_Cond>Noun&lt;=99</Expression_Cond>
+          <Expression_Loop>Noun+ 1</Expression_Loop>
+          <RecordCount value="100" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>Verb</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>0</Expression_Init>
+          <Expression_Cond>Verb&lt;=99</Expression_Cond>
+          <Expression_Loop>Verb+ 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="246" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;1,&quot; + ToString([Noun]) + &quot;,&quot;&#xA;+ ToString([Verb]) + &quot;,3,1,1,2,3,1,3,4,3,1,5,0,3,2,1,10,19,1,19,5,23,2,23,6,27,1,27,5,31,2,6,31,35,1,5,35,39,2,39,9,43,1,43,5,47,1,10,47,51,1,51,6,55,1,55,10,59,1,59,6,63,2,13,63,67,1,9,67,71,2,6,71,75,1,5,75,79,1,9,79,83,2,6,83,87,1,5,87,91,2,6,91,95,2,95,9,99,1,99,6,103,1,103,13,107,2,13,107,111,2,111,10,115,1,115,6,119,1,6,119,123,2,6,123,127,1,127,5,131,2,131,6,135,1,135,2,139,1,139,9,0,99,2,14,0,0&quot;" field="Input" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input = "1," + ToString([Noun]) + ","
++ ToString([Verb]) + ",3,1,1,2,3,1,3,4,3,1...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>State</UpdateField_Name>
+          <CreateField_Name>State</CreateField_Name>
+          <CreateField_Type>V_WString</CreateField_Type>
+          <CreateField_Size>1000000</CreateField_Size>
+          <Expression_Init>'0 ' + Replace([Input], ",", " ")</Expression_Init>
+          <Expression_Cond>Left([State],1)!='-'</Expression_Cond>
+          <Expression_Loop>// GetWord([State], ToNumber(GetWord([State], 0)) + 1) Op
+// ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)) Left
+// ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)) Right
+// GetWord([State], ToNumber(GetWord([State], 0)) + 4) // Target
+Switch(
+   GetWord([State], ToNumber(GetWord([State], 0)) + 1),
+   '-',
+   '99', '- ' + REGEX_Replace([State], "^\d+ ", ""),
+   '1', ToString(ToNumber(GetWord([State], 0))+4) + ' ' +
+   REGEX_Replace([State], "^\d+ ((?:\d+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\d+)( .*)",
+        "${1}" + ToString(
+             ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)) +
+             ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1))
+        )+ "$3"
+   ),
+   '2', ToString(ToNumber(GetWord([State], 0))+4) + ' ' +
+   REGEX_Replace([State], "^\d+ ((?:\d+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\d+)( .*)",
+        "${1}" + ToString(
+             ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)) *
+             ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1))
+        )+ "$3"
+   )
+)</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="450" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Last</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="Verb" />
+            <Field name="Noun" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Last 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="534" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber(GetWord([State], 1))" field="Value" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Value = ToNumber(GetWord([State], 1))
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="654" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Value] = 19690720</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Value</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-02 16:54:32</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>19690720</Operand>
+              <StartDate>2019-12-02 16:54:32</StartDate>
+              <EndDate>2019-12-02 16:54:32</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Value] = 19690720</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2019-Day2-v2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
