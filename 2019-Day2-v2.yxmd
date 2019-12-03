@@ -272,7 +272,15 @@ Switch(
         <Position x="774" y="54" />
       </GuiSettings>
       <Properties>
-        <Configuration />
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
