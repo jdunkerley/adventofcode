@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="138" y="66" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -14,7 +14,7 @@
           <Optional value="False" />
           <TextInput>
             <Configuration>
-              <NumRows value="13" />
+              <NumRows value="6" />
               <Fields>
                 <Field name="RecordID" />
                 <Field name="Input" />
@@ -22,55 +22,27 @@
               <Data>
                 <r>
                   <c>0</c>
-                  <c>0</c>
+                  <c>1002</c>
                 </r>
                 <r>
                   <c>0</c>
-                  <c>1</c>
+                  <c>1002</c>
                 </r>
                 <r>
                   <c>1</c>
-                  <c>9</c>
+                  <c>4</c>
                 </r>
                 <r>
                   <c>2</c>
-                  <c>10</c>
+                  <c>3</c>
                 </r>
                 <r>
                   <c>3</c>
-                  <c>3</c>
+                  <c>4</c>
                 </r>
                 <r>
                   <c>4</c>
-                  <c>2</c>
-                </r>
-                <r>
-                  <c>5</c>
-                  <c>3</c>
-                </r>
-                <r>
-                  <c>6</c>
-                  <c>11</c>
-                </r>
-                <r>
-                  <c>7</c>
-                  <c>0</c>
-                </r>
-                <r>
-                  <c>8</c>
-                  <c>99</c>
-                </r>
-                <r>
-                  <c>9</c>
-                  <c>30</c>
-                </r>
-                <r>
-                  <c>10</c>
-                  <c>40</c>
-                </r>
-                <r>
-                  <c>11</c>
-                  <c>50</c>
+                  <c>33</c>
                 </r>
               </Data>
             </Configuration>
@@ -79,12 +51,12 @@
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
-          <Left value="False" />
+          <Left value="True" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -95,6 +67,7 @@
         <Position x="0" y="0" width="59" height="59" />
       </GuiSettings>
       <Properties>
+        <Configuration />
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -104,7 +77,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="246" y="66" />
+        <Position x="162" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -120,7 +93,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -128,7 +101,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="246" y="198" />
+        <Position x="162" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -144,265 +117,15 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
     </Node>
-    <Node ToolID="6">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="354" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="RecordID" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="RecordID" />
-          </JoinInfo>
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Left_RecordID" selected="False" input="Left_" />
-                <SelectField field="Left_Input" selected="False" input="Left_" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Left">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="RecordID" />
-          </SortInfo>
-        </MetaInfo>
-        <MetaInfo connection="Join">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="Right">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="RecordID" />
-          </SortInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
-    <Node ToolID="7">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="450" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Expression>[Input] IN (1,2)</Expression>
-          <Mode>Custom</Mode>
-          <Simple>
-            <Operator>=</Operator>
-            <Field>Input</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2019-12-02 06:48:54</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <StartDate>2019-12-02 06:48:54</StartDate>
-              <EndDate>2019-12-02 06:48:54</EndDate>
-              <Operand>
-              </Operand>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[Input] IN (1,2)</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="True">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="False">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="8">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="546" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UpdateField value="False" />
-          <UpdateField_Name />
-          <CreateField_Name>Row</CreateField_Name>
-          <CreateField_Type>Int32</CreateField_Type>
-          <CreateField_Size>4</CreateField_Size>
-          <Expression_Init>[RecordID]+1</Expression_Init>
-          <Expression_Cond>Row &lt;= [RecordID]+3</Expression_Cond>
-          <Expression_Loop>Row + 1</Expression_Loop>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-            <Field name="Row" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
-    </Node>
-    <Node ToolID="9">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="642" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="Row" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="RecordID" />
-          </JoinInfo>
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Left_Input" selected="True" rename="OpCode" input="Left_" />
-                <SelectField field="Left_Row" selected="False" input="Left_" />
-                <SelectField field="Right_RecordID" selected="True" rename="Right_RecordID" input="Right_" />
-                <SelectField field="Right_Input" selected="True" rename="Right_Input" input="Right_" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Left">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-            <Field name="Row" type="Int32" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="Row" />
-          </SortInfo>
-        </MetaInfo>
-        <MetaInfo connection="Join">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
-            <Field name="Right_RecordID" source="TextInput:" type="Byte" />
-            <Field name="Right_Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="Right">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="RecordID" />
-          </SortInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
-    <Node ToolID="14">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1266" y="186" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="RecordID" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="RecordID" />
-          </JoinInfo>
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="True" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Left_RecordID" selected="False" input="Left_" />
-                <SelectField field="Right_RecordID" selected="True" input="Right_" />
-                <SelectField field="Left_Input" selected="True" input="Left_" />
-                <SelectField field="Right_Input" selected="False" input="Right_" />
-                <SelectField field="Left_Original" selected="True" input="Left_" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Left">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field description="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" name="Input" source="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" type="Int32" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="RecordID" />
-          </SortInfo>
-        </MetaInfo>
-        <MetaInfo connection="Join">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field description="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" name="Input" source="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="Right">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="RecordID" />
-          </SortInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1350" y="186" />
+        <Position x="1854" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -423,7 +146,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="RecordID" source="TextInput:" type="Int16" />
             <Field name="Input" source="(Multiple Sources)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
@@ -432,24 +155,24 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="534" y="270" />
+        <Position x="1578" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="[RecordID]+4" field="RecordID" size="1" type="Byte" />
+            <FormulaField expression="[RecordID]+IIF(MOD([Input],100)&lt;3,4,2)" field="RecordID" size="1" type="Byte" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[RecordID = [RecordID]+4
+          <DefaultAnnotationText><![CDATA[RecordID = [RecordID]+IIF(MOD([Input],100)<3,4,2)
 ]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="Formula: [RecordID]+4" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
+            <Field name="RecordID" source="Formula: [RecordID]+IIF(MOD([Input],100)&lt;3,4,2)" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -457,7 +180,7 @@
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="1554" y="198" />
+        <Position x="2142" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -481,63 +204,17 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="RecordID" source="(Multiple Sources)" type="Int16" />
             <Field name="Input" source="(Multiple Sources)" type="Int32" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
+            <Field name="OpCode" source="TextInput:" type="Int16" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
     </Node>
-    <Node ToolID="18">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1650" y="198" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Expression>[OpCode] not in (1,2)</Expression>
-          <Mode>Custom</Mode>
-          <Simple>
-            <Operator>=</Operator>
-            <Field>OpCode</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2019-12-02 07:26:29</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <Operand>99</Operand>
-              <StartDate>2019-12-02 07:26:29</StartDate>
-              <EndDate>2019-12-02 07:26:29</EndDate>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[OpCode] not in (1,2)</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="True">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="(Multiple Sources)" type="Int32" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="False">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="(Multiple Sources)" type="Int32" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1926" y="90" />
+        <Position x="2094" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -554,7 +231,7 @@
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1986" y="270" />
+        <Position x="2010" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -571,7 +248,7 @@
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1794" y="222" />
+        <Position x="1902" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -590,7 +267,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="RecordID" source="(Multiple Sources)" type="Int16" />
             <Field name="Input" source="(Multiple Sources)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
@@ -599,39 +276,51 @@
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="930" y="66" />
+        <Position x="738" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <UpdateField value="False" />
-          <UpdateField_Name>RecordID</UpdateField_Name>
-          <CreateField_Name>Value</CreateField_Name>
+          <UpdateField_Name>Value</UpdateField_Name>
+          <CreateField_Name>Result</CreateField_Name>
           <CreateField_Type>Int32</CreateField_Type>
           <CreateField_Size>4</CreateField_Size>
           <OtherRows>Empty</OtherRows>
-          <NumRows value="1" />
-          <Expression>SWITCH([Parameter]-[RecordID],
-[Row-1:Value],
-1,[Input],
-2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))</Expression>
+          <NumRows value="3" />
+          <Expression>IF [OpCode] = 1 AND [Parameter] = 3 THEN
+	[Row-2:Value]+[Row-1:Value]	
+ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN
+	[Row-2:Value]*[Row-1:Value]
+ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN
+	1
+ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN
+       [Row-1:Value] != 0
+ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN
+       [Row-1:Value] = 0
+ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN
+	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)
+ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN
+	IIF([Row-1:Value] = [Row-2:Value],1,0)
+ELSE
+	NULL()
+ENDIF</Expression>
           <GroupByFields />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>SWITCH([Parameter]-[RecordID],
-[Row-1:Value],
-1,[Input],
-2,II...</DefaultAnnotationText>
+          <DefaultAnnotationText>IF [OpCode] = 1 AND [Parameter] = 3 THEN
+	[Row-2:Value]+[Row-...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
-            <Field name="Parameter" source="TextInput:" type="Byte" />
-            <Field name="Original" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-            <Field description="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" name="Value" source="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" type="Int32" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Value" source="Formula: IIF([Flags]='1',[Input],[Value])" type="Int16" />
+            <Field name="OpRecordID" source="Formula: [Start]" type="Int32" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Parameter" source="Formula: [RecordID]-[Start]" type="Byte" />
+            <Field description="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" name="Result" source="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" type="Int32" />
           </RecordInfo>
           <SortInfo locale="0">
             <Field field="Parameter" order="Ascending" />
@@ -642,7 +331,7 @@
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="1026" y="66" />
+        <Position x="978" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -658,11 +347,12 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
-            <Field name="Parameter" source="TextInput:" type="Byte" />
-            <Field name="Original" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-            <Field description="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" name="Value" source="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" type="Int32" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Value" source="Formula: IIF([Flags]='1',[Input],[Value])" type="Int16" />
+            <Field name="OpRecordID" source="Formula: // 1,2,7,8 ==&gt; +4&#xA;// 3,4 ==&gt; +2&#xA;IF [OpCode] IN (1,2,3,7,8) THEN&#xA; IIF([OpRecordID] = [Input], 0, 1 + [Parameter]) + [Input]&#xA;ELSEIF [OpCode] = 4 THEN&#xA; [OpRecordID] + 2&#xA;ELSEIF [OpCode] in (5,6) THEN &#xA; [OpRecordID]&#xA;ELSE&#xA; [OpRecordID]&#xA;ENDIF" type="Int32" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Parameter" source="Formula: [RecordID]-[Start]" type="Byte" />
+            <Field description="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" name="Result" source="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" type="Int32" />
           </RecordInfo>
           <SortInfo locale="0">
             <Field field="Parameter" order="Ascending" />
@@ -673,7 +363,7 @@
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="1422" y="186" />
+        <Position x="1950" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -688,7 +378,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="RecordID" source="TextInput:" type="Int16" />
             <Field name="Input" source="(Multiple Sources)" type="Int32" />
           </RecordInfo>
           <SortInfo locale="0">
@@ -698,41 +388,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
     </Node>
-    <Node ToolID="26">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1110" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="RecordID" selected="False" />
-            <SelectField field="OpCode" selected="False" />
-            <SelectField field="Parameter" selected="False" />
-            <SelectField field="Original" selected="True" rename="RecordID" />
-            <SelectField field="Input" selected="False" />
-            <SelectField field="Value" selected="True" rename="Input" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field description="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" name="Input" source="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF([OpCode]=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1890" y="270" />
+        <Position x="2058" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -752,7 +410,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="(Multiple Sources)" type="Byte" />
+            <Field name="RecordID" source="(Multiple Sources)" type="Int16" />
             <Field name="Input" source="(Multiple Sources)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
@@ -761,7 +419,7 @@
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="1758" y="90" />
+        <Position x="1902" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -776,9 +434,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="RecordID" source="(Multiple Sources)" type="Int16" />
             <Field name="Input" source="(Multiple Sources)" type="Int32" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
+            <Field name="OpCode" source="TextInput:" type="Int16" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -786,7 +444,7 @@
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1842" y="90" />
+        <Position x="1998" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -810,9 +468,669 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="24">
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="846" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Substring([Flags],[RecordID]-[Start]-1,1)" field="Flags" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Flags = Substring([Flags],[RecordID]-[Start]-1,1)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: Substring([Flags],[RecordID]-[Start]-1,1)" type="V_WString" />
+            <Field name="Start" source="TextInput:" type="Byte" />
+            <Field name="Parameters" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1002" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[MOD([Input],100) =4 ]]></Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>OpCode</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-05 21:30:02</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-12-05 21:30:02</StartDate>
+              <EndDate>2019-12-05 21:30:02</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[MOD([Input],100) =4 ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1182" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output34</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1098" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Value" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF(Mod([OpCode],10)=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" name="Value" source="Formula: SWITCH([Parameter]-[RecordID],&#xA;[Row-1:Value],&#xA;1,[Input],&#xA;2,IIF(Mod([OpCode],10)=1,[Row-1:Value]+[Input],[Row-1:Value]*[Input]))" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="438" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="MOD([Input],100)" field="OpCode" size="1" type="Byte" />
+            <FormulaField expression="ReverseString(PadLeft(ToString(Int([Input]/100)),3,'0'))" field="Flags" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>OpCode = MOD([Input],100)
+Flags = ReverseString(PadLeft(ToString(Int([Input]/100...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: ReverseString(PadLeft(ToString(Int([Input]/100)),3,'0'))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="438" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="9" />
+          <Fields>
+            <Field name="OpCode" />
+            <Field name="Parameters" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>6</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>7</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>8</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>99</c>
+              <c>0</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OpCode" source="TextInput:" type="Byte" />
+            <Field name="Parameters" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="558" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="OpCode" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="OpCode" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Source_RecordID" selected="False" input="Left_" />
+                <SelectField field="Right_OpCode" selected="False" rename="Right_OpCode" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: ReverseString(PadLeft(ToString(Int([Input]/100)),3,'0'))" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="OpCode" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: ReverseString(PadLeft(ToString(Int([Input]/100)),3,'0'))" type="V_WString" />
+            <Field name="Parameters" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="OpCode" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="OpCode" source="TextInput:" type="Byte" />
+            <Field name="Parameters" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="OpCode" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="246" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_RecordID" selected="True" rename="Source_RecordID" input="Source_" />
+                <SelectField field="Source_Input" selected="False" rename="Source_Input" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="330" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[RecordID] = [Source_RecordID]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-06 13:04:47</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-12-06 13:04:47</StartDate>
+              <EndDate>2019-12-06 13:04:47</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] = [Source_RecordID]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="666" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_RecordID" selected="True" input="Target_" />
+                <SelectField field="Target_Input" selected="True" input="Target_" />
+                <SelectField field="Source_Input" selected="False" rename="Source_Input" input="Source_" />
+                <SelectField field="Source_OpCode" selected="True" input="Source_" />
+                <SelectField field="Source_Flags" selected="True" input="Source_" />
+                <SelectField field="Source_RecordID" selected="True" rename="Start" input="Source_" />
+                <SelectField field="Source_Parameters" selected="True" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: ReverseString(PadLeft(ToString(Int([Input]/100)),3,'0'))" type="V_WString" />
+            <Field name="Start" source="TextInput:" type="Byte" />
+            <Field name="Parameters" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="738" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[RecordID] &gt; [Start]
+AND
+[RecordID] &lt;= [Start] + [Parameters]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-06 13:08:44</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-12-06 13:08:44</StartDate>
+              <EndDate>2019-12-06 13:08:44</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] &gt; [Start]
+AND
+[RecordID] &lt;= [Start] + [Parameters]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: ReverseString(PadLeft(ToString(Int([Input]/100)),3,'0'))" type="V_WString" />
+            <Field name="Start" source="TextInput:" type="Byte" />
+            <Field name="Parameters" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: ReverseString(PadLeft(ToString(Int([Input]/100)),3,'0'))" type="V_WString" />
+            <Field name="Start" source="TextInput:" type="Byte" />
+            <Field name="Parameters" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="918" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="OpCode" selected="True" />
+            <SelectField field="Flags" selected="True" />
+            <SelectField field="Start" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: Substring([Flags],[RecordID]-[Start]-1,1)" type="V_WString" />
+            <Field name="Start" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1014" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_RecordID" selected="True" input="Source_" />
+                <SelectField field="Source_Input" selected="True" input="Source_" />
+                <SelectField field="Target_RecordID" selected="True" rename="Input_RecordID" input="Target_" />
+                <SelectField field="Target_Input" selected="True" rename="Value" input="Target_" />
+                <SelectField field="Source_OpCode" selected="True" input="Source_" />
+                <SelectField field="Source_Flags" selected="True" input="Source_" />
+                <SelectField field="Source_Start" selected="True" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Input_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: Substring([Flags],[RecordID]-[Start]-1,1)" type="V_WString" />
+            <Field name="Start" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1110" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>IIF([Flags]='1',[Input_RecordID]=[RecordID],[Input_RecordID]=[Input])</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-06 13:14:23</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-12-06 13:14:23</StartDate>
+              <EndDate>2019-12-06 13:14:23</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF([Flags]='1',[Input_RecordID]=[RecordID],[Input_RecordID]=[Input])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Input_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: Substring([Flags],[RecordID]-[Start]-1,1)" type="V_WString" />
+            <Field name="Start" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Input_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: Substring([Flags],[RecordID]-[Start]-1,1)" type="V_WString" />
+            <Field name="Start" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1218" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF([Flags]='1',[Input],[Value])" field="Value" size="2" type="Int16" />
+            <FormulaField expression="[Start]" field="OpRecordID" size="4" type="Int32" />
+            <FormulaField expression="[RecordID]-[Start]" field="Start" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Value = IIF([Flags]='1',[Input],[Value])
+OpRecordID = [Start]
+Start = [RecordID]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Input_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Value" source="Formula: IIF([Flags]='1',[Input],[Value])" type="Int16" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Flags" size="1073741823" source="Formula: Substring([Flags],[RecordID]-[Start]-1,1)" type="V_WString" />
+            <Field name="Start" source="Formula: [RecordID]-[Start]" type="Byte" />
+            <Field name="OpRecordID" source="Formula: [Start]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1314" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="Input_RecordID" selected="False" />
+            <SelectField field="Value" selected="True" />
+            <SelectField field="OpRecordID" selected="True" />
+            <SelectField field="OpCode" selected="True" />
+            <SelectField field="Flags" selected="False" />
+            <SelectField field="Start" selected="True" rename="Parameter" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Value" source="Formula: IIF([Flags]='1',[Input],[Value])" type="Int16" />
+            <Field name="OpRecordID" source="Formula: [Start]" type="Int32" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Parameter" source="Formula: [RecordID]-[Start]" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="49">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="834" y="66" />
+        <Position x="1398" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -828,10 +1146,11 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
-            <Field name="Parameter" source="TextInput:" type="Byte" />
-            <Field name="Original" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Value" source="Formula: IIF([Flags]='1',[Input],[Value])" type="Int16" />
+            <Field name="OpRecordID" source="Formula: [Start]" type="Int32" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Parameter" source="Formula: [RecordID]-[Start]" type="Byte" />
           </RecordInfo>
           <SortInfo locale="0">
             <Field field="Parameter" order="Ascending" />
@@ -840,70 +1159,100 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
     </Node>
-    <Node ToolID="10">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="738" y="66" />
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="858" y="234" />
       </GuiSettings>
       <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="Right_Input" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="RecordID" />
-          </JoinInfo>
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Left_Right_RecordID" selected="True" rename="Parameter" input="Left_" />
-                <SelectField field="Left_Right_Input" selected="True" rename="Original" input="Left_" />
-                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="// 1,2,7,8 ==&gt; +4&#xA;// 3,4 ==&gt; +2&#xA;IF [OpCode] IN (1,2,3,7,8) THEN&#xA;	IIF([OpRecordID] = [Input], 0, 1 + [Parameter]) + [Input]&#xA;ELSEIF [OpCode] = 4 THEN&#xA;	[OpRecordID] + 2&#xA;ELSEIF [OpCode] in (5,6) THEN &#xA;	[OpRecordID]&#xA;ELSE&#xA;	[OpRecordID]&#xA;ENDIF" field="OpRecordID" size="4" type="Int32" />
+          </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText />
+          <DefaultAnnotationText>OpRecordID = // 1,2,7,8 ==&gt; +4
+// 3,4 ==&gt; +2
+IF [OpCode] IN (1,2,3,7,8) THEN
+	II...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Left">
+        <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
-            <Field name="Right_RecordID" source="TextInput:" type="Byte" />
-            <Field name="Right_Input" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Value" source="Formula: IIF([Flags]='1',[Input],[Value])" type="Int16" />
+            <Field name="OpRecordID" source="Formula: // 1,2,7,8 ==&gt; +4&#xA;// 3,4 ==&gt; +2&#xA;IF [OpCode] IN (1,2,3,7,8) THEN&#xA; IIF([OpRecordID] = [Input], 0, 1 + [Parameter]) + [Input]&#xA;ELSEIF [OpCode] = 4 THEN&#xA; [OpRecordID] + 2&#xA;ELSEIF [OpCode] in (5,6) THEN &#xA; [OpRecordID]&#xA;ELSE&#xA; [OpRecordID]&#xA;ENDIF" type="Int32" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Parameter" source="Formula: [RecordID]-[Start]" type="Byte" />
+            <Field description="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" name="Result" source="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" type="Int32" />
           </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="Right_Input" />
-          </SortInfo>
-        </MetaInfo>
-        <MetaInfo connection="Join">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="OpCode" source="TextInput:" type="Byte" />
-            <Field name="Parameter" source="TextInput:" type="Byte" />
-            <Field name="Original" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-          <SortInfo>
-            <Field field="Original" order="" />
-          </SortInfo>
-        </MetaInfo>
-        <MetaInfo connection="Right">
-          <RecordInfo>
-            <Field name="RecordID" source="TextInput:" type="Byte" />
-            <Field name="Input" source="TextInput:" type="Byte" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="RecordID" />
+          <SortInfo locale="0">
+            <Field field="Parameter" order="Ascending" />
           </SortInfo>
         </MetaInfo>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1098" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[OpCode] = 4</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>OpCode</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-08 09:35:06</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2019-12-08 09:35:06</StartDate>
+              <EndDate>2019-12-08 09:35:06</EndDate>
+              <Operand>4</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[OpCode] = 4</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Value" source="Formula: IIF([Flags]='1',[Input],[Value])" type="Int16" />
+            <Field name="OpRecordID" source="Formula: // 1,2,7,8 ==&gt; +4&#xA;// 3,4 ==&gt; +2&#xA;IF [OpCode] IN (1,2,3,7,8) THEN&#xA; IIF([OpRecordID] = [Input], 0, 1 + [Parameter]) + [Input]&#xA;ELSEIF [OpCode] = 4 THEN&#xA; [OpRecordID] + 2&#xA;ELSEIF [OpCode] in (5,6) THEN &#xA; [OpRecordID]&#xA;ELSE&#xA; [OpRecordID]&#xA;ENDIF" type="Int32" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Parameter" source="Formula: [RecordID]-[Start]" type="Byte" />
+            <Field description="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" name="Result" source="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" type="Int32" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Parameter" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" source="TextInput:" type="Int16" />
+            <Field name="Value" source="Formula: IIF([Flags]='1',[Input],[Value])" type="Int16" />
+            <Field name="OpRecordID" source="Formula: // 1,2,7,8 ==&gt; +4&#xA;// 3,4 ==&gt; +2&#xA;IF [OpCode] IN (1,2,3,7,8) THEN&#xA; IIF([OpRecordID] = [Input], 0, 1 + [Parameter]) + [Input]&#xA;ELSEIF [OpCode] = 4 THEN&#xA; [OpRecordID] + 2&#xA;ELSEIF [OpCode] in (5,6) THEN &#xA; [OpRecordID]&#xA;ELSE&#xA; [OpRecordID]&#xA;ENDIF" type="Int32" />
+            <Field name="OpCode" source="Formula: MOD([Input],100)" type="Byte" />
+            <Field name="Parameter" source="Formula: [RecordID]-[Start]" type="Byte" />
+            <Field description="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" name="Result" source="Formula: IF [OpCode] = 1 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]+[Row-1:Value]	&#xA;ELSEIF [OpCode] = 2 AND [Parameter] = 3 THEN&#xA;	[Row-2:Value]*[Row-1:Value]&#xA;ELSEIF [OpCode] = 3 AND [Parameter] = 1 THEN&#xA;	1&#xA;ELSEIF [OpCode] = 5 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] != 0&#xA;ELSEIF [OpCode] = 6 AND [Parameter] = 2 THEN&#xA;       [Row-1:Value] = 0&#xA;ELSEIF [OpCode] = 7 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] &lt; [Row-2:Value],1,0)&#xA;ELSEIF [OpCode] = 8 AND [Parameter] = 3 THEN&#xA;	IIF([Row-1:Value] = [Row-2:Value],1,0)&#xA;ELSE&#xA;	NULL()&#xA;ENDIF" type="Int32" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Parameter" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
     </Node>
   </Nodes>
   <Connections>
@@ -917,59 +1266,27 @@
     </Connection>
     <Connection>
       <Origin ToolID="3" Connection="Output" />
-      <Destination ToolID="6" Connection="Left" />
+      <Destination ToolID="39" Connection="Source" />
     </Connection>
     <Connection>
       <Origin ToolID="4" Connection="Output" />
-      <Destination ToolID="6" Connection="Right" />
+      <Destination ToolID="39" Connection="Targets" />
     </Connection>
     <Connection>
       <Origin ToolID="4" Connection="Output" />
-      <Destination ToolID="9" Connection="Right" />
+      <Destination ToolID="41" Connection="Targets" />
     </Connection>
     <Connection>
-      <Origin ToolID="8" Connection="Output" />
-      <Destination ToolID="9" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="4" Connection="Output" />
-      <Destination ToolID="14" Connection="Right" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="26" Connection="Output" />
-      <Destination ToolID="14" Connection="Left" />
+      <Origin ToolID="38" Connection="Join" />
+      <Destination ToolID="41" Connection="Source" />
     </Connection>
     <Connection>
       <Origin ToolID="4" Connection="Output" />
-      <Destination ToolID="10" Connection="Right" />
+      <Destination ToolID="45" Connection="Targets" />
     </Connection>
     <Connection>
-      <Origin ToolID="9" Connection="Join" />
-      <Destination ToolID="10" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="6" Connection="Join" />
-      <Destination ToolID="7" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="6" Connection="Join" />
-      <Destination ToolID="16" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="7" Connection="True" />
-      <Destination ToolID="8" Connection="Input" />
-    </Connection>
-    <Connection name="#1">
-      <Origin ToolID="14" Connection="Left" />
-      <Destination ToolID="15" Connection="Input" />
-    </Connection>
-    <Connection name="#2">
-      <Origin ToolID="14" Connection="Join" />
-      <Destination ToolID="15" Connection="Input" />
-    </Connection>
-    <Connection name="#3">
-      <Origin ToolID="14" Connection="Right" />
-      <Destination ToolID="15" Connection="Input" />
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Source" />
     </Connection>
     <Connection>
       <Origin ToolID="15" Connection="Output" />
@@ -980,7 +1297,7 @@
       <Destination ToolID="17" Connection="Source" />
     </Connection>
     <Connection>
-      <Origin ToolID="25" Connection="Output" />
+      <Origin ToolID="27" Connection="Output" />
       <Destination ToolID="17" Connection="Targets" />
     </Connection>
     <Connection name="#2">
@@ -988,32 +1305,20 @@
       <Destination ToolID="27" Connection="Input" />
     </Connection>
     <Connection name="#1">
-      <Origin ToolID="21" Connection="Output" />
+      <Origin ToolID="25" Connection="Output" />
       <Destination ToolID="27" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="17" Connection="Output" />
-      <Destination ToolID="18" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="18" Connection="False" />
-      <Destination ToolID="21" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="18" Connection="True" />
-      <Destination ToolID="28" Connection="Input" />
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="22" Connection="Output" />
-      <Destination ToolID="23" Connection="Input" />
+      <Destination ToolID="50" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="23" Connection="Output" />
-      <Destination ToolID="26" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="27" Connection="Output" />
-      <Destination ToolID="20" Connection="Input" />
+      <Destination ToolID="51" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="28" Connection="Output" />
@@ -1024,12 +1329,64 @@
       <Destination ToolID="19" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="24" Connection="Output" />
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="True" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="True" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="49" Connection="Output" />
       <Destination ToolID="22" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="10" Connection="Join" />
-      <Destination ToolID="24" Connection="Input" />
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -1058,6 +1415,12 @@
       <Constant>
         <Namespace>Question</Namespace>
         <Name>Macro Output (20)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (34)</Name>
         <Value />
         <IsNumeric value="False" />
       </Constant>
@@ -1110,6 +1473,12 @@
               <Name>Macro Output (20)</Name>
               <ToolId value="20" />
             </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (34)</Description>
+              <Name>Macro Output (34)</Name>
+              <ToolId value="34" />
+            </Question>
           </Questions>
         </Question>
       </Questions>
@@ -1130,8 +1499,10 @@
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
         <Tool ToolId="19" Selected="True" />
         <Tool ToolId="20" Selected="True" />
+        <Tool ToolId="34" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />

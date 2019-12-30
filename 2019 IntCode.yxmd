@@ -1,0 +1,646 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="14" />
+          <Fields>
+            <Field name="Inp" />
+            <Field name="Input" />
+            <Field name="Expected" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>1,0,0,1,99</c>
+              <c>1,2,0,1,99</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>2,3,0,3,99</c>
+              <c>2,3,0,6,99</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>2,4,4,5,99,0</c>
+              <c>2,4,4,5,99,9801</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1,1,1,4,99,5,6,0,99</c>
+              <c>30,1,1,4,2,5,6,0,99</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>3,1,4,1,99</c>
+              <c>3,1,4,1,99</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1002,4,3,4,33</c>
+              <c>1002,4,3,4,99</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1,12,2,3,1,1,2,3,1,3,4,3,1,5,0,3,2,1,10,19,1,19,5,23,2,23,6,27,1,27,5,31,2,6,31,35,1,5,35,39,2,39,9,43,1,43,5,47,1,10,47,51,1,51,6,55,1,55,10,59,1,59,6,63,2,13,63,67,1,9,67,71,2,6,71,75,1,5,75,79,1,9,79,83,2,6,83,87,1,5,87,91,2,6,91,95,2,95,9,99,1,99,6,103,1,103,13,107,2,13,107,111,2,111,10,115,1,115,6,119,1,6,119,123,2,6,123,127,1,127,5,131,2,131,6,135,1,135,2,139,1,139,9,0,99,2,14,0,0</c>
+              <c>5866663,12,2,2,1,1,2,3,1,3,4,3,1,5,0,3,2,1,10,48,1,19,5,49,2,23,6,98,1,27,5,99,2,6,31,198,1,5,35,199,2,39,9,597,1,43,5,598,1,10,47,602,1,51,6,604,1,55,10,608,1,59,6,610,2,13,63,3050,1,9,67,3053,2,6,71,6106,1,5,75,6107,1,9,79,6110,2,6,83,12220,1,5,87,12221,2,6,91,24442,2,95,9,73326,1,99,6,73328,1,103,13,73333,2,13,107,366665,2,111,10,1466660,1,115,6,1466662,1,6,119,1466664,2,6,123,2933328,1,127,5,2933329,2,131,6,5866658,1,135,2,5866660,1,139,9,0,99,2,14,0,0</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1,42,59,3,1,1,2,3,1,3,4,3,1,5,0,3,2,1,10,19,1,19,5,23,2,23,6,27,1,27,5,31,2,6,31,35,1,5,35,39,2,39,9,43,1,43,5,47,1,10,47,51,1,51,6,55,1,55,10,59,1,59,6,63,2,13,63,67,1,9,67,71,2,6,71,75,1,5,75,79,1,9,79,83,2,6,83,87,1,5,87,91,2,6,91,95,2,95,9,99,1,99,6,103,1,103,13,107,2,13,107,111,2,111,10,115,1,115,6,119,1,6,119,123,2,6,123,127,1,127,5,131,2,131,6,135,1,135,2,139,1,139,9,0,99,2,14,0,0</c>
+              <c>19690720,42,59,2,1,1,2,3,1,3,4,3,1,5,0,3,2,1,10,168,1,19,5,169,2,23,6,338,1,27,5,339,2,6,31,678,1,5,35,679,2,39,9,2037,1,43,5,2038,1,10,47,2042,1,51,6,2044,1,55,10,2048,1,59,6,2050,2,13,63,10250,1,9,67,10253,2,6,71,20506,1,5,75,20507,1,9,79,20510,2,6,83,41020,1,5,87,41021,2,6,91,82042,2,95,9,246126,1,99,6,246128,1,103,13,246133,2,13,107,1230665,2,111,10,4922660,1,115,6,4922662,1,6,119,4922664,2,6,123,9845328,1,127,5,9845329,2,131,6,19690658,1,135,2,19690717,1,139,9,0,99,2,14,0,0</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>3,225,1,225,6,6,1100,1,238,225,104,0,1001,92,74,224,1001,224,-85,224,4,224,1002,223,8,223,101,1,224,224,1,223,224,223,1101,14,63,225,102,19,83,224,101,-760,224,224,4,224,102,8,223,223,101,2,224,224,1,224,223,223,1101,21,23,224,1001,224,-44,224,4,224,102,8,223,223,101,6,224,224,1,223,224,223,1102,40,16,225,1102,6,15,225,1101,84,11,225,1102,22,25,225,2,35,96,224,1001,224,-350,224,4,224,102,8,223,223,101,6,224,224,1,223,224,223,1101,56,43,225,101,11,192,224,1001,224,-37,224,4,224,102,8,223,223,1001,224,4,224,1,223,224,223,1002,122,61,224,1001,224,-2623,224,4,224,1002,223,8,223,101,7,224,224,1,223,224,223,1,195,87,224,1001,224,-12,224,4,224,1002,223,8,223,101,5,224,224,1,223,224,223,1101,75,26,225,1101,6,20,225,1102,26,60,224,101,-1560,224,224,4,224,102,8,223,223,101,3,224,224,1,223,224,223,4,223,99,0,0,0,677,0,0,0,0,0,0,0,0,0,0,0,1105,0,99999,1105,227,247,1105,1,99999,1005,227,99999,1005,0,256,1105,1,99999,1106,227,99999,1106,0,265,1105,1,99999,1006,0,99999,1006,227,274,1105,1,99999,1105,1,280,1105,1,99999,1,225,225,225,1101,294,0,0,105,1,0,1105,1,99999,1106,0,300,1105,1,99999,1,225,225,225,1101,314,0,0,106,0,0,1105,1,99999,108,677,226,224,102,2,223,223,1006,224,329,1001,223,1,223,1108,226,677,224,1002,223,2,223,1006,224,344,101,1,223,223,7,226,677,224,102,2,223,223,1006,224,359,1001,223,1,223,1007,226,677,224,1002,223,2,223,1006,224,374,1001,223,1,223,1108,677,226,224,102,2,223,223,1005,224,389,1001,223,1,223,107,226,226,224,102,2,223,223,1006,224,404,101,1,223,223,1107,226,226,224,1002,223,2,223,1005,224,419,1001,223,1,223,1007,677,677,224,102,2,223,223,1006,224,434,101,1,223,223,1107,226,677,224,1002,223,2,223,1006,224,449,101,1,223,223,107,677,677,224,102,2,223,223,1005,224,464,1001,223,1,223,1008,226,226,224,1002,223,2,223,1005,224,479,101,1,223,223,1007,226,226,224,102,2,223,223,1005,224,494,1001,223,1,223,8,677,226,224,1002,223,2,223,1005,224,509,1001,223,1,223,108,677,677,224,1002,223,2,223,1005,224,524,1001,223,1,223,1008,677,677,224,102,2,223,223,1006,224,539,1001,223,1,223,7,677,226,224,1002,223,2,223,1005,224,554,101,1,223,223,1108,226,226,224,1002,223,2,223,1005,224,569,101,1,223,223,107,677,226,224,102,2,223,223,1005,224,584,101,1,223,223,8,226,226,224,1002,223,2,223,1005,224,599,101,1,223,223,108,226,226,224,1002,223,2,223,1006,224,614,1001,223,1,223,7,226,226,224,102,2,223,223,1006,224,629,1001,223,1,223,1107,677,226,224,102,2,223,223,1005,224,644,101,1,223,223,8,226,677,224,102,2,223,223,1006,224,659,1001,223,1,223,1008,226,677,224,1002,223,2,223,1006,224,674,1001,223,1,223,4,223,99,226</c>
+              <c>3,225,1,225,6,6,1101,1,238,225,104,0,1001,92,74,224,1001,224,-85,224,4,224,1002,223,8,223,101,1,224,224,1,223,224,223,1101,14,63,225,102,19,83,224,101,-760,224,224,4,224,102,8,223,223,101,2,224,224,1,224,223,223,1101,21,23,224,1001,224,-44,224,4,224,102,8,223,223,101,6,224,224,1,223,224,223,1102,40,16,225,1102,6,15,225,1101,84,11,225,1102,22,25,225,2,35,96,224,1001,224,-350,224,4,224,102,8,223,223,101,6,224,224,1,223,224,223,1101,56,43,225,101,11,192,224,1001,224,-37,224,4,224,102,8,223,223,1001,224,4,224,1,223,224,223,1002,122,61,224,1001,224,-2623,224,4,224,1002,223,8,223,101,7,224,224,1,223,224,223,1,195,87,224,1001,224,-12,224,4,224,1002,223,8,223,101,5,224,224,1,223,224,223,1101,75,26,225,1101,6,20,225,1102,26,60,224,101,-1560,224,224,4,224,102,8,223,223,101,3,224,224,1,223,224,223,4,223,99,2845163,3,26,677,0,0,0,0,0,0,0,0,0,0,0,1105,0,99999,1105,227,247,1105,1,99999,1005,227,99999,1005,0,256,1105,1,99999,1106,227,99999,1106,0,265,1105,1,99999,1006,0,99999,1006,227,274,1105,1,99999,1105,1,280,1105,1,99999,1,225,225,225,1101,294,0,0,105,1,0,1105,1,99999,1106,0,300,1105,1,99999,1,225,225,225,1101,314,0,0,106,0,0,1105,1,99999,108,677,226,224,102,2,223,223,1006,224,329,1001,223,1,223,1108,226,677,224,1002,223,2,223,1006,224,344,101,1,223,223,7,226,677,224,102,2,223,223,1006,224,359,1001,223,1,223,1007,226,677,224,1002,223,2,223,1006,224,374,1001,223,1,223,1108,677,226,224,102,2,223,223,1005,224,389,1001,223,1,223,107,226,226,224,102,2,223,223,1006,224,404,101,1,223,223,1107,226,226,224,1002,223,2,223,1005,224,419,1001,223,1,223,1007,677,677,224,102,2,223,223,1006,224,434,101,1,223,223,1107,226,677,224,1002,223,2,223,1006,224,449,101,1,223,223,107,677,677,224,102,2,223,223,1005,224,464,1001,223,1,223,1008,226,226,224,1002,223,2,223,1005,224,479,101,1,223,223,1007,226,226,224,102,2,223,223,1005,224,494,1001,223,1,223,8,677,226,224,1002,223,2,223,1005,224,509,1001,223,1,223,108,677,677,224,1002,223,2,223,1005,224,524,1001,223,1,223,1008,677,677,224,102,2,223,223,1006,224,539,1001,223,1,223,7,677,226,224,1002,223,2,223,1005,224,554,101,1,223,223,1108,226,226,224,1002,223,2,223,1005,224,569,101,1,223,223,107,677,226,224,102,2,223,223,1005,224,584,101,1,223,223,8,226,226,224,1002,223,2,223,1005,224,599,101,1,223,223,108,226,226,224,1002,223,2,223,1006,224,614,1001,223,1,223,7,226,226,224,102,2,223,223,1006,224,629,1001,223,1,223,1107,677,226,224,102,2,223,223,1005,224,644,101,1,223,223,8,226,677,224,102,2,223,223,1006,224,659,1001,223,1,223,1008,226,677,224,1002,223,2,223,1006,224,674,1001,223,1,223,4,223,99,226</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>3,9,8,9,10,9,4,9,99,-1,8</c>
+              <c />
+            </r>
+            <r>
+              <c>8</c>
+              <c>3,9,8,9,10,9,4,9,99,-1,8</c>
+              <c />
+            </r>
+            <r>
+              <c>4</c>
+              <c>3,9,7,9,10,9,4,9,99,-1,8</c>
+              <c />
+            </r>
+            <r>
+              <c>9</c>
+              <c>3,9,7,9,10,9,4,9,99,-1,8</c>
+              <c />
+            </r>
+            <r>
+              <c>5</c>
+              <c>3,225,1,225,6,6,1100,1,238,225,104,0,1001,92,74,224,1001,224,-85,224,4,224,1002,223,8,223,101,1,224,224,1,223,224,223,1101,14,63,225,102,19,83,224,101,-760,224,224,4,224,102,8,223,223,101,2,224,224,1,224,223,223,1101,21,23,224,1001,224,-44,224,4,224,102,8,223,223,101,6,224,224,1,223,224,223,1102,40,16,225,1102,6,15,225,1101,84,11,225,1102,22,25,225,2,35,96,224,1001,224,-350,224,4,224,102,8,223,223,101,6,224,224,1,223,224,223,1101,56,43,225,101,11,192,224,1001,224,-37,224,4,224,102,8,223,223,1001,224,4,224,1,223,224,223,1002,122,61,224,1001,224,-2623,224,4,224,1002,223,8,223,101,7,224,224,1,223,224,223,1,195,87,224,1001,224,-12,224,4,224,1002,223,8,223,101,5,224,224,1,223,224,223,1101,75,26,225,1101,6,20,225,1102,26,60,224,101,-1560,224,224,4,224,102,8,223,223,101,3,224,224,1,223,224,223,4,223,99,0,0,0,677,0,0,0,0,0,0,0,0,0,0,0,1105,0,99999,1105,227,247,1105,1,99999,1005,227,99999,1005,0,256,1105,1,99999,1106,227,99999,1106,0,265,1105,1,99999,1006,0,99999,1006,227,274,1105,1,99999,1105,1,280,1105,1,99999,1,225,225,225,1101,294,0,0,105,1,0,1105,1,99999,1106,0,300,1105,1,99999,1,225,225,225,1101,314,0,0,106,0,0,1105,1,99999,108,677,226,224,102,2,223,223,1006,224,329,1001,223,1,223,1108,226,677,224,1002,223,2,223,1006,224,344,101,1,223,223,7,226,677,224,102,2,223,223,1006,224,359,1001,223,1,223,1007,226,677,224,1002,223,2,223,1006,224,374,1001,223,1,223,1108,677,226,224,102,2,223,223,1005,224,389,1001,223,1,223,107,226,226,224,102,2,223,223,1006,224,404,101,1,223,223,1107,226,226,224,1002,223,2,223,1005,224,419,1001,223,1,223,1007,677,677,224,102,2,223,223,1006,224,434,101,1,223,223,1107,226,677,224,1002,223,2,223,1006,224,449,101,1,223,223,107,677,677,224,102,2,223,223,1005,224,464,1001,223,1,223,1008,226,226,224,1002,223,2,223,1005,224,479,101,1,223,223,1007,226,226,224,102,2,223,223,1005,224,494,1001,223,1,223,8,677,226,224,1002,223,2,223,1005,224,509,1001,223,1,223,108,677,677,224,1002,223,2,223,1005,224,524,1001,223,1,223,1008,677,677,224,102,2,223,223,1006,224,539,1001,223,1,223,7,677,226,224,1002,223,2,223,1005,224,554,101,1,223,223,1108,226,226,224,1002,223,2,223,1005,224,569,101,1,223,223,107,677,226,224,102,2,223,223,1005,224,584,101,1,223,223,8,226,226,224,1002,223,2,223,1005,224,599,101,1,223,223,108,226,226,224,1002,223,2,223,1006,224,614,1001,223,1,223,7,226,226,224,102,2,223,223,1006,224,629,1001,223,1,223,1107,677,226,224,102,2,223,223,1005,224,644,101,1,223,223,8,226,677,224,102,2,223,223,1006,224,659,1001,223,1,223,1008,226,677,224,1002,223,2,223,1006,224,674,1001,223,1,223,4,223,99,226</c>
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="258" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>State</UpdateField_Name>
+          <CreateField_Name>State</CreateField_Name>
+          <CreateField_Type>V_WString</CreateField_Type>
+          <CreateField_Size>1000000</CreateField_Size>
+          <Expression_Init>'0 ' + Replace([Input], ",", " ")</Expression_Init>
+          <Expression_Cond>Left([State],1)!='-'</Expression_Cond>
+          <Expression_Loop>IIF(Left([State],1)='*',
+	REGEX_Replace([State], "^\*\S+ ", ""),
+    Switch(
+       TrimLeft(RIGHT(GetWord([State], ToNumber(GetWord([State], 0)) + 1), 2), '0'),
+       '-',
+       '99', '- ' + REGEX_Replace([State], "^\S+ ", ""),
+       '1', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +
+       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\S+)(.*)",
+            "${1}" + ToString(
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))
+ +
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))
+            )+ "$3"
+       ),
+       '2', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +
+       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\S+)(.*)",
+            "${1}" + ToString(
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))
+ *
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))
+            )+ "$3"
+       ),
+       '3', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 2), 0, 2)) + ' ' +
+       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 2) + "})(\S+)(.*)",
+            "${1}" + ToString(Inp) + "$3"
+       ),
+       '4', '*' + 
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))
+ + ' ' + 
+            ToString(ToNumber(GetWord([State], 0))+2) + ' ' + REGEX_Replace([State], "^\S+ ", ""),
+       '5', REGEX_Replace([State], "^\S+", IIF(
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))!='0',
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 3), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)),
+ToString(ToNumber(GetWord([State], 0))+3))
+       ),
+       '6', REGEX_Replace([State], "^\S+", IIF(
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))='0',
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 3), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)),
+ToString(ToNumber(GetWord([State], 0))+3))
+       ),
+       '7', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +
+       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\S+)(.*)",
+            "${1}" + IIF(
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))
+ &lt;
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))
+            ,'1','0')+ "$3"
+       ),
+       '8', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +
+       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\S+)(.*)",
+            "${1}" + IIF(
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))
+ =
+IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))
+            ,'1','0')+ "$3"
+       )
+   )
+)</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="150" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="354" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Last</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="RecordID" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Last 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace(REGEX_Replace(State, &quot;\d+ (.*)&quot;, &quot;$1&quot;),&quot; &quot;,&quot;,&quot;)" field="State" size="1000000" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[State = Replace(REGEX_Replace(State, "\d+ (.*)", "$1")," ",",")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="546" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[State] != [Expected]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-29 15:49:26</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-12-29 15:49:26</StartDate>
+              <EndDate>2019-12-29 15:49:26</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[State] != [Expected]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14956_7f6f9351aa8f444593ead86366992b54_\Engine_11864_64d0079cca2f4147a02449c431607958_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="8" />
+          <Fields>
+            <Field name="Inp" />
+            <Field name="State" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>0 3,9,8,9,10,9,4,9,99,-1,8</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>2 1,0,4,0,99</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>*1 4 1 0 4 0 99</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>4 1 0 4 0 99</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>0 1002,4,3,4,33</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>0 1101,100,-1,4,0</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>0 3,225,1,225,6,6,1100,1,238,225,104,0,1001,92,74,224,1001,224,-85,224,4,224,1002,223,8,223,101,1,224,224,1,223,224,223,1101,14,63,225,102,19,83,224,101,-760,224,224,4,224,102,8,223,223,101,2,224,224,1,224,223,223,1101,21,23,224,1001,224,-44,224,4,224,102,8,223,223,101,6,224,224,1,223,224,223,1102,40,16,225,1102,6,15,225,1101,84,11,225,1102,22,25,225,2,35,96,224,1001,224,-350,224,4,224,102,8,223,223,101,6,224,224,1,223,224,223,1101,56,43,225,101,11,192,224,1001,224,-37,224,4,224,102,8,223,223,1001,224,4,224,1,223,224,223,1002,122,61,224,1001,224,-2623,224,4,224,1002,223,8,223,101,7,224,224,1,223,224,223,1,195,87,224,1001,224,-12,224,4,224,1002,223,8,223,101,5,224,224,1,223,224,223,1101,75,26,225,1101,6,20,225,1102,26,60,224,101,-1560,224,224,4,224,102,8,223,223,101,3,224,224,1,223,224,223,4,223,99,0,0,0,677,0,0,0,0,0,0,0,0,0,0,0,1105,0,99999,1105,227,247,1105,1,99999,1005,227,99999,1005,0,256,1105,1,99999,1106,227,99999,1106,0,265,1105,1,99999,1006,0,99999,1006,227,274,1105,1,99999,1105,1,280,1105,1,99999,1,225,225,225,1101,294,0,0,105,1,0,1105,1,99999,1106,0,300,1105,1,99999,1,225,225,225,1101,314,0,0,106,0,0,1105,1,99999,108,677,226,224,102,2,223,223,1006,224,329,1001,223,1,223,1108,226,677,224,1002,223,2,223,1006,224,344,101,1,223,223,7,226,677,224,102,2,223,223,1006,224,359,1001,223,1,223,1007,226,677,224,1002,223,2,223,1006,224,374,1001,223,1,223,1108,677,226,224,102,2,223,223,1005,224,389,1001,223,1,223,107,226,226,224,102,2,223,223,1006,224,404,101,1,223,223,1107,226,226,224,1002,223,2,223,1005,224,419,1001,223,1,223,1007,677,677,224,102,2,223,223,1006,224,434,101,1,223,223,1107,226,677,224,1002,223,2,223,1006,224,449,101,1,223,223,107,677,677,224,102,2,223,223,1005,224,464,1001,223,1,223,1008,226,226,224,1002,223,2,223,1005,224,479,101,1,223,223,1007,226,226,224,102,2,223,223,1005,224,494,1001,223,1,223,8,677,226,224,1002,223,2,223,1005,224,509,1001,223,1,223,108,677,677,224,1002,223,2,223,1005,224,524,1001,223,1,223,1008,677,677,224,102,2,223,223,1006,224,539,1001,223,1,223,7,677,226,224,1002,223,2,223,1005,224,554,101,1,223,223,1108,226,226,224,1002,223,2,223,1005,224,569,101,1,223,223,107,677,226,224,102,2,223,223,1005,224,584,101,1,223,223,8,226,226,224,1002,223,2,223,1005,224,599,101,1,223,223,108,226,226,224,1002,223,2,223,1006,224,614,1001,223,1,223,7,226,226,224,102,2,223,223,1006,224,629,1001,223,1,223,1107,677,226,224,102,2,223,223,1005,224,644,101,1,223,223,8,226,677,224,102,2,223,223,1006,224,659,1001,223,1,223,1008,226,677,224,1002,223,2,223,1006,224,674,1001,223,1,223,4,223,99,226</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>6 3 225 1 225 6 6 1101 1 238 0 99</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="354" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF(Left([State],1)='*',&#xA;	REGEX_Replace([State], &quot;^\*\S+ &quot;, &quot;&quot;),&#xA;    Switch(&#xA;       TrimLeft(RIGHT(GetWord([State], ToNumber(GetWord([State], 0)) + 1), 2), '0'),&#xA;       '-',&#xA;       '99', '- ' + REGEX_Replace([State], &quot;^\S+ &quot;, &quot;&quot;),&#xA;       '1', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + ToString(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))&#xA; +&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))&#xA;            )+ &quot;$3&quot;&#xA;       ),&#xA;       '2', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + ToString(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))&#xA; *&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))&#xA;            )+ &quot;$3&quot;&#xA;       ),&#xA;       '3', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 2), 0, 2)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 2) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + ToString(Inp) + &quot;$3&quot;&#xA;       ),&#xA;       '4', '*' + &#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))&#xA; + ' ' + &#xA;            ToString(ToNumber(GetWord([State], 0))+2) + ' ' + REGEX_Replace([State], &quot;^\S+ &quot;, &quot;&quot;),&#xA;       '5', REGEX_Replace([State], &quot;^\S+&quot;, IIF(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))!='0',&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 3), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)),&#xA;ToString(ToNumber(GetWord([State], 0))+3))&#xA;       ),&#xA;       '6', REGEX_Replace([State], &quot;^\S+&quot;, IIF(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))='0',&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 3), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)),&#xA;ToString(ToNumber(GetWord([State], 0))+3))&#xA;       ),&#xA;       '7', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + IIF(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))&#xA; &lt;&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))&#xA;            ,'1','0')+ &quot;$3&quot;&#xA;       ),&#xA;       '8', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + IIF(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))&#xA; =&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))&#xA;            ,'1','0')+ &quot;$3&quot;&#xA;       )&#xA;   )&#xA;)" field="State" size="1000000" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>State = IIF(Left([State],1)='*',
+	REGEX_Replace([State], "^\*\S+ ", ""),
+    Swi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="246" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[State]" field="RefState" size="1073741823" type="V_WString" />
+            <FormulaField expression="Replace([State], &quot;,&quot;, &quot; &quot;)" field="State" size="1000000" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[RefState = [State]
+State = Replace([State], ",", " ")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="State" selected="True" type="V_WString" size="1000000" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Left([State],1)='*'</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-29 18:01:01</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2019-12-29 18:01:01</StartDate>
+              <EndDate>2019-12-29 18:01:01</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Left([State],1)='*'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="666" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14956_7f6f9351aa8f444593ead86366992b54_\Engine_11864_d7366076f39d40ce8214cce57d71c55a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="462" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Input" selected="False" />
+            <SelectField field="Expected" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="354" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\jdunkerley\Dropbox\intcodetest.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>intcodetest.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="450" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14956_7f6f9351aa8f444593ead86366992b54_\Engine_11864_7b563d1cc5f2472ca4c5d5c641a3c40a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2019 IntCode</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
