@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="66" y="210" />
+        <Position x="54" y="264" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -57,7 +57,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="162" y="6" />
+        <Position x="150" y="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -79,7 +79,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="498" y="78" />
+        <Position x="486" y="132" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -105,7 +105,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="66" y="6" />
+        <Position x="54" y="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5094,7 +5094,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="594" y="78" />
+        <Position x="582" y="132" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5115,7 +5115,7 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="162" y="210" />
+        <Position x="150" y="264" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5135,14 +5135,14 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
     </Node>
-    <Node ToolID="18">
+    <Node ToolID="37">
       <GuiSettings>
-        <Position x="306" y="222" />
+        <Position x="294" y="276" />
       </GuiSettings>
       <Properties>
         <Configuration />
         <Annotation DisplayMode="0">
-          <Name />
+          <Name>2019-Day6 (18)</Name>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
@@ -5151,7 +5151,7 @@
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="66" y="66" />
+        <Position x="54" y="120" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5177,7 +5177,7 @@
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="162" y="66" />
+        <Position x="150" y="120" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5198,7 +5198,7 @@
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="498" y="210" />
+        <Position x="486" y="264" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5256,65 +5256,13 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="22">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="305" y="0" width="114.35" height="24" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>Part 1</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="True" />
-          <Folded value="True" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="17">
-          <GuiSettings>
-            <Position x="330" y="92" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="C:\Repos\adventofcode\2019-Day6.yxmc" />
-        </Node>
-        <Node ToolID="10">
-          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="486" y="49" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <SummarizeFields>
-                <SummarizeField field="Level" action="Sum" rename="Sum_Level" />
-              </SummarizeFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-        </Node>
-      </ChildNodes>
-    </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="426" y="234" />
+        <Position x="414" y="288" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14404_723b7ff0ae374989ab3d236fe47d52ed_\Engine_11864_44dd1b3d88d54207a354fbb5c3014dcf_.yxdb</TempFile>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_11404_5f9169107ad14b58839f65b7c9a2488e_\Engine_19160_ee4b61ed09254d85ae5df4ed552d7b2c_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -5338,7 +5286,7 @@
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="426" y="162" />
+        <Position x="414" y="216" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5356,7 +5304,7 @@
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="594" y="210" />
+        <Position x="582" y="264" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5376,14 +5324,14 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
     </Node>
-    <Node ToolID="27">
+    <Node ToolID="39">
       <GuiSettings>
-        <Position x="750" y="198" />
+        <Position x="738" y="252" />
       </GuiSettings>
       <Properties>
         <Configuration />
         <Annotation DisplayMode="0">
-          <Name />
+          <Name>2019-Day6 (27)</Name>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
@@ -5392,11 +5340,11 @@
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1026" y="198" />
+        <Position x="1014" y="252" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14404_723b7ff0ae374989ab3d236fe47d52ed_\Engine_11864_3b00462d6252410f9fc57dbc23f26abc_.yxdb</TempFile>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_11404_5f9169107ad14b58839f65b7c9a2488e_\Engine_19160_269a131a80684f00b80fab021bb75ea9_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -5420,7 +5368,7 @@
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="834" y="198" />
+        <Position x="822" y="252" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5452,7 +5400,7 @@
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="930" y="198" />
+        <Position x="918" y="252" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5469,9 +5417,61 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="293" y="54" width="265" height="176" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Part 1</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="474" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Level" action="Sum" rename="Sum_Level" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings>
+            <Position x="318" y="146" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>2019-Day6 (17)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\adventofcode\2019-Day6.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="762" y="17" width="361" height="149" />
+        <Position x="750" y="71" width="361" height="149" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5487,27 +5487,13 @@
         </Annotation>
       </Properties>
       <ChildNodes>
-        <Node ToolID="15">
-          <GuiSettings>
-            <Position x="787" y="66.99995" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>2019-Day6 (4)</Name>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="2019-Day6.yxmc" />
-        </Node>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1039" y="67.00002" />
+            <Position x="1027" y="121" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14492_3aa45190c3f243b6864014bef8ae0160_\Engine_11864_aa4879cffa2248428271abf200e21955_.yxdb</TempFile>
+              <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_11404_5f9169107ad14b58839f65b7c9a2488e_\Engine_19160_43c8e48eb68f468c9bc3929a17b010b3_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -5531,7 +5517,7 @@
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="858" y="66.00001" />
+            <Position x="846" y="120" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -5563,7 +5549,7 @@
         </Node>
         <Node ToolID="32">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="954" y="66" />
+            <Position x="942" y="120" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -5580,6 +5566,20 @@
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
         </Node>
+        <Node ToolID="40">
+          <GuiSettings>
+            <Position x="775" y="120.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>2019-Day6 (4)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="2019-Day6.yxmc" />
+        </Node>
       </ChildNodes>
     </Node>
   </Nodes>
@@ -5590,19 +5590,19 @@
     </Connection>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="15" Connection="Links" />
+      <Destination ToolID="40" Connection="Links" />
     </Connection>
     <Connection>
       <Origin ToolID="13" Connection="Output" />
-      <Destination ToolID="15" Connection="Nodes" />
+      <Destination ToolID="40" Connection="Nodes" />
     </Connection>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="17" Connection="Links" />
+      <Destination ToolID="38" Connection="Links" />
     </Connection>
     <Connection>
       <Origin ToolID="20" Connection="Output" />
-      <Destination ToolID="17" Connection="Nodes" />
+      <Destination ToolID="38" Connection="Nodes" />
     </Connection>
     <Connection>
       <Origin ToolID="3" Connection="Output" />
@@ -5614,26 +5614,26 @@
     </Connection>
     <Connection>
       <Origin ToolID="13" Connection="Output" />
-      <Destination ToolID="27" Connection="Nodes" />
+      <Destination ToolID="39" Connection="Nodes" />
     </Connection>
     <Connection>
       <Origin ToolID="26" Connection="Output" />
-      <Destination ToolID="27" Connection="Links" />
+      <Destination ToolID="39" Connection="Links" />
     </Connection>
     <Connection>
       <Origin ToolID="16" Connection="Output" />
-      <Destination ToolID="18" Connection="Links" />
+      <Destination ToolID="37" Connection="Links" />
     </Connection>
     <Connection>
       <Origin ToolID="20" Connection="Output" />
-      <Destination ToolID="18" Connection="Nodes" />
+      <Destination ToolID="37" Connection="Nodes" />
     </Connection>
     <Connection>
-      <Origin ToolID="18" Connection="Result" />
+      <Origin ToolID="37" Connection="Result" />
       <Destination ToolID="24" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="18" Connection="Result" />
+      <Origin ToolID="37" Connection="Result" />
       <Destination ToolID="25" Connection="Input" />
     </Connection>
     <Connection>
@@ -5645,11 +5645,7 @@
       <Destination ToolID="26" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="17" Connection="Result" />
-      <Destination ToolID="10" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="27" Connection="Result" />
+      <Origin ToolID="39" Connection="Result" />
       <Destination ToolID="29" Connection="Input" />
     </Connection>
     <Connection>
@@ -5661,8 +5657,8 @@
       <Destination ToolID="28" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="15" Connection="Result" />
-      <Destination ToolID="31" Connection="Input" />
+      <Origin ToolID="38" Connection="Result" />
+      <Destination ToolID="10" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="31" Connection="True" />
@@ -5671,6 +5667,10 @@
     <Connection>
       <Origin ToolID="32" Connection="Output" />
       <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Result" />
+      <Destination ToolID="31" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -5687,7 +5687,7 @@
     <ShowAllMacroMessages value="False" />
     <ShowConnectionStatusIsOn value="True" />
     <ShowConnectionStatusOnlyWhenRunning value="True" />
-    <ZoomLevel value="-1" />
+    <ZoomLevel value="1" />
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />

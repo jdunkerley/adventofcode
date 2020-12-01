@@ -1,0 +1,978 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="200" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1789</c>
+            </r>
+            <r>
+              <c>1818</c>
+            </r>
+            <r>
+              <c>1729</c>
+            </r>
+            <r>
+              <c>1578</c>
+            </r>
+            <r>
+              <c>1927</c>
+            </r>
+            <r>
+              <c>751</c>
+            </r>
+            <r>
+              <c>1772</c>
+            </r>
+            <r>
+              <c>1521</c>
+            </r>
+            <r>
+              <c>1850</c>
+            </r>
+            <r>
+              <c>1438</c>
+            </r>
+            <r>
+              <c>1855</c>
+            </r>
+            <r>
+              <c>1334</c>
+            </r>
+            <r>
+              <c>1878</c>
+            </r>
+            <r>
+              <c>1290</c>
+            </r>
+            <r>
+              <c>1678</c>
+            </r>
+            <r>
+              <c>1847</c>
+            </r>
+            <r>
+              <c>1495</c>
+            </r>
+            <r>
+              <c>1538</c>
+            </r>
+            <r>
+              <c>1403</c>
+            </r>
+            <r>
+              <c>1797</c>
+            </r>
+            <r>
+              <c>1906</c>
+            </r>
+            <r>
+              <c>1770</c>
+            </r>
+            <r>
+              <c>1963</c>
+            </r>
+            <r>
+              <c>1370</c>
+            </r>
+            <r>
+              <c>1684</c>
+            </r>
+            <r>
+              <c>1328</c>
+            </r>
+            <r>
+              <c>1544</c>
+            </r>
+            <r>
+              <c>1528</c>
+            </r>
+            <r>
+              <c>1871</c>
+            </r>
+            <r>
+              <c>2010</c>
+            </r>
+            <r>
+              <c>1999</c>
+            </r>
+            <r>
+              <c>1347</c>
+            </r>
+            <r>
+              <c>1760</c>
+            </r>
+            <r>
+              <c>1903</c>
+            </r>
+            <r>
+              <c>1860</c>
+            </r>
+            <r>
+              <c>1468</c>
+            </r>
+            <r>
+              <c>1511</c>
+            </r>
+            <r>
+              <c>1477</c>
+            </r>
+            <r>
+              <c>1668</c>
+            </r>
+            <r>
+              <c>1979</c>
+            </r>
+            <r>
+              <c>1358</c>
+            </r>
+            <r>
+              <c>1298</c>
+            </r>
+            <r>
+              <c>1493</c>
+            </r>
+            <r>
+              <c>1459</c>
+            </r>
+            <r>
+              <c>1382</c>
+            </r>
+            <r>
+              <c>2001</c>
+            </r>
+            <r>
+              <c>1394</c>
+            </r>
+            <r>
+              <c>1681</c>
+            </r>
+            <r>
+              <c>1515</c>
+            </r>
+            <r>
+              <c>1948</c>
+            </r>
+            <r>
+              <c>1991</c>
+            </r>
+            <r>
+              <c>1775</c>
+            </r>
+            <r>
+              <c>1661</c>
+            </r>
+            <r>
+              <c>1786</c>
+            </r>
+            <r>
+              <c>1966</c>
+            </r>
+            <r>
+              <c>1506</c>
+            </r>
+            <r>
+              <c>1853</c>
+            </r>
+            <r>
+              <c>1373</c>
+            </r>
+            <r>
+              <c>1454</c>
+            </r>
+            <r>
+              <c>1462</c>
+            </r>
+            <r>
+              <c>1830</c>
+            </r>
+            <r>
+              <c>1964</c>
+            </r>
+            <r>
+              <c>1442</c>
+            </r>
+            <r>
+              <c>1455</c>
+            </r>
+            <r>
+              <c>2008</c>
+            </r>
+            <r>
+              <c>1854</c>
+            </r>
+            <r>
+              <c>1763</c>
+            </r>
+            <r>
+              <c>1758</c>
+            </r>
+            <r>
+              <c>1751</c>
+            </r>
+            <r>
+              <c>1460</c>
+            </r>
+            <r>
+              <c>1630</c>
+            </r>
+            <r>
+              <c>1487</c>
+            </r>
+            <r>
+              <c>1360</c>
+            </r>
+            <r>
+              <c>1793</c>
+            </r>
+            <r>
+              <c>1590</c>
+            </r>
+            <r>
+              <c>1940</c>
+            </r>
+            <r>
+              <c>1388</c>
+            </r>
+            <r>
+              <c>1313</c>
+            </r>
+            <r>
+              <c>1408</c>
+            </r>
+            <r>
+              <c>1429</c>
+            </r>
+            <r>
+              <c>1725</c>
+            </r>
+            <r>
+              <c>1397</c>
+            </r>
+            <r>
+              <c>1941</c>
+            </r>
+            <r>
+              <c>1974</c>
+            </r>
+            <r>
+              <c>1788</c>
+            </r>
+            <r>
+              <c>1473</c>
+            </r>
+            <r>
+              <c>1913</c>
+            </r>
+            <r>
+              <c>664</c>
+            </r>
+            <r>
+              <c>1989</c>
+            </r>
+            <r>
+              <c>1490</c>
+            </r>
+            <r>
+              <c>1778</c>
+            </r>
+            <r>
+              <c>1726</c>
+            </r>
+            <r>
+              <c>1366</c>
+            </r>
+            <r>
+              <c>2005</c>
+            </r>
+            <r>
+              <c>1449</c>
+            </r>
+            <r>
+              <c>1924</c>
+            </r>
+            <r>
+              <c>1926</c>
+            </r>
+            <r>
+              <c>1769</c>
+            </r>
+            <r>
+              <c>1314</c>
+            </r>
+            <r>
+              <c>1636</c>
+            </r>
+            <r>
+              <c>1780</c>
+            </r>
+            <r>
+              <c>1546</c>
+            </r>
+            <r>
+              <c>1647</c>
+            </r>
+            <r>
+              <c>1856</c>
+            </r>
+            <r>
+              <c>320</c>
+            </r>
+            <r>
+              <c>396</c>
+            </r>
+            <r>
+              <c>1595</c>
+            </r>
+            <r>
+              <c>1867</c>
+            </r>
+            <r>
+              <c>1602</c>
+            </r>
+            <r>
+              <c>1699</c>
+            </r>
+            <r>
+              <c>1367</c>
+            </r>
+            <r>
+              <c>1876</c>
+            </r>
+            <r>
+              <c>1662</c>
+            </r>
+            <r>
+              <c>1686</c>
+            </r>
+            <r>
+              <c>1581</c>
+            </r>
+            <r>
+              <c>1697</c>
+            </r>
+            <r>
+              <c>1938</c>
+            </r>
+            <r>
+              <c>1400</c>
+            </r>
+            <r>
+              <c>720</c>
+            </r>
+            <r>
+              <c>1808</c>
+            </r>
+            <r>
+              <c>1625</c>
+            </r>
+            <r>
+              <c>1439</c>
+            </r>
+            <r>
+              <c>1734</c>
+            </r>
+            <r>
+              <c>2003</c>
+            </r>
+            <r>
+              <c>1718</c>
+            </r>
+            <r>
+              <c>1879</c>
+            </r>
+            <r>
+              <c>1864</c>
+            </r>
+            <r>
+              <c>1811</c>
+            </r>
+            <r>
+              <c>1309</c>
+            </r>
+            <r>
+              <c>721</c>
+            </r>
+            <r>
+              <c>1607</c>
+            </r>
+            <r>
+              <c>1814</c>
+            </r>
+            <r>
+              <c>1484</c>
+            </r>
+            <r>
+              <c>1869</c>
+            </r>
+            <r>
+              <c>1736</c>
+            </r>
+            <r>
+              <c>1507</c>
+            </r>
+            <r>
+              <c>1437</c>
+            </r>
+            <r>
+              <c>1894</c>
+            </r>
+            <r>
+              <c>1561</c>
+            </r>
+            <r>
+              <c>2004</c>
+            </r>
+            <r>
+              <c>269</c>
+            </r>
+            <r>
+              <c>1942</c>
+            </r>
+            <r>
+              <c>1915</c>
+            </r>
+            <r>
+              <c>1767</c>
+            </r>
+            <r>
+              <c>1562</c>
+            </r>
+            <r>
+              <c>1364</c>
+            </r>
+            <r>
+              <c>1783</c>
+            </r>
+            <r>
+              <c>1863</c>
+            </r>
+            <r>
+              <c>1601</c>
+            </r>
+            <r>
+              <c>1323</c>
+            </r>
+            <r>
+              <c>182</c>
+            </r>
+            <r>
+              <c>1985</c>
+            </r>
+            <r>
+              <c>1722</c>
+            </r>
+            <r>
+              <c>1545</c>
+            </r>
+            <r>
+              <c>1774</c>
+            </r>
+            <r>
+              <c>1552</c>
+            </r>
+            <r>
+              <c>1742</c>
+            </r>
+            <r>
+              <c>1790</c>
+            </r>
+            <r>
+              <c>1874</c>
+            </r>
+            <r>
+              <c>1583</c>
+            </r>
+            <r>
+              <c>1308</c>
+            </r>
+            <r>
+              <c>1441</c>
+            </r>
+            <r>
+              <c>1463</c>
+            </r>
+            <r>
+              <c>1503</c>
+            </r>
+            <r>
+              <c>1447</c>
+            </r>
+            <r>
+              <c>1540</c>
+            </r>
+            <r>
+              <c>1953</c>
+            </r>
+            <r>
+              <c>1371</c>
+            </r>
+            <r>
+              <c>1331</c>
+            </r>
+            <r>
+              <c>1688</c>
+            </r>
+            <r>
+              <c>1905</c>
+            </r>
+            <r>
+              <c>1815</c>
+            </r>
+            <r>
+              <c>1799</c>
+            </r>
+            <r>
+              <c>811</c>
+            </r>
+            <r>
+              <c>1446</c>
+            </r>
+            <r>
+              <c>1374</c>
+            </r>
+            <r>
+              <c>1936</c>
+            </r>
+            <r>
+              <c>1665</c>
+            </r>
+            <r>
+              <c>1433</c>
+            </r>
+            <r>
+              <c>1551</c>
+            </r>
+            <r>
+              <c>1806</c>
+            </r>
+            <r>
+              <c>1674</c>
+            </r>
+            <r>
+              <c>1784</c>
+            </r>
+            <r>
+              <c>1596</c>
+            </r>
+            <r>
+              <c>1704</c>
+            </r>
+            <r>
+              <c>1393</c>
+            </r>
+            <r>
+              <c>1691</c>
+            </r>
+            <r>
+              <c>1567</c>
+            </r>
+            <r>
+              <c>1335</c>
+            </r>
+            <r>
+              <c>593</c>
+            </r>
+            <r>
+              <c>1509</c>
+            </r>
+            <r>
+              <c>1986</c>
+            </r>
+            <r>
+              <c>1297</c>
+            </r>
+            <r>
+              <c>1419</c>
+            </r>
+            <r>
+              <c>1418</c>
+            </r>
+            <r>
+              <c>1339</c>
+            </r>
+            <r>
+              <c>1745</c>
+            </r>
+            <r>
+              <c>1930</c>
+            </r>
+            <r>
+              <c>1514</c>
+            </r>
+            <r>
+              <c>1706</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="212" y="164" width="650" height="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Part 2</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="222.0002" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_Field1" selected="True" rename="Field2" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Allow All</AnnotationText>
+              <DefaultAnnotationText>Allow All</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="318" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Field2]&gt;[Field1]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Field2]&gt;[Field1]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="426" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="2020-[Field1]-[Field2]" field="Miss" size="4" type="Int32" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Miss = 2020-[Field1]-[Field2]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="534" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Miss" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Field1" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Miss" selected="False" input="Left_" />
+                    <SelectField field="Right_Field1" selected="True" rename="Field3" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="630" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Field3]&gt;[Field2]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Field3]&gt;[Field2]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="750" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Field1]*[Field2]*[Field3]" field="Product" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Product = [Field1]*[Field2]*[Field3]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="212" y="20" width="440" height="135" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Part1</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="222" y="54.00002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="2020-[Field1]" field="Miss" size="4" type="Int32" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Miss = 2020-[Field1]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="342" y="54.00001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Miss" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Field1" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Field1" selected="True" input="Left_" />
+                    <SelectField field="Right_Field1" selected="True" rename="Field2" input="Right_" />
+                    <SelectField field="Right_Miss" selected="False" rename="Right_Miss" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Join Miss to Field1</AnnotationText>
+              <DefaultAnnotationText>Join Miss to Field1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="546" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Field1]*[Field2]" field="Product" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Product = [Field1]*[Field2]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="438" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Field2]&gt;[Field1]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Field2]&gt;[Field1]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2020 Day1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

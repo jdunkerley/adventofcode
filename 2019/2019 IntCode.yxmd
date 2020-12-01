@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="54" y="102" />
+        <Position x="54" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -96,7 +96,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="258" y="102" />
+        <Position x="258" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -105,65 +105,65 @@
           <CreateField_Name>State</CreateField_Name>
           <CreateField_Type>V_WString</CreateField_Type>
           <CreateField_Size>1000000</CreateField_Size>
-          <Expression_Init>'0 ' + Replace([Input], ",", " ")</Expression_Init>
+          <Expression_Init>'0 0 ' + Replace([Input], ",", " ")</Expression_Init>
           <Expression_Cond>Left([State],1)!='-'</Expression_Cond>
-          <Expression_Loop>IIF(Left([State],1)='*',
-	REGEX_Replace([State], "^\*\S+ ", ""),
-    Switch(
-       TrimLeft(RIGHT(GetWord([State], ToNumber(GetWord([State], 0)) + 1), 2), '0'),
-       '-',
-       '99', '- ' + REGEX_Replace([State], "^\S+ ", ""),
-       '1', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +
-       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\S+)(.*)",
-            "${1}" + ToString(
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))
- +
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))
-            )+ "$3"
-       ),
-       '2', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +
-       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\S+)(.*)",
-            "${1}" + ToString(
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))
- *
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))
-            )+ "$3"
-       ),
-       '3', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 2), 0, 2)) + ' ' +
-       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 2) + "})(\S+)(.*)",
-            "${1}" + ToString(Inp) + "$3"
-       ),
-       '4', '*' + 
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))
- + ' ' + 
-            ToString(ToNumber(GetWord([State], 0))+2) + ' ' + REGEX_Replace([State], "^\S+ ", ""),
-       '5', REGEX_Replace([State], "^\S+", IIF(
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))!='0',
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 3), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)),
-ToString(ToNumber(GetWord([State], 0))+3))
-       ),
-       '6', REGEX_Replace([State], "^\S+", IIF(
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))='0',
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),GetWord([State], ToNumber(GetWord([State], 0)) + 3), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)),
-ToString(ToNumber(GetWord([State], 0))+3))
-       ),
-       '7', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +
-       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\S+)(.*)",
-            "${1}" + IIF(
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))
- &lt;
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))
-            ,'1','0')+ "$3"
-       ),
-       '8', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +
-       REGEX_Replace([State], "^\S+ ((?:\S+ ){" + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + "})(\S+)(.*)",
-            "${1}" + IIF(
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))
- =
-IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\S$"),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))
-            ,'1','0')+ "$3"
-       )
-   )
+          <Expression_Loop>IIF(LEFT([State],1)="*",
+     REGEX_Replace([State], "^*\S+ ", ""),
+     Switch(Mod(ToNumber(GetWord([State], 0)),100),"- 0 99",
+99,"-",1,
+ToString(ToNumber(GetWord([State], 0))+
+          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+3,1)='1' THEN GetWord([State],2+3) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+3,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+3))) ENDIF=GetWord([State], 0),0,3))+" "
++GetWord([State],1)+" "
++REGEX_Replace([State],
+               "^\d+ \d+ ((:\d+ ){2})(\d+)(.*)", 
+               "${1}"+ToString(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)+ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF))+"${3}")
+,2,
+ToString(ToNumber(GetWord([State], 0))+
+          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+3,1)='1' THEN GetWord([State],2+3) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+3,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+3))) ENDIF=GetWord([State], 0),0,3))+" "
++GetWord([State],1)+" "
++REGEX_Replace([State],
+               "^\d+ \d+ ((:\d+ ){2})(\d+)(.*)", 
+               "${1}"+ToString(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)*ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF))+"${3}")
+,3,
+ToString(ToNumber(GetWord([State], 0))+
+          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF=GetWord([State], 0),0,1))+" "
++GetWord([State],1)+" "
++REGEX_Replace([State],
+               "^\d+ \d+ ((:\d+ ){0})(\d+)(.*)", 
+               "${1}"+ToString([Inp])+"${3}")
+,4,
+"*"+ToString(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF) + 
+ToString(ToNumber(GetWord([State], 0))+
+          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF=GetWord([State], 0),0,1))+" "
++GetWord([State],1)+" "
++REGEX_Replace([State], "^\d+ \d+ (.*)$", "$1")
+,7,
+ToString(ToNumber(GetWord([State], 0))+
+          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+3,1)='1' THEN GetWord([State],2+3) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+3,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+3))) ENDIF=GetWord([State], 0),0,3))+" "
++GetWord([State],1)+" "
++REGEX_Replace([State],
+               "^\d+ \d+ ((:\d+ ){2})(\d+)(.*)", 
+               "${1}"+ToString(IIF(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)&lt;ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF),1,0))+"${3}")
+,8,
+ToString(ToNumber(GetWord([State], 0))+
+          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+3,1)='1' THEN GetWord([State],2+3) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+3,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+3))) ENDIF=GetWord([State], 0),0,3))+" "
++GetWord([State],1)+" "
++REGEX_Replace([State],
+               "^\d+ \d+ ((:\d+ ){2})(\d+)(.*)", 
+               "${1}"+ToString(IIF(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)=ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF),1,0))+"${3}")
+,5,
+REGEX_Replace([State], "^\d+ (.*)$",ToString(IIF(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)!=0,ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF),ToNumber(GetWord([State], 0))+3)) + " $1")
++GetWord([State],1)+" "
++REGEX_Replace([State], "^\d+ \d+ (.*)$", "$1")
+,6,
+REGEX_Replace([State], "^\d+ (.*)$",ToString(IIF(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)=0,ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF),ToNumber(GetWord([State], 0))+3)) + " $1")
++GetWord([State],1)+" "
++REGEX_Replace([State], "^\d+ \d+ (.*)$", "$1")
+,9,
+ToString(ToNumber(GetWord([State], 0))+
+          IIF(GetWord([State], 1)=GetWord([State], 0),0,1))+" "
++ToString(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF))+" "
++REGEX_Replace([State], "^\d+ \d+ (.*)$", "$1"))
 )</Expression_Loop>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -176,7 +176,7 @@ IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="150" y="102" />
+        <Position x="150" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -196,7 +196,7 @@ IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="354" y="102" />
+        <Position x="354" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -216,17 +216,17 @@ IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="450" y="102" />
+        <Position x="450" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="Replace(REGEX_Replace(State, &quot;\d+ (.*)&quot;, &quot;$1&quot;),&quot; &quot;,&quot;,&quot;)" field="State" size="1000000" type="V_WString" />
+            <FormulaField expression="Replace(REGEX_Replace(State, &quot;\d+ \d+ (.*)&quot;, &quot;$1&quot;),&quot; &quot;,&quot;,&quot;)" field="State" size="1000000" type="V_WString" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[State = Replace(REGEX_Replace(State, "\d+ (.*)", "$1")," ",",")
+          <DefaultAnnotationText><![CDATA[State = Replace(REGEX_Replace(State, "\d+ \d+ (.*)", "$1")," ",",")
 ]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -235,7 +235,7 @@ IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="546" y="102" />
+        <Position x="546" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -269,11 +269,11 @@ IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="642" y="102" />
+        <Position x="642" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14956_7f6f9351aa8f444593ead86366992b54_\Engine_11864_64d0079cca2f4147a02449c431607958_.yxdb</TempFile>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_24468_5f84b8d39ad94b82bd7d89e28da5c162_\Engine_22920_28aa80f34f544d6e872b3eecd4a9c472_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -297,7 +297,7 @@ IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="54" y="294" />
+        <Position x="54" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -351,19 +351,19 @@ IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="354" y="294" />
+        <Position x="354" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="IIF(Left([State],1)='*',&#xA;	REGEX_Replace([State], &quot;^\*\S+ &quot;, &quot;&quot;),&#xA;    Switch(&#xA;       TrimLeft(RIGHT(GetWord([State], ToNumber(GetWord([State], 0)) + 1), 2), '0'),&#xA;       '-',&#xA;       '99', '- ' + REGEX_Replace([State], &quot;^\S+ &quot;, &quot;&quot;),&#xA;       '1', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + ToString(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))&#xA; +&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))&#xA;            )+ &quot;$3&quot;&#xA;       ),&#xA;       '2', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + ToString(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))&#xA; *&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))&#xA;            )+ &quot;$3&quot;&#xA;       ),&#xA;       '3', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 2), 0, 2)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 2) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + ToString(Inp) + &quot;$3&quot;&#xA;       ),&#xA;       '4', '*' + &#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))&#xA; + ' ' + &#xA;            ToString(ToNumber(GetWord([State], 0))+2) + ' ' + REGEX_Replace([State], &quot;^\S+ &quot;, &quot;&quot;),&#xA;       '5', REGEX_Replace([State], &quot;^\S+&quot;, IIF(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))!='0',&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 3), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)),&#xA;ToString(ToNumber(GetWord([State], 0))+3))&#xA;       ),&#xA;       '6', REGEX_Replace([State], &quot;^\S+&quot;, IIF(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 2), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1))='0',&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),GetWord([State], ToNumber(GetWord([State], 0)) + 3), GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)),&#xA;ToString(ToNumber(GetWord([State], 0))+3))&#xA;       ),&#xA;       '7', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + IIF(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))&#xA; &lt;&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))&#xA;            ,'1','0')+ &quot;$3&quot;&#xA;       ),&#xA;       '8', ToString(ToNumber(GetWord([State], 0)) + IIF(GetWord([State], 0)=GetWord([State], ToNumber(GetWord([State], 0)) + 4), 0, 4)) + ' ' +&#xA;       REGEX_Replace([State], &quot;^\S+ ((?:\S+ ){&quot; + GetWord([State], ToNumber(GetWord([State], 0)) + 4) + &quot;})(\S+)(.*)&quot;,&#xA;            &quot;${1}&quot; + IIF(&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 2)) + 1)))&#xA; =&#xA;IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), &quot;^\S*1\S\S\S$&quot;),ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)), ToNumber(GetWord([State], ToNumber(GetWord([State], ToNumber(GetWord([State], 0)) + 3)) + 1)))&#xA;            ,'1','0')+ &quot;$3&quot;&#xA;       )&#xA;   )&#xA;)" field="State" size="1000000" type="V_WString" />
+            <FormulaField expression="IIF(LEFT([State],1)=&quot;*&quot;,&#xA;     REGEX_Replace([State], &quot;^*\S+ &quot;, &quot;&quot;),&#xA;     Switch(Mod(ToNumber(GetWord([State], 0)),100),&quot;- 0 99&quot;,&#xA;99,&quot;-&quot;,1,&#xA;ToString(ToNumber(GetWord([State], 0))+&#xA;          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+3,1)='1' THEN GetWord([State],2+3) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+3,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+3))) ENDIF=GetWord([State], 0),0,3))+&quot; &quot;&#xA;+GetWord([State],1)+&quot; &quot;&#xA;+REGEX_Replace([State],&#xA;               &quot;^\d+ \d+ ((:\d+ ){2})(\d+)(.*)&quot;, &#xA;               &quot;${1}&quot;+ToString(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)+ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF))+&quot;${3}&quot;)&#xA;,2,&#xA;ToString(ToNumber(GetWord([State], 0))+&#xA;          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+3,1)='1' THEN GetWord([State],2+3) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+3,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+3))) ENDIF=GetWord([State], 0),0,3))+&quot; &quot;&#xA;+GetWord([State],1)+&quot; &quot;&#xA;+REGEX_Replace([State],&#xA;               &quot;^\d+ \d+ ((:\d+ ){2})(\d+)(.*)&quot;, &#xA;               &quot;${1}&quot;+ToString(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)*ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF))+&quot;${3}&quot;)&#xA;,3,&#xA;ToString(ToNumber(GetWord([State], 0))+&#xA;          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF=GetWord([State], 0),0,1))+&quot; &quot;&#xA;+GetWord([State],1)+&quot; &quot;&#xA;+REGEX_Replace([State],&#xA;               &quot;^\d+ \d+ ((:\d+ ){0})(\d+)(.*)&quot;, &#xA;               &quot;${1}&quot;+ToString([Inp])+&quot;${3}&quot;)&#xA;,4,&#xA;&quot;*&quot;+ToString(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF) + &#xA;ToString(ToNumber(GetWord([State], 0))+&#xA;          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF=GetWord([State], 0),0,1))+&quot; &quot;&#xA;+GetWord([State],1)+&quot; &quot;&#xA;+REGEX_Replace([State], &quot;^\d+ \d+ (.*)$&quot;, &quot;$1&quot;)&#xA;,7,&#xA;ToString(ToNumber(GetWord([State], 0))+&#xA;          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+3,1)='1' THEN GetWord([State],2+3) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+3,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+3))) ENDIF=GetWord([State], 0),0,3))+&quot; &quot;&#xA;+GetWord([State],1)+&quot; &quot;&#xA;+REGEX_Replace([State],&#xA;               &quot;^\d+ \d+ ((:\d+ ){2})(\d+)(.*)&quot;, &#xA;               &quot;${1}&quot;+ToString(IIF(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)&lt;ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF),1,0))+&quot;${3}&quot;)&#xA;,8,&#xA;ToString(ToNumber(GetWord([State], 0))+&#xA;          IIF(IF Substring(ReverseString(GetWord([State], 0)),2+3,1)='1' THEN GetWord([State],2+3) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+3,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+3))) ENDIF=GetWord([State], 0),0,3))+&quot; &quot;&#xA;+GetWord([State],1)+&quot; &quot;&#xA;+REGEX_Replace([State],&#xA;               &quot;^\d+ \d+ ((:\d+ ){2})(\d+)(.*)&quot;, &#xA;               &quot;${1}&quot;+ToString(IIF(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)=ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF),1,0))+&quot;${3}&quot;)&#xA;,5,&#xA;REGEX_Replace([State], &quot;^\d+ (.*)$&quot;,ToString(IIF(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)!=0,ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF),ToNumber(GetWord([State], 0))+3)) + &quot; $1&quot;)&#xA;+GetWord([State],1)+&quot; &quot;&#xA;+REGEX_Replace([State], &quot;^\d+ \d+ (.*)$&quot;, &quot;$1&quot;)&#xA;,6,&#xA;REGEX_Replace([State], &quot;^\d+ (.*)$&quot;,ToString(IIF(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF)=0,ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+2,1)='1' THEN GetWord([State],2+2) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+2,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+2))) ENDIF),ToNumber(GetWord([State], 0))+3)) + &quot; $1&quot;)&#xA;+GetWord([State],1)+&quot; &quot;&#xA;+REGEX_Replace([State], &quot;^\d+ \d+ (.*)$&quot;, &quot;$1&quot;)&#xA;,9,&#xA;ToString(ToNumber(GetWord([State], 0))+&#xA;          IIF(GetWord([State], 1)=GetWord([State], 0),0,1))+&quot; &quot;&#xA;+ToString(ToNumber(IF Substring(ReverseString(GetWord([State], 0)),2+1,1)='1' THEN GetWord([State],2+1) ELSE GetWord([State],2+IIF(Substring(ReverseString(GetWord([State], 0)),2+1,1)='2',ToNumber(GetWord([State], 1)),0)+ToNumber(GetWord([State],2+1))) ENDIF))+&quot; &quot;&#xA;+REGEX_Replace([State], &quot;^\d+ \d+ (.*)$&quot;, &quot;$1&quot;))&#xA;)" field="State" size="1000000" type="V_WString" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>State = IIF(Left([State],1)='*',
-	REGEX_Replace([State], "^\*\S+ ", ""),
-    Swi...</DefaultAnnotationText>
+          <DefaultAnnotationText>State = IIF(LEFT([State],1)="*",
+     REGEX_Replace([State], "^*\S+ ", ""),
+    ...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -371,7 +371,7 @@ IIF(REGEX_Match(GetWord([State], ToNumber(GetWord([State], 0)) + 1), "^\S*1\S\S\
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="246" y="294" />
+        <Position x="246" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -392,7 +392,7 @@ State = Replace([State], ",", " ")
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="150" y="294" />
+        <Position x="150" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -413,7 +413,7 @@ State = Replace([State], ",", " ")
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="354" y="210" />
+        <Position x="354" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -445,11 +445,11 @@ State = Replace([State], ",", " ")
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="666" y="210" />
+        <Position x="666" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14956_7f6f9351aa8f444593ead86366992b54_\Engine_11864_d7366076f39d40ce8214cce57d71c55a_.yxdb</TempFile>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_24468_5f84b8d39ad94b82bd7d89e28da5c162_\Engine_22920_65c317fa89454da2aa63576c4a22ee5c_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -473,7 +473,7 @@ State = Replace([State], ",", " ")
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="462" y="210" />
+        <Position x="462" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -495,7 +495,7 @@ State = Replace([State], ",", " ")
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="354" y="30" />
+        <Position x="354" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -512,19 +512,16 @@ State = Replace([State], ",", " ")
           <DefaultAnnotationText>intcodetest.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="450" y="294" />
+        <Position x="450" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_14956_7f6f9351aa8f444593ead86366992b54_\Engine_11864_7b563d1cc5f2472ca4c5d5c641a3c40a_.yxdb</TempFile>
+          <TempFile>C:\Users\JDUNKE~1\AppData\Local\Temp\Engine_24468_5f84b8d39ad94b82bd7d89e28da5c162_\Engine_22920_f4157451efcb4e2696e15c6b37aa940b_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
