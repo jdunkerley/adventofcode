@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="54" y="30" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -30,7 +30,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
-        <Position x="246" y="30" />
+        <Position x="246" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -71,7 +71,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
-        <Position x="342" y="30" />
+        <Position x="342" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -89,7 +89,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="438" y="30" />
+        <Position x="438" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -126,7 +126,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="438" y="102" />
+        <Position x="438" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -161,7 +161,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="630" y="42" />
+        <Position x="630" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -205,7 +205,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="534" y="102" />
+        <Position x="534" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -237,7 +237,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="714" y="42" />
+        <Position x="714" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -261,7 +261,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="822" y="42" />
+        <Position x="822" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -289,7 +289,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="918" y="42" />
+        <Position x="918" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -320,7 +320,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1014" y="42" />
+        <Position x="1014" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -340,11 +340,11 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1110" y="42" />
+        <Position x="1110" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_37196_3d435ba3f3824be5817a41aecec51ebd_\Engine_25560_c38a7f9f9946428ab3d59bd7329add94_.yxdb</TempFile>
+          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_30356_3e6929b883864d0598b8c7182918eec6_\Engine_10860_e5012b0c14d7454fb89327b34ec1a71a_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -368,7 +368,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="918" y="138" />
+        <Position x="918" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -387,7 +387,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1014" y="138" />
+        <Position x="1014" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -410,6 +410,26 @@ TimeStamp - Ascending</DefaultAnnotationText>
           <RecordInfo>
             <Field name="URL" size="66" source="CrossTab:Group:First:" type="String" />
             <Field name="Name" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+            <Field description="Formula: [Row-1:Rank]+1" name="01_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="01_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="02_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="02_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="03_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="03_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="04_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="04_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="05_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="05_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="06_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="06_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="07_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="07_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="08_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="08_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="09_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="09_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="10_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="10_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
           </RecordInfo>
           <SortInfo>
             <Field field="URL" order="Asc" />
@@ -421,7 +441,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="90" />
+        <Position x="54" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -445,9 +465,6 @@ TimeStamp - Ascending</DefaultAnnotationText>
           <DefaultAnnotationText>cookie.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Field_1" size="254" source="File: C:\Repos\Alteryx\cookie.txt" type="V_String" />
@@ -458,7 +475,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="150" y="30" />
+        <Position x="150" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -481,6 +498,27 @@ TimeStamp - Ascending</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="234" width="696" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Place a cookie.txt file in parent folder with content like:
+session=53616c7465645f5fa8a92e5q12345678765474141362366abcd17904fcb2a520fb8365707898901c4dc51d2efb6e18badc0d97</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
     </Node>
   </Nodes>
   <Connections>

@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="42" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="10" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>L.LL.LL.LL</c>
+            </r>
+            <r>
+              <c>LLLLLLL.LL</c>
+            </r>
+            <r>
+              <c>L.L.L..L..</c>
+            </r>
+            <r>
+              <c>LLLL.LL.LL</c>
+            </r>
+            <r>
+              <c>L.LL.LL.LL</c>
+            </r>
+            <r>
+              <c>L.LLLLL.LL</c>
+            </r>
+            <r>
+              <c>..L.L.....</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>L.LLLLLL.L</c>
+            </r>
+            <r>
+              <c>L.LLLLL.LL</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="42" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="98" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LL.LLLLLLL.LLLLL.LLLLLLLL.LLLLL.LLLL.LLLLL.LLLLLLLLLLLLLLLLLLLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLLLLLLL.L.LLL..LLLL.LLLLLLLLLLLLLLL.LLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLL..LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLLL.LL.LL.LLLLLLLLLLLLLLL.LLLLLLLLL.LLLLL.L.LLL.LLLL.L.LLLLLLL.LLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLL.L.LLLL.LLLLL.LLLLL.LLLLLLLLLLLLLLL..LLLLLL.LLLLLLLLL.LLLLLLLL..LLLLLLLLLLLLLL.L</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLLLLLLL.LLLLLLLLLLLLLLLLL.LLLLLLLLL.LLLL.LL.LLLLLLLL.LLLLLL.LLLLLL.LLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLLLLLLLL.LLL.LLLLLLLLLL.L.LLL..LLLLLLLLL.LLLLLLL.LLLLLLLL.LLLLLL.LLLL.LLLLL</c>
+            </r>
+            <r>
+              <c>LLLL.LLL.LLLLLL.LL.LLLLL..LLL.LLLL..LL.L.LLLLLLLLLLL.LLLLLLLL.LLLLLLL..LLLLLLL.LLL.LLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLLLLLLLL.LLLLLLLLLLLLLL.LLLLLL.LLLLLLLLL.LLLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LL...L......L.L.L......L....L.....LLLL..L.L.L.L................LL........L..L...L......L..L.LL..</c>
+            </r>
+            <r>
+              <c>L.LLLLLLLLLLLLLL.L.LLLLLLLLLLLLLLLL.LLLLLLLLL.LLLLL.LLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLL.LL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.L.LLLLLLLLLLLL.LLLLLLLLLLL.LLLLLLLLLLLLLLLLLL.LLLLLLLLLL.LLLLLLLLLLLLLLLL.LLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL..L.LLLLLL.LLLL.LLLLLLLL.LLLLLL.LL.L.LLLLLL.LLLLLLLLLLLLLLLLL.L.LLLLL..LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLL.LLLL.LLLL.LLLLL.LLLLLLLLLLLLLLLLLLLLL.LLLLLLLLL.LLLLLLL.LLLLLL.LLLLLL.L.LLLLLLL.LL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLLL.LLLLL.LLLLLLLL.LLLLLLLLLLLLL.LL.LLLLLLLLL.LLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLL.LLLL.LLLL.LLLLL.LLLLL.LL.LLLL..L.LLLL.LLLLLLLLL.LLLLLLL.LLLLLLLL.LLLLL..LLLLL.LLLL</c>
+            </r>
+            <r>
+              <c>.L...L.....L.........L.L..L...LL.....L.L.L..L.L.....L..L.L.L........L...L..L.......L....L...LL.L</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLL.LLL.LL.LLLL.LLL.L.LLLLLLLLLLLLL..LLLLLLLLLLLLLLLL.LL.LLLL.LLLLLLLLLLLLLLLLLLLLL.LLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLLLLLLLLLLLL..LL.LLLLLLLLLLL.LLLLLL.LLLLLLLL..LLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLLLLLLL.LLLL..LLLLLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLL.L.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL...LLLLLLL.LLLLLLLLLL.LLLLLLLLLLLLLLLLL.L.LLLLLLLLLLL.LLLLLLL.LL..LLLLLLLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>L...LL.L........L..LLL.L.LL..L..L.L.L..L..L.........L.....LLL.....LLL........LLL...LL..L.L...LL.</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL.LLLL.LLLLL.LLLLL.L.LLLLL...LLL.L.L.LLLLLLLLLLLL.LLLLLLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLL.LLLL.LLLLLLLLL.LLLLLLLLL..L.L.L.LLLLLLLL.LLLLLL.LLLLLLL.L.LLLLLLL.LLL.LLLLLLLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLL.LLLLLLLLL.LLLLLLLLLLL.LLL.LLLL.LLLLLL.LLLLLLLLL.LLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLL.</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLLL..LLLL.LLLLLLLL.LLLLLL.LLLLLLLLL.LL.LLLL.LLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>...L.L.L..LL.......L.LL.L..LL........LLLL.....LL.LLL.L.LL...L.L.......LL....L..L..LL.L....L..LLL</c>
+            </r>
+            <r>
+              <c>L...LLLLLLLLLLLLLLLLLLLLLLLLL.LLLLL.LLLLLLLL.L.LLLL.LLLLL.LLL.LLLLLLL.LLLLLLLLLLLLLLL.LL.LLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLL.LLLLL.LLLLLLLLLL.LLLLL.LLLLLLLLLLL.LLL.LLLLLLLLLLLLLLLLL.LLLLLLLL.LLLLL.LLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.L.LLLLLLL.LLLL.LLLLL.LLLLLLLLLLLLLL..LLLLL.LLLLLL.L..LLLLLLL.LL.L.LLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLL.LL.LLLL.LLLLL.L.LLL.LLLLLLLL.LLLLLL.LLLL.LLLLLLLLLLLLLLLLL.LLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL.LL.L.LLLLL.LLLLL.LLLLLLLLLLLLLLL.LLLLLLLLL.LLLLL.L.LLLLLLLL.LLLLLL.LLLL.LLLLL</c>
+            </r>
+            <r>
+              <c>..LL...LL..LLL.L...L....L.L...L.L.L...L.LL.L........L.L..L...L..L.L.LL.L.L..L..LLLL..L..L..L...L</c>
+            </r>
+            <r>
+              <c>LL.LLLLL.LLLLLLL.LLLL.L.LLLLL.LLLLL.LLLL.LLLLLLLLLL.LLLLLLLLLLLLLLLLL.L.LLLLLLLLLLLLL.LL.LLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL.LLLL.LLLLLLLLLLLLLLLLLLLL.LLLLLL.LLLLLLLLLLLLLLLLL.LLLLLLLL.LLLLLL.LLL.L.LLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLL.LLLLLLLLLL.LLLLL.LLLLL.LLLLLLLL.LLLLLL.LLLLLLLLL.LLLLLLLL.LLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLL.LLL.LLLLLLLLL.LL...LLL.L.LLLLLLLLLLLLLL.LLLLLL.LLLLLLLLLLLLLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLL.L.LLLLLLLL.LLLL.LLLL.LLLLLLLLLLLLLL...LLLLL.LLLLLLLLL.LLLLLLL.LLLL.LLLLLLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL.LL.L.LLLLL.LLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLL.L.L.LLLLLLLL.LLLL.LLLLLLLLLL.L</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLL..LLLL.LLLLLLLLLLLLLLLLLLLL.LLLLLL.LL.LLLLLLLL.LLLLLLLLLLLLLL.LLLLLLLLLLLLLLLL.</c>
+            </r>
+            <r>
+              <c>...L......L....L...LLLL.LLLLL.L..LL.L........LL...L.L.LLLLLLLLLL.LL.LLLL...L....L.....L....LL...</c>
+            </r>
+            <r>
+              <c>LLLL.LLLLLLLLLLLLL..L.L.LLLLLLLLLLLLLLLLLL.L.LLLLLL.LLLLLLL.L.LLLLLLL.LL.LLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLL.LLL.LLLL.LLLLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLL.LLLLLLL.LLLLL.LL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLL.LLLLLL.LLLL.LLLLLLLLL.L.LLLLLLLL.LLLLLLLLLLLLLLLL..LLLLLL.LLLLLLLLLLLLLLLLLLLLLL.LLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLL.LLLLLLLL.LLL..LLLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLLLLL.LLLLLLL.LLLLLLLL.LLLLLL.L.LLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLL.LLLL.LLLLL.LLL..LLL.LLLL..LLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLL...LLL.LLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLLL.LLLLL.LLLLLLLLLLLLLLL.LLLLLLLLL.LLLLLLL.LLLLLL.LLLLLLLL.LLLLLLL.LL</c>
+            </r>
+            <r>
+              <c>L.L.L.L.L.L....L.LL.L...LL......LL.LL...LLL....L..L..LL.LL.L.L..L..LL.L...LLL.....LLLL.....L....</c>
+            </r>
+            <r>
+              <c>LLLLLL...LLLLLLLLL..LLL.LLLLL.LLL.LLLL.LLLLL.LLLLLLLLLLLLLLLL.LLLLLLL.LLLLLLLL.LLLLLL.LLLLLLL.LL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL.LLLLLLLLLL.LLLLL.LLLLLLLL.LLLLL..LLLLLL.LL.LLLL..L.LLLLLLLL.LLLLL.LLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLLL.L.LLL.LLLLLLLL.LLLL.L.LLLLLLLLL.LLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLL.LL..LLLL.LLLLL.LLLLLLLLLLLLLL.LLLLLLLLLLLLLLLL.LL.LLLL.LLLLL..L.L.LLLL.LLLLLL.LLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLL.LLLLL.LLLLLL.LLL.LLLLLLLLLLLLLLLLLLLLL.LLLLLLLLL.LLLLLLL.LLLLLLLL.L.LLLLL..LLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLL.LLL..LLL.LLLLLLLLLLLLLLLLLLLL.LLLLLL.LLLLLLL.L.LLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>L.LLLLLL.LLLLLLLLL.LLLL.LLLLLLLLLLL.LLL.LLLL.LLLLLL.LLLLLLLLLLLLLLLLL.LLLLLLLL..LLLLL.LLLL.LLLLL</c>
+            </r>
+            <r>
+              <c>LLLL.L....L.L.LL.LLLL...LL....L.L..L....L...LLL..L..LLLL...L..L.L.L....L..L.LL.L.L...L...L....L.</c>
+            </r>
+            <r>
+              <c>L.LLLLLL.LLLLLLLLL.LLL..LLLLL.LLLLL.LLLLLLLLLLLLLLL.LLLLLLLLL.LLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLL.LLLLLL.LLLLL.LLLLL.LLLLLLLL.LL.LLLL.LLLLL.LL.L.LL.LL.LLLLLLLLLLLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL..LLL.LLLLL.LLLLL.LLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL..LLLLLLLLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLL.LL.LLLL.LLLLLLLLLLL.LLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLL.LL.LLLL.LLLLLL.L.LL.LLLLLLLL.LLLL.L.LLLLLLLLL.LLLLLLL.LLLLLLLLLLLLLL.LLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLL.LLLLL.LLLLLLLLLLLLLLLL.LLLLLL.LLLLLL.LLLLLLLLLLL.LLLLLLL.LLLLLLL..LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>.L.L..L....L...........L.LL....L.......L..L.LL..L.L........L..L.............L.L....LL.LLL..L.LL.</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLL.LL.LLLL.LLLLL.LLLLL.LLLLLLLL.LLLLLLLLLL.LLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLLLLLLL.LLLLL.LLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL.LLLLLL.L.LLL.LL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLL.LLLLL.LLLL.LLLLLLLLLLL.LLLLLLLLLLLLLL..LLLLL.LLL.LL.LLLL.LLLLLLLL.LLL.LLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL.LLLL.LL.LLL..LLLLLLLLLLLL.LLLLLLLLLL.LLLLL.LLLLLLL.LLLLLLLL..LL.LL.LLL.LL.LLL</c>
+            </r>
+            <r>
+              <c>........L...L....LL.....LL..L.....LL.LLLL.LL.LLL.....LLL.....LL.L..LLL.....LL.............L....L</c>
+            </r>
+            <r>
+              <c>LLL.LLLL.LLLLLLLLLL.LLL.LLLLL.LLLLLLLLLLLLLLLLLLLLL.LLLLLLLLL.LLLLLLL...LLLLLL.L.L.LL..LLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLL.LL.LLLLLLLLL.L.LLL.LLLLL.LLLLLLLL..LLLLLLLLLLLLLLLLLLLLL...LLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>.LLLLLLL.LLLLLLLLL.LLLL.LLLLLLL.LLLL.LL..LLL.LLLLLLLLL.LLLLLL.LL.L.LL.LLLLLLLLLLLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLL.LLL.LLLLL.LLL.LLLLLL.LLLLL.LL.LLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLL.LLLLLLLL.LLLL.LLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLLLLLLLLLLLLLL.LLLLLLLL.LL.LLL.LLLLLLLL..LLLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLL.LLL.LLLLLLLLLLLLLLLLLLL.LLLL.L.LLL..LLLL.L.LLL.LL.L.LL.L.LLLLLLL.LLLLLLLL.LLLL.L.L.LLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLLLLLLLL.LLLLL.LLLLLLLLLLLLL.L.LL.LLLLLL.L.LLLLLLLLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLL.LLLL.LLLLLLL.L.LLLLLLLLLL.LLLLL..LLL.LL..LLLLLL.LL.LLLLLL.LLLLLLL.LL.LLLLLLLLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>.L.....L...L.......L...L....L....L..L..LLL.....L............L..LL.L...L.L.L..LL...LLL..L.L.L....</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLL.LLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLLLLL.LLLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>.L.LLLLLLLLLLLLLLL.LLLL.LLLLLLLLLLLLLLLLLLL.LLLLLLLLLL..LLLLL.LLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLL.L.LLLLLLLLLL.LLLLLLLLL.LLLL.LLLLLL.LLLLLLL.L.LLLLLL.LLLLLL.LL.LLLLLL.LLLLLL.LLL</c>
+            </r>
+            <r>
+              <c>LL.LLLLL.LLLLLLLLL..LLL.L.LLL.LLLLL.L.LLL.LL.LLLLLL.LLLLLLLLL.LLLLLL..LLL.LLLL.LLLLL.LLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>.L...LLL.....L.....LLL....LLLL.L.LL....L...L...L.L.L....L.LLLL...L.L....L.....LL.L.....L..L.L...</c>
+            </r>
+            <r>
+              <c>LLLLL.L...LLLLLLLL.LLLLLLLLLL.LLLLLL.LLLLLLL.LLLLLLLLLLLLLLLL.LL.LLLL.L.LLLLLL.LLLLLL.LLLL.LLLLL</c>
+            </r>
+            <r>
+              <c>LLLL.LLL.LLLLLLLLLLLLLLLL.LLL.LLLLL.LLLLLLLLLLLLLLL.LLLLLLLLLLL.LLLLL.L.LLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLL.L.LLLLLLL.L.LLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL.LLLL.LLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLL.LLL.LL.LLLLLLLLL.</c>
+            </r>
+            <r>
+              <c>..L..................LL..LL....L.....L..L..L.L...LLLL......L.L.L......L..L....LLLL.L...L....LL..</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLL..LLLLL.LLLL.LLLLLL.LLLLLLLL.LLLLLL.L.LLLLLLL.LLL.LLLLLLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLL.LLLLL.LLLLL.LLLLLLLLLLLL.L.LLLLLL..LLLLLLLL.LLLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLLLLLLLLLLLLLLLLLL.LLLLLL.LLLLLLLLLLLL.LLLLLLLLL.LLL.LLLLLL..LLLLLLL.L</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL.LLLL.LLLLL.LL.LLLLLLLLLLL.LLLLLL..LLLLLL.LLLLLLLLL..LL.LLLL.LLLL.L.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLL.LLL.LLLLLLLLLL.LLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>L.LLL.LL.LLLL.LLL..LLLL.LLLLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLL.L.LL.LLLL.LLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLLLL..LLL.LLLLL.LL.LLLLLL.LLLLLLLLL.LLLLLLL.LLLLLLLLLL.LLLL.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL..LLLLL.LL..LLLLLLLLLLL.LLLLLLLLLLL.LLLLLLLLL.LLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLL..LLL.LLLLL.LLLLL.LLLLLLLL.LLLLLL..L.LLLLLLLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLLLLLLLLLLLLLLLL.LLLLLL.LLLLL.LLLLLLLL.LLLLLL.LLLLL.LLL.LLLLLLL.LLLLL.LL.LLLL.L.LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLL.LLLL.LL.LLLLLLLLLLL.LLLLLLLLLL..LLLLLLLL.LL.LLLLL.LL.LLLLLLLLLLLLLLLLLLLLLLLLLLL..LLLLLLLLLL</c>
+            </r>
+            <r>
+              <c>LLLLLLLL.LLLLLLLLL.LLLL.LLLL..LLLLL.LLLLLLLL.LLLLLL.LLLLLLLLL.LLLLLLLLLLLLLLLL.LLLLLLLLLL.LLLLLL</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="246" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>2020 Day11 2 (9)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="2020 Day11 2.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="197" y="5" width="111.1293" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Part1</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings>
+            <Position x="222" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>2020 Day11 (3)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day11.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="22" Connection="Input1" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2020 Day11</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
