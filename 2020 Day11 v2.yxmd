@@ -77,7 +77,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_5600_90c708353b234d97b097f5a0ba03ac0d_\Engine_28524_1e767a9140bb471cb5150d481126f4c6_.yxdb</TempFile>
+          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine2_12500_20dbe4cfb74bc546a5cd415d3c66cd2c_\Engine_12500_56b3f3336798d04d8f9ef132b0c36b9e~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -470,7 +470,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_5600_90c708353b234d97b097f5a0ba03ac0d_\Engine_28524_c57742e82725475fb6d296ba0684e1ae_.yxdb</TempFile>
+          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine2_12500_20dbe4cfb74bc546a5cd415d3c66cd2c_\Engine_12500_cbe66596b2370a40bd10cbc0e6461910~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1186,6 +1186,7 @@ RowCount - Ascending</DefaultAnnotationText>
     <CancelOnError value="False" />
     <DisableBrowse value="False" />
     <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
     <DisableAllOutput value="False" />
     <ShowAllMacroMessages value="False" />
     <ShowConnectionStatusIsOn value="True" />
