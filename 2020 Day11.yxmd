@@ -367,20 +367,6 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="22">
-      <GuiSettings>
-        <Position x="246" y="162" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name>2020 Day11 2 (9)</Name>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="2020 Day11 2.yxmc" />
-    </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
         <Position x="197" y="5" width="111.1293" height="133" />
@@ -399,7 +385,7 @@
         </Annotation>
       </Properties>
       <ChildNodes>
-        <Node ToolID="8">
+        <Node ToolID="23">
           <GuiSettings>
             <Position x="222" y="54" />
           </GuiSettings>
@@ -415,11 +401,25 @@
         </Node>
       </ChildNodes>
     </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="222" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>2020 Day11 2 (9)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="2020 Day11 2.yxmc" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
       <Origin ToolID="7" Connection="Output" />
-      <Destination ToolID="8" Connection="Input1" />
+      <Destination ToolID="23" Connection="Input1" />
     </Connection>
     <Connection>
       <Origin ToolID="7" Connection="Output" />

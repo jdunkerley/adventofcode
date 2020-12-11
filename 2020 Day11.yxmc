@@ -56,7 +56,7 @@
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>Input</DefaultAnnotationText>
-          <Left value="False" />
+          <Left value="True" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
@@ -71,6 +71,7 @@
         <Position x="0" y="0" width="59" height="59" />
       </GuiSettings>
       <Properties>
+        <Configuration />
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -358,9 +359,9 @@ Substring([Field1],[Char]-1,1)...</DefaultAnnotationText>
               <PeriodType>
               </PeriodType>
               <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
               <StartDate>2020-12-11 06:08:50</StartDate>
               <EndDate>2020-12-11 06:08:50</EndDate>
-              <Operand>0</Operand>
             </Operands>
           </Simple>
         </Configuration>
@@ -601,6 +602,7 @@ Substring([Field1],[Char]-1,1)...</DefaultAnnotationText>
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
         <Tool ToolId="12" Selected="True" />
         <Tool ToolId="13" Selected="True" />
       </Wiz_OpenOutputTools>
