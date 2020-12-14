@@ -161,7 +161,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="630" y="66" />
+        <Position x="726" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -209,27 +209,12 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Operator>IsNotNull</Operator>
-            <Field>MemberId</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2020-12-07 16:19:58</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <StartDate>2020-12-07 16:19:58</StartDate>
-              <EndDate>2020-12-07 16:19:58</EndDate>
-              <Operand>
-              </Operand>
-            </Operands>
-          </Simple>
+          <Expression>EndsWith([JSON_Name], ".name")</Expression>
+          <Mode>Custom</Mode>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>!IsNull([MemberId])</DefaultAnnotationText>
+          <DefaultAnnotationText>EndsWith([JSON_Name], ".name")</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -237,7 +222,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="714" y="66" />
+        <Position x="822" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -261,7 +246,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="822" y="66" />
+        <Position x="918" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -289,7 +274,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="918" y="66" />
+        <Position x="1014" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -320,7 +305,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1014" y="66" />
+        <Position x="1110" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -340,11 +325,11 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1110" y="66" />
+        <Position x="1206" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_30356_3e6929b883864d0598b8c7182918eec6_\Engine_10860_e5012b0c14d7454fb89327b34ec1a71a_.yxdb</TempFile>
+          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_2700_76a9439e581f49bca2c45f847afa92db_\Engine_11528_4b9c57ebd80f4558a2a346e8044ac18d_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -368,7 +353,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="918" y="162" />
+        <Position x="1014" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -387,7 +372,7 @@ TimeStamp - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1014" y="162" />
+        <Position x="1110" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -430,6 +415,12 @@ TimeStamp - Ascending</DefaultAnnotationText>
             <Field description="Formula: [Row-1:Rank]+1" name="09_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
             <Field description="Formula: [Row-1:Rank]+1" name="10_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
             <Field description="Formula: [Row-1:Rank]+1" name="10_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="11_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="11_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="12_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="12_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="13_1" source="Formula: [Row-1:Rank]+1" type="Int32" />
+            <Field description="Formula: [Row-1:Rank]+1" name="13_2" source="Formula: [Row-1:Rank]+1" type="Int32" />
           </RecordInfo>
           <SortInfo>
             <Field field="URL" order="Asc" />
@@ -520,6 +511,24 @@ session=53616c7465645f5fa8a92e5q12345678765474141362366abcd17904fcb2a520fb836570
         </Annotation>
       </Properties>
     </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="iif(IsNull([JSON_ValueString]),[MemberId],[JSON_ValueString])" field="JSON_ValueString" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>JSON_ValueString = iif(IsNull([JSON_ValueString]),[MemberId],[JSON_ValueString])...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -547,7 +556,7 @@ session=53616c7465645f5fa8a92e5q12345678765474141362366abcd17904fcb2a520fb836570
       <Destination ToolID="6" Connection="Left" />
     </Connection>
     <Connection>
-      <Origin ToolID="7" Connection="True" />
+      <Origin ToolID="19" Connection="Output" />
       <Destination ToolID="6" Connection="Right" />
     </Connection>
     <Connection>
@@ -557,6 +566,10 @@ session=53616c7465645f5fa8a92e5q12345678765474141362366abcd17904fcb2a520fb836570
     <Connection>
       <Origin ToolID="6" Connection="Join" />
       <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="9" Connection="Output" />
