@@ -144,115 +144,6 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
     </Node>
-    <Node ToolID="32">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="606" y="18" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="True" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="x" selected="True" />
-            <SelectField field="y" selected="True" />
-            <SelectField field="z" selected="True" />
-            <SelectField field="Field1" selected="True" />
-            <SelectField field="w" selected="False" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="64">
-      <GuiSettings>
-        <Position x="1182" y="18" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name>2020 Day17 (38)</Name>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
-    </Node>
-    <Node ToolID="65">
-      <GuiSettings>
-        <Position x="1086" y="18" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name>2020 Day17 (37)</Name>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
-    </Node>
-    <Node ToolID="66">
-      <GuiSettings>
-        <Position x="990" y="18" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name>2020 Day17 (36)</Name>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
-    </Node>
-    <Node ToolID="67">
-      <GuiSettings>
-        <Position x="894" y="18" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name>2020 Day17 (35)</Name>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
-    </Node>
-    <Node ToolID="68">
-      <GuiSettings>
-        <Position x="798" y="18" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name>2020 Day17 (34)</Name>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
-    </Node>
-    <Node ToolID="69">
-      <GuiSettings>
-        <Position x="702" y="18" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name>2020 Day17 (33)</Name>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="2020 Day17.yxmc" />
-    </Node>
     <Node ToolID="70">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
         <Position x="30" y="90" />
@@ -321,7 +212,7 @@ w = 0
     </Node>
     <Node ToolID="72">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="606" y="102" />
+        <Position x="42" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -344,12 +235,261 @@ w = 0
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="113" y="160.9998" width="529" height="133.0002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Part 1</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="73">
+          <GuiSettings>
+            <Position x="138" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>2020 Day17 (33)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings>
+            <Position x="210" y="209.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>2020 Day17 (34)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings>
+            <Position x="294" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>2020 Day17 (35)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings>
+            <Position x="378" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>2020 Day17 (36)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings>
+            <Position x="462" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>2020 Day17 (37)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings>
+            <Position x="558" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>2020 Day17 (38)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="113" y="317" width="541" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Part 2</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="79">
+          <GuiSettings>
+            <Position x="138" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">True</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings>
+            <Position x="234" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">True</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings>
+            <Position x="318" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">True</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings>
+            <Position x="402" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">True</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings>
+            <Position x="486" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">True</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings>
+            <Position x="570" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (48)">True</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Repos\Alteryx\adventofcode\2020 Day17.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
   </Nodes>
   <Connections>
-    <Connection>
-      <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="2" Connection="Input" />
-    </Connection>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
       <Destination ToolID="3" Connection="Input" />
@@ -367,36 +507,60 @@ w = 0
       <Destination ToolID="71" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="32" Connection="Output" />
-      <Destination ToolID="69" Connection="Input1" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="65" Connection="Output35" />
-      <Destination ToolID="64" Connection="Input1" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="66" Connection="Output35" />
-      <Destination ToolID="65" Connection="Input1" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="67" Connection="Output35" />
-      <Destination ToolID="66" Connection="Input1" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="68" Connection="Output35" />
-      <Destination ToolID="67" Connection="Input1" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="69" Connection="Output35" />
-      <Destination ToolID="68" Connection="Input1" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="71" Connection="Output" />
-      <Destination ToolID="32" Connection="Input" />
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="71" Connection="Output" />
       <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="73" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="79" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output35" />
+      <Destination ToolID="74" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output35" />
+      <Destination ToolID="75" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output35" />
+      <Destination ToolID="76" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output35" />
+      <Destination ToolID="77" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output35" />
+      <Destination ToolID="78" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output35" />
+      <Destination ToolID="80" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output35" />
+      <Destination ToolID="81" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output35" />
+      <Destination ToolID="82" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output35" />
+      <Destination ToolID="83" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output35" />
+      <Destination ToolID="84" Connection="Input1" />
     </Connection>
   </Connections>
   <Properties>
