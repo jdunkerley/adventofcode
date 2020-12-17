@@ -1,0 +1,1613 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="21" />
+              <Fields>
+                <Field name="x" />
+                <Field name="y" />
+                <Field name="z" />
+                <Field name="Field1" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>3</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>3</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>#</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Byte" />
+            <Field name="y" source="TextInput:" type="Byte" />
+            <Field name="z" source="TextInput:" type="Byte" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="150" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Addr</FieldFind>
+          <FieldSearch>Addr</FieldSearch>
+          <ReplaceFoundField>Addr</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Field1" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="sx" source="TextInput:" type="Int16" />
+            <Field name="y" type="Int32" />
+            <Field name="sy" source="TextInput:" type="Int16" />
+            <Field name="z" type="Int32" />
+            <Field name="sz" source="TextInput:" type="Int16" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>sx=0 and sy=0 and sz=0</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>sx=0 and sy=0 and sz=0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="sx" source="TextInput:" type="Int16" />
+            <Field name="y" type="Int32" />
+            <Field name="sy" source="TextInput:" type="Int16" />
+            <Field name="z" type="Int32" />
+            <Field name="sz" source="TextInput:" type="Int16" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="sx" source="TextInput:" type="Int16" />
+            <Field name="y" type="Int32" />
+            <Field name="sy" source="TextInput:" type="Int16" />
+            <Field name="z" type="Int32" />
+            <Field name="sz" source="TextInput:" type="Int16" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="x" action="GroupBy" rename="x" />
+            <SummarizeField field="y" action="GroupBy" rename="y" />
+            <SummarizeField field="z" action="GroupBy" rename="z" />
+            <SummarizeField field="Field1" action="CountNonNull" rename="CountNonNull_Field1" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Summarize: GroupBy - x" type="Int32" />
+            <Field name="y" source="Summarize: GroupBy - y" type="Int32" />
+            <Field name="z" source="Summarize: GroupBy - z" type="Int32" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x" order="Asc" />
+            <Field field="y" order="Asc" />
+            <Field field="z" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="438" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="z" />
+            <Field field="y" />
+            <Field field="x" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="z" />
+            <Field field="y" />
+            <Field field="x" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_x" selected="True" input="Left_" />
+                <SelectField field="Left_y" selected="True" input="Left_" />
+                <SelectField field="Left_z" selected="True" input="Left_" />
+                <SelectField field="Left_Addr" selected="True" input="Left_" />
+                <SelectField field="Left_Field1" selected="True" input="Left_" />
+                <SelectField field="Right_x" selected="False" rename="Right_x" input="Right_" />
+                <SelectField field="Right_y" selected="False" rename="Right_y" input="Right_" />
+                <SelectField field="Right_z" selected="False" rename="Right_z" input="Right_" />
+                <SelectField field="Right_CountNonNull_Field1" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="z" />
+            <Field field="y" />
+            <Field field="x" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="z" order="" />
+            <Field field="y" order="" />
+            <Field field="x" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="x" source="Summarize: GroupBy - x" type="Int32" />
+            <Field name="y" source="Summarize: GroupBy - y" type="Int32" />
+            <Field name="z" source="Summarize: GroupBy - z" type="Int32" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="z" />
+            <Field field="y" />
+            <Field field="x" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="510" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[iif([Field1]='#', [CountNonNull_Field1] in (2,3),
+[CountNonNull_Field1] = 3)
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[iif([Field1]='#', [CountNonNull_Field1] in (2,3),
+[CountNonNull_Field1] = 3)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="z" order="" />
+            <Field field="y" order="" />
+            <Field field="x" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="z" order="" />
+            <Field field="y" order="" />
+            <Field field="x" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="630" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="x" action="Min" rename="Min_x" />
+            <SummarizeField field="y" action="Min" rename="Min_y" />
+            <SummarizeField field="z" action="Min" rename="Min_z" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_x" type="Int32" />
+            <Field name="Min_y" type="Int32" />
+            <Field name="Min_z" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="54" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToString([x])+&quot;,&quot;+&#xA;ToString([y])+&quot;,&quot;+&#xA;ToString([z])" field="Addr" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Addr = ToString([x])+","+
+ToString([y])+","+
+ToString([z])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Byte" />
+            <Field name="y" source="TextInput:" type="Byte" />
+            <Field name="z" source="TextInput:" type="Byte" />
+            <Field name="Field1" size="1" source="TextInput:" type="String" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x])+&quot;,&quot;+&#xA;ToString([y])+&quot;,&quot;+&#xA;ToString([z])" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'#'" field="Field1" size="1" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Field1 = '#'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="Formula: '#'" type="String" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="z" order="" />
+            <Field field="y" order="" />
+            <Field field="x" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="726" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="Formula: '#'" type="String" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+            <Field name="Min_x" type="Int32" />
+            <Field name="Min_y" type="Int32" />
+            <Field name="Min_z" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="918" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Addr" selected="False" />
+            <SelectField field="CountNonNull_Field1" selected="False" />
+            <SelectField field="Min_x" selected="False" />
+            <SelectField field="Min_y" selected="False" />
+            <SelectField field="Min_z" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Formula: [x]-[Min_x]" type="Int32" />
+            <Field name="y" source="Formula: y-[Min_y]" type="Int32" />
+            <Field name="z" source="Formula: z-[Min_z]" type="Int32" />
+            <Field name="Field1" size="1" source="Formula: '#'" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="822" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[x]-[Min_x]" field="x" size="4" type="Int32" />
+            <FormulaField expression="y-[Min_y]" field="y" size="4" type="Int32" />
+            <FormulaField expression="z-[Min_z]" field="z" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[x = [x]-[Min_x]
+y = y-[Min_y]
+z = z-[Min_z]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Formula: [x]-[Min_x]" type="Int32" />
+            <Field name="y" source="Formula: y-[Min_y]" type="Int32" />
+            <Field name="z" source="Formula: z-[Min_z]" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+            <Field name="Field1" size="1" source="Formula: '#'" type="String" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+            <Field name="Min_x" type="Int32" />
+            <Field name="Min_y" type="Int32" />
+            <Field name="Min_z" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1014" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output35</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="42" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="x" action="Min" rename="Min_x" />
+            <SummarizeField field="x" action="Max" rename="Max_x" />
+            <SummarizeField field="y" action="Min" rename="Min_y" />
+            <SummarizeField field="y" action="Max" rename="Max_y" />
+            <SummarizeField field="z" action="Min" rename="Min_z" />
+            <SummarizeField field="z" action="Max" rename="Max_z" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_x" type="Int32" />
+            <Field name="Max_x" type="Int32" />
+            <Field name="Min_y" type="Int32" />
+            <Field name="Max_y" type="Int32" />
+            <Field name="Min_z" type="Int32" />
+            <Field name="Max_z" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="138" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>x</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>Min_x</Expression_Init>
+          <Expression_Cond>x &lt;= Max_x</Expression_Cond>
+          <Expression_Loop>x + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_x" type="Int32" />
+            <Field name="Max_x" type="Int32" />
+            <Field name="Min_y" type="Int32" />
+            <Field name="Max_y" type="Int32" />
+            <Field name="Min_z" type="Int32" />
+            <Field name="Max_z" type="Int32" />
+            <Field name="x" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="210" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>y</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>Min_y</Expression_Init>
+          <Expression_Cond>y &lt;= Max_y</Expression_Cond>
+          <Expression_Loop>y + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_x" type="Int32" />
+            <Field name="Max_x" type="Int32" />
+            <Field name="Min_y" type="Int32" />
+            <Field name="Max_y" type="Int32" />
+            <Field name="Min_z" type="Int32" />
+            <Field name="Max_z" type="Int32" />
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="282" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>z</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>Min_z</Expression_Init>
+          <Expression_Cond>z &lt;= Max_z</Expression_Cond>
+          <Expression_Loop>z + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_x" type="Int32" />
+            <Field name="Max_x" type="Int32" />
+            <Field name="Min_y" type="Int32" />
+            <Field name="Max_y" type="Int32" />
+            <Field name="Min_z" type="Int32" />
+            <Field name="Max_z" type="Int32" />
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="438" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToString([x])+&quot;,&quot;+&#xA;ToString([y])+&quot;,&quot;+&#xA;ToString([z])" field="Addr" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Addr = ToString([x])+","+
+ToString([y])+","+
+ToString([z])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_z" type="Int32" />
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x])+&quot;,&quot;+&#xA;ToString([y])+&quot;,&quot;+&#xA;ToString([z])" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="354" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Min_x" selected="False" />
+            <SelectField field="Max_x" selected="False" />
+            <SelectField field="Min_y" selected="False" />
+            <SelectField field="Max_y" selected="False" />
+            <SelectField field="Max_z" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_z" type="Int32" />
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="522" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Addr</FieldFind>
+          <FieldSearch>Addr</FieldSearch>
+          <ReplaceFoundField>Field1</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="CountNonNull_Field1" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_z" type="Int32" />
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x])+&quot;,&quot;+&#xA;ToString([y])+&quot;,&quot;+&#xA;ToString([z])" type="V_WString" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF(IsNull([CountNonNull_Field1]),&quot;.&quot;,&quot;#&quot;)" field="Field1" size="1073741823" type="V_WString" />
+            <FormulaField expression="z-[Min_z]" field="z" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Field1 = IIF(IsNull([CountNonNull_Field1]),".","#")
+z = z-[Min_z]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Min_z" type="Int32" />
+            <Field name="x" type="Int32" />
+            <Field name="y" type="Int32" />
+            <Field name="z" source="Formula: z-[Min_z]" type="Int32" />
+            <Field name="Addr" size="1073741823" source="Formula: ToString([x])+&quot;,&quot;+&#xA;ToString([y])+&quot;,&quot;+&#xA;ToString([z])" type="V_WString" />
+            <Field name="CountNonNull_Field1" source="Summarize: CountNonNull - Field1" type="Int64" />
+            <Field name="Field1" size="1073741823" source="Formula: IIF(IsNull([CountNonNull_Field1]),&quot;.&quot;,&quot;#&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="690" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="z" action="GroupBy" rename="z" />
+            <SummarizeField field="y" action="GroupBy" rename="y" />
+            <SummarizeField field="Field1" action="Concat" rename="Concat_Field1">
+              <Concat_Start />
+              <Separator />
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="z" source="Summarize: GroupBy - z" type="Int32" />
+            <Field name="y" source="Summarize: GroupBy - y" type="Int32" />
+            <Field name="Concat_Field1" size="1073741823" source="Summarize: Concat - Field1" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="z" order="Asc" />
+            <Field field="y" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="774" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Diagram</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="152" y="20" width="777" height="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>BuildGrid</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="162" y="57.00012" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="x" action="Min" rename="Min_x" />
+                <SummarizeField field="x" action="Max" rename="Max_x" />
+                <SummarizeField field="y" action="Min" rename="Min_y" />
+                <SummarizeField field="y" action="Max" rename="Max_y" />
+                <SummarizeField field="z" action="Min" rename="Min_z" />
+                <SummarizeField field="z" action="Max" rename="Max_z" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Min_x" source="TextInput:" type="Byte" />
+                <Field name="Max_x" source="TextInput:" type="Byte" />
+                <Field name="Min_y" source="TextInput:" type="Byte" />
+                <Field name="Max_y" source="TextInput:" type="Byte" />
+                <Field name="Min_z" source="TextInput:" type="Byte" />
+                <Field name="Max_z" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="246" y="57.00026" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name />
+              <CreateField_Name>x</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>Min_x-1</Expression_Init>
+              <Expression_Cond>x &lt;= Max_x + 1</Expression_Cond>
+              <Expression_Loop>x + 1</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Min_x" source="TextInput:" type="Byte" />
+                <Field name="Max_x" source="TextInput:" type="Byte" />
+                <Field name="Min_y" source="TextInput:" type="Byte" />
+                <Field name="Max_y" source="TextInput:" type="Byte" />
+                <Field name="Min_z" source="TextInput:" type="Byte" />
+                <Field name="Max_z" source="TextInput:" type="Byte" />
+                <Field name="x" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="402" y="57.00007" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name />
+              <CreateField_Name>y</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>Min_y-1</Expression_Init>
+              <Expression_Cond>y &lt;= Max_y + 1</Expression_Cond>
+              <Expression_Loop>y + 1</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Min_x" source="TextInput:" type="Byte" />
+                <Field name="Max_x" source="TextInput:" type="Byte" />
+                <Field name="Min_y" source="TextInput:" type="Byte" />
+                <Field name="Max_y" source="TextInput:" type="Byte" />
+                <Field name="Min_z" source="TextInput:" type="Byte" />
+                <Field name="Max_z" source="TextInput:" type="Byte" />
+                <Field name="x" type="Int32" />
+                <Field name="sx" source="TextInput:" type="Int16" />
+                <Field name="y" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="570" y="57.00008" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name />
+              <CreateField_Name>z</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>Min_z-1</Expression_Init>
+              <Expression_Cond>z &lt;= Max_z + 1</Expression_Cond>
+              <Expression_Loop>z + 1</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Min_x" source="TextInput:" type="Byte" />
+                <Field name="Max_x" source="TextInput:" type="Byte" />
+                <Field name="Min_y" source="TextInput:" type="Byte" />
+                <Field name="Max_y" source="TextInput:" type="Byte" />
+                <Field name="Min_z" source="TextInput:" type="Byte" />
+                <Field name="Max_z" source="TextInput:" type="Byte" />
+                <Field name="x" type="Int32" />
+                <Field name="sx" source="TextInput:" type="Int16" />
+                <Field name="y" type="Int32" />
+                <Field name="sy" source="TextInput:" type="Int16" />
+                <Field name="z" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="738" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Min_x" selected="False" />
+                <SelectField field="Max_x" selected="False" />
+                <SelectField field="Min_y" selected="False" />
+                <SelectField field="Max_y" selected="False" />
+                <SelectField field="Min_z" selected="False" />
+                <SelectField field="Max_z" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="x" type="Int32" />
+                <Field name="sx" source="TextInput:" type="Int16" />
+                <Field name="y" type="Int32" />
+                <Field name="sy" source="TextInput:" type="Int16" />
+                <Field name="z" type="Int32" />
+                <Field name="sz" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="162" y="141.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="3" />
+              <Fields>
+                <Field name="s" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>-1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Shifts</AnnotationText>
+              <DefaultAnnotationText>Shifts</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="s" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="318" y="57.00015" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_s" selected="True" rename="sx" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Min_x" source="TextInput:" type="Byte" />
+                <Field name="Max_x" source="TextInput:" type="Byte" />
+                <Field name="Min_y" source="TextInput:" type="Byte" />
+                <Field name="Max_y" source="TextInput:" type="Byte" />
+                <Field name="Min_z" source="TextInput:" type="Byte" />
+                <Field name="Max_z" source="TextInput:" type="Byte" />
+                <Field name="x" type="Int32" />
+                <Field name="sx" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="486" y="57.00008" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_s" selected="True" rename="sy" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Min_x" source="TextInput:" type="Byte" />
+                <Field name="Max_x" source="TextInput:" type="Byte" />
+                <Field name="Min_y" source="TextInput:" type="Byte" />
+                <Field name="Max_y" source="TextInput:" type="Byte" />
+                <Field name="Min_z" source="TextInput:" type="Byte" />
+                <Field name="Max_z" source="TextInput:" type="Byte" />
+                <Field name="x" type="Int32" />
+                <Field name="sx" source="TextInput:" type="Int16" />
+                <Field name="y" type="Int32" />
+                <Field name="sy" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="666" y="57.00008" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_s" selected="True" rename="sz" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Min_x" source="TextInput:" type="Byte" />
+                <Field name="Max_x" source="TextInput:" type="Byte" />
+                <Field name="Min_y" source="TextInput:" type="Byte" />
+                <Field name="Max_y" source="TextInput:" type="Byte" />
+                <Field name="Min_z" source="TextInput:" type="Byte" />
+                <Field name="Max_z" source="TextInput:" type="Byte" />
+                <Field name="x" type="Int32" />
+                <Field name="sx" source="TextInput:" type="Int16" />
+                <Field name="y" type="Int32" />
+                <Field name="sy" source="TextInput:" type="Int16" />
+                <Field name="z" type="Int32" />
+                <Field name="sz" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="822" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" field="Addr" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Addr = ToString([x]+sx)+","+
+ToString([y]+sy)+","+
+ToString([z]+sz)
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="x" type="Int32" />
+                <Field name="sx" source="TextInput:" type="Int16" />
+                <Field name="y" type="Int32" />
+                <Field name="sy" source="TextInput:" type="Int16" />
+                <Field name="z" type="Int32" />
+                <Field name="sz" source="TextInput:" type="Int16" />
+                <Field name="Addr" size="1073741823" source="Formula: ToString([x]+sx)+&quot;,&quot;+&#xA;ToString([y]+sy)+&quot;,&quot;+&#xA;ToString([z]+sz)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="False" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="False" />
+      <Destination ToolID="42" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="42" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="32" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="15" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="12" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="13" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (1)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (35)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (45)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2020 Day17</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (35)</Description>
+              <Name>Macro Output (35)</Name>
+              <ToolId value="35" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (35)</Description>
+              <Name>Macro Output (45)</Name>
+              <ToolId value="45" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="35" Selected="True" />
+        <Tool ToolId="45" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

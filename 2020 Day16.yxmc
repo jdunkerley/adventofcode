@@ -1,0 +1,1231 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="210" />
+              <Fields>
+                <Field name="Column" />
+                <Field name="ColumnName" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>duration</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>route</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>arrival track</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>duration</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>route</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>seat</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>train</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>type</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>arrival location</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>arrival track</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>duration</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>price</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>route</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>seat</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>train</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>type</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>arrival track</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>duration</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>price</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>route</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>seat</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>train</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>type</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>arrival track</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>duration</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>route</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>train</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>arrival track</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>duration</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>route</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>seat</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>train</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>route</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>arrival station</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>arrival track</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>departure date</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>departure location</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>departure platform</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>departure station</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>departure time</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>departure track</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>duration</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>route</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>zone</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>arrival platform</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>class</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>row</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>wagon</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>zone</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Column" source="TextInput:" type="Byte" />
+            <Field name="ColumnName" size="18" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="162" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ColumnName" action="GroupBy" rename="ColumnName" />
+            <SummarizeField field="Column" action="CountDistinct" rename="CountDistinct_Column" />
+            <SummarizeField field="Column" action="Min" rename="Min_Column" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ColumnName" size="18" source="Summarize: GroupBy - ColumnName" type="V_String" />
+            <Field name="CountDistinct_Column" source="Summarize: CountDistinct - Column" type="Int64" />
+            <Field name="Min_Column" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ColumnName" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="258" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>CountDistinct_Column</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-12-16 07:27:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2020-12-16 07:27:52</StartDate>
+              <EndDate>2020-12-16 07:27:52</EndDate>
+              <Operand>1</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[CountDistinct_Column] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="ColumnName" size="18" source="Summarize: GroupBy - ColumnName" type="V_String" />
+            <Field name="CountDistinct_Column" source="Summarize: CountDistinct - Column" type="Int64" />
+            <Field name="Min_Column" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ColumnName" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="ColumnName" size="18" source="Summarize: GroupBy - ColumnName" type="V_String" />
+            <Field name="CountDistinct_Column" source="Summarize: CountDistinct - Column" type="Int64" />
+            <Field name="Min_Column" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ColumnName" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="354" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Column" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Min_Column" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_ColumnName" selected="True" rename="Right_ColumnName" input="Right_" />
+                <SelectField field="Right_CountDistinct_Column" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Column" source="TextInput:" type="Byte" />
+            <Field name="ColumnName" size="18" source="TextInput:" type="V_String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Column" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Column" source="TextInput:" type="Byte" />
+            <Field name="ColumnName" size="18" source="TextInput:" type="V_String" />
+            <Field name="Right_ColumnName" size="18" source="Summarize: GroupBy - ColumnName" type="V_String" />
+            <Field name="Min_Column" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Column" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="ColumnName" size="18" source="Summarize: GroupBy - ColumnName" type="V_String" />
+            <Field name="Min_Column" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Min_Column" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="54" y="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Loop</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="570" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output7</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="462" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ColumnName] = [Right_ColumnName]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ColumnName] = [Right_ColumnName]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Column" source="TextInput:" type="Byte" />
+            <Field name="ColumnName" size="18" source="TextInput:" type="V_String" />
+            <Field name="Right_ColumnName" size="18" source="Summarize: GroupBy - ColumnName" type="V_String" />
+            <Field name="Min_Column" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Column" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Column" source="TextInput:" type="Byte" />
+            <Field name="ColumnName" size="18" source="TextInput:" type="V_String" />
+            <Field name="Right_ColumnName" size="18" source="Summarize: GroupBy - ColumnName" type="V_String" />
+            <Field name="Min_Column" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Column" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Left" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2020 Day16</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (6)</Description>
+              <Name>Macro Output (6)</Name>
+              <ToolId value="6" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (7)</Description>
+              <Name>Macro Output (7)</Name>
+              <ToolId value="7" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input1</Input>
+        <Output>Loop</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="6" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

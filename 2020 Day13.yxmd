@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="64" y="54" />
+        <Position x="28" y="6" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -30,7 +30,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="160" y="54" />
+        <Position x="124" y="6" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -48,7 +48,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="160" y="126" />
+        <Position x="124" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -66,7 +66,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="256" y="126" />
+        <Position x="220" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -85,7 +85,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="424" y="126" />
+        <Position x="388" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -116,7 +116,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="556" y="66" />
+        <Position x="520" y="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -143,7 +143,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="652" y="66" />
+        <Position x="616" y="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -164,7 +164,7 @@ Result = V*ID
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="64" y="114" />
+        <Position x="28" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -191,7 +191,7 @@ Result = V*ID
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="556" y="186" />
+        <Position x="522" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -213,7 +213,7 @@ Result = V*ID
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="652" y="186" />
+        <Position x="606" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -232,7 +232,7 @@ Result = V*ID
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="1012" y="366" />
+        <Position x="954" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -256,7 +256,7 @@ Result = V*ID
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="160" y="210" />
+        <Position x="30" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -280,7 +280,7 @@ Result = V*ID
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="904" y="366" />
+        <Position x="846" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -299,7 +299,7 @@ Result = V*ID
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="340" y="126" />
+        <Position x="304" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -317,19 +317,16 @@ Result = V*ID
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
     </Node>
-    <Node ToolID="33">
+    <Node ToolID="41">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="906" y="522" />
+        <Position x="978" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Remainder" selected="True" type="V_String" size="5" />
-            <SelectField field="Product" selected="True" type="V_String" size="21" />
-            <SelectField field="p" selected="True" type="V_String" size="21" />
-            <SelectField field="ModInverse" selected="True" type="V_String" size="21" />
+            <SelectField field="v" selected="True" type="FixedDecimal" size="32.0" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -341,16 +338,16 @@ Result = V*ID
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="39">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1004" y="488" width="141.8422" height="180" />
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1038" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Non BaseA</Caption>
-          <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
-          <Disabled value="False" />
-          <Folded value="False" />
+          <SummarizeFields>
+            <SummarizeField field="Product" action="GroupBy" rename="Product" />
+            <SummarizeField field="v" action="Sum" rename="Sum_v" />
+          </SummarizeFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -358,44 +355,75 @@ Result = V*ID
           <Left value="False" />
         </Annotation>
       </Properties>
-      <ChildNodes>
-        <Node ToolID="32">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="1014" y="522" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <UpdateField value="False" />
-              <UpdateField_Name>R</UpdateField_Name>
-              <CreateField_Name>Result</CreateField_Name>
-              <CreateField_Type>V_String</CreateField_Type>
-              <CreateField_Size>21</CreateField_Size>
-              <OtherRows>Empty</OtherRows>
-              <NumRows value="1" />
-              <Expression>Int64Mod(
- Int64Add(
-   iif([Row-1:Result]="","0",[Row-1:Result]),
-   Int64Mult([Remainder],[ModInverse],[p])
- )
- , [Product]
-)</Expression>
-              <GroupByFields />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Int64Mod(
- Int64Add(
-   iif([Row-1:Result]="","0",[Row-1:Resu...</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
-        </Node>
-      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1110" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Product" selected="True" type="V_String" size="21" />
+            <SelectField field="Sum_v" selected="True" type="V_String" size="26" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="846" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Remainder]*[p]" field="v" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[v = [Remainder]*[p]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="918" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>RecordID</UpdateField_Name>
+          <CreateField_Name>RowCount</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>1</Expression_Init>
+          <Expression_Cond>RowCount &lt;= ModInverse</Expression_Cond>
+          <Expression_Loop>RowCount + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="344" width="271" height="216" />
+        <Position x="18" y="272" width="271" height="216" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -413,7 +441,7 @@ Result = V*ID
       <ChildNodes>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="64.00002" y="414" />
+            <Position x="28.00005" y="342" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -441,7 +469,7 @@ Result = V*ID
         </Node>
         <Node ToolID="18">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="172" y="414" />
+            <Position x="136" y="342" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -459,7 +487,7 @@ Result = V*ID
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-            <Position x="256" y="378" />
+            <Position x="220" y="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -489,7 +517,7 @@ Result = V*ID
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="339" y="341" width="505" height="225" />
+        <Position x="303" y="269" width="505" height="225" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -507,7 +535,7 @@ Result = V*ID
       <ChildNodes>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="364" y="390" />
+            <Position x="328" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -526,7 +554,7 @@ Result = V*ID
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-            <Position x="460" y="390" />
+            <Position x="424" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -549,7 +577,7 @@ Result = V*ID
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="544" y="390" />
+            <Position x="508" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -569,7 +597,7 @@ iif(Mod(a * Mod(p, [Modulo]), [Modulo]) == 1,
         </Node>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="652" y="390" />
+            <Position x="616" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -601,7 +629,7 @@ iif(Mod(a * Mod(p, [Modulo]), [Modulo]) == 1,
         </Node>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="760" y="390" />
+            <Position x="724" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -618,6 +646,45 @@ iif(Mod(a * Mod(p, [Modulo]), [Modulo]) == 1,
             </Annotation>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1172" y="416" width="141.8422" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Non BaseA</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1182" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Int64Mod([Sum_v], [Product])" field="Sum_v" size="26" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Sum_v = Int64Mod([Sum_v], [Product])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
         </Node>
       </ChildNodes>
     </Node>
@@ -680,8 +747,24 @@ iif(Mod(a * Mod(p, [Modulo]), [Modulo]) == 1,
       <Destination ToolID="5" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="33" Connection="Output" />
-      <Destination ToolID="32" Connection="Input" />
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="17" Connection="Output" />
@@ -713,7 +796,7 @@ iif(Mod(a * Mod(p, [Modulo]), [Modulo]) == 1,
     </Connection>
     <Connection>
       <Origin ToolID="24" Connection="Output" />
-      <Destination ToolID="33" Connection="Input" />
+      <Destination ToolID="47" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
