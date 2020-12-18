@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="42" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Field1" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2 * 3 + (4 * 5)</c>
+                </r>
+                <r>
+                  <c>1 + 2</c>
+                </r>
+                <r>
+                  <c>1 + (2 + (3 * 6))</c>
+                </r>
+                <r>
+                  <c>1 + (4 * 4 * 2)</c>
+                </r>
+                <r>
+                  <c>1 + 2 * 3 + 4 * 5 + 6</c>
+                </r>
+                <r>
+                  <c>1 + (3 + 4 * 6)</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="21" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="150" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="iif(Contains([Field1],&quot;(&quot;),&#xA; Length(REGEX_Replace([Field1], &quot;(.*?)(\([0-9 *+]+\)).*&quot;, &quot;$1&quot;)),&#xA; 0)" field="I" size="2" type="Int16" />
+            <FormulaField expression="REGEX_Replace([Field1], &quot;.{&quot; + ToString(I) + &quot;}(\([^)]+\)|[^(]+).*&quot;, &quot;$1&quot;)" field="ToEval" size="1073741823" type="V_WString" />
+            <FormulaField expression="iif([#1] and Contains([ToEval],&quot;+&quot;),&#xA;    Length(REGEX_Replace([ToEval], &quot;(.*?)(\(?\d+ [+]).*&quot;, &quot;$1&quot;)),&#xA;    0)" field="Index" size="2" type="Int16" />
+            <FormulaField expression="REGEX_Replace(Substring([ToEval],Index), &quot;(\(?\d+ [[*+] \d+\)?).*&quot;,&quot;$1&quot;)" field="Ex" size="1073741823" type="V_WString" />
+            <FormulaField expression="iif(Contains(Ex, &quot;*&quot;),&#xA;ToNumber(GetWord(Trim(Ex,&quot;()&quot;),0)) * ToNumber(GetWord(Trim(Ex,&quot;()&quot;),2)),&#xA;ToNumber(GetWord(Trim(Ex,&quot;()&quot;),0)) + ToNumber(GetWord(Trim(Ex,&quot;()&quot;),2)))" field="Eval" size="1073741823" type="V_WString" />
+            <FormulaField expression="iif(right(Ex,1)!=&quot;)&quot; and left(Ex,1)=&quot;(&quot;,&quot;(&quot;+Eval, &#xA;iif(right(Ex,1)=&quot;)&quot; and left(Ex,1)!=&quot;(&quot;,Eval+&quot;)&quot;,Eval))" field="Eval" size="1073741823" type="V_WString" />
+            <FormulaField expression="Left([ToEval],Index)+Eval+Substring([ToEval],Index+length(Ex))" field="Eval" size="1073741823" type="V_WString" />
+            <FormulaField expression="LEft([Field1],I)+Eval+Substring([Field1],I+length(ToEval))" field="Field1" size="21" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>I = iif(Contains([Field1],"("),
+ Length(REGEX_Replace([Field1], "(.*?)(\([0-9 *+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="21" source="Formula: LEft([Field1],I)+Eval+Substring([Field1],I+length(ToEval))" type="V_String" />
+            <Field name="I" source="Formula: iif(Contains([Field1],&quot;(&quot;),&#xA; Length(REGEX_Replace([Field1], &quot;(.*?)(\([0-9 *+]+\)).*&quot;, &quot;$1&quot;)),&#xA; 0)" type="Int16" />
+            <Field name="ToEval" size="1073741823" source="Formula: REGEX_Replace([Field1], &quot;.{&quot; + ToString(I) + &quot;}(\([^)]+\)|[^(]+).*&quot;, &quot;$1&quot;)" type="V_WString" />
+            <Field name="Index" source="Formula: iif([#1] and Contains([ToEval],&quot;+&quot;),&#xA;    Length(REGEX_Replace([ToEval], &quot;(.*?)(\(?\d+ [+]).*&quot;, &quot;$1&quot;)),&#xA;    0)" type="Int16" />
+            <Field name="Ex" size="1073741823" source="Formula: REGEX_Replace(Substring([ToEval],Index), &quot;(\(?\d+ [[*+] \d+\)?).*&quot;,&quot;$1&quot;)" type="V_WString" />
+            <Field name="Eval" size="1073741823" source="Formula: Left([ToEval],Index)+Eval+Substring([ToEval],Index+length(Ex))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_CountMatches([Field1], "[*+]")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_CountMatches([Field1], "[*+]")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Field1" size="21" source="Formula: LEft([Field1],I)+Eval+Substring([Field1],I+length(ToEval))" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Field1" size="21" source="Formula: LEft([Field1],I)+Eval+Substring([Field1],I+length(ToEval))" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="I" selected="False" />
+            <SelectField field="ToEval" selected="False" />
+            <SelectField field="Index" selected="False" />
+            <SelectField field="Ex" selected="False" />
+            <SelectField field="Eval" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="21" source="Formula: LEft([Field1],I)+Eval+Substring([Field1],I+length(ToEval))" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="42" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output10</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="438" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Result</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+        <Position x="174" y="18" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Check Box (12)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Question" />
+      <Destination ToolID="5" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Check Box (12)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2020 Day18</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (6)</Name>
+          <ToolId value="6" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (10)</Description>
+              <Name>Macro Output (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (11)</Description>
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>MultFirst</Description>
+              <Name>Check Box (12)</Name>
+              <ToolId value="12" />
+              <Questions />
+              <Default value="False" />
+              <Collapsable value="False" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input1</Input>
+        <Output>Output10</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="11" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
