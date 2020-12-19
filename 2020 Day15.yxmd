@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="30" y="18" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -48,7 +48,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="30" y="78" />
+        <Position x="54" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -72,14 +72,14 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="560" y="19.99999" width="391" height="210" />
+        <Position x="584" y="55.99998" width="159.6114" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Part 2 (BaseA)</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
-          <Disabled value="False" />
-          <Folded value="False" />
+          <Disabled value="True" />
+          <Folded value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -90,7 +90,7 @@
       <ChildNodes>
         <Node ToolID="10">
           <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-            <Position x="630" y="54.00002" />
+            <Position x="654" y="90.00002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -113,7 +113,7 @@
         </Node>
         <Node ToolID="12">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="702" y="54" />
+            <Position x="726" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -153,7 +153,7 @@
         </Node>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="570" y="53.99999" />
+            <Position x="594" y="89.99999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -173,7 +173,7 @@ Field1 = ReplaceChar([Field1], ",", "...</DefaultAnnotationText>
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="810" y="54" />
+            <Position x="834" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -192,7 +192,7 @@ Field1 = ReplaceChar([Field1], ",", "...</DefaultAnnotationText>
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="882" y="54" />
+            <Position x="906" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -212,7 +212,7 @@ Field1 = ReplaceChar([Field1], ",", "...</DefaultAnnotationText>
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="116" y="19.99998" width="415" height="210" />
+        <Position x="140" y="55.99998" width="415" height="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -230,7 +230,7 @@ Field1 = ReplaceChar([Field1], ",", "...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="1">
           <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-            <Position x="198" y="54" />
+            <Position x="222" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -253,7 +253,7 @@ Field1 = ReplaceChar([Field1], ",", "...</DefaultAnnotationText>
         </Node>
         <Node ToolID="3">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="126" y="53.99998" />
+            <Position x="150" y="89.99998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -272,7 +272,7 @@ Field1 = ReplaceChar([Field1], ",", "...</DefaultAnnotationText>
         </Node>
         <Node ToolID="4">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="270" y="53.99999" />
+            <Position x="294" y="89.99998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -317,7 +317,7 @@ iif(
         </Node>
         <Node ToolID="6">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="390" y="54" />
+            <Position x="414" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -336,7 +336,7 @@ iif(
         </Node>
         <Node ToolID="7">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="462" y="54" />
+            <Position x="486" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -357,7 +357,7 @@ iif(
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="560" y="248" width="295" height="210" />
+        <Position x="584" y="284" width="295" height="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -375,7 +375,7 @@ iif(
       <ChildNodes>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-            <Position x="642" y="282" />
+            <Position x="666" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -398,7 +398,7 @@ iif(
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="570" y="282" />
+            <Position x="594" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -419,7 +419,7 @@ Field1 = ReplaceChar([Field1], ",", "...</DefaultAnnotationText>
         </Node>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="714" y="282" />
+            <Position x="738" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -454,7 +454,7 @@ Field1 = ReplaceChar([Field1], ",", "...</DefaultAnnotationText>
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="786" y="282" />
+            <Position x="810" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>

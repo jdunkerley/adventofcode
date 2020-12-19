@@ -1,0 +1,2460 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="222" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field1</Field>
+          <RegExExpression value="(\d+): (.*)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Field1</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RuleID" type="Int16" size="2" />
+            <Field field="Rule" type="V_String" size="10000" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="iif(left([Rule],1)='&quot;', &#xA;   Trim([Rule],'&quot;'),&#xA;   &quot;( &quot; +&#xA;   iif(Contains([Rule], &quot;|&quot;), &#xA;     REGEX_Replace([Rule], &quot;(\d+ \d+)&quot;,&quot;\( $1 \)&quot;),&#xA;     [Rule]) + &quot; )&quot;)" field="Rule" size="10000" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Rule = iif(left([Rule],1)='"', 
+   Trim([Rule],'"'),
+   "( " +
+   iif(Contains([...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="402" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>2020 Day19 (9)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="2020 Day19.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_16616_68e2ffd7c3cc4679aa9b2c29cc4735e7_\Engine_4396_5e8b2fbc203e4b569e8c2b3540fb07f0_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="498" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReplaceChar([Rule], &quot; &quot;, &quot;&quot;)" field="Rule" size="1000" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Rule = ReplaceChar([Rule], " ", "")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="594" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>RuleID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-12-19 06:20:29</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2020-12-19 06:20:29</StartDate>
+              <EndDate>2020-12-19 06:20:29</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RuleID] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="258" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Field1" selected="False" rename="Source_Field1" input="Source_" />
+                <SelectField field="Source_RuleID" selected="False" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([Field1], [Rule])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([Field1], [Rule])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="126" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([Field1], "^\d+:.*")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([Field1], "^\d+:.*")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="30" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="11" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>0: 4 1 5</c>
+            </r>
+            <r>
+              <c>1: 2 3 | 3 2</c>
+            </r>
+            <r>
+              <c>2: 4 4 | 5 5</c>
+            </r>
+            <r>
+              <c>3: 4 5 | 5 4</c>
+            </r>
+            <r>
+              <c>4: "a"</c>
+            </r>
+            <r>
+              <c>5: "b"</c>
+            </r>
+            <r>
+              <c>ababbb</c>
+            </r>
+            <r>
+              <c>bababa</c>
+            </r>
+            <r>
+              <c>abbbab</c>
+            </r>
+            <r>
+              <c>aaabbb</c>
+            </r>
+            <r>
+              <c>aaaabbb</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Test1</AnnotationText>
+          <DefaultAnnotationText>Test1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="30" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="555" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>53: 21 35 | 84 72</c>
+            </r>
+            <r>
+              <c>129: 72 68 | 35 97</c>
+            </r>
+            <r>
+              <c>29: 110 35 | 45 72</c>
+            </r>
+            <r>
+              <c>12: 26 72 | 2 35</c>
+            </r>
+            <r>
+              <c>101: 72 103 | 35 52</c>
+            </r>
+            <r>
+              <c>5: 40 35 | 49 72</c>
+            </r>
+            <r>
+              <c>94: 35 57 | 72 58</c>
+            </r>
+            <r>
+              <c>87: 86 72 | 69 35</c>
+            </r>
+            <r>
+              <c>1: 63 35 | 61 72</c>
+            </r>
+            <r>
+              <c>119: 96 35</c>
+            </r>
+            <r>
+              <c>59: 35 96 | 72 118</c>
+            </r>
+            <r>
+              <c>14: 96 35 | 74 72</c>
+            </r>
+            <r>
+              <c>20: 78 72 | 26 35</c>
+            </r>
+            <r>
+              <c>120: 72 35 | 72 72</c>
+            </r>
+            <r>
+              <c>82: 51 72 | 93 35</c>
+            </r>
+            <r>
+              <c>104: 35 36 | 72 106</c>
+            </r>
+            <r>
+              <c>96: 35 72 | 72 72</c>
+            </r>
+            <r>
+              <c>25: 89 35</c>
+            </r>
+            <r>
+              <c>130: 56 35 | 14 72</c>
+            </r>
+            <r>
+              <c>57: 35 112 | 72 21</c>
+            </r>
+            <r>
+              <c>24: 38 35 | 95 72</c>
+            </r>
+            <r>
+              <c>126: 72 35 | 35 35</c>
+            </r>
+            <r>
+              <c>39: 35 41 | 72 46</c>
+            </r>
+            <r>
+              <c>113: 127 35 | 22 72</c>
+            </r>
+            <r>
+              <c>114: 72 87 | 35 129</c>
+            </r>
+            <r>
+              <c>3: 72 107 | 35 132</c>
+            </r>
+            <r>
+              <c>64: 72 98 | 35 9</c>
+            </r>
+            <r>
+              <c>124: 80 35 | 126 72</c>
+            </r>
+            <r>
+              <c>117: 35 80 | 72 120</c>
+            </r>
+            <r>
+              <c>122: 72 1 | 35 43</c>
+            </r>
+            <r>
+              <c>11: 42 31</c>
+            </r>
+            <r>
+              <c>76: 58 72 | 71 35</c>
+            </r>
+            <r>
+              <c>52: 99 96</c>
+            </r>
+            <r>
+              <c>84: 35 35</c>
+            </r>
+            <r>
+              <c>88: 35 37 | 72 106</c>
+            </r>
+            <r>
+              <c>67: 118 72 | 80 35</c>
+            </r>
+            <r>
+              <c>43: 19 72 | 91 35</c>
+            </r>
+            <r>
+              <c>4: 113 72 | 23 35</c>
+            </r>
+            <r>
+              <c>85: 72 80 | 35 15</c>
+            </r>
+            <r>
+              <c>36: 112 35 | 118 72</c>
+            </r>
+            <r>
+              <c>32: 72 112 | 35 79</c>
+            </r>
+            <r>
+              <c>62: 35 77 | 72 81</c>
+            </r>
+            <r>
+              <c>23: 25 35 | 6 72</c>
+            </r>
+            <r>
+              <c>116: 96 35 | 112 72</c>
+            </r>
+            <r>
+              <c>8: 42</c>
+            </r>
+            <r>
+              <c>105: 131 35 | 15 72</c>
+            </r>
+            <r>
+              <c>27: 84 72 | 15 35</c>
+            </r>
+            <r>
+              <c>133: 72 104 | 35 76</c>
+            </r>
+            <r>
+              <c>16: 72 72</c>
+            </r>
+            <r>
+              <c>22: 72 112 | 35 80</c>
+            </r>
+            <r>
+              <c>37: 15 35</c>
+            </r>
+            <r>
+              <c>41: 120 35 | 112 72</c>
+            </r>
+            <r>
+              <c>91: 72 82 | 35 88</c>
+            </r>
+            <r>
+              <c>109: 35 100 | 72 34</c>
+            </r>
+            <r>
+              <c>15: 35 72 | 35 35</c>
+            </r>
+            <r>
+              <c>92: 35 18 | 72 50</c>
+            </r>
+            <r>
+              <c>110: 35 4 | 72 114</c>
+            </r>
+            <r>
+              <c>123: 35 112 | 72 120</c>
+            </r>
+            <r>
+              <c>46: 72 16 | 35 120</c>
+            </r>
+            <r>
+              <c>26: 120 72 | 96 35</c>
+            </r>
+            <r>
+              <c>83: 123 72 | 33 35</c>
+            </r>
+            <r>
+              <c>111: 90 35 | 94 72</c>
+            </r>
+            <r>
+              <c>10: 72 101 | 35 130</c>
+            </r>
+            <r>
+              <c>45: 133 72 | 111 35</c>
+            </r>
+            <r>
+              <c>77: 10 72 | 125 35</c>
+            </r>
+            <r>
+              <c>90: 35 44 | 72 105</c>
+            </r>
+            <r>
+              <c>99: 72 | 35</c>
+            </r>
+            <r>
+              <c>93: 112 35 | 112 72</c>
+            </r>
+            <r>
+              <c>13: 32 35 | 124 72</c>
+            </r>
+            <r>
+              <c>56: 72 96 | 35 15</c>
+            </r>
+            <r>
+              <c>61: 72 73 | 35 28</c>
+            </r>
+            <r>
+              <c>6: 99 74</c>
+            </r>
+            <r>
+              <c>58: 72 120 | 35 16</c>
+            </r>
+            <r>
+              <c>95: 72 80 | 35 96</c>
+            </r>
+            <r>
+              <c>60: 99 21</c>
+            </r>
+            <r>
+              <c>63: 72 20 | 35 83</c>
+            </r>
+            <r>
+              <c>42: 72 122 | 35 29</c>
+            </r>
+            <r>
+              <c>38: 120 72 | 16 35</c>
+            </r>
+            <r>
+              <c>51: 131 35 | 16 72</c>
+            </r>
+            <r>
+              <c>17: 35 84 | 72 84</c>
+            </r>
+            <r>
+              <c>131: 99 99</c>
+            </r>
+            <r>
+              <c>100: 115 35 | 117 72</c>
+            </r>
+            <r>
+              <c>55: 35 2 | 72 116</c>
+            </r>
+            <r>
+              <c>21: 99 72 | 35 35</c>
+            </r>
+            <r>
+              <c>89: 72 72 | 35 35</c>
+            </r>
+            <r>
+              <c>34: 22 72 | 85 35</c>
+            </r>
+            <r>
+              <c>18: 96 35 | 131 72</c>
+            </r>
+            <r>
+              <c>75: 5 72 | 108 35</c>
+            </r>
+            <r>
+              <c>108: 3 72 | 102 35</c>
+            </r>
+            <r>
+              <c>49: 72 117 | 35 127</c>
+            </r>
+            <r>
+              <c>102: 35 132 | 72 41</c>
+            </r>
+            <r>
+              <c>0: 8 11</c>
+            </r>
+            <r>
+              <c>79: 72 35</c>
+            </r>
+            <r>
+              <c>19: 72 12 | 35 92</c>
+            </r>
+            <r>
+              <c>71: 21 35</c>
+            </r>
+            <r>
+              <c>98: 35 15 | 72 131</c>
+            </r>
+            <r>
+              <c>81: 35 109 | 72 70</c>
+            </r>
+            <r>
+              <c>106: 72 131 | 35 16</c>
+            </r>
+            <r>
+              <c>30: 67 35 | 115 72</c>
+            </r>
+            <r>
+              <c>50: 15 99</c>
+            </r>
+            <r>
+              <c>86: 35 112</c>
+            </r>
+            <r>
+              <c>69: 72 21 | 35 89</c>
+            </r>
+            <r>
+              <c>2: 35 21 | 72 80</c>
+            </r>
+            <r>
+              <c>73: 35 60 | 72 59</c>
+            </r>
+            <r>
+              <c>33: 72 15 | 35 118</c>
+            </r>
+            <r>
+              <c>70: 72 121 | 35 30</c>
+            </r>
+            <r>
+              <c>31: 35 62 | 72 54</c>
+            </r>
+            <r>
+              <c>65: 24 72 | 55 35</c>
+            </r>
+            <r>
+              <c>127: 35 15 | 72 74</c>
+            </r>
+            <r>
+              <c>118: 35 35 | 72 99</c>
+            </r>
+            <r>
+              <c>78: 15 72 | 96 35</c>
+            </r>
+            <r>
+              <c>68: 72 89 | 35 120</c>
+            </r>
+            <r>
+              <c>112: 35 72</c>
+            </r>
+            <r>
+              <c>7: 65 35 | 48 72</c>
+            </r>
+            <r>
+              <c>44: 74 72 | 80 35</c>
+            </r>
+            <r>
+              <c>115: 35 128 | 72 74</c>
+            </r>
+            <r>
+              <c>74: 35 72 | 99 35</c>
+            </r>
+            <r>
+              <c>125: 35 64 | 72 47</c>
+            </r>
+            <r>
+              <c>40: 98 35 | 17 72</c>
+            </r>
+            <r>
+              <c>121: 72 53 | 35 119</c>
+            </r>
+            <r>
+              <c>103: 72 15 | 35 126</c>
+            </r>
+            <r>
+              <c>9: 35 16 | 72 84</c>
+            </r>
+            <r>
+              <c>97: 84 35 | 16 72</c>
+            </r>
+            <r>
+              <c>80: 35 72 | 72 35</c>
+            </r>
+            <r>
+              <c>47: 35 66 | 72 106</c>
+            </r>
+            <r>
+              <c>28: 50 35 | 27 72</c>
+            </r>
+            <r>
+              <c>107: 80 72 | 126 35</c>
+            </r>
+            <r>
+              <c>128: 72 35 | 99 72</c>
+            </r>
+            <r>
+              <c>132: 35 80 | 72 118</c>
+            </r>
+            <r>
+              <c>54: 75 35 | 7 72</c>
+            </r>
+            <r>
+              <c>66: 72 84 | 35 89</c>
+            </r>
+            <r>
+              <c>48: 39 35 | 13 72</c>
+            </r>
+            <r>
+              <c>35: "a"</c>
+            </r>
+            <r>
+              <c>72: "b"</c>
+            </r>
+            <r>
+              <c />
+            </r>
+            <r>
+              <c>bababbaaaabbaaaaabbbbaab</c>
+            </r>
+            <r>
+              <c>bbbaaaaabababaabbbbaabab</c>
+            </r>
+            <r>
+              <c>bbaaababbaaaaaaaaabbabba</c>
+            </r>
+            <r>
+              <c>baaabbbaabaabbabbabbbbaaaabbabab</c>
+            </r>
+            <r>
+              <c>bbbabbbaaababbbaaaabaaababababbabbabbbabbbabaaabbbaabbbb</c>
+            </r>
+            <r>
+              <c>aaaaaaaabbabbabaabbabbab</c>
+            </r>
+            <r>
+              <c>bbaabbababbabaaaababababaabbbaab</c>
+            </r>
+            <r>
+              <c>bbabbababbaabaabaabbaaab</c>
+            </r>
+            <r>
+              <c>baaabbbbaababbabaaabaaba</c>
+            </r>
+            <r>
+              <c>baabbabaaaabbaabbaaabaaa</c>
+            </r>
+            <r>
+              <c>babbbbaabbabbbabbbabbabbbbbbbabb</c>
+            </r>
+            <r>
+              <c>aabbaaaabababbabbabbaababbaababa</c>
+            </r>
+            <r>
+              <c>babbabbbbaabaaabaaaaabbb</c>
+            </r>
+            <r>
+              <c>bbbabbbababaaababbababab</c>
+            </r>
+            <r>
+              <c>ababaaabbabbbabaaaabbbba</c>
+            </r>
+            <r>
+              <c>aabbaaaaabbbbbabbbbbabbbbbbaaaaaaabbabba</c>
+            </r>
+            <r>
+              <c>abbbaabbaabbabaaaabbaaab</c>
+            </r>
+            <r>
+              <c>babbaababbaaaabbaaaaabab</c>
+            </r>
+            <r>
+              <c>babbbbbaabaababbaaabbabb</c>
+            </r>
+            <r>
+              <c>aaabbaabaabaababbaabaaba</c>
+            </r>
+            <r>
+              <c>abaaaaabbbbaaaaaaaaaabbb</c>
+            </r>
+            <r>
+              <c>aabbbaabaabbabbbbaaababababaabaaabaababbabbababbaabaabbababaaaba</c>
+            </r>
+            <r>
+              <c>bbaabaaabaaabbbbbaaaaaab</c>
+            </r>
+            <r>
+              <c>abbbbbaaaabaaababbbbabba</c>
+            </r>
+            <r>
+              <c>aabbbbababbbaabbabaabbab</c>
+            </r>
+            <r>
+              <c>aaaaaabbabbabbaabaaabbaa</c>
+            </r>
+            <r>
+              <c>aaabbbbbbbabbabaabaaaaba</c>
+            </r>
+            <r>
+              <c>bbababaabaababbbbabababbbababaabbbbaaaba</c>
+            </r>
+            <r>
+              <c>aaaaaababbaabbababbaabbb</c>
+            </r>
+            <r>
+              <c>babbababaaaabbabbabbbaabbbbbbbaabbaababa</c>
+            </r>
+            <r>
+              <c>bbbaabbbabbbaaaaabbbaaba</c>
+            </r>
+            <r>
+              <c>bbbaabbaaabaabababababab</c>
+            </r>
+            <r>
+              <c>bbbbbaaaaabbbbbbaabbbaab</c>
+            </r>
+            <r>
+              <c>aababaababbabbbbbabbabba</c>
+            </r>
+            <r>
+              <c>bbbaabbbaaaaabbabbbbabba</c>
+            </r>
+            <r>
+              <c>abbaaaabbbbbbaaababababbbabbbabaaababaaa</c>
+            </r>
+            <r>
+              <c>aaaabaababbabbaababbbbaa</c>
+            </r>
+            <r>
+              <c>aaaaaabbbbbbabbbbaababaa</c>
+            </r>
+            <r>
+              <c>baabbbabababbbbbbababaababaabaabbaababaaabbbbbaabbabaabbbbabbaab</c>
+            </r>
+            <r>
+              <c>ababbbbabaaabbbbbabbaaab</c>
+            </r>
+            <r>
+              <c>babaababababbbababbbbbba</c>
+            </r>
+            <r>
+              <c>baaababbbaabbababbabaaaaaaaabbbaabaabbbabbbaabbbaababaaabababbbbabaaaabb</c>
+            </r>
+            <r>
+              <c>baabaaabaabbbbababaabaaa</c>
+            </r>
+            <r>
+              <c>aabbaababbbaabababaaabaaabbabbbbabbaabaababaabbb</c>
+            </r>
+            <r>
+              <c>bbbbabbbbaabababbbbbbbabaaaaabba</c>
+            </r>
+            <r>
+              <c>babbabbbbababaaaabaaabaa</c>
+            </r>
+            <r>
+              <c>aababbbaaababababbbbaaaa</c>
+            </r>
+            <r>
+              <c>babbbaabbaababbbbbbababbbaabbabbaaabbaaa</c>
+            </r>
+            <r>
+              <c>baababaaaaabbbbbaabbabbbabbbbabaabbbaababbabbbbaabaaabaa</c>
+            </r>
+            <r>
+              <c>bbaabbaababbbabbabaabaaa</c>
+            </r>
+            <r>
+              <c>aabaaabaabaabbaaabbbbbba</c>
+            </r>
+            <r>
+              <c>aaabaaabbaabbbbabbabaaab</c>
+            </r>
+            <r>
+              <c>babbbbbabaababbbbaababbbbabbaaab</c>
+            </r>
+            <r>
+              <c>ababbaaabaaababbbabaabaa</c>
+            </r>
+            <r>
+              <c>aaabbaababbbbbabababaaaa</c>
+            </r>
+            <r>
+              <c>ababbbababaaaaabbbaaaaba</c>
+            </r>
+            <r>
+              <c>abbbbbbbaaaaabaaabaaaaba</c>
+            </r>
+            <r>
+              <c>bbaaababababbaabbaabababbaaabbababbabaaabbbbabaa</c>
+            </r>
+            <r>
+              <c>abababbaabbbaaababaabbaa</c>
+            </r>
+            <r>
+              <c>babbbbbaabaaabbbabbabbaabbaaaaaa</c>
+            </r>
+            <r>
+              <c>baaaabbbbabbbbbbaabababb</c>
+            </r>
+            <r>
+              <c>abbbbbabaababbababaaabab</c>
+            </r>
+            <r>
+              <c>babbaabaaabbbbabbbbabaabaaababbaabaababaabbbbbba</c>
+            </r>
+            <r>
+              <c>aabababaaaaabbbaaabbabab</c>
+            </r>
+            <r>
+              <c>abbbbbabaaaabbaaaabbbbaa</c>
+            </r>
+            <r>
+              <c>babbbbbabbbbbaaababbbbaa</c>
+            </r>
+            <r>
+              <c>bbbabbbbbbbaabbbbaabaaba</c>
+            </r>
+            <r>
+              <c>aababbbabaaaabbbabbbbbabababbaaaaabaabab</c>
+            </r>
+            <r>
+              <c>bbbbbababbbabbbaaabbbbaa</c>
+            </r>
+            <r>
+              <c>bbababaabaaaabaabaaaaaba</c>
+            </r>
+            <r>
+              <c>bbaabbaaababbbabbbabbbbb</c>
+            </r>
+            <r>
+              <c>babaaaabaabaabaabbaaaaaaaabbaaab</c>
+            </r>
+            <r>
+              <c>aaababaabababbabbbabaabb</c>
+            </r>
+            <r>
+              <c>aaababaaaaabbaababaaabaa</c>
+            </r>
+            <r>
+              <c>bbabbbbaaaabaabbaabababb</c>
+            </r>
+            <r>
+              <c>bbaaabbabbaabbaabbaabbba</c>
+            </r>
+            <r>
+              <c>babbbabaabbabbaababbbaaa</c>
+            </r>
+            <r>
+              <c>aaaaaaaabaaaababbbbbabba</c>
+            </r>
+            <r>
+              <c>bbbbabbbabaaababababbbaa</c>
+            </r>
+            <r>
+              <c>aabbbbbbabbbaabbabaaabba</c>
+            </r>
+            <r>
+              <c>baaaaabbbbabbbbababaabaa</c>
+            </r>
+            <r>
+              <c>abbbabbbbaabbbbaabbaabbb</c>
+            </r>
+            <r>
+              <c>aabaabaabababaaaaaaabaaa</c>
+            </r>
+            <r>
+              <c>bbbbbabaaabaaabaaaaaabbb</c>
+            </r>
+            <r>
+              <c>bbbababbbbbabbbabaabababbababababbbbbaabbbabaaba</c>
+            </r>
+            <r>
+              <c>baaaaaaabbaaaabbabbbbbba</c>
+            </r>
+            <r>
+              <c>bbbaabbabaaaaaaaaabababb</c>
+            </r>
+            <r>
+              <c>bbabaaaaababbaababababbbaaabbbba</c>
+            </r>
+            <r>
+              <c>bbbbaabbbabbbbbaaaaaabbb</c>
+            </r>
+            <r>
+              <c>abbabbaaabbbaaababbababb</c>
+            </r>
+            <r>
+              <c>abbabbbbaababaabbbabbbbababbaaab</c>
+            </r>
+            <r>
+              <c>abbbbabbbbbaaabbabbabbba</c>
+            </r>
+            <r>
+              <c>babaaaabbabbabbbbaaabaaa</c>
+            </r>
+            <r>
+              <c>babbaaaaaabaabbabbbaaaba</c>
+            </r>
+            <r>
+              <c>aababababbbbbbabaabababb</c>
+            </r>
+            <r>
+              <c>abbbbbbbbbaabaabbbabaaba</c>
+            </r>
+            <r>
+              <c>baaabbbbaabbaaaaabababbbbbabbabaaabaaaaa</c>
+            </r>
+            <r>
+              <c>abaabbbabbbbbbaaaabbbabb</c>
+            </r>
+            <r>
+              <c>bbbbbaaaabbbbbbbbaaaabaababababbbaaaababababbabaaababaaa</c>
+            </r>
+            <r>
+              <c>aaaabababaababbbaaaaabba</c>
+            </r>
+            <r>
+              <c>bababbababbbaaaabbbaaaaa</c>
+            </r>
+            <r>
+              <c>bbabaaaabbbababaaabbbbaa</c>
+            </r>
+            <r>
+              <c>baababbbababaaabbbbbbbabbabababbaababbaaaaabaaaa</c>
+            </r>
+            <r>
+              <c>abaababbaabaaabaaaababaabbabbbaaababaaaa</c>
+            </r>
+            <r>
+              <c>baabbaaabbbabbabbbbbbbaababbaaaabbbbbbbbabaababbbabbabbaabbbbbba</c>
+            </r>
+            <r>
+              <c>babaabaabbbababbbbbbabaaabaabbaaabbbbababaabbabaababbbaa</c>
+            </r>
+            <r>
+              <c>aaaaabaabababbabbaaaaaba</c>
+            </r>
+            <r>
+              <c>bababbabbabbaabaaabbabaaaaaabbab</c>
+            </r>
+            <r>
+              <c>abbaaaaabbaabaaaabbaaabb</c>
+            </r>
+            <r>
+              <c>bbbbbbabbaaaabbbbaabaaaa</c>
+            </r>
+            <r>
+              <c>bbbabbbbbaababbaaabababb</c>
+            </r>
+            <r>
+              <c>bababbaabbbababbbaaaaabbbabbabbbbbaaaaaaababbaba</c>
+            </r>
+            <r>
+              <c>aaaabbaaabbbbabbaaaaaaab</c>
+            </r>
+            <r>
+              <c>baaabbbbbbaabbaabababbba</c>
+            </r>
+            <r>
+              <c>aaabaaabbaabbaaabbaaaaba</c>
+            </r>
+            <r>
+              <c>baaabbbbabbbbbbbbaaaaaaabbbaaaba</c>
+            </r>
+            <r>
+              <c>aabaaaabbabbbabaabbaabab</c>
+            </r>
+            <r>
+              <c>ababaaababbbababbaaaaaab</c>
+            </r>
+            <r>
+              <c>abaaaaabbbbbbaaaabaaabba</c>
+            </r>
+            <r>
+              <c>bbbababaabbbaaababaabbaa</c>
+            </r>
+            <r>
+              <c>abbabbabaaaabbbabaabaaabaaabbbbaabbbaaabaaabababbbabbbbaaababbaaaaabaaaa</c>
+            </r>
+            <r>
+              <c>aaaaabaaaababbbaabbbbbbbbbbbabba</c>
+            </r>
+            <r>
+              <c>bababbaabbbababbbbaabbbb</c>
+            </r>
+            <r>
+              <c>bbbabaaabbaaaaaabbaabbaaaaaaabba</c>
+            </r>
+            <r>
+              <c>baabbaaaabbbabaaaaabbbab</c>
+            </r>
+            <r>
+              <c>baabbababbaabaaaaaaaabba</c>
+            </r>
+            <r>
+              <c>bababbabbbbbaabbaaabaabababbbabaabbabbbababaaabb</c>
+            </r>
+            <r>
+              <c>babbbbbaabaaaaaabaaabbba</c>
+            </r>
+            <r>
+              <c>ababababbabbabbbbaaaaaaabbbbbbbbbbbbabbbbbababbaababbabbabaabbbbabababbabbaaabbbabbabbba</c>
+            </r>
+            <r>
+              <c>aabaababbbaaaaabababaaba</c>
+            </r>
+            <r>
+              <c>baabbbbabbaaabbabbabbaab</c>
+            </r>
+            <r>
+              <c>aaabaaaabaaababbaaaaaabaaaabaaaaaaabbbaabbabbbaabbbabaaaabbbaabaaaabbabb</c>
+            </r>
+            <r>
+              <c>baabababbbbabbbaaaaabbbb</c>
+            </r>
+            <r>
+              <c>abbbaaaabaabababababaabb</c>
+            </r>
+            <r>
+              <c>babaabababababbbaabaaabb</c>
+            </r>
+            <r>
+              <c>abbbababbbaaababbbbbaaaa</c>
+            </r>
+            <r>
+              <c>aababaabbaaabbabbabaaabb</c>
+            </r>
+            <r>
+              <c>bbbbabbbabbaabbabbaaaaaaabbbbaababaababaabaaababaabbaaabbbbabbab</c>
+            </r>
+            <r>
+              <c>ababbbbbabbabbaabbbabbbbbaababaaabbbbaba</c>
+            </r>
+            <r>
+              <c>bbbaabbabaaaabbbaaaabaaa</c>
+            </r>
+            <r>
+              <c>bbbababaaabbabaaaabaaaaa</c>
+            </r>
+            <r>
+              <c>ababbbabbbbbabbbbbaaabbaabababab</c>
+            </r>
+            <r>
+              <c>baabaaabbbbbbbabaaaabaabbbaaaaab</c>
+            </r>
+            <r>
+              <c>baaaabaabbababaaabaabbbabaaabbabbbbababbababaaba</c>
+            </r>
+            <r>
+              <c>abababbbabbbbbabbababbaababbbbba</c>
+            </r>
+            <r>
+              <c>babababbaababbbabbabaaab</c>
+            </r>
+            <r>
+              <c>aabaaabaaaabbaabbbbabbaa</c>
+            </r>
+            <r>
+              <c>abababbaaaabaabbbbabbbbb</c>
+            </r>
+            <r>
+              <c>baabbbaaaababbabababbaba</c>
+            </r>
+            <r>
+              <c>babbbbbaaabaaabaaabbbbabbbbababbaabbaaaabbbbaaba</c>
+            </r>
+            <r>
+              <c>babbababbabbbabbbbbabbaa</c>
+            </r>
+            <r>
+              <c>bbaabaaaaaabaabbbaabbaaaabaaabaa</c>
+            </r>
+            <r>
+              <c>aabbaabbbababaaabbbabbbabbaabaabaaaaabababbbbaaa</c>
+            </r>
+            <r>
+              <c>babaababbaaaaabbbabbaaaa</c>
+            </r>
+            <r>
+              <c>aababbbabbbbbaabbaaababa</c>
+            </r>
+            <r>
+              <c>abbaaaabbbabbababbabbbaa</c>
+            </r>
+            <r>
+              <c>abbbabaaabababaabbabbbab</c>
+            </r>
+            <r>
+              <c>abaabaabaaaabbaabbaaaaaabbaaaababaaaaaba</c>
+            </r>
+            <r>
+              <c>bbbaabbaabbbaaabbbbbaabbbbbbaaab</c>
+            </r>
+            <r>
+              <c>bbaaaabbaaaabbbaaabbabbbababbaabbbbaaaba</c>
+            </r>
+            <r>
+              <c>aababaabaabbabaabbaaaaabaaababbaabbbbaaa</c>
+            </r>
+            <r>
+              <c>bbaaaabbbabababababaabbb</c>
+            </r>
+            <r>
+              <c>bbbabaabbaaababbaabbbbbbbaaababaabaaabab</c>
+            </r>
+            <r>
+              <c>bbbbbaabaabbbbbbabbabbab</c>
+            </r>
+            <r>
+              <c>bbbbabbabbabbaaabbbabbaa</c>
+            </r>
+            <r>
+              <c>aababaabbaabababbbaaabbbabaabaaa</c>
+            </r>
+            <r>
+              <c>abbbbbbbaababaabbbbbaaab</c>
+            </r>
+            <r>
+              <c>bbbaabbbaabbaabbabbabbab</c>
+            </r>
+            <r>
+              <c>aaaaaababbbbabaaabbaaaabbabaababaaaabbaaaaaaabbbaaabbaaaaaaababbabaababa</c>
+            </r>
+            <r>
+              <c>aabbbbabaaaabbaaaaabbbab</c>
+            </r>
+            <r>
+              <c>bbaaabbbaaaabbbababaabba</c>
+            </r>
+            <r>
+              <c>aabbaaaabaabababaaaabaaa</c>
+            </r>
+            <r>
+              <c>babaababbabaababababaabb</c>
+            </r>
+            <r>
+              <c>aabbaababaababbabbabbbab</c>
+            </r>
+            <r>
+              <c>babbbabaabbbaaaaaaaababaaaabaaabababbaaa</c>
+            </r>
+            <r>
+              <c>bbabbbbaaababbbaabaaabbbbbbabaabaabbbbaa</c>
+            </r>
+            <r>
+              <c>aabbbbbbbbbaaabbabbababa</c>
+            </r>
+            <r>
+              <c>aaaabaabbabbbabbbbbabbab</c>
+            </r>
+            <r>
+              <c>aabaaabaaaabaaabaabbbabb</c>
+            </r>
+            <r>
+              <c>bbabbabaaababbaaabbabaaa</c>
+            </r>
+            <r>
+              <c>aabbaabbaabaababbaaaabbaabaababbbabaaaaa</c>
+            </r>
+            <r>
+              <c>bbbbbbaabbbabaaaabaaabab</c>
+            </r>
+            <r>
+              <c>aabbbbababbbababbaaaaabbbaababbbbbabaabb</c>
+            </r>
+            <r>
+              <c>baababbbbaabbbaaabbaabbb</c>
+            </r>
+            <r>
+              <c>aabbaabbbbaaabbababbbbab</c>
+            </r>
+            <r>
+              <c>bababaaabaabbbbaabbaabbb</c>
+            </r>
+            <r>
+              <c>bbbabaaabbbbbbaabbbbaaab</c>
+            </r>
+            <r>
+              <c>aababababbaabbabbbababaabbbaabbaaaaabbaabaabbaabaababbbbbbabbbaaaabbbbaa</c>
+            </r>
+            <r>
+              <c>aaaaabaabaabaabbbaaaaabbbaabaabbbbaaaabbbbbabaabbaaababa</c>
+            </r>
+            <r>
+              <c>bbaaababaaabbaabbbbbaaab</c>
+            </r>
+            <r>
+              <c>aabbaaaabbabaaaabbbaaaabbbbabaaaababbaababaabbbababaabbb</c>
+            </r>
+            <r>
+              <c>babbbbbaabbbaabbaaaaaababaabbbbb</c>
+            </r>
+            <r>
+              <c>bbaabbbbbbaabbabbaabbbabbabaaaaabaaabaaabaabbbaa</c>
+            </r>
+            <r>
+              <c>babaababababbaaaaaabbaaa</c>
+            </r>
+            <r>
+              <c>bbbaabbaaaababbababababbbbbbaaab</c>
+            </r>
+            <r>
+              <c>aaababaabbbbbbaaabbbbaab</c>
+            </r>
+            <r>
+              <c>bbaaababababaaabaaaaaaab</c>
+            </r>
+            <r>
+              <c>aaababaaabaaabbbbabaaababbbabababababbbbaaaabaaa</c>
+            </r>
+            <r>
+              <c>babaabbbaaabbaaabaabbbab</c>
+            </r>
+            <r>
+              <c>abbbbbaaaaaaabaaababbabb</c>
+            </r>
+            <r>
+              <c>babaababaabbbbabababaabb</c>
+            </r>
+            <r>
+              <c>baaabbbbabaaaaabbaaabaaa</c>
+            </r>
+            <r>
+              <c>bababaaabbbaaaabbbbbabba</c>
+            </r>
+            <r>
+              <c>baabababbaaababbbbbabbab</c>
+            </r>
+            <r>
+              <c>bababaaaababbbabaabababb</c>
+            </r>
+            <r>
+              <c>bbabbbbabbbbbbbbbaaaababbbbbabbbaabbbabaabaababa</c>
+            </r>
+            <r>
+              <c>aaabbbbbbaaababbbbaabbba</c>
+            </r>
+            <r>
+              <c>abbbaaaaababbaabaabaaaaa</c>
+            </r>
+            <r>
+              <c>bababaaaaabaaaabbabaabababbbaaaaabaababa</c>
+            </r>
+            <r>
+              <c>baaaaaaaaaaabababbabbaaa</c>
+            </r>
+            <r>
+              <c>baaaabbbbbbababbaabbbaba</c>
+            </r>
+            <r>
+              <c>bbbbbbbbbabbbaababbaaaba</c>
+            </r>
+            <r>
+              <c>baaaaaaabababbaabbbabaabbaaabbbaaaaabaaa</c>
+            </r>
+            <r>
+              <c>bbbbabbbbaabababaabbbaaaaababbbbbbababbbbabaaaabbbabbaabbabbbbbb</c>
+            </r>
+            <r>
+              <c>abaababbbbaaaaaabaaabbaa</c>
+            </r>
+            <r>
+              <c>babbaabaabbbbbaabbabbbbaabbbbabbbbababbb</c>
+            </r>
+            <r>
+              <c>baaaabaababbbaabbbaabbba</c>
+            </r>
+            <r>
+              <c>aabaaabababbaabaabaaabba</c>
+            </r>
+            <r>
+              <c>abbbabababbaaaaabaaaabbbbbaababbbabbabbbbbaabbbb</c>
+            </r>
+            <r>
+              <c>babbababbabbbaababbbababbbaaaaba</c>
+            </r>
+            <r>
+              <c>baababbabbbababbbbaaabbbaabbabababababab</c>
+            </r>
+            <r>
+              <c>ababbaaabaabababbbabbabaabbbabba</c>
+            </r>
+            <r>
+              <c>bbbaaabbbbaabaabbbbbbaaabbabbabaaaaaabbababaaabb</c>
+            </r>
+            <r>
+              <c>babbababbaabbbbabbbaaaaa</c>
+            </r>
+            <r>
+              <c>bbaabbaababababaaabaaabb</c>
+            </r>
+            <r>
+              <c>ababbaabbbbbbaaabbaaabbbababbbbbaaabbbaaabaaabab</c>
+            </r>
+            <r>
+              <c>aaabbaabaaaaaabbbabbaabaaabaaababbaaabbaaabaaabb</c>
+            </r>
+            <r>
+              <c>abbbaabbbbabaaaaabaaaaba</c>
+            </r>
+            <r>
+              <c>abaaabaaaabababbbababbbababbabba</c>
+            </r>
+            <r>
+              <c>bbaaaaababaabbbabbbbabba</c>
+            </r>
+            <r>
+              <c>bbaabaaaaaaaaabbbbaaabbbaababbbaaaabbaba</c>
+            </r>
+            <r>
+              <c>abababbbaababbaababbbababbbabaabbbabaaababbaaabb</c>
+            </r>
+            <r>
+              <c>bbaaaaabbbbbbaaaabaaaabb</c>
+            </r>
+            <r>
+              <c>bbaabbaabbabaaaabaabbaab</c>
+            </r>
+            <r>
+              <c>bbbaaaabbaaaabaaababbaba</c>
+            </r>
+            <r>
+              <c>abbbaaababbbbbaabaabbbaaaabbbbbbbaaaabaaababaaba</c>
+            </r>
+            <r>
+              <c>aababbaaabbbbbaabaaabbba</c>
+            </r>
+            <r>
+              <c>baaaabbbabaaaaaaaabbabbaabaaaabbabaabbab</c>
+            </r>
+            <r>
+              <c>bbaababbabbabbaababbaabababaaaaa</c>
+            </r>
+            <r>
+              <c>aabbaaaaaaaabbabbaabbabaabababbbbaababaa</c>
+            </r>
+            <r>
+              <c>abbabbaaaabbbbbbbbbabaababababaaabbbabbbabaabbaa</c>
+            </r>
+            <r>
+              <c>baabbbbabaaababbabababbbabbbbaaabbbbababaaaaaaabbbababaa</c>
+            </r>
+            <r>
+              <c>bbaaababaabaabaaaaabaaaa</c>
+            </r>
+            <r>
+              <c>bbbbbbabbabbabbbbbababba</c>
+            </r>
+            <r>
+              <c>baababbabbaabbabbbababbb</c>
+            </r>
+            <r>
+              <c>bbabbbbbaaaabbbbaaabbabbababaaaaaaabbbaa</c>
+            </r>
+            <r>
+              <c>bbabbbbababaabababaabbaa</c>
+            </r>
+            <r>
+              <c>bbbaaaabaaababbaababbabb</c>
+            </r>
+            <r>
+              <c>abbaabbaaaaabbaaaabaabbb</c>
+            </r>
+            <r>
+              <c>abaaaaababababbbbbaababa</c>
+            </r>
+            <r>
+              <c>aabbbbabaabbaabbbaababbabaaababbabbaababbbabaabb</c>
+            </r>
+            <r>
+              <c>baaababbaaaababaaaabbaba</c>
+            </r>
+            <r>
+              <c>bbbbaabbaaaabbbaabbbbabbbaaabbabbbbaabbbaaaaaabababbaaabbaabbabb</c>
+            </r>
+            <r>
+              <c>abbbbbaabbaabbaaabbaabbb</c>
+            </r>
+            <r>
+              <c>bbababaaababbbbbbbbbabab</c>
+            </r>
+            <r>
+              <c>babbbbbaabaaaaabbaababaa</c>
+            </r>
+            <r>
+              <c>bbababbaababbabaaaaaaababababbbaabaaaabaabbabbaaabbbaaaabaabbbbbbababababaabaabb</c>
+            </r>
+            <r>
+              <c>bbaabaabbababbaabbbaaaaa</c>
+            </r>
+            <r>
+              <c>abbaaaabaaaaaababbbbbabb</c>
+            </r>
+            <r>
+              <c>aababbaaababbbbabababbba</c>
+            </r>
+            <r>
+              <c>bbaaaaababbababbbaababbbbaaabbbaaabaabbbabbbaabaaabbbbaa</c>
+            </r>
+            <r>
+              <c>aaaabbabaabbabaaabaabbbabbbaabbbbababbbabbabbabb</c>
+            </r>
+            <r>
+              <c>aababbbabaabaabbbbbaaaababbbbaab</c>
+            </r>
+            <r>
+              <c>bababababbbabababaababaa</c>
+            </r>
+            <r>
+              <c>baabbaaaababbaaaabbabbab</c>
+            </r>
+            <r>
+              <c>aabbaabaaabaabaaababbbaa</c>
+            </r>
+            <r>
+              <c>ababbaabababbaabbbbabbab</c>
+            </r>
+            <r>
+              <c>aaaabaabababbaaaabbbaaba</c>
+            </r>
+            <r>
+              <c>bbbaabbbababbbbabbbabbab</c>
+            </r>
+            <r>
+              <c>aaababaabbbaaabbbbabbaab</c>
+            </r>
+            <r>
+              <c>ababbbabbbaabaaaaaabbbaa</c>
+            </r>
+            <r>
+              <c>abbbbabbbaabbbaabbbaaabbbaaabbababaabbaa</c>
+            </r>
+            <r>
+              <c>aabababababaaaabbbbabbbbbbbbbaaababbbbbabbbababaaabbabab</c>
+            </r>
+            <r>
+              <c>baaaabbbabbaabbabbbabababaabbababaabbbab</c>
+            </r>
+            <r>
+              <c>babaaabbbbbbabbbababbbbbbaaaaabbaababbbbbbabaababbbaabbaaababbababbbaaabaaaaaaaa</c>
+            </r>
+            <r>
+              <c>abbbbbababaaaaabbbbbabab</c>
+            </r>
+            <r>
+              <c>bbaaaaabbabaaabababaaabbabaaabba</c>
+            </r>
+            <r>
+              <c>ababbbbabbababaaabababab</c>
+            </r>
+            <r>
+              <c>baababbabaaaabbbaaaabbbb</c>
+            </r>
+            <r>
+              <c>bbabbabababbbabbbbabbbaa</c>
+            </r>
+            <r>
+              <c>abbaaaaaababaaabababbbaa</c>
+            </r>
+            <r>
+              <c>aabaababbababbabaabbbbaa</c>
+            </r>
+            <r>
+              <c>bbbbbbababaabbaaaaaaabababbbbbba</c>
+            </r>
+            <r>
+              <c>bbbbabbbbaababbbbabbbbbaababbbbabbababab</c>
+            </r>
+            <r>
+              <c>baaaaaaabbaabaababbabbba</c>
+            </r>
+            <r>
+              <c>babbbabbaabbbbbbababaaba</c>
+            </r>
+            <r>
+              <c>aabaabababbbbabbaaaaabba</c>
+            </r>
+            <r>
+              <c>baabaabbbaaabbabaaabbbbbbbaaabbababaabbbbbababbbaaaabaaa</c>
+            </r>
+            <r>
+              <c>bbbabababbaabbabbaaabbbabbaaaababbabbbaaabbaabaa</c>
+            </r>
+            <r>
+              <c>baaaaaaababababbbbaaaaaaaabbbbabbbbaaabaaaaabbbbaaaaaaab</c>
+            </r>
+            <r>
+              <c>ababaaabbbbbabbbbaabbbab</c>
+            </r>
+            <r>
+              <c>aabbaabbabaaaaabaababaaa</c>
+            </r>
+            <r>
+              <c>abbbbbabbbbabaaabaaabbabaabbabba</c>
+            </r>
+            <r>
+              <c>babbbbbbbbbaabbabaaaabba</c>
+            </r>
+            <r>
+              <c>aaaabbaaaabaababaabaabba</c>
+            </r>
+            <r>
+              <c>baabbabaabbbabaabbbaaaaa</c>
+            </r>
+            <r>
+              <c>abbabbaabaaaabaabbaabaabbbaabaaaaabbbabb</c>
+            </r>
+            <r>
+              <c>bbbaaaababbbaabbabaabaaa</c>
+            </r>
+            <r>
+              <c>babbbbababaaabaabaaababaababaaaabbbaaabbabbabbabaababbba</c>
+            </r>
+            <r>
+              <c>aaaababababbbaabaaaaabba</c>
+            </r>
+            <r>
+              <c>aaaababababbababbababbba</c>
+            </r>
+            <r>
+              <c>bbaababbbaababbabbabaabb</c>
+            </r>
+            <r>
+              <c>baababbaaabbaaaaaabbbbbbbababbba</c>
+            </r>
+            <r>
+              <c>bababbabaaaaaabbbbababbb</c>
+            </r>
+            <r>
+              <c>aaaabaabaabaabaaabbbbaaa</c>
+            </r>
+            <r>
+              <c>abbbabbbbabbabaaaaabbaaaaaaaabbaaaaaaaabbaabbbbbbabbbaaabaaaabababaaabaaaabaaaaa</c>
+            </r>
+            <r>
+              <c>bbbababbbbabbabaaabbaaaababaaaababbaaabaababaabb</c>
+            </r>
+            <r>
+              <c>babababbaaabbaabaaabbbba</c>
+            </r>
+            <r>
+              <c>baaabbabbaabaaabbbbabbbbabbbaaaaaabaaabb</c>
+            </r>
+            <r>
+              <c>aabaaababbaaaaabbbbbaabbbbaaabababbaabbabbbabbab</c>
+            </r>
+            <r>
+              <c>bbbbbaababaabbbaababbbbbabbaabaa</c>
+            </r>
+            <r>
+              <c>abaaaaaabaaabbabbbbbaaab</c>
+            </r>
+            <r>
+              <c>aababbbaabbbabbbabaababa</c>
+            </r>
+            <r>
+              <c>bbaabbaabbaabaabbabbbabbbaaabbbbaababaaabbbabbaabababbbb</c>
+            </r>
+            <r>
+              <c>babbbbbbababbbbababababaaaabbbba</c>
+            </r>
+            <r>
+              <c>baaabaaaabbbaabbbabbaaabaabbbaaaabbaabbbbaabbbabbbababaabaaaaaaabbbbaabb</c>
+            </r>
+            <r>
+              <c>bbbabbbaaaaaaaaabbbbabba</c>
+            </r>
+            <r>
+              <c>bbbabbbaaabbaababbabaaaaaabaabba</c>
+            </r>
+            <r>
+              <c>aabaaaababbbbababbbaabab</c>
+            </r>
+            <r>
+              <c>aabbbbaaababababbbbabbababbbbbbabbaabbbb</c>
+            </r>
+            <r>
+              <c>baaaaabbbbbbbbbbaabaabba</c>
+            </r>
+            <r>
+              <c>aabaaabaaababaababbabbab</c>
+            </r>
+            <r>
+              <c>abaaabaabababbbaabaabaaa</c>
+            </r>
+            <r>
+              <c>abbbababababaaabbabaabbb</c>
+            </r>
+            <r>
+              <c>aabaaaababbbbbbbabaababbaaababaabbbababbbababaabaaabaaba</c>
+            </r>
+            <r>
+              <c>bababaaabbbabbbbababbbababaabaaa</c>
+            </r>
+            <r>
+              <c>abaaaaabbbbabaaabaababbaaabbaaaaaabaabbbabbbbaba</c>
+            </r>
+            <r>
+              <c>baabbababbababaaaabbabba</c>
+            </r>
+            <r>
+              <c>aaababbabababbaabbbbaabbaaaaabaaaabbbbbbbbbabbaa</c>
+            </r>
+            <r>
+              <c>abaabbbabaabaabbabbaabaa</c>
+            </r>
+            <r>
+              <c>bbaabaaaababbbbbababbbbbbaabaaabaabbaaab</c>
+            </r>
+            <r>
+              <c>ababbbbabaababbaaaaabaaa</c>
+            </r>
+            <r>
+              <c>aabbbbbaaaabbaabbbbbabaaaaaababbaababbbaaaaababbbbbbbbaaabbbbaab</c>
+            </r>
+            <r>
+              <c>aaabaaabbbaabaaabaaaaabbabbababb</c>
+            </r>
+            <r>
+              <c>abbabbaaaaaabbabbbababab</c>
+            </r>
+            <r>
+              <c>aabaababbababbabbaabbbbb</c>
+            </r>
+            <r>
+              <c>abbabbaaababbaabbaabbbab</c>
+            </r>
+            <r>
+              <c>ababbbbabaabbbbabbbaaabbabbaaabaabaabbab</c>
+            </r>
+            <r>
+              <c>aabbaaaabaaabbbbaabaabbb</c>
+            </r>
+            <r>
+              <c>aababbaabaaabbbbbbaaabaa</c>
+            </r>
+            <r>
+              <c>bbabaaaabaabbbaaaaaaaaab</c>
+            </r>
+            <r>
+              <c>bbbbbaaaabbbbbaabaabaaba</c>
+            </r>
+            <r>
+              <c>aaaaaabbababbbabaabbaaaabaabaaba</c>
+            </r>
+            <r>
+              <c>bbaaabbbaabaababbababbabbbbbaabbbabababaabaabbbb</c>
+            </r>
+            <r>
+              <c>bbaaaaaabbaabbabaaabbbaa</c>
+            </r>
+            <r>
+              <c>baabbbaabbbbbaaabbaaaaba</c>
+            </r>
+            <r>
+              <c>abbaaaaabababbaaabaaaaba</c>
+            </r>
+            <r>
+              <c>baabbbaabbaaabbbbbbbaabbbaabaaaaababbbaa</c>
+            </r>
+            <r>
+              <c>abaababbaaaabaababbbbbba</c>
+            </r>
+            <r>
+              <c>abbbaabbabaababbbbbbaaab</c>
+            </r>
+            <r>
+              <c>babbbabaaaababaaaaaaaaab</c>
+            </r>
+            <r>
+              <c>baaaaaaababbababaabbabbbaababaaa</c>
+            </r>
+            <r>
+              <c>ababaaabbbbbbabaabaaabab</c>
+            </r>
+            <r>
+              <c>baababbabbaaaaaaababaaaa</c>
+            </r>
+            <r>
+              <c>ababaaabbabbbabbaabbbaaa</c>
+            </r>
+            <r>
+              <c>abaaaaabaabaaabaaabaabbb</c>
+            </r>
+            <r>
+              <c>aababbaabbabbbbabaaaabba</c>
+            </r>
+            <r>
+              <c>bbbabaaaabbbaaababbababb</c>
+            </r>
+            <r>
+              <c>baaaaabbaabbaabababaaaaa</c>
+            </r>
+            <r>
+              <c>bbaaababbababaaabbbbabba</c>
+            </r>
+            <r>
+              <c>aabbaabaabbaaaaabbaaabbbbabbbabbbbabbbbbabaaabbaaaaabaaa</c>
+            </r>
+            <r>
+              <c>aaaaabaaabbbbbaababbbbbbbbbbabba</c>
+            </r>
+            <r>
+              <c>baaaabbbabababaabaabababbbbabaaabbbbbbbb</c>
+            </r>
+            <r>
+              <c>bbbabbbbbbbbaabbbbababba</c>
+            </r>
+            <r>
+              <c>abbbaaaaabbbabaaaabbabaababaabaa</c>
+            </r>
+            <r>
+              <c>bbbbbbabbabbbbbaaabaaabb</c>
+            </r>
+            <r>
+              <c>ababbbabababaaabaababaaa</c>
+            </r>
+            <r>
+              <c>baabaaababaaaaabbbbaaaba</c>
+            </r>
+            <r>
+              <c>babbbaabbaabbbaaababbaabbbababba</c>
+            </r>
+            <r>
+              <c>abaaababbbbbbbbaaabbbaaababaabbabbaabbbb</c>
+            </r>
+            <r>
+              <c>aaabaaabbbaabaabbabbbaaa</c>
+            </r>
+            <r>
+              <c>babbbaababbaaaababbbbaba</c>
+            </r>
+            <r>
+              <c>bababbabababbbbbbbbbaaab</c>
+            </r>
+            <r>
+              <c>abbbbbaaababbaaabbababab</c>
+            </r>
+            <r>
+              <c>babbbbabaabbababbabaaabbababbababbbaaababaaaaaba</c>
+            </r>
+            <r>
+              <c>bbaaabbabaabbababbbaaabbaabaaabaaabababbbaaabbbaabbaababaabaaaaaabbaabaabbaababa</c>
+            </r>
+            <r>
+              <c>aabaabaaaaabaabbabbabababaaaaabaaaabbabb</c>
+            </r>
+            <r>
+              <c>abaababbbbbaaaababaaaaababbabbab</c>
+            </r>
+            <r>
+              <c>bbaaababaaababbabbabaabb</c>
+            </r>
+            <r>
+              <c>babaaaabbaaabbbbabaaaaba</c>
+            </r>
+            <r>
+              <c>abababbbbbbababaabaabbaa</c>
+            </r>
+            <r>
+              <c>baabbaaabaabbbaabbbabaabaaabbaba</c>
+            </r>
+            <r>
+              <c>babbbaabaaaabbbababbaaaa</c>
+            </r>
+            <r>
+              <c>ababbbabaabbbbabaabaaabb</c>
+            </r>
+            <r>
+              <c>aabaaaabbbababbabbaabbbaabaaaaababaaaaaabbbbabbbbaaaabaabbababaababbaabb</c>
+            </r>
+            <r>
+              <c>ababbaabababbbababbbababaabbabaaaabaababbbbbbbba</c>
+            </r>
+            <r>
+              <c>abaaabbbbbbabaabbbabbabaababbbabaaaaaaabbaaaaaba</c>
+            </r>
+            <r>
+              <c>bababbabbabababbbbbbbbaaaababaababbaabbb</c>
+            </r>
+            <r>
+              <c>bbbbabaaabababbbaaabbbba</c>
+            </r>
+            <r>
+              <c>bbbbaabbbabbaabaaaababaaaaababaaabbabbabaaaababbabaabbab</c>
+            </r>
+            <r>
+              <c>bbabbbbabaabaabbabaabbbb</c>
+            </r>
+            <r>
+              <c>babbbbbaabababaababbbbab</c>
+            </r>
+            <r>
+              <c>aaaabbababbaaaaaaabbbaaa</c>
+            </r>
+            <r>
+              <c>aabbaabbbabbbbbbbbabbaaa</c>
+            </r>
+            <r>
+              <c>baaaabbbbbbabaaabaabaaba</c>
+            </r>
+            <r>
+              <c>bababbbbabbbbababababaab</c>
+            </r>
+            <r>
+              <c>abbabbbbabbbbbbbabababbaabaabaaabbaabbbb</c>
+            </r>
+            <r>
+              <c>aaaaabbbabbabaabbabbbabbaabaaaabbbbabaababbbbbbbbbaabbbbaababaabaabbaaaa</c>
+            </r>
+            <r>
+              <c>bbaababbabbbabaaabbabbba</c>
+            </r>
+            <r>
+              <c>babbbbbbbbaababbababbbabaaabaaba</c>
+            </r>
+            <r>
+              <c>aaaaaabbaabbaaaaabaabbab</c>
+            </r>
+            <r>
+              <c>bbababbbaaaaaaabbaabbbbababbabbabbbaaabbbaabbaaabbababab</c>
+            </r>
+            <r>
+              <c>abaaabbbbbabbababbaaabaa</c>
+            </r>
+            <r>
+              <c>abbbbbbbbbaabaaabaaaabababaabbbaabbaabbabaabbbababbbabba</c>
+            </r>
+            <r>
+              <c>babaaabaabababbbaaaababb</c>
+            </r>
+            <r>
+              <c>abababbaababbbbbabbbbaba</c>
+            </r>
+            <r>
+              <c>aaaaabababaaaaaaabbaaabaabbbaabb</c>
+            </r>
+            <r>
+              <c>baababababaaabbbbbbabaababbaaaabbbaababa</c>
+            </r>
+            <r>
+              <c>aababaabbaabbbaabaababbbabbbaaba</c>
+            </r>
+            <r>
+              <c>abababbbaaababaababaaabb</c>
+            </r>
+            <r>
+              <c>bbaabaabaaaaabaabbbbbbab</c>
+            </r>
+            <r>
+              <c>ababbaaabbbaabbbaaababab</c>
+            </r>
+            <r>
+              <c>baabababbaaaaabbbbbbabbbabaabbbb</c>
+            </r>
+            <r>
+              <c>abababbabbbbaabbbabaabbb</c>
+            </r>
+            <r>
+              <c>aababbababbbabbbbabbbaaa</c>
+            </r>
+            <r>
+              <c>baaabbbbabbbbbbbabaaabab</c>
+            </r>
+            <r>
+              <c>bbbabaabaabbaabbbaabaaaa</c>
+            </r>
+            <r>
+              <c>ababbbbaaabaababbaababaa</c>
+            </r>
+            <r>
+              <c>abbbbbaaaababbabbbabbabaaabbabbaaaabbbba</c>
+            </r>
+            <r>
+              <c>bbbbabaaaabbbbbbabaabbabbababbbbabbabaabbbabbaab</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_16616_68e2ffd7c3cc4679aa9b2c29cc4735e7_\Engine_4396_db84a5d3245a44fe9dea48bdd7ab97bd_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="30" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="46" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>42: 9 14 | 10 1</c>
+            </r>
+            <r>
+              <c>9: 14 27 | 1 26</c>
+            </r>
+            <r>
+              <c>10: 23 14 | 28 1</c>
+            </r>
+            <r>
+              <c>1: "a"</c>
+            </r>
+            <r>
+              <c>11: 42 31</c>
+            </r>
+            <r>
+              <c>5: 1 14 | 15 1</c>
+            </r>
+            <r>
+              <c>19: 14 1 | 14 14</c>
+            </r>
+            <r>
+              <c>12: 24 14 | 19 1</c>
+            </r>
+            <r>
+              <c>16: 15 1 | 14 14</c>
+            </r>
+            <r>
+              <c>31: 14 17 | 1 13</c>
+            </r>
+            <r>
+              <c>6: 14 14 | 1 14</c>
+            </r>
+            <r>
+              <c>2: 1 24 | 14 4</c>
+            </r>
+            <r>
+              <c>0: 8 11</c>
+            </r>
+            <r>
+              <c>13: 14 3 | 1 12</c>
+            </r>
+            <r>
+              <c>15: 1 | 14</c>
+            </r>
+            <r>
+              <c>17: 14 2 | 1 7</c>
+            </r>
+            <r>
+              <c>23: 25 1 | 22 14</c>
+            </r>
+            <r>
+              <c>28: 16 1</c>
+            </r>
+            <r>
+              <c>4: 1 1</c>
+            </r>
+            <r>
+              <c>20: 14 14 | 1 15</c>
+            </r>
+            <r>
+              <c>3: 5 14 | 16 1</c>
+            </r>
+            <r>
+              <c>27: 1 6 | 14 18</c>
+            </r>
+            <r>
+              <c>14: "b"</c>
+            </r>
+            <r>
+              <c>21: 14 1 | 1 14</c>
+            </r>
+            <r>
+              <c>25: 1 1 | 1 14</c>
+            </r>
+            <r>
+              <c>22: 14 14</c>
+            </r>
+            <r>
+              <c>8: 42</c>
+            </r>
+            <r>
+              <c>26: 14 22 | 1 20</c>
+            </r>
+            <r>
+              <c>18: 15 15</c>
+            </r>
+            <r>
+              <c>7: 14 5 | 1 21</c>
+            </r>
+            <r>
+              <c>24: 14 1</c>
+            </r>
+            <r>
+              <c>abbbbbabbbaaaababbaabbbbabababbbabbbbbbabaaaa</c>
+            </r>
+            <r>
+              <c>bbabbbbaabaabba</c>
+            </r>
+            <r>
+              <c>babbbbaabbbbbabbbbbbaabaaabaaa</c>
+            </r>
+            <r>
+              <c>aaabbbbbbaaaabaababaabababbabaaabbababababaaa</c>
+            </r>
+            <r>
+              <c>bbbbbbbaaaabbbbaaabbabaaa</c>
+            </r>
+            <r>
+              <c>bbbababbbbaaaaaaaabbababaaababaabab</c>
+            </r>
+            <r>
+              <c>ababaaaaaabaaab</c>
+            </r>
+            <r>
+              <c>ababaaaaabbbaba</c>
+            </r>
+            <r>
+              <c>baabbaaaabbaaaababbaababb</c>
+            </r>
+            <r>
+              <c>abbbbabbbbaaaababbbbbbaaaababb</c>
+            </r>
+            <r>
+              <c>aaaaabbaabaaaaababaa</c>
+            </r>
+            <r>
+              <c>aaaabbaaaabbaaa</c>
+            </r>
+            <r>
+              <c>aaaabbaabbaaaaaaabbbabbbaaabbaabaaa</c>
+            </r>
+            <r>
+              <c>babaaabbbaaabaababbaabababaaab</c>
+            </r>
+            <r>
+              <c>aabbbbbaabbbaaaaaabbbbbababaaaaabbaaabba</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Test2</AnnotationText>
+          <DefaultAnnotationText>Test2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="54" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[RuleID] in (42, 31)</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RuleID] in (42, 31)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="246" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="150" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="RuleID" />
+          <DataField field="Rule" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from Field1" name="31" size="10000" source="Formula: ReplaceChar([Rule], &quot; &quot;, &quot;&quot;)" type="V_String" />
+            <Field description="RegEx: Parsed from Field1" name="42" size="10000" source="Formula: ReplaceChar([Rule], &quot; &quot;, &quot;&quot;)" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="320" y="272" width="302" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Evaluate Rule 11</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="330" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>Parsed</UpdateField_Name>
+              <CreateField_Name>Parsed</CreateField_Name>
+              <CreateField_Type>V_String</CreateField_Type>
+              <CreateField_Size>1000</CreateField_Size>
+              <Expression_Init>[Field1]</Expression_Init>
+              <Expression_Cond>REGEX_Match([Parsed],[42] + ".*?")
+ AND
+ REGEX_Match([Parsed],".*?" + [31] + "$")</Expression_Cond>
+              <Expression_Loop>REGEX_Replace(
+  REGEX_Replace(
+    [Parsed], "^(" + [42] + ")" ,""),
+    "(" + [31] + ")$","")</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="426" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Last</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False">
+                <Field name="Field1" />
+              </GroupFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Last 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="510" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace(&#xA;  REGEX_Replace(&#xA;    [Parsed], &quot;^(&quot; + [42] + &quot;)&quot; ,&quot;&quot;),&#xA;    &quot;(&quot; + [31] + &quot;)$&quot;,&quot;&quot;)" field="Parsed" size="1000" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Parsed = REGEX_Replace(
+  REGEX_Replace(
+    [Parsed], "^(" + [42] + ")" ,""),
+ ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="656" y="272" width="165.5769" height="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Evaluate Rule 8</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="666" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>REGEX_Match([Parsed], "^(" + [42] + ")+")</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>REGEX_Match([Parsed], "^(" + [42] + ")+")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="21" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output8" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="14" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="False" />
+      <Destination ToolID="14" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="False" />
+      <Destination ToolID="24" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="24" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2020 Day19</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="42" y="102" />
+        <Position x="54" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -44,7 +44,7 @@
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>Input</DefaultAnnotationText>
-          <Left value="False" />
+          <Left value="True" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
@@ -56,7 +56,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="150" y="102" />
+        <Position x="162" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -65,8 +65,7 @@
             <FormulaField expression="REGEX_Replace([Field1], &quot;.{&quot; + ToString(I) + &quot;}(\([^)]+\)|[^(]+).*&quot;, &quot;$1&quot;)" field="ToEval" size="1073741823" type="V_WString" />
             <FormulaField expression="iif([#1] and Contains([ToEval],&quot;+&quot;),&#xA;    Length(REGEX_Replace([ToEval], &quot;(.*?)(\(?\d+ [+]).*&quot;, &quot;$1&quot;)),&#xA;    0)" field="Index" size="2" type="Int16" />
             <FormulaField expression="REGEX_Replace(Substring([ToEval],Index), &quot;(\(?\d+ [[*+] \d+\)?).*&quot;,&quot;$1&quot;)" field="Ex" size="1073741823" type="V_WString" />
-            <FormulaField expression="iif(Contains(Ex, &quot;*&quot;),&#xA;ToNumber(GetWord(Trim(Ex,&quot;()&quot;),0)) * ToNumber(GetWord(Trim(Ex,&quot;()&quot;),2)),&#xA;ToNumber(GetWord(Trim(Ex,&quot;()&quot;),0)) + ToNumber(GetWord(Trim(Ex,&quot;()&quot;),2)))" field="Eval" size="1073741823" type="V_WString" />
-            <FormulaField expression="iif(right(Ex,1)!=&quot;)&quot; and left(Ex,1)=&quot;(&quot;,&quot;(&quot;+Eval, &#xA;iif(right(Ex,1)=&quot;)&quot; and left(Ex,1)!=&quot;(&quot;,Eval+&quot;)&quot;,Eval))" field="Eval" size="1073741823" type="V_WString" />
+            <FormulaField expression="iif(right(Ex,1)!=&quot;)&quot; and left(Ex,1)=&quot;(&quot;, &quot;(&quot;, &quot;&quot;) +&#xA;ToString(iif(Contains(Ex, &quot;*&quot;),&#xA;  ToNumber(GetWord(Trim(Ex,&quot;()&quot;),0)) * ToNumber(GetWord(Trim(Ex,&quot;()&quot;),2)),  &#xA;  ToNumber(GetWord(Trim(Ex,&quot;()&quot;),0)) + ToNumber(GetWord(Trim(Ex,&quot;()&quot;),2))))&#xA;+ iif(right(Ex,1)=&quot;)&quot; and left(Ex,1)!=&quot;(&quot;,&quot;)&quot;,&quot;&quot;)&#xA;" field="Eval" size="1073741823" type="V_WString" />
             <FormulaField expression="Left([ToEval],Index)+Eval+Substring([ToEval],Index+length(Ex))" field="Eval" size="1073741823" type="V_WString" />
             <FormulaField expression="LEft([Field1],I)+Eval+Substring([Field1],I+length(ToEval))" field="Field1" size="21" type="V_String" />
           </FormulaFields>
@@ -95,6 +94,7 @@
         <Position x="0" y="0" width="59" height="59" />
       </GuiSettings>
       <Properties>
+        <Configuration />
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -104,7 +104,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="342" y="102" />
+        <Position x="354" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -131,7 +131,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="258" y="102" />
+        <Position x="270" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -161,7 +161,7 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="42" y="174" />
+        <Position x="54" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -178,7 +178,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="438" y="102" />
+        <Position x="450" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -195,7 +195,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
-        <Position x="174" y="18" width="59" height="59" />
+        <Position x="186" y="54" width="59" height="59" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -334,6 +334,7 @@
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
         <Tool ToolId="10" Selected="True" />
         <Tool ToolId="11" Selected="True" />
       </Wiz_OpenOutputTools>
