@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="78" y="42" />
+        <Position x="54" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -48,7 +48,7 @@
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>Input</DefaultAnnotationText>
-          <Left value="False" />
+          <Left value="True" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
@@ -65,6 +65,7 @@
         <Position x="0" y="0" width="59" height="59" />
       </GuiSettings>
       <Properties>
+        <Configuration />
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -74,7 +75,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="294" y="42" />
+        <Position x="270" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -105,7 +106,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="390" y="78" />
+        <Position x="366" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -133,7 +134,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-        <Position x="486" y="42" />
+        <Position x="462" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -168,7 +169,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="198" y="42" />
+        <Position x="174" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -196,7 +197,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="390" y="150" />
+        <Position x="366" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -213,7 +214,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="570" y="42" />
+        <Position x="54" y="42" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -343,6 +344,7 @@
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
         <Tool ToolId="8" Selected="True" />
         <Tool ToolId="9" Selected="True" />
       </Wiz_OpenOutputTools>
