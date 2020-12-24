@@ -1,0 +1,1639 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="30" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="20" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>sesenwnenenewseeswwswswwnenewsewsw</c>
+            </r>
+            <r>
+              <c>neeenesenwnwwswnenewnwwsewnenwseswesw</c>
+            </r>
+            <r>
+              <c>seswneswswsenwwnwse</c>
+            </r>
+            <r>
+              <c>nwnwneseeswswnenewneswwnewseswneseene</c>
+            </r>
+            <r>
+              <c>swweswneswnenwsewnwneneseenw</c>
+            </r>
+            <r>
+              <c>eesenwseswswnenwswnwnwsewwnwsene</c>
+            </r>
+            <r>
+              <c>sewnenenenesenwsewnenwwwse</c>
+            </r>
+            <r>
+              <c>wenwwweseeeweswwwnwwe</c>
+            </r>
+            <r>
+              <c>wsweesenenewnwwnwsenewsenwwsesesenwne</c>
+            </r>
+            <r>
+              <c>neeswseenwwswnwswswnw</c>
+            </r>
+            <r>
+              <c>nenwswwsewswnenenewsenwsenwnesesenew</c>
+            </r>
+            <r>
+              <c>enewnwewneswsewnwswenweswnenwsenwsw</c>
+            </r>
+            <r>
+              <c>sweneswneswneneenwnewenewwneswswnese</c>
+            </r>
+            <r>
+              <c>swwesenesewenwneswnwwneseswwne</c>
+            </r>
+            <r>
+              <c>enesenwswwswneneswsenwnewswseenwsese</c>
+            </r>
+            <r>
+              <c>wnwnesenesenenwwnenwsewesewsesesew</c>
+            </r>
+            <r>
+              <c>nenewswnwewswnenesenwnesewesw</c>
+            </r>
+            <r>
+              <c>eneswnwswnwsenenwnwnwwseeswneewsenese</c>
+            </r>
+            <r>
+              <c>neswnwewnwnwseenwseesewsenwsweewe</c>
+            </r>
+            <r>
+              <c>wseweeenwnesenwwwswnew</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="222" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field1</Field>
+          <RegExExpression value="ne|nw|se|sw|e|w" />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="126" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="318" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>RecordID</UpdateField_Name>
+          <CreateField_Name>X</CreateField_Name>
+          <CreateField_Type>Int64</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>[Row-1:X]+
+Switch(Field1,0,"e",10,"w",-10,
+"ne",5,"nw",-5,
+"se",5,"sw",-5)</Expression>
+          <GroupByFields>
+            <Field field="RecordID" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Row-1:X]+
+Switch(Field1,0,"e",10,"w",-10,
+"ne",5,"nw",-5,
+"s...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="426" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>RecordID</UpdateField_Name>
+          <CreateField_Name>Y</CreateField_Name>
+          <CreateField_Type>Int64</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>[Row-1:Y]+
+Switch(Field1,0,"e",0,"w",-0,
+"ne",10,"nw",10,
+"se",-10,"sw",-10)</Expression>
+          <GroupByFields>
+            <Field field="RecordID" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Row-1:Y]+
+Switch(Field1,0,"e",0,"w",-0,
+"ne",10,"nw",10,
+"se...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="618" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="X" action="GroupBy" rename="X" />
+            <SummarizeField field="Y" action="GroupBy" rename="Y" />
+            <SummarizeField field="RecordID" action="CountDistinct" rename="CountDistinct_RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="690" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Mod([CountDistinct_RecordID],2)=1</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Mod([CountDistinct_RecordID],2)=1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="546" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Last</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="RecordID" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Last 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="30" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="408" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>nweeseeeeswsweenw</c>
+            </r>
+            <r>
+              <c>nwnwnwneswswnwnwwnwnwnwnwnenwsenwnwnwnenw</c>
+            </r>
+            <r>
+              <c>wnewneswnweseneseseswnewnesweswwnene</c>
+            </r>
+            <r>
+              <c>weswnwnwnwnwewswnwwsenwnwwwseewe</c>
+            </r>
+            <r>
+              <c>wnesewwswwsewenewnwswswnwwewwne</c>
+            </r>
+            <r>
+              <c>enweseseseneeseseseeswsese</c>
+            </r>
+            <r>
+              <c>neenesenewswnenenenwneseneeneneneneewne</c>
+            </r>
+            <r>
+              <c>swwnwswwsewswswnwseeseeenewewe</c>
+            </r>
+            <r>
+              <c>seseseeseesewwsenesesenwnweeesesew</c>
+            </r>
+            <r>
+              <c>neneeeneseseewnwseeswsenwwwenwswe</c>
+            </r>
+            <r>
+              <c>eeeseesewnwseeeseeseswnwneswnwnee</c>
+            </r>
+            <r>
+              <c>swesenwsesesenewnewsewnesese</c>
+            </r>
+            <r>
+              <c>swsewwseeneswsewnesenwsene</c>
+            </r>
+            <r>
+              <c>wseseseneenwnewnwwseeenewnwneenwse</c>
+            </r>
+            <r>
+              <c>eeeeswweeseesewnwneeeenwee</c>
+            </r>
+            <r>
+              <c>swseseseswseesesenwsesesenwenwseseseswsese</c>
+            </r>
+            <r>
+              <c>eenwseswwswnwewwnwsenwenwwwneeww</c>
+            </r>
+            <r>
+              <c>seswswswseseneswneswswswswsewneseneseswsw</c>
+            </r>
+            <r>
+              <c>seswwseseseswseseswswseseseswswnwneesw</c>
+            </r>
+            <r>
+              <c>enwenwnwswnwswenwneswneswnwnwnwnwnwnwnwne</c>
+            </r>
+            <r>
+              <c>wwwwwwnewwneswwswwewwwww</c>
+            </r>
+            <r>
+              <c>ewneeneswsesenesweeeeewseeewnw</c>
+            </r>
+            <r>
+              <c>swsenesweseswseswseesewwswswnwnwsesesw</c>
+            </r>
+            <r>
+              <c>nwenwseneseeswsenweneseeswnenw</c>
+            </r>
+            <r>
+              <c>nwnwnwnwnwnwnwwnwnwnwsenwnw</c>
+            </r>
+            <r>
+              <c>wsewwnwwwwsenenwewwswwnwwsewe</c>
+            </r>
+            <r>
+              <c>wwwnwwwewewwwswswnweswnwnwwww</c>
+            </r>
+            <r>
+              <c>eewesenenenwneeeeeseneee</c>
+            </r>
+            <r>
+              <c>nwswnwewwweneneneswnenwneneenwwe</c>
+            </r>
+            <r>
+              <c>neenwswseeeweeeseeswnwww</c>
+            </r>
+            <r>
+              <c>nwseswsewwseseswenesenesenewswneswe</c>
+            </r>
+            <r>
+              <c>ewnwnwnwnewnenweneeneneneseneneww</c>
+            </r>
+            <r>
+              <c>nwnwnwsenwwwnwnwnw</c>
+            </r>
+            <r>
+              <c>wswsenenwsenwwnewnenwnwnwnwnwnenwwsw</c>
+            </r>
+            <r>
+              <c>eeeeeeeeeweeneesw</c>
+            </r>
+            <r>
+              <c>nwewswwwnenwenwweswwswnwenwwnw</c>
+            </r>
+            <r>
+              <c>swsenenweeeswswswswseswswwswnwwswenw</c>
+            </r>
+            <r>
+              <c>newnesenenwseneseeneseewwnwnewsene</c>
+            </r>
+            <r>
+              <c>newnwneswnwneesewnwwnwnwwnwnwwswwnw</c>
+            </r>
+            <r>
+              <c>ewwswswswsewswnwewwswswswswswnwsew</c>
+            </r>
+            <r>
+              <c>nwnwsewnenenwseseesene</c>
+            </r>
+            <r>
+              <c>seseseswseseseeesesesewsenenesesenewse</c>
+            </r>
+            <r>
+              <c>neewnewnenewwnwenwwnwenwneesenw</c>
+            </r>
+            <r>
+              <c>sewnwnewsenenenwsesesewswseeeseseswse</c>
+            </r>
+            <r>
+              <c>eswwsesesesenenewswwnesesewsesenese</c>
+            </r>
+            <r>
+              <c>nwnwnwsenwswnwnewenwnwnwwsenw</c>
+            </r>
+            <r>
+              <c>wenwswwwwwswewwswwwwwww</c>
+            </r>
+            <r>
+              <c>enweeweneeeeneeeseeseeswwsew</c>
+            </r>
+            <r>
+              <c>neseneneeneneneneneneneswnwwnenenenene</c>
+            </r>
+            <r>
+              <c>eeneseneneeweeeeee</c>
+            </r>
+            <r>
+              <c>nenwnwseenenwnwneswnwswnenenwnwnwswswnene</c>
+            </r>
+            <r>
+              <c>nenenwnewnewseswnwnwneneneneesenenenenw</c>
+            </r>
+            <r>
+              <c>ewwwwneswwsesewswswwswwnwswwsw</c>
+            </r>
+            <r>
+              <c>neeneenenwswneneeeeneneeee</c>
+            </r>
+            <r>
+              <c>sewwnwwnwnewsewwwwnwsenwww</c>
+            </r>
+            <r>
+              <c>swswneseswswswswseswswswnwnwswenwnwnesesw</c>
+            </r>
+            <r>
+              <c>wwwwnwewwwnwwswnwsenwwww</c>
+            </r>
+            <r>
+              <c>wswewnwswseswwswseswwwnewwwnesww</c>
+            </r>
+            <r>
+              <c>wneswseseswswswsesesenwseseneseswesesese</c>
+            </r>
+            <r>
+              <c>nenweeswnwwnwneseswnwneeneseneswnwne</c>
+            </r>
+            <r>
+              <c>nwnwswnwnwnenwswnwnwnwnenenwe</c>
+            </r>
+            <r>
+              <c>eswesweenenwnweneeeeene</c>
+            </r>
+            <r>
+              <c>nweewneneneneneneenesweseneenewse</c>
+            </r>
+            <r>
+              <c>wwswswswswswnwwwswsew</c>
+            </r>
+            <r>
+              <c>nenenenesenwnenwswnenwnenwnenenenenwnese</c>
+            </r>
+            <r>
+              <c>wnwwwwwnwnesewnwwsewnwnwswnwww</c>
+            </r>
+            <r>
+              <c>neneneneneswneswwnenenenenwnwseenenenese</c>
+            </r>
+            <r>
+              <c>nwnwnenenenewnenewnwnwnesenwnwneseenene</c>
+            </r>
+            <r>
+              <c>seenwnwsenwsenwnweswwwwwnwneneswsenw</c>
+            </r>
+            <r>
+              <c>nwseweswwswwwwneswwnweenesewnwsww</c>
+            </r>
+            <r>
+              <c>eeeeeeeesewenenweeseeenew</c>
+            </r>
+            <r>
+              <c>sewwsewwwwwnwnwwwwnewwesenww</c>
+            </r>
+            <r>
+              <c>sweeswweswenwsesesewnewwwseswesw</c>
+            </r>
+            <r>
+              <c>swswswswesenwswwsweswswswsenweswnwsw</c>
+            </r>
+            <r>
+              <c>nwneswnenwnwswnenwnwnwenenwnwnenwnw</c>
+            </r>
+            <r>
+              <c>seswnwnwnwnwswwwewnwnwnenw</c>
+            </r>
+            <r>
+              <c>wwnwnwwnwwneeswwwswwwwnwswenw</c>
+            </r>
+            <r>
+              <c>neenwnwenwwnwnwswenenwwsweeswnwse</c>
+            </r>
+            <r>
+              <c>nenewnewneneeswnesenwnenwnwesesewsw</c>
+            </r>
+            <r>
+              <c>wswnwswwwwneseswneswswwwswseswnew</c>
+            </r>
+            <r>
+              <c>nwnenweswnenwnwseneseswswnwswnwnenweswnw</c>
+            </r>
+            <r>
+              <c>neneseswnenenenenwsenenenwnenenwnenenwsw</c>
+            </r>
+            <r>
+              <c>eneseneswsenweeseseeweseseeswsee</c>
+            </r>
+            <r>
+              <c>seesesesesewseseseenesese</c>
+            </r>
+            <r>
+              <c>nwenwnenwwnwsweswnwnwwwswwnwnenwwne</c>
+            </r>
+            <r>
+              <c>wsenewswsenwneseswwnesewneenwwnwse</c>
+            </r>
+            <r>
+              <c>newwwnwwswwenwwwesewwwwwwwnw</c>
+            </r>
+            <r>
+              <c>eeweswneswneswenweewnesewsenwswnww</c>
+            </r>
+            <r>
+              <c>nenweswseswswswneseswswswswnwswsesw</c>
+            </r>
+            <r>
+              <c>wwewswwnwnwwnenweneswnwweseww</c>
+            </r>
+            <r>
+              <c>wseweseseseseseswseseseseneesenesese</c>
+            </r>
+            <r>
+              <c>swwswswswswnwwswswswweswwswseswswne</c>
+            </r>
+            <r>
+              <c>nenwnwenenweseseseneweneeweeneesene</c>
+            </r>
+            <r>
+              <c>seseseseswseseeseswseeseseswsenwsenwsw</c>
+            </r>
+            <r>
+              <c>swseswswswseswnwseseseeswswsesesesewne</c>
+            </r>
+            <r>
+              <c>wswswswswswwswswnwswwwswsenenweew</c>
+            </r>
+            <r>
+              <c>nenwnwneneewenwnewneswweswnesw</c>
+            </r>
+            <r>
+              <c>seeeeweeeeeeneesesesee</c>
+            </r>
+            <r>
+              <c>swneneswswnwseneswswswsenwswwsweswenwsw</c>
+            </r>
+            <r>
+              <c>swseeeeswneneesenwnwnwseeseeswnwsewsw</c>
+            </r>
+            <r>
+              <c>wenwnwnwnwsenwnwwswwnwnewnwsenwswnwse</c>
+            </r>
+            <r>
+              <c>seeeswsesesenwsesesewsesesenwesesenwse</c>
+            </r>
+            <r>
+              <c>swenwseswseseswseneswswswswswseeswwwsw</c>
+            </r>
+            <r>
+              <c>nenwneneeesweeneseeneneeneneeswe</c>
+            </r>
+            <r>
+              <c>eswsweswwswswswswswwwnwweswswswsw</c>
+            </r>
+            <r>
+              <c>nenwneeenenwswewneswswenee</c>
+            </r>
+            <r>
+              <c>swswwswwwnwnwsenwneswwseswwswsenee</c>
+            </r>
+            <r>
+              <c>eswsesweswswsewsenwewsweswwesenw</c>
+            </r>
+            <r>
+              <c>wnenwnwwsenewnwewenwnwwnwsesenwsw</c>
+            </r>
+            <r>
+              <c>eneeneeneeeneeenwwnesweneeeswe</c>
+            </r>
+            <r>
+              <c>swsweswswswswswswnwswswsenwswsw</c>
+            </r>
+            <r>
+              <c>nenwnwnenenenwnwnwnwnwsw</c>
+            </r>
+            <r>
+              <c>seweseneeeeeseneesweesesewenw</c>
+            </r>
+            <r>
+              <c>enwwwnwweswwenwweswwenwswwswwnw</c>
+            </r>
+            <r>
+              <c>nwswnwneneneneneswwnwnenenenesenenenenenw</c>
+            </r>
+            <r>
+              <c>nenwnenwswswneneenwswneneneneneswswnenene</c>
+            </r>
+            <r>
+              <c>nwwseneseseeseseswseesesesewsesenesese</c>
+            </r>
+            <r>
+              <c>seneseseseswneseseseswseswseswsesenenenw</c>
+            </r>
+            <r>
+              <c>seeswseswseswswswswswseeswswswnesewsenw</c>
+            </r>
+            <r>
+              <c>newneneneeeneneene</c>
+            </r>
+            <r>
+              <c>eeeseeweeeeenweesenweeesw</c>
+            </r>
+            <r>
+              <c>swneswswsesewswneswwseswseswneswswsesese</c>
+            </r>
+            <r>
+              <c>nwseswnewswswnenwenewnenenwnesene</c>
+            </r>
+            <r>
+              <c>wsenewswwwwwwewwwwwwwnwnew</c>
+            </r>
+            <r>
+              <c>eseeeswsewwewnenwsesenewenwsenee</c>
+            </r>
+            <r>
+              <c>newswwswwweswwsewnenwnweseswene</c>
+            </r>
+            <r>
+              <c>sesesewwseseswneseswnesesenwsesenwesese</c>
+            </r>
+            <r>
+              <c>enwenwnwnwnwnwnwewnwnwnwwsenenwnwnww</c>
+            </r>
+            <r>
+              <c>wnenwnenwswnesesenenenenenenenenewne</c>
+            </r>
+            <r>
+              <c>sesweseenenwnwseneeesweswseswwnwse</c>
+            </r>
+            <r>
+              <c>wswneneeseneweneseweswnenwnwwnwee</c>
+            </r>
+            <r>
+              <c>nwnwnwwwsewwwwnwwwewwnwwsew</c>
+            </r>
+            <r>
+              <c>weenwnwnwnwwsewnwnwenwwwwnwww</c>
+            </r>
+            <r>
+              <c>eesweeeenwseesewseesenweesee</c>
+            </r>
+            <r>
+              <c>nwnenenwnewnwnwsenwenwsenwnwnenwnenwnw</c>
+            </r>
+            <r>
+              <c>enweeeeeeseneeeweeeeeesw</c>
+            </r>
+            <r>
+              <c>seswsesenewnesewnwneswnenenewwnwenw</c>
+            </r>
+            <r>
+              <c>wswwswswwswswswswneswswswneswswswswe</c>
+            </r>
+            <r>
+              <c>seseseeesenwesesese</c>
+            </r>
+            <r>
+              <c>swswswswswseswswswneswwnwswswseneeswswsw</c>
+            </r>
+            <r>
+              <c>wnewwewwswnwwwneseweswswseww</c>
+            </r>
+            <r>
+              <c>seeeneneesewsewseenesenwwweneseswse</c>
+            </r>
+            <r>
+              <c>neswswswswseswnwswseswswswswswswswnwswsw</c>
+            </r>
+            <r>
+              <c>wseswsenenenenenwneneneenwnwnwnenenenewne</c>
+            </r>
+            <r>
+              <c>wwswwwwnwenwnwnwnwwnwnw</c>
+            </r>
+            <r>
+              <c>sesenwsewwswsesesesesesesenenesweseseew</c>
+            </r>
+            <r>
+              <c>esenenewnenesenesenwnwseswneenewwwne</c>
+            </r>
+            <r>
+              <c>ewseswseswseswwwsenenwswseesesesesw</c>
+            </r>
+            <r>
+              <c>swseseseseneseeswseewswseneeeenesese</c>
+            </r>
+            <r>
+              <c>ewneswnenwswwswwwsew</c>
+            </r>
+            <r>
+              <c>eewwnwnwwnenenenwnwnenwswnwseneenenw</c>
+            </r>
+            <r>
+              <c>wswwnewwwwswwwwswswwwne</c>
+            </r>
+            <r>
+              <c>neswnewnenewswneneneenwnenenwe</c>
+            </r>
+            <r>
+              <c>sweeneeeeeeweseeesenweseese</c>
+            </r>
+            <r>
+              <c>seswsenwseeseswseeseewsenwwweswsese</c>
+            </r>
+            <r>
+              <c>nweenwnwwnwnwsenwnwnwnenwsewnwnwnwwwe</c>
+            </r>
+            <r>
+              <c>ewnewneeesweswwswswwwww</c>
+            </r>
+            <r>
+              <c>wwswwsewnewswswwewwenesewwwww</c>
+            </r>
+            <r>
+              <c>sesweseesewswswseswseneswseseseswnwse</c>
+            </r>
+            <r>
+              <c>wwswnwwswewwseswswwweew</c>
+            </r>
+            <r>
+              <c>eesewneneneneneseswseneeenenenwwwse</c>
+            </r>
+            <r>
+              <c>neenwnwnenenwnenwswnene</c>
+            </r>
+            <r>
+              <c>seseseseswswsweswenwsewseswswswsenwsw</c>
+            </r>
+            <r>
+              <c>swswnwswswneswswewswswswswwenwswnwswe</c>
+            </r>
+            <r>
+              <c>eeseeeeeeeesesenwenewseseew</c>
+            </r>
+            <r>
+              <c>eswseseeswnwwseseseswsesesenesesewseswse</c>
+            </r>
+            <r>
+              <c>swneseswswesenewwwswenenwwswwwsesw</c>
+            </r>
+            <r>
+              <c>nwwnwnwnewswnwwwenwwwsenwnwnwwnw</c>
+            </r>
+            <r>
+              <c>swnwnwnwnwnenwnwnwseeeswwnwnwnenenenw</c>
+            </r>
+            <r>
+              <c>nenwnenenesenesenenwneenewneneswnenene</c>
+            </r>
+            <r>
+              <c>seseewseseseeeseeseseeewneese</c>
+            </r>
+            <r>
+              <c>eneeneeeseewewnwseneneesweswe</c>
+            </r>
+            <r>
+              <c>sesenweeseseneesweseeeeseeenwsesw</c>
+            </r>
+            <r>
+              <c>nwnwnwnwsenwnenenesewnenenweneswnenwnww</c>
+            </r>
+            <r>
+              <c>nwnenenewneeneenwneenweneswnewsww</c>
+            </r>
+            <r>
+              <c>neseseneseseswwswsese</c>
+            </r>
+            <r>
+              <c>nwenenwnenweseneswnwnwwnenwnenwnenene</c>
+            </r>
+            <r>
+              <c>neeeeseneneeeneeneenw</c>
+            </r>
+            <r>
+              <c>nwswnwnwnenwnwnwwsenwnwwnenwsewnwnww</c>
+            </r>
+            <r>
+              <c>enwnwwwnweswneswnesesenenenwnwnwnew</c>
+            </r>
+            <r>
+              <c>seswwnwsewwwwswneeswwwwwsenewnw</c>
+            </r>
+            <r>
+              <c>wwwwwwnenwewwwnwwnwsenwnwnwwsese</c>
+            </r>
+            <r>
+              <c>neswseewnwnenwwswsenwwnwnwneseneseee</c>
+            </r>
+            <r>
+              <c>eesweseswswsenwnwnwnesw</c>
+            </r>
+            <r>
+              <c>nwnwnwnesenwnwnwwneenwnwwnwnwne</c>
+            </r>
+            <r>
+              <c>weeesweseswewenesenwnweseneenw</c>
+            </r>
+            <r>
+              <c>enesewesweswnenwswnwwseeseneeseee</c>
+            </r>
+            <r>
+              <c>sesenwnwseswseswswsenwneesew</c>
+            </r>
+            <r>
+              <c>nwnwnewnwnwnewswnwwwwewnwnwnwsenw</c>
+            </r>
+            <r>
+              <c>nwnwseneswnenwnenenwnenwnenenwnw</c>
+            </r>
+            <r>
+              <c>wswsewwswnewswsewswwwneswnwneswswsw</c>
+            </r>
+            <r>
+              <c>seneseneenwseeneneenenenenenewweww</c>
+            </r>
+            <r>
+              <c>swswseswnwswswseswne</c>
+            </r>
+            <r>
+              <c>seneswsewswseswenesenenweenwesesenwse</c>
+            </r>
+            <r>
+              <c>nenenwnenwsenwnwsenwnwnwwnwnwwnwnesenwnwnw</c>
+            </r>
+            <r>
+              <c>wwnwwwnwnwnwnweswnwsew</c>
+            </r>
+            <r>
+              <c>wneswwwnenwwswseseswwnenewswwswse</c>
+            </r>
+            <r>
+              <c>swswswswswswweewsw</c>
+            </r>
+            <r>
+              <c>wwwnewseewswnewswswswswneeenwwsw</c>
+            </r>
+            <r>
+              <c>sewsesweseseswseesesesenesewwnwswwnee</c>
+            </r>
+            <r>
+              <c>swswnenwswswswswseswswswswsweswswswsw</c>
+            </r>
+            <r>
+              <c>ewwwwwwwwwsenwewwswwsewnenw</c>
+            </r>
+            <r>
+              <c>sweswswnweenwnwnwnwnwnwweewswnwenwnw</c>
+            </r>
+            <r>
+              <c>eeeenweeseeenesenenwwnwseswweesw</c>
+            </r>
+            <r>
+              <c>swwseseswnenwswswwswnwnwseseeneewsesw</c>
+            </r>
+            <r>
+              <c>sesenwseeneseeseswswsesewseseneseseswsw</c>
+            </r>
+            <r>
+              <c>nwswswswewswswnwswswswseswsww</c>
+            </r>
+            <r>
+              <c>eseswsenwswswswseswswswswswneswsw</c>
+            </r>
+            <r>
+              <c>esewnweeweeswnw</c>
+            </r>
+            <r>
+              <c>sweneweenwsenewnwseswnenenwnwwnese</c>
+            </r>
+            <r>
+              <c>ewnewneswsesesweneneneenwsw</c>
+            </r>
+            <r>
+              <c>swwwwnwswwseswwneseswnwwsewwwww</c>
+            </r>
+            <r>
+              <c>neenwnenenenwsewsewnwwnwwsenesenenwnw</c>
+            </r>
+            <r>
+              <c>swwneswenwwswseseeswseneneseswwseseswsw</c>
+            </r>
+            <r>
+              <c>nwneswsenwseenwwnwnwnwnwwnwnwnwnwnw</c>
+            </r>
+            <r>
+              <c>wwnwswnwsewwwnwwwewwenwsenwwe</c>
+            </r>
+            <r>
+              <c>sweseseeeseseeeeseeneeesenw</c>
+            </r>
+            <r>
+              <c>weweeeeseeneseeeeeeewseee</c>
+            </r>
+            <r>
+              <c>wswswewnesewwwswwwwwnewnwwe</c>
+            </r>
+            <r>
+              <c>seeeseseseseeseswseseenenwseswwsesee</c>
+            </r>
+            <r>
+              <c>eswseswnwneseswswswswsw</c>
+            </r>
+            <r>
+              <c>neneseenwnenenenweseneeeeeseneew</c>
+            </r>
+            <r>
+              <c>swnenwnwsenewnenewsenwneseseseswwswne</c>
+            </r>
+            <r>
+              <c>seseseseseseseseswsewneseswwsesesenese</c>
+            </r>
+            <r>
+              <c>enwwnesewsenesenwenenwneseesenenwneswse</c>
+            </r>
+            <r>
+              <c>senwnenwwnwnwwnweneswsenenwswswnwenesese</c>
+            </r>
+            <r>
+              <c>seswseseseseseesesenwseesesesese</c>
+            </r>
+            <r>
+              <c>eeeeswneeenwweeesenee</c>
+            </r>
+            <r>
+              <c>nwwnwseewnwwwwww</c>
+            </r>
+            <r>
+              <c>neenenwneneneswenwneeseswnwnwneseswne</c>
+            </r>
+            <r>
+              <c>swseseseseseseseesenwsw</c>
+            </r>
+            <r>
+              <c>wnwseswewswswneesenwsenwseseeenesesw</c>
+            </r>
+            <r>
+              <c>nwswnwnwenwnwswnwenwwenwwnwswwweenw</c>
+            </r>
+            <r>
+              <c>wweweeseeseeeseeneeeeneee</c>
+            </r>
+            <r>
+              <c>seweeswnwsweeeeseeeswenwneewe</c>
+            </r>
+            <r>
+              <c>seswseswswsewswswneseswsw</c>
+            </r>
+            <r>
+              <c>wweseneswseseeseseenwswseseeseneneee</c>
+            </r>
+            <r>
+              <c>wsenenwwswnwwseesenweswwnwnwnwenwnw</c>
+            </r>
+            <r>
+              <c>sweswnwswenweeswnwswswwwwswswenesw</c>
+            </r>
+            <r>
+              <c>seseseesewseneseeseseneesewswseewe</c>
+            </r>
+            <r>
+              <c>swneswswseswsweswswwswwswswnwne</c>
+            </r>
+            <r>
+              <c>nwneneseneneseswswenenenwnewneneneneene</c>
+            </r>
+            <r>
+              <c>seseswswnewneseseswseseeswneswwswswwese</c>
+            </r>
+            <r>
+              <c>nwswnwnwewsenwnenewwwswewnwwww</c>
+            </r>
+            <r>
+              <c>newnwseseneswwwnewsweewwseesene</c>
+            </r>
+            <r>
+              <c>wwwwnewwwwnwswswenewenwsenesww</c>
+            </r>
+            <r>
+              <c>senenwneeneeeenwesw</c>
+            </r>
+            <r>
+              <c>swnenenwswswnweneswswswnwesewsenwswswsw</c>
+            </r>
+            <r>
+              <c>nwnwnwsenenwnenwnwwnwnwnwsewwnwenenw</c>
+            </r>
+            <r>
+              <c>seswnewswswneswwewswswwswwswwwsww</c>
+            </r>
+            <r>
+              <c>swnwesewwswswswwswnwneswswse</c>
+            </r>
+            <r>
+              <c>swseswwwwnewwwswww</c>
+            </r>
+            <r>
+              <c>wswneneneseswnwnenweswenwnwnenesesewnenw</c>
+            </r>
+            <r>
+              <c>wewwneenenwnwnwsenwseswswswsewseenee</c>
+            </r>
+            <r>
+              <c>swenwnwneenwnwnwnwswnwnwswnwnwnwnwnwnwnw</c>
+            </r>
+            <r>
+              <c>nwnwsenenenwnenenenenenenwnenene</c>
+            </r>
+            <r>
+              <c>wnweeeeseseseenwseswnwsesesesesesene</c>
+            </r>
+            <r>
+              <c>wneswseseswseeeseseeseneneeseeee</c>
+            </r>
+            <r>
+              <c>neneneswnewnwwswneswnwneneneneseenesw</c>
+            </r>
+            <r>
+              <c>wswnwneewwswwewwnwnww</c>
+            </r>
+            <r>
+              <c>ewnwwnwnenwnwnwwwswwwsewenwww</c>
+            </r>
+            <r>
+              <c>seswseseseswswswneswswswsw</c>
+            </r>
+            <r>
+              <c>seneseesesenwswseseseseeseseewsewsese</c>
+            </r>
+            <r>
+              <c>neswwseswnwwseswneseswswwnwseeenenese</c>
+            </r>
+            <r>
+              <c>nwnenwnwnwwsenwnenwnwnenwseseswsenwswnew</c>
+            </r>
+            <r>
+              <c>nwnwnwseenesenwneneenwewnwswswnenwnenw</c>
+            </r>
+            <r>
+              <c>wnwnwwseswnesweneneeswswsw</c>
+            </r>
+            <r>
+              <c>sesenwseneeweeseeswenwseswseeseswsee</c>
+            </r>
+            <r>
+              <c>nwswnwsenwneswnwneeewnweswnwwswnwnw</c>
+            </r>
+            <r>
+              <c>nenwnwnwsenewsenwnesewsenesenwnenenenw</c>
+            </r>
+            <r>
+              <c>esewswseseseswsenwsenweswsesewnwsene</c>
+            </r>
+            <r>
+              <c>eenwneweswwsweeneeeneneneseese</c>
+            </r>
+            <r>
+              <c>swswwswseswswswswswnwswswwseneeneswswsw</c>
+            </r>
+            <r>
+              <c>nwewseeeseeseeseseseneenwseesw</c>
+            </r>
+            <r>
+              <c>eseseeesenwseseesesesewesenewesewne</c>
+            </r>
+            <r>
+              <c>nwnwswnwnwwwnwewwnwwnenw</c>
+            </r>
+            <r>
+              <c>nwnwsenwwwnesenwnwnwsewnwnwnwnwnenwnwnw</c>
+            </r>
+            <r>
+              <c>eeeeeeewwseeewseenwswsenwnene</c>
+            </r>
+            <r>
+              <c>wsesewswswneswswwswswnwnwswesweww</c>
+            </r>
+            <r>
+              <c>sewsewswwnenwswseswswswneswsenwseesw</c>
+            </r>
+            <r>
+              <c>enwnewnwswseseneswnweneenwswnenwnwwse</c>
+            </r>
+            <r>
+              <c>swneneenweeenenesweneswneneswneene</c>
+            </r>
+            <r>
+              <c>nwsenwnwnwnewnenenwnwnwsenenwnwnenwwne</c>
+            </r>
+            <r>
+              <c>nwnwwnwwnwnwenwenwwnwseswnwnwewwnw</c>
+            </r>
+            <r>
+              <c>senwseeswseseeweswwsweseeneneneene</c>
+            </r>
+            <r>
+              <c>nwswneenwnwenenenwswseseeswseenenenene</c>
+            </r>
+            <r>
+              <c>seeeweneseeseee</c>
+            </r>
+            <r>
+              <c>eswwneswwsweesenwsesewenwse</c>
+            </r>
+            <r>
+              <c>eenenewnewnenwneneneeeneseneseneese</c>
+            </r>
+            <r>
+              <c>ewseseswswenewwseswse</c>
+            </r>
+            <r>
+              <c>seseeseeesweseseeeseseeeneswnww</c>
+            </r>
+            <r>
+              <c>nwnwweswewsenwnenenwswnwneesenwwswnene</c>
+            </r>
+            <r>
+              <c>eeeeenwwseeeseeweweeeseenw</c>
+            </r>
+            <r>
+              <c>eswnenewswseeswsenwseswswsewswswneswsw</c>
+            </r>
+            <r>
+              <c>wewsewsewwnwnwewwnenwwwwwwswse</c>
+            </r>
+            <r>
+              <c>nwneneswswneweew</c>
+            </r>
+            <r>
+              <c>eeeseseswseesewsenewenwseneneweese</c>
+            </r>
+            <r>
+              <c>esesesesesesesenwseseesesw</c>
+            </r>
+            <r>
+              <c>enenewnesweneneenenenene</c>
+            </r>
+            <r>
+              <c>seneswnenwnwnenenenee</c>
+            </r>
+            <r>
+              <c>swswseswswwswwseeswnwswnwswswneswswsw</c>
+            </r>
+            <r>
+              <c>nenwnwnwnenwnenwswnwnwneneenwnene</c>
+            </r>
+            <r>
+              <c>seseswswsenwesesenwseswnwswseseseswnwseswe</c>
+            </r>
+            <r>
+              <c>senenwsesesewwsweseseswneswseswsewswsesw</c>
+            </r>
+            <r>
+              <c>enweswswneseeeenwsweeeeseene</c>
+            </r>
+            <r>
+              <c>nenwneswnenwenenenenwnwswnenwwenesenw</c>
+            </r>
+            <r>
+              <c>eneewneswenenenwweseweseeneenenw</c>
+            </r>
+            <r>
+              <c>swseeswnwswweneeswnwswswwwswneswnw</c>
+            </r>
+            <r>
+              <c>sweeswswswswswswswswseseseswnwswenwwsesw</c>
+            </r>
+            <r>
+              <c>nenwwwwwnwswwneswesewnewswwwe</c>
+            </r>
+            <r>
+              <c>neenewnewneeeseneeneeeswnwwnene</c>
+            </r>
+            <r>
+              <c>eswswnwswswseswnenwseswswsesenenwsesewnwse</c>
+            </r>
+            <r>
+              <c>swnwnweneeeneeeneneswwwene</c>
+            </r>
+            <r>
+              <c>swswwswsewneswswwswwwnwsweswnwwsesw</c>
+            </r>
+            <r>
+              <c>sewseewswswseesesesenwwnesenwseese</c>
+            </r>
+            <r>
+              <c>nwswsenwnesweneeenenenenenenenenenenw</c>
+            </r>
+            <r>
+              <c>eeseenwseesewnweeeneeseeewe</c>
+            </r>
+            <r>
+              <c>nwnwswswnwnewwnewswnwnwenwwnwnwwnw</c>
+            </r>
+            <r>
+              <c>wswswseneswwnenwswwwneswneswswseswsw</c>
+            </r>
+            <r>
+              <c>enesenwsweeeesweeenw</c>
+            </r>
+            <r>
+              <c>nwsweeeeneeeneeswseeeeewneew</c>
+            </r>
+            <r>
+              <c>eswweseeneneneweenwenesweswewe</c>
+            </r>
+            <r>
+              <c>nwsesenwewwnewnwnwnwnwwneswnwewwwe</c>
+            </r>
+            <r>
+              <c>swswwwswnweswswseswswwwswswnewswsw</c>
+            </r>
+            <r>
+              <c>neneweeweeneswsweeeeenweeee</c>
+            </r>
+            <r>
+              <c>senenenenenenenenwnwswnese</c>
+            </r>
+            <r>
+              <c>nwswwnwnwnwnwwnwsenenwnwnwenenwnwnenwnw</c>
+            </r>
+            <r>
+              <c>eneweesesweswnweweeeeseesesenese</c>
+            </r>
+            <r>
+              <c>seweneeneeewwneseenenee</c>
+            </r>
+            <r>
+              <c>nwnwnwwnenwseswnwnwwewwse</c>
+            </r>
+            <r>
+              <c>wwsenwwwwwswsewnwswswnewwswsesw</c>
+            </r>
+            <r>
+              <c>neneneswswseseseeeenweeeeeewesw</c>
+            </r>
+            <r>
+              <c>sesweneneenweeenesweenenenwnweee</c>
+            </r>
+            <r>
+              <c>nweswnwneneneneneswswswene</c>
+            </r>
+            <r>
+              <c>eseeesweenesweneeenwswe</c>
+            </r>
+            <r>
+              <c>nenwwnenwswwnenwsesesenenewseseeswsesw</c>
+            </r>
+            <r>
+              <c>senwneweneewnwswsesenwnwnwnwewnwnw</c>
+            </r>
+            <r>
+              <c>neeswnenwnenwnwnenenenenwwnw</c>
+            </r>
+            <r>
+              <c>nenwsewneswswswsewseseseeseswneneswse</c>
+            </r>
+            <r>
+              <c>senenwnenwsenwnwnenenwnwnene</c>
+            </r>
+            <r>
+              <c>senenenwsewnesewwwesewswswseswswe</c>
+            </r>
+            <r>
+              <c>swswswnwwswswswswsesesweneswseseswswsenw</c>
+            </r>
+            <r>
+              <c>seneesenwenewnwsewsesweseeseesew</c>
+            </r>
+            <r>
+              <c>seseenweseeseseeseseneenwesesesesw</c>
+            </r>
+            <r>
+              <c>wwewnwwnwswnwwnenwnwnww</c>
+            </r>
+            <r>
+              <c>wwneswnenewnwneeenwnenenenwnenenwsene</c>
+            </r>
+            <r>
+              <c>swwswneswwswwwwswweswwswwswesesw</c>
+            </r>
+            <r>
+              <c>wwwnwwnewswnwnesenwsewwwnwwnww</c>
+            </r>
+            <r>
+              <c>swwneweswswwwsw</c>
+            </r>
+            <r>
+              <c>wswswswwneswwwwwwwww</c>
+            </r>
+            <r>
+              <c>sweeesenwnwenwswe</c>
+            </r>
+            <r>
+              <c>wswwswsenwswswnwswnesweseswwswswsww</c>
+            </r>
+            <r>
+              <c>swseswwnwsweswswneswswwswswswseenwsw</c>
+            </r>
+            <r>
+              <c>swwneeeeeeneenee</c>
+            </r>
+            <r>
+              <c>neneenenwnenenenwneneneenenwneswneswne</c>
+            </r>
+            <r>
+              <c>nenwneneseneneneeneeswnwnesenene</c>
+            </r>
+            <r>
+              <c>swswneswswnwenwseseneswwwswseneenwnwsw</c>
+            </r>
+            <r>
+              <c>newwwwwsewnwnwsewwww</c>
+            </r>
+            <r>
+              <c>wnwsenwnwnwnwnwnewnwnwnwnww</c>
+            </r>
+            <r>
+              <c>seseseneswseseseseseswsesew</c>
+            </r>
+            <r>
+              <c>seeswsewnwneewnenesewwnwnwnenwsesww</c>
+            </r>
+            <r>
+              <c>wswnwnwsenewneswswnwseneneneeseeswnwnw</c>
+            </r>
+            <r>
+              <c>swwswswswewswswnesw</c>
+            </r>
+            <r>
+              <c>swseswsenesenweswsewwesesenwsenese</c>
+            </r>
+            <r>
+              <c>eneneeneeneeneeseweswneeewsene</c>
+            </r>
+            <r>
+              <c>nwseeeeeeswswneeswsenweeeesenee</c>
+            </r>
+            <r>
+              <c>nwnwenewnwneseneenwsweswswnenenenenw</c>
+            </r>
+            <r>
+              <c>nenewswewswneeneneeeneneenenenwnew</c>
+            </r>
+            <r>
+              <c>sewweswnenwswwnwnwewsenenwsewenw</c>
+            </r>
+            <r>
+              <c>neswneseswswnwseswnwsw</c>
+            </r>
+            <r>
+              <c>nenwseswnwwswsenwnwwswsenesweseswwsene</c>
+            </r>
+            <r>
+              <c>swwwwwwswwnwewwwwnewwseww</c>
+            </r>
+            <r>
+              <c>nwneeseneneneneswneeeswneswnenenwwnwnw</c>
+            </r>
+            <r>
+              <c>nwwnwwwsewwwnwswnewwswsenenwwnww</c>
+            </r>
+            <r>
+              <c>nwwnwnwnwswenwwsenewnww</c>
+            </r>
+            <r>
+              <c>nwnwsenenenenenenenene</c>
+            </r>
+            <r>
+              <c>neenweenesenwneeneneeswnenenenwswwese</c>
+            </r>
+            <r>
+              <c>eewweeneneeeeeenwneenesewsesw</c>
+            </r>
+            <r>
+              <c>swseswnenewswswswsw</c>
+            </r>
+            <r>
+              <c>swnwewneeswnweseswenwswseeeseeene</c>
+            </r>
+            <r>
+              <c>wenwneneenwnwsewnwswwsenenwnesenwne</c>
+            </r>
+            <r>
+              <c>eeeweeseeeneeeeeenweewe</c>
+            </r>
+            <r>
+              <c>sewnwnwswnwnenwnwnwneenwnwseswnwnwnwnw</c>
+            </r>
+            <r>
+              <c>wwnenwnwwsenwnwnwwswswnwnwnwnwnwwenw</c>
+            </r>
+            <r>
+              <c>neseeseeseseswnww</c>
+            </r>
+            <r>
+              <c>senwsewnweeeseesenwsweeneseseneee</c>
+            </r>
+            <r>
+              <c>seseeenwwseeseesewsweeseeenee</c>
+            </r>
+            <r>
+              <c>wwwnwswwsenwwwwwseswnwewswwswse</c>
+            </r>
+            <r>
+              <c>swnwnwnwnwnwnenwnwnwwenwwsenwnwwnwsww</c>
+            </r>
+            <r>
+              <c>neseneeeneswneenwnewsweenenenesewne</c>
+            </r>
+            <r>
+              <c>nwwnenewwswwwnewswsewwenwsesww</c>
+            </r>
+            <r>
+              <c>seswwwnwnenenewswswww</c>
+            </r>
+            <r>
+              <c>nwnenwnwsewnwnwswnwnenwnenw</c>
+            </r>
+            <r>
+              <c>wswswswnesweswswswswsweswswswswswswnw</c>
+            </r>
+            <r>
+              <c>nwsenwwnwsewnwwnwnwnweneswnwwwnwnww</c>
+            </r>
+            <r>
+              <c>senwnwnwewnwnenwswnwnwsenwnwnwnwnwnwnw</c>
+            </r>
+            <r>
+              <c>wweneweswswwewswnewnwwwwnwsewsw</c>
+            </r>
+            <r>
+              <c>seneeswwwwwwwnwwnwnwsenwwenwswnw</c>
+            </r>
+            <r>
+              <c>nwnweseeswwsenwnwwsenwewnwnwnwnwwnwe</c>
+            </r>
+            <r>
+              <c>sewwswweswswewnwswwswneseswseswnw</c>
+            </r>
+            <r>
+              <c>neswneneneneneenweneneenee</c>
+            </r>
+            <r>
+              <c>newseseseseswnwesesenenewseseswsesese</c>
+            </r>
+            <r>
+              <c>swnwsesesesesesesesesesenwseseweswsenese</c>
+            </r>
+            <r>
+              <c>nwenwswnwneneenesenwnwswnenw</c>
+            </r>
+            <r>
+              <c>sewsenenweenwswnewsenwsweseseswsenese</c>
+            </r>
+            <r>
+              <c>swneswnwsweeeswenenwnesweeewe</c>
+            </r>
+            <r>
+              <c>senwseeenwenenwneeeeneenesw</c>
+            </r>
+            <r>
+              <c>nenenenweseeswwseneewnwwseeesesw</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="810" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="X" selected="True" />
+            <SelectField field="Y" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="990" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Day" action="GroupBy" rename="Day" />
+            <SummarizeField field="Day" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings>
+        <Position x="894" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>2020 Day24 (11)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="2020 Day24.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output19" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2020 Day24</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
