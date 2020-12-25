@@ -162,7 +162,7 @@ Left([State],FindString(...</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <WorkflowName>c:\repos\alteryx\adventofcode\2020 day23.yxmd</WorkflowName>
-          <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":95,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"}},"outputs":[],"source":["from ayx import Alteryx\n","import pandas as pd \n","df = Alteryx.read(\"#1\")\n","vals = list(df['V'])\n","l = len(vals)"]},{"cell_type":"code","execution_count":96,"metadata":{},"outputs":[],"source":["class Cup:\n","    def __init__(self, v: int):\n","        self.v = v\n","        self.next = None\n","    \n","    def __repr__(self):\n","        return f'C({self.v}:{self.next.v})'\n","\n","d = {}\n","for i, v in enumerate(vals):\n","    c = Cup(v)\n","    if i > 0:\n","        d[vals[i - 1]].next = c\n","        \n","    d[v] = c\n","d[vals[-1]].next = d[vals[0]]"]},{"cell_type":"code","execution_count":97,"metadata":{},"outputs":[],"source":["current = d[vals[0]]\n","\n","for i in range(df['games'][0]):\n","    c_next = current.next\n","    current.next = current.next.next.next.next\n","    pickup = [c_next.v, c_next.next.v, c_next.next.next.v]\n","\n","    i = 1\n","    while (current.v - i if current.v - i > 0 else current.v - i + l) in pickup:\n","        i += 1\n","    i = (current.v - i if current.v - i > 0 else current.v - i + l)\n","    t_next = d[i].next\n","    d[i].next = c_next\n","    c_next.next.next.next = t_next\n","    \n","    current = current.next"]},{"cell_type":"code","execution_count":null,"metadata":{},"outputs":[],"source":["current = d[1]\n","output = []\n","while (current.next.v != 1):\n","    output.append(current.v)\n"]},{"cell_type":"code","execution_count":99,"metadata":{},"outputs":[],"source":["output"]}],"metadata":{"kernelspec":{"display_name":"jupytertool_venv","language":"python","name":"jupytertool_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.6.8"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+          <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":95,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"}},"outputs":[],"source":["from ayx import Alteryx\n","import pandas as pd \n","df = Alteryx.read(\"#1\")\n","vals = list(df['V'])\n","l = len(vals)"]},{"cell_type":"code","execution_count":96,"metadata":{},"outputs":[],"source":["class Cup:\n","    def __init__(self, v: int):\n","        self.v = v\n","        self.next = None\n","    \n","    def __repr__(self):\n","        return f'C({self.v}:{self.next.v})'\n","\n","d = {}\n","for i, v in enumerate(vals):\n","    c = Cup(v)\n","    if i > 0:\n","        d[vals[i - 1]].next = c\n","        \n","    d[v] = c\n","d[vals[-1]].next = d[vals[0]]"]},{"cell_type":"code","execution_count":97,"metadata":{},"outputs":[],"source":["current = d[vals[0]]\n","\n","for i in range(df['games'][0]):\n","    c_next = current.next\n","    current.next = current.next.next.next.next\n","    pickup = [c_next.v, c_next.next.v, c_next.next.next.v]\n","\n","    i = 1\n","    while (current.v - i if current.v - i > 0 else current.v - i + l) in pickup:\n","        i += 1\n","    i = (current.v - i if current.v - i > 0 else current.v - i + l)\n","    t_next = d[i].next\n","    d[i].next = c_next\n","    c_next.next.next.next = t_next\n","    \n","    current = current.next"]},{"cell_type":"code","execution_count":101,"metadata":{},"outputs":[],"source":["current = d[1]\n","output = []\n","while (current.next.v != 1):\n","    output.append(current.v)\n","    current = current.next"]},{"cell_type":"code","execution_count":103,"metadata":{},"outputs":[],"source":["df = pd.DataFrame(output)\n","Alteryx.write(df,1)"]}],"metadata":{"kernelspec":{"display_name":"jupytertool_venv","language":"python","name":"jupytertool_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.6.8"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
           <JupyterProduction>true</JupyterProduction>
           <vEnvName>jupytertool_venv</vEnvName>
           <DefaultVenv>1</DefaultVenv>
@@ -233,16 +233,21 @@ Alteryx.write(df,1)</productionModeScript>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <MetaInfo connection="Output1">
+          <RecordInfo>
+            <Field name="0" source="PythonTool:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="570" y="234" />
+        <Position x="738" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_19392_f6abfc5b69274e0bbec5599b08e7bb1c_\Engine_11632_ce658dabca0143159d604c1d1ef3e592_.yxdb</TempFile>
+          <TempFile>C:\Users\jdunk\AppData\Local\Temp\Engine_18928_7a53f821c6284b4e99443301d3780f3f_\Engine_11632_edeff8bc261f4f79b6fe2de759e250ee_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -263,6 +268,49 @@ Alteryx.write(df,1)</productionModeScript>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings>
+        <Position x="546" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Ranges">2-3</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="SelectRecords.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="642" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>0</UpdateField_Name>
+          <CreateField_Name>P</CreateField_Name>
+          <CreateField_Type>Int64</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>Max(1,[Row-1:P])*[0]</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Max(1,[Row-1:P])*[0]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
     </Node>
   </Nodes>
   <Connections>
@@ -296,6 +344,14 @@ Alteryx.write(df,1)</productionModeScript>
     </Connection>
     <Connection>
       <Origin ToolID="8" Connection="Output1" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
       <Destination ToolID="9" Connection="Input" />
     </Connection>
   </Connections>
