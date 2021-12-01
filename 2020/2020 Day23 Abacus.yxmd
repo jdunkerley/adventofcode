@@ -111,7 +111,7 @@ V &lt;= 1000000</Expression_Cond>
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="546" y="30" />
+        <Position x="534" y="30" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -121,8 +121,8 @@ V &lt;= 1000000</Expression_Cond>
           <CreateField_Type>Int32</CreateField_Type>
           <CreateField_Size>4</CreateField_Size>
           <Expression_Init>0</Expression_Init>
-          <Expression_Cond>// RowCount &lt;= 100
-RowCount &lt;= 10000000</Expression_Cond>
+          <Expression_Cond><![CDATA[ //RowCount <= 100
+RowCount <= 30000]]></Expression_Cond>
           <Expression_Loop>RowCount + 1</Expression_Loop>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -149,9 +149,9 @@ RowCount &lt;= 10000000</Expression_Cond>
           <Expression>iif([RowCount]=0,
   VarListGet("Arr",0),
   VarListGet("Arr",Mod(VarNum("I",VarListIndexOf("Arr",[Row-1:C]),[Row-1:C])+4, Count)) + 
-  0*VarNum("A", VarListRemove("Arr",Mod(VarNum("I")+1,Count),[Row-1:C]),[Row-1:C]) +
-  0*VarNum("B", VarListRemove("Arr",Mod(VarListIndexOf("Arr",[Row-1:C])+1,VarListLength("Arr")),[Row-1:C]),[Row-1:C]) +
-  0*VarNum("C", VarListRemove("Arr",Mod(VarListIndexOf("Arr",[Row-1:C])+1,VarListLength("Arr")),[Row-1:C]),[Row-1:C]) +
+  0*VarNum("A", VarListRemove("Arr",Mod(VarNum("I")+1,Count))) +
+  0*VarNum("B", VarListRemove("Arr",Mod(VarListIndexOf("Arr",[Row-1:C])+1,VarListLength("Arr")))) +
+  0*VarNum("C", VarListRemove("Arr",Mod(VarListIndexOf("Arr",[Row-1:C])+1,VarListLength("Arr")))) +
   0*VarNum("K", 
       iif([Row-1:C]-1+IIF([Row-1:C]&lt;2,Count,0) not in (VarNum("A"),VarNum("B"),VarNum("C")),
         [Row-1:C]-1+IIF([Row-1:C]&lt;2,Count,0),
@@ -160,11 +160,10 @@ RowCount &lt;= 10000000</Expression_Cond>
       iif([Row-1:C]-3+IIF([Row-1:C]&lt;4,Count,0) not in (VarNum("A"),VarNum("B"),VarNum("C")),
         [Row-1:C]-3+IIF([Row-1:C]&lt;4,Count,0),
         [Row-1:C]-4+IIF([Row-1:C]&lt;5,Count,0)
-      )))
-      ,[Row-1:C]) +
-  0*VarListInsert("Arr",MOD(VarListIndexOf("Arr", VarNum("K"))+1,VarListLength("Arr")),VarNum("C"),[Row-1:C]) +
-  0*VarListInsert("Arr",MOD(VarListIndexOf("Arr", VarNum("K"))+1,VarListLength("Arr")),VarNum("B"),[Row-1:C]) +
-  0*VarListInsert("Arr",MOD(VarListIndexOf("Arr", VarNum("K"))+1,VarListLength("Arr")),VarNum("A"),[Row-1:C])
+      )))) +
+  0*VarListInsert("Arr",VarNum("J",VarListIndexOf("Arr", VarNum("K"))+1),VarNum("C")) +
+  0*VarListInsert("Arr",VarNum("J"),VarNum("B")) +
+  0*VarListInsert("Arr",VarNum("J"),VarNum("A"))
 )</Expression>
           <GroupByFields />
         </Configuration>
@@ -241,7 +240,7 @@ RowCount &lt;= 10000000</Expression_Cond>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="VarListGet(&quot;Arr&quot;, MOD(I+[RowCount],VarListLength(&quot;Arr&quot;)))" field="I" size="2" type="Int16" />
+            <FormulaField expression="VarListGet(&quot;Arr&quot;, MOD(I+[RowCount],VarListLength(&quot;Arr&quot;)))" field="I" size="8" type="Int64" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">

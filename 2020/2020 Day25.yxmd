@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2020.3">
+<AlteryxDocument yxmdVer="2020.4">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="54" y="66" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -30,7 +30,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="150" y="66" />
+        <Position x="150" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -53,7 +53,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="246" y="66" />
+        <Position x="246" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -72,7 +72,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="342" y="66" />
+        <Position x="342" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -91,7 +91,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="474" y="66" />
+        <Position x="474" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -118,7 +118,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="558" y="66" />
+        <Position x="558" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -135,7 +135,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="666" y="66" />
+        <Position x="666" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -158,7 +158,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="750" y="66" />
+        <Position x="750" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -182,7 +182,7 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="846" y="66" />
+        <Position x="846" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -201,7 +201,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="54" y="126" />
+        <Position x="54" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>

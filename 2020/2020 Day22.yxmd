@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2020.3">
+<AlteryxDocument yxmdVer="2020.4">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="66" y="42" />
+        <Position x="54" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -63,7 +63,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="162" y="30" />
+        <Position x="150" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -87,7 +87,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="282" y="30" />
+        <Position x="270" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -104,7 +104,7 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="66" y="138" />
+        <Position x="54" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -284,7 +284,7 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="666" y="42" width="444" height="168" />
+        <Position x="762" y="78" width="444" height="168" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -307,7 +307,7 @@ Otherwise, at least one player must not have enough cards left in their deck to 
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="390" y="30" />
+        <Position x="378" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -326,7 +326,7 @@ Otherwise, at least one player must not have enough cards left in their deck to 
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="462" y="30" />
+        <Position x="450" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -349,7 +349,7 @@ Otherwise, at least one player must not have enough cards left in their deck to 
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="546" y="30" />
+        <Position x="534" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -371,7 +371,7 @@ Otherwise, at least one player must not have enough cards left in their deck to 
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="90" y="246" />
+        <Position x="78" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -396,7 +396,7 @@ Substring(GetWord(C,0),1) + " " +Substring(GetWord(C,1),1)+ Left(GetWord(C,1),1)
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="174" y="246" />
+        <Position x="162" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -414,7 +414,7 @@ Substring(GetWord(C,0),1) + " " +Substring(GetWord(C,1),1)+ Left(GetWord(C,1),1)
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="246" y="246" />
+        <Position x="234" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -433,7 +433,7 @@ Substring(GetWord(...</DefaultAnnotationText>
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="342" y="246" />
+        <Position x="330" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -465,7 +465,7 @@ Substring(GetWord(...</DefaultAnnotationText>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="534" y="246" />
+        <Position x="522" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -486,7 +486,7 @@ C = CharToInt(C)-48
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="438" y="246" />
+        <Position x="426" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -506,7 +506,7 @@ C = CharToInt(C)-48
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="618" y="246" />
+        <Position x="606" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -524,7 +524,7 @@ C = CharToInt(C)-48
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="90" y="414" />
+        <Position x="78" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -593,7 +593,7 @@ ENDIF</Expression_Loop>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="174" y="414" />
+        <Position x="162" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -611,7 +611,7 @@ ENDIF</Expression_Loop>
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="270" y="414" />
+        <Position x="258" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -643,7 +643,7 @@ ENDIF</Expression_Loop>
     </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="462" y="414" />
+        <Position x="450" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -664,7 +664,7 @@ C = CharToInt(C)-48
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="366" y="414" />
+        <Position x="354" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -684,7 +684,7 @@ C = CharToInt(C)-48
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="546" y="414" />
+        <Position x="534" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -703,16 +703,16 @@ C = CharToInt(C)-48
   </Nodes>
   <Connections>
     <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="2" Connection="Output" />
       <Destination ToolID="3" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="3" Connection="False" />
       <Destination ToolID="17" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="2" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="17" Connection="Output" />
