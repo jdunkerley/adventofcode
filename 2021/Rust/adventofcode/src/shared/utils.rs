@@ -1,7 +1,7 @@
 pub fn lines(input: &str) -> Vec<String> {
     input.lines()
-        .map(|x| x.to_string())
-        .filter(|x| x.trim() != "")
+        .map(|x| x.trim().to_string())
+        .filter(|x| x != "")
         .collect()
 }
 
