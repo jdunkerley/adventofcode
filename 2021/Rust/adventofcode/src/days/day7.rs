@@ -23,6 +23,7 @@ fn process(input: &str, cost: fn(i32) -> i32) {
 
 pub fn run() {
     let test_input = "16,1,2,0,4,2,7,1,2,14";
+    println!("Test Input:");
     process(test_input, |x| x);
     process(test_input, |x| x * (x + 1) / 2);
 

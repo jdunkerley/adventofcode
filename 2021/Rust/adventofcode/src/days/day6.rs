@@ -20,7 +20,6 @@ fn process(input: &str, iters: u16) {
 
 pub fn run() {
     let test_input = "3,4,3,1,2";
-
     println!("Test Input:");
     process(test_input, 80);
     process(test_input, 256);
