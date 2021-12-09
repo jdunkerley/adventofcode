@@ -16,7 +16,7 @@ fn count_matches(a: &str, b: &str) -> usize {
     a.chars().map(|c| if b.contains(&String::from(c)) { 1 } else { 0 }).sum()
 }
 
-fn process_line(line: &str) -> i32 {
+fn process_line(line: &str) -> (i32, i32) {
     let index = line.find(" | ");
     if index.is_none() {
         panic!("Bad format line {}", line);
@@ -106,13 +106,12 @@ fn process_line(line: &str) -> i32 {
         .collect();
     let output = output[0] * 1000 + output[1] * 100 + output[2] * 10 + output[3];
 
-    // line[index + 3..].split(' ').filter(|x| x.len() < 5 || x.len() == 7).count() as i32
-    output
+    (line[index + 3..].split(' ').filter(|x| x.len() < 5 || x.len() == 7).count() as i32, output)
 }
 
 fn process(input: &str) {
     let lines: Vec<String> = lines(&input);
-    println!("{}", lines.iter().map(|x| process_line(x)).sum::<i32>());
+    println!("{:?}", lines.iter().map(|x| process_line(x)).reduce(|a, b| (a.0 + b.0, a.1 + b.1)).unwrap());
 }
 
 pub fn run() {
@@ -131,6 +130,6 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
     process(test_input);
 
     let input = fs::read_to_string("data/day8.txt").expect("Failed to read the file.");
-    println!("Real Input: {}", input.len());
+    println!("Real Input:");
     process(&input);
 }
