@@ -1,12 +1,12 @@
-use crate::shared::utils::{lines};
-use std::str::FromStr;
+use crate::shared::utils::lines;
 use std::fs;
+use std::str::FromStr;
 
 #[derive(Debug, PartialEq)]
 enum Move {
     Forward,
     Down,
-    Up
+    Up,
 }
 
 impl FromStr for Move {
@@ -25,7 +25,7 @@ impl FromStr for Move {
 #[derive(Debug)]
 struct MoveSteps {
     direction: Move,
-    steps: i64
+    steps: i64,
 }
 
 impl FromStr for MoveSteps {
@@ -47,7 +47,10 @@ impl FromStr for MoveSteps {
             return Err(());
         }
 
-        Ok(MoveSteps { direction: step.unwrap(), steps: count.unwrap() })
+        Ok(MoveSteps {
+            direction: step.unwrap(),
+            steps: count.unwrap(),
+        })
     }
 }
 
@@ -61,7 +64,7 @@ fn process(input: &str) {
     for line in lines {
         let move_steps = MoveSteps::from_str(&line);
         if move_steps.is_err() {
-            panic!("Invalid Input {}" , line);
+            panic!("Invalid Input {}", line);
         }
 
         let move_steps = move_steps.unwrap();
@@ -69,7 +72,7 @@ fn process(input: &str) {
             Move::Forward => {
                 d += move_steps.steps * aim;
                 x += move_steps.steps;
-            },
+            }
             Move::Down => aim += move_steps.steps,
             Move::Up => aim -= move_steps.steps,
         }

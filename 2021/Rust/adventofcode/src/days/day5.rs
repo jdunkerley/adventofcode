@@ -1,8 +1,8 @@
+use crate::shared::utils::lines;
 use std::collections::HashMap;
-use crate::shared::utils::{lines};
+use std::fs;
 use std::num::ParseIntError;
 use std::str::FromStr;
-use std::fs;
 
 #[derive(Hash, Eq, PartialEq, Debug, Copy, Clone)]
 struct Point {
@@ -14,13 +14,14 @@ impl FromStr for Point {
     type Err = ();
 
     fn from_str(input: &str) -> Result<Point, Self::Err> {
-        let parts: Vec<Result<i16, ParseIntError>> = input
-            .split(',')
-            .map(|x| x.parse::<i16>())
-            .collect();
+        let parts: Vec<Result<i16, ParseIntError>> =
+            input.split(',').map(|x| x.parse::<i16>()).collect();
 
         if parts.len() == 2 && parts.iter().all(|x| x.is_ok()) {
-            Ok(Point{ x: *parts[0].as_ref().unwrap(), y: *parts[1].as_ref().unwrap() })
+            Ok(Point {
+                x: *parts[0].as_ref().unwrap(),
+                y: *parts[1].as_ref().unwrap(),
+            })
         } else {
             Err(())
         }
@@ -30,7 +31,7 @@ impl FromStr for Point {
 #[derive(Debug, Copy, Clone)]
 struct Line {
     start: Point,
-    end: Point
+    end: Point,
 }
 
 impl FromStr for Line {
@@ -44,7 +45,10 @@ impl FromStr for Line {
                 let start = Point::from_str(&input[0..i]);
                 let end = Point::from_str(&input[i + 4..]);
                 if start.is_ok() && end.is_ok() {
-                    Ok(Line { start:start.unwrap(), end: end.unwrap() })
+                    Ok(Line {
+                        start: start.unwrap(),
+                        end: end.unwrap(),
+                    })
                 } else {
                     Err(())
                 }
@@ -68,7 +72,10 @@ impl Line {
         } else if self.is_horizontal() {
             (if self.end.x > self.start.x { 1 } else { -1 }, 0)
         } else {
-            (if self.end.x > self.start.x { 1 } else { -1 }, if self.end.y > self.start.y { 1 } else { -1 })
+            (
+                if self.end.x > self.start.x { 1 } else { -1 },
+                if self.end.y > self.start.y { 1 } else { -1 },
+            )
         }
     }
 
@@ -81,7 +88,10 @@ impl Line {
     }
 
     fn point(self: &Self, step: usize) -> Point {
-        Point{x: self.start.x + self.step().0 * step as i16, y: self.start.y + self.step().1 * step as i16}
+        Point {
+            x: self.start.x + self.step().0 * step as i16,
+            y: self.start.y + self.step().1 * step as i16,
+        }
     }
 }
 
@@ -90,13 +100,16 @@ impl IntoIterator for Line {
     type IntoIter = LineIter;
 
     fn into_iter(self) -> Self::IntoIter {
-        LineIter{ data: self, step: 0 }
+        LineIter {
+            data: self,
+            step: 0,
+        }
     }
 }
 
 struct LineIter {
     data: Line,
-    step: usize
+    step: usize,
 }
 
 impl Iterator for LineIter {
@@ -140,13 +153,20 @@ mod tests {
 
 fn get_overlaps<'a, I>(lines: I) -> usize
 where
-    I: IntoIterator<Item = &'a Line>
+    I: IntoIterator<Item = &'a Line>,
 {
     let mut grid = HashMap::new();
     for line in lines {
         for point in line.into_iter() {
             let current = grid.remove(&point);
-            grid.insert(point, if current.is_none() { 1_u8 } else { current.unwrap() + 1 });
+            grid.insert(
+                point,
+                if current.is_none() {
+                    1_u8
+                } else {
+                    current.unwrap() + 1
+                },
+            );
         }
     }
 
@@ -154,11 +174,19 @@ where
 }
 
 fn process(input: &str) {
-    let lines: Vec<Line> = lines(&input).iter()
+    let lines: Vec<Line> = lines(&input)
+        .iter()
         .map(|x| Line::from_str(x).unwrap())
         .collect();
 
-    println!("H/V {}", get_overlaps(lines.iter().filter(|x| x.is_horizontal() || x.is_vertical())));
+    println!(
+        "H/V {}",
+        get_overlaps(
+            lines
+                .iter()
+                .filter(|x| x.is_horizontal() || x.is_vertical())
+        )
+    );
     println!("All {}", get_overlaps(lines.iter().filter(|_| true)));
 }
 

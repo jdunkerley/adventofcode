@@ -1,4 +1,4 @@
-use crate::shared::utils::{lines};
+use crate::shared::utils::lines;
 use std::fs;
 
 fn more_ones(lines: &Vec<String>, index: usize) -> bool {
@@ -18,7 +18,11 @@ fn filter_list(lines: &Vec<String>, highest: bool) -> u32 {
     let mut filtered = lines.clone();
     let mut index: usize = 0;
     while filtered.len() > 1 {
-        let char = if more_ones(&filtered, index) { '1' } else { '0' };
+        let char = if more_ones(&filtered, index) {
+            '1'
+        } else {
+            '0'
+        };
         if highest {
             filtered.retain(|x| x.chars().nth(index).unwrap() == char);
         } else {
@@ -35,7 +39,7 @@ fn process(input: &str) {
 
     let length = lines[0].chars().count();
 
-    let mut counts : Vec<u16> = Vec::with_capacity(length);
+    let mut counts: Vec<u16> = Vec::with_capacity(length);
     for _i in 0..length {
         counts.push(0);
     }

@@ -1,10 +1,14 @@
-use std::cmp::{min, max};
+use std::cmp::{max, min};
 use std::fs;
 
 fn process(input: &str, cost: fn(i32) -> i32) {
-    let positions: Vec<i16> = input.split(',').map(|x| x.parse::<i16>().unwrap()).collect();
+    let positions: Vec<i16> = input
+        .split(',')
+        .map(|x| x.parse::<i16>().unwrap())
+        .collect();
 
-    let range = positions.iter()
+    let range = positions
+        .iter()
         .map(|x| (x, x))
         .reduce(|c, r| (min(c.0, r.0), max(c.1, r.1)))
         .unwrap();
@@ -12,7 +16,7 @@ fn process(input: &str, cost: fn(i32) -> i32) {
 
     let mut best = (-1, -1);
     for v in range {
-        let cost = positions.iter().map(|p| cost((p-v).abs() as i32)).sum();
+        let cost = positions.iter().map(|p| cost((p - v).abs() as i32)).sum();
         if cost < best.1 || best.0 == -1 {
             best = (v, cost);
         }

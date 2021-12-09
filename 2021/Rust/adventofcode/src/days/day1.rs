@@ -1,15 +1,14 @@
 use crate::shared::utils::{lines, lines_to_i64};
 use std::fs;
 
-fn positive_change(input: &Vec<i64>) -> i32
-{
+fn positive_change(input: &Vec<i64>) -> i32 {
     let mut count = 0;
     for (i, v) in input.iter().enumerate() {
         if i == 0 {
             continue;
         }
 
-        if input[i-1] < *v {
+        if input[i - 1] < *v {
             count += 1;
         }
     }
@@ -17,8 +16,7 @@ fn positive_change(input: &Vec<i64>) -> i32
     count
 }
 
-fn aggregate_blocks(input: &Vec<i64>) -> Vec<i64>
-{
+fn aggregate_blocks(input: &Vec<i64>) -> Vec<i64> {
     let mut output = Vec::new();
     let mut total = 0;
 
@@ -30,9 +28,8 @@ fn aggregate_blocks(input: &Vec<i64>) -> Vec<i64>
         }
 
         output.push(total);
-        total -= input[i -2];
+        total -= input[i - 2];
     }
-
 
     output
 }
@@ -63,4 +60,3 @@ pub fn run() {
     println!("Real Input:");
     process(&input);
 }
-

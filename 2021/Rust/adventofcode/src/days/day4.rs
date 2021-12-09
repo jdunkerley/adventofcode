@@ -1,5 +1,5 @@
+use crate::shared::utils::lines;
 use std::collections::HashMap;
-use crate::shared::utils::{lines};
 use std::fs;
 
 #[derive(Debug)]
@@ -13,7 +13,7 @@ const MARKED: u8 = 255;
 impl BingoBoard {
     fn new<I>(board: I) -> Self
     where
-        I: IntoIterator<Item = u8>
+        I: IntoIterator<Item = u8>,
     {
         let mut array = [MARKED; 25];
         let mut map = HashMap::with_capacity(25);
@@ -21,7 +21,7 @@ impl BingoBoard {
             array[i] = num;
             map.insert(num, i);
         }
-        BingoBoard{ board: array, map }
+        BingoBoard { board: array, map }
     }
 
     fn get(self: &Self, row: usize, col: usize) -> u8 {
@@ -29,40 +29,44 @@ impl BingoBoard {
     }
 
     fn total(self: &Self) -> u16 {
-        self.board.into_iter().filter(|x| *x != MARKED).map(|x| x as u16).sum()
+        self.board
+            .into_iter()
+            .filter(|x| *x != MARKED)
+            .map(|x| x as u16)
+            .sum()
     }
 
     fn mark(self: &mut Self, play: u8) -> Option<(usize, usize)> {
-        let played = {
-            self.map.remove(&play)
-        };
+        let played = { self.map.remove(&play) };
 
         match played {
             Some(i) => {
                 self.board[i] = MARKED;
                 Some((i / 5, i % 5 + 1))
-            },
-            None => None
+            }
+            None => None,
         }
     }
 
     fn bingo(self: &Self) -> bool {
         for row in 1..5 {
-            if self.get(row, 1) == MARKED &&
-                self.get(row, 2) == MARKED &&
-                self.get(row, 3) == MARKED &&
-                self.get(row, 4) == MARKED &&
-                self.get(row, 5) == MARKED {
+            if self.get(row, 1) == MARKED
+                && self.get(row, 2) == MARKED
+                && self.get(row, 3) == MARKED
+                && self.get(row, 4) == MARKED
+                && self.get(row, 5) == MARKED
+            {
                 return true;
             }
         }
 
         for col in 1..5 {
-            if self.get(1, col) == MARKED &&
-                self.get(2, col) == MARKED &&
-                self.get(3, col) == MARKED &&
-                self.get(4, col) == MARKED &&
-                self.get(5, col) == MARKED {
+            if self.get(1, col) == MARKED
+                && self.get(2, col) == MARKED
+                && self.get(3, col) == MARKED
+                && self.get(4, col) == MARKED
+                && self.get(5, col) == MARKED
+            {
                 return true;
             }
         }
@@ -76,7 +80,7 @@ fn process(input: &str) {
 
     let mut boards: Vec<BingoBoard> = Vec::new();
     for i in (1..lines.len()).step_by(5) {
-        let board: Vec<u8> = lines[i..i+5]
+        let board: Vec<u8> = lines[i..i + 5]
             .join(" ")
             .split(' ')
             .filter(|x| x.trim() != "")
@@ -85,11 +89,14 @@ fn process(input: &str) {
         boards.push(BingoBoard::new(board));
     }
 
-    let plays: Vec<u8> = lines[0].split(',').map(|x| x.parse::<u8>().unwrap()).collect();
+    let plays: Vec<u8> = lines[0]
+        .split(',')
+        .map(|x| x.parse::<u8>().unwrap())
+        .collect();
     for play in plays {
         for (i, board) in boards.iter_mut().enumerate() {
             if board.bingo() {
-                continue
+                continue;
             }
 
             let result = board.mark(play);
@@ -130,4 +137,3 @@ pub fn run() {
     println!("Real Input:");
     process(&input);
 }
-

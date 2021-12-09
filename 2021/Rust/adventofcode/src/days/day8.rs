@@ -1,4 +1,4 @@
-use crate::shared::utils::{lines};
+use crate::shared::utils::lines;
 use std::fs;
 
 // 1 __c__f_ 2 0
@@ -13,7 +13,9 @@ use std::fs;
 // 8 abcdefg 7 9
 
 fn count_matches(a: &str, b: &str) -> usize {
-    a.chars().map(|c| if b.contains(&String::from(c)) { 1 } else { 0 }).sum()
+    a.chars()
+        .map(|c| if b.contains(&String::from(c)) { 1 } else { 0 })
+        .sum()
 }
 
 fn process_line(line: &str) -> (i32, i32) {
@@ -45,7 +47,12 @@ fn process_line(line: &str) -> (i32, i32) {
     }
 
     // Identify b
-    let b = String::from(ordered[4].chars().filter(|&c| !ordered[3].contains(&String::from(c))).collect::<Vec<char>>()[0]);
+    let b = String::from(
+        ordered[4]
+            .chars()
+            .filter(|&c| !ordered[3].contains(&String::from(c)))
+            .collect::<Vec<char>>()[0],
+    );
 
     // Lets find 5
     if count_matches(codes[3], &b) == 1 {
@@ -60,7 +67,13 @@ fn process_line(line: &str) -> (i32, i32) {
     }
 
     // 2 is the left over 5
-    ordered[2] = if codes[3] != "" { codes[3] } else if codes[4] != "" { codes[4] } else { codes[5] };
+    ordered[2] = if codes[3] != "" {
+        codes[3]
+    } else if codes[4] != "" {
+        codes[4]
+    } else {
+        codes[5]
+    };
 
     // Lets find 9
     if count_matches(codes[6], ordered[4]) == 4 {
@@ -87,7 +100,13 @@ fn process_line(line: &str) -> (i32, i32) {
     }
 
     // 0 is the left over 6
-    ordered[0] = if codes[6] != "" { codes[6] } else if codes[7] != "" { codes[7] } else { codes[8] };
+    ordered[0] = if codes[6] != "" {
+        codes[6]
+    } else if codes[7] != "" {
+        codes[7]
+    } else {
+        codes[8]
+    };
 
     fn match_position(to_match: &str, ordered: &Vec<&str>) -> i32 {
         let len = to_match.len();
@@ -106,12 +125,25 @@ fn process_line(line: &str) -> (i32, i32) {
         .collect();
     let output = output[0] * 1000 + output[1] * 100 + output[2] * 10 + output[3];
 
-    (line[index + 3..].split(' ').filter(|x| x.len() < 5 || x.len() == 7).count() as i32, output)
+    (
+        line[index + 3..]
+            .split(' ')
+            .filter(|x| x.len() < 5 || x.len() == 7)
+            .count() as i32,
+        output,
+    )
 }
 
 fn process(input: &str) {
     let lines: Vec<String> = lines(&input);
-    println!("{:?}", lines.iter().map(|x| process_line(x)).reduce(|a, b| (a.0 + b.0, a.1 + b.1)).unwrap());
+    println!(
+        "{:?}",
+        lines
+            .iter()
+            .map(|x| process_line(x))
+            .reduce(|a, b| (a.0 + b.0, a.1 + b.1))
+            .unwrap()
+    );
 }
 
 pub fn run() {

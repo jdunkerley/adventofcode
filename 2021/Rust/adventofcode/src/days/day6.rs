@@ -1,6 +1,8 @@
-
 fn process(input: &str, iters: u16) {
-    let fish: Vec<u16> = input.split(',').map(|x| x.parse::<u16>().unwrap()).collect();
+    let fish: Vec<u16> = input
+        .split(',')
+        .map(|x| x.parse::<u16>().unwrap())
+        .collect();
 
     let mut counts = [0_u64; 9];
     for f in fish {
