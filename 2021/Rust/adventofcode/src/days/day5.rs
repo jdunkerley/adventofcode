@@ -5,9 +5,9 @@ use std::num::ParseIntError;
 use std::str::FromStr;
 
 #[derive(Hash, Eq, PartialEq, Debug, Copy, Clone)]
-struct Point {
-    x: i16,
-    y: i16,
+pub struct Point {
+    pub x: i16,
+    pub y: i16,
 }
 
 impl FromStr for Point {
