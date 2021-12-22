@@ -21,11 +21,12 @@ pub fn lines_to_i64(lines: Vec<String>) -> Vec<i64> {
     v
 }
 
-pub fn min_max<I>(iter: I) -> Option<(i16, i16)>
+pub fn min_max<I, J>(iter: I) -> Option<(J, J)>
 where
-    I: IntoIterator<Item = i16>,
+    I: IntoIterator<Item = J>,
+    J: std::cmp::Ord + Copy,
 {
-    let mut output: Option<(i16, i16)> = None;
+    let mut output: Option<(J, J)> = None;
 
     for v in iter.into_iter() {
         if let Some(current) = output {
