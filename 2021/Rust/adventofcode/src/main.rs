@@ -4,7 +4,7 @@ mod shared;
 use days::*;
 
 fn main() {
-    let day = 15;
+    let day = 16;
 
     match day {
         1 => day1::run(),
@@ -22,6 +22,7 @@ fn main() {
         13 => day13::run(),
         14 => day14::run(),
         15 => day15::run(),
+        16 => day16::run(),
         _ => panic!("Not done yet!"),
     }
 }
